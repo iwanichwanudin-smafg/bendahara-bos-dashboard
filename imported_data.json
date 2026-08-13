@@ -1,0 +1,7903 @@
+{
+  "1": [
+    {
+      "jenis": "Operasional",
+      "desc": "Tagihan Listrik Januari",
+      "link": "-",
+      "qty": 4758,
+      "satuan": "kWh",
+      "harga": 950,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "27 Feb 2026",
+          "qty": 4667,
+          "harga": 950,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-TagihanL"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas A4",
+      "link": "-",
+      "qty": 6,
+      "satuan": "rim",
+      "harga": 70000,
+      "bulan": "Januari",
+      "note": "Bayar hutang ke FG inc 6 rim",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 6,
+          "harga": 70000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-KertasA4"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas F4",
+      "link": "-",
+      "qty": 6,
+      "satuan": "rim",
+      "harga": 80000,
+      "bulan": "Januari",
+      "note": "Bayar hutang ke FG inc 6 rim",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 6,
+          "harga": 80000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-KertasF4"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Map Raport",
+      "link": "-",
+      "qty": 135,
+      "satuan": "pcs",
+      "harga": 75000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 135,
+          "harga": 75000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-MapRapor"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola Basket MOLTEN BG 4550 Size 7",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 883000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 1,
+          "harga": 883000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-BolaBask"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Net Voli MITZUDA VN 285 Original",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 935000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 1,
+          "harga": 935000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-NetVoliM"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola Futsal OrtusEight (Uk. 4)",
+      "link": "-",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 373000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 2,
+          "harga": 373000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-BolaFuts"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bet Pingpong KATANA KB05 Original",
+      "link": "-",
+      "qty": 4,
+      "satuan": "pcs",
+      "harga": 206000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "27 Feb 2026",
+          "qty": 4,
+          "harga": 206000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-BetPingp"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Net Pingpong PWR SPIN 720 3 STAR",
+      "link": "-",
+      "qty": 1,
+      "satuan": "set",
+      "harga": 156000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 1,
+          "harga": 156000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-NetPingp"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola Pingpong HUNDRED TOURNAMENT 6 IN 1 Original",
+      "link": "-",
+      "qty": 3,
+      "satuan": "box",
+      "harga": 42000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 3,
+          "harga": 42000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-BolaPing"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cat garis lapangan voli",
+      "link": "-",
+      "qty": 1,
+      "satuan": "galon (5 kg)",
+      "harga": 373000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 1,
+          "harga": 373000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-Catgaris"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas Concorde Putih 90gr",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pak",
+      "harga": 17000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 10,
+          "harga": 17000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-KertasCo"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta refill stampel",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 26000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 10,
+          "harga": 26000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-Tintaref"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Stampel ttd kepsek",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 125000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 1,
+          "harga": 125000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-Stampelt"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Riski Francisko",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 5700000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 1,
+          "harga": 3446070,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-RiskiFra"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Pangestu Wibisono",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 6300000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "27 Feb 2026",
+          "qty": 1,
+          "harga": 6078510,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-Pangestu"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Mahmud Syah Alam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 4200000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 1,
+          "harga": 4094280,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-MahmudSy"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Manekin - Praktik Memandikan Jenazah",
+      "link": "-",
+      "qty": 1,
+      "satuan": "set",
+      "harga": 3960000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 1,
+          "harga": 3960000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-ManekinP"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Printer Canon pixma G3730 (ruang guru)",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 3360000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "27 Feb 2026",
+          "qty": 1,
+          "harga": 3360000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-PrinterC"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Meja Printer (RJ 80x40x75)",
+      "link": "-",
+      "qty": 1,
+      "satuan": "unit",
+      "harga": 441039,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 1,
+          "harga": 441039,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-PUTRA-MejaPrin"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tagihan Listrik Juli",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 7960000,
+      "bulan": "Juli"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Riski Francisko",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 5800000,
+      "bulan": "Juli"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Pangestu Wibisono",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 6300000,
+      "bulan": "Juli"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Mahmud Syah Alam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 4200000,
+      "bulan": "Juli"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tagihan Listrik Agustus",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 7950000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Riski Francisko",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 5800000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Pangestu Wibisono",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 6300000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Mahmud Syah Alam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 4200000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Set Meja Kursi Siswa",
+      "link": "-",
+      "qty": 50,
+      "satuan": "pcs",
+      "harga": 995000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Kotak Penyimpanan HP",
+      "link": "-",
+      "qty": 12,
+      "satuan": "pcs",
+      "harga": 470000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku Golden ways anak Sholeh",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 44000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku good bye fairy",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 131000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku Physics 12th Edition",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 728000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Bupena Kimia XII - Erlangga",
+      "link": "-",
+      "qty": 19,
+      "satuan": "eks",
+      "harga": 146000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Bupena Kimia XI - Erlangga",
+      "link": "-",
+      "qty": 8,
+      "satuan": "eks",
+      "harga": 204000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Ekonomi XII - Erlangga",
+      "link": "-",
+      "qty": 27,
+      "satuan": "eks",
+      "harga": 140000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "IPS Sosiologi Kls X SMA/MA [ Kur Merdeka ] - B Aksara",
+      "link": "-",
+      "qty": 47,
+      "satuan": "eks",
+      "harga": 138000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Modul Sosiologi Kls XI SMA/MA [ Kur Merdeka ] - B Aksara",
+      "link": "-",
+      "qty": 25,
+      "satuan": "eks",
+      "harga": 124000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Modul Sosiologi Kls XII SMA/MA [ Kur Merdeka ] - B Aksara",
+      "link": "-",
+      "qty": 35,
+      "satuan": "eks",
+      "harga": 141000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Geografi XII - Yrama Widya",
+      "link": "-",
+      "qty": 31,
+      "satuan": "eks",
+      "harga": 193000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Mandiri Matematika Tingkat Lanjut XII - Erlangga",
+      "link": "-",
+      "qty": 19,
+      "satuan": "eks",
+      "harga": 219000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Mandiri Matematika XII Kumer - Erlangga",
+      "link": "-",
+      "qty": 47,
+      "satuan": "eks",
+      "harga": 165000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tagihan Listrik September",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 7960000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Riski Francisko",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 5800000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Pangestu Wibisono",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 6300000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Mahmud Syah Alam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 4200000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Lenovo IdeaPad Slim intel core i3 Gen 13",
+      "link": "https://tk.tokopedia.com/ZSaro9e6q/",
+      "qty": 3,
+      "satuan": "pcs",
+      "harga": 9585000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tagihan Listrik November",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 7960000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Riski Francisko",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 5800000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Pangestu Wibisono",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 6300000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Mahmud Syah Alam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 4200000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tagihan Listrik Desember",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 7960000,
+      "bulan": "Desember"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Riski Francisko",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 5800000,
+      "bulan": "Desember"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Pangestu Wibisono",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 6300000,
+      "bulan": "Desember"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Mahmud Syah Alam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 4200000,
+      "bulan": "Desember"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tagihan Listrik Oktober",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 7960000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Riski Francisko",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 5800000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Pangestu Wibisono",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 6300000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Mahmud Syah Alam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 4200000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tagihan Listrik Februari",
+      "link": "-",
+      "qty": 8632,
+      "satuan": "kWh",
+      "harga": 950,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "27 Feb 2026",
+          "qty": 1,
+          "harga": 5453000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-PUTRA-TagihanL"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Jas Laboratorium MIPA (Uk L 8 pcs, Uk XL 8 pcs, Uk XXL 4 pcs)",
+      "link": "-",
+      "qty": 20,
+      "satuan": "pcs",
+      "harga": 125000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 20,
+          "harga": 125000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-PUTRA-JasLabor"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Riski Francisko",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 5700000,
+      "bulan": "Februari",
+      "note": "Perlu direvisi di Perubahan",
+      "realisasi": {
+        "Februari": {
+          "tgl": "27 Feb 2026",
+          "qty": 1,
+          "harga": 1952773,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-PUTRA-RiskiFra"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Pangestu Wibisono",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 6300000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "27 Feb 2026",
+          "qty": 1,
+          "harga": 5875893,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-PUTRA-Pangestu"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Mahmud Syah Alam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 4200000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "27 Feb 2026",
+          "qty": 1,
+          "harga": 3548376,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-PUTRA-MahmudSy"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Lenovo Monitor 24 inch D24-40 (Buat Perpus)",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 1395000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "27 Feb 2026",
+          "qty": 1,
+          "harga": 1395000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-PUTRA-LenovoMo"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Universal Bluetooth Keyboard (hitam) (Buat Perpus)",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 155000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 1,
+          "harga": 155000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-PUTRA-Universa"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Tablet Stand Holder Foldable 360 Rotatable merk AMINO",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 110000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "27 Feb 2026",
+          "qty": 1,
+          "harga": 110000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-PUTRA-TabletSt"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tagihan Listrik P-1/TR 6.600 VA s.d. 200 kVA",
+      "link": "-",
+      "qty": 6793,
+      "satuan": "kWh",
+      "harga": 950,
+      "bulan": "Maret",
+      "realisasi": {
+        "Maret": {
+          "tgl": "5 Mar 2026",
+          "qty": 1,
+          "harga": 6310697,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MAR-PUTRA-TagihanL"
+        }
+      },
+      "volume": 6793,
+      "tarif": 950,
+      "hargaFinal": 6310697,
+      "tahap1": 6453350,
+      "tahap2": -142653
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Riski Francisko",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 3800000,
+      "bulan": "Maret",
+      "realisasi": {
+        "Maret": {
+          "tgl": "27 Mar 2026",
+          "qty": 1,
+          "harga": 5653428,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MAR-PUTRA-RiskiFra"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Pangestu Wibisono",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 5880000,
+      "bulan": "Maret",
+      "realisasi": {
+        "Maret": {
+          "tgl": "27 Mar 2026",
+          "qty": 1,
+          "harga": 6015238,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MAR-PUTRA-Pangestu"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Mahmud Syah Alam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 4200000,
+      "bulan": "Maret",
+      "realisasi": {
+        "Maret": {
+          "tgl": "27 Mar 2026",
+          "qty": 1,
+          "harga": 3789334,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MAR-PUTRA-MahmudSy"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Belanja Tagihan Listrik Bulanan",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 12000000,
+      "bulan": "April",
+      "note": "Revisi satuan dari kWh",
+      "realisasi": {
+        "April": {
+          "tgl": "7 Apr 2026",
+          "qty": 1,
+          "harga": 4890727,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-PUTRA-TagihanL"
+        }
+      },
+      "volume": 1,
+      "tarif": 12000000,
+      "hargaFinal": 8930727,
+      "tahap1": 12000000,
+      "tahap2": -3069273
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas A4",
+      "link": "-",
+      "qty": 17,
+      "satuan": "rim",
+      "harga": 70000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 17,
+          "harga": 70000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-PUTRA-KertasA4"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas F4",
+      "link": "-",
+      "qty": 3,
+      "satuan": "rim",
+      "harga": 80000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 3,
+          "harga": 80000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-PUTRA-KertasF4"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Honor Riski Francisko",
+      "link": "-",
+      "qty": 80,
+      "satuan": "jam",
+      "harga": 190000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "28 Apr 2026",
+          "qty": 1,
+          "harga": 11528748,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-PUTRA-RiskiFra"
+        }
+      },
+      "volume": 80,
+      "tarif": 190000,
+      "hargaFinal": 11052271,
+      "tahap1": 15200000,
+      "tahap2": -4147729,
+      "kode_rekening": "7959770671130342"
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Honor Pangestu Wibisono",
+      "link": "-",
+      "qty": 88,
+      "satuan": "jam",
+      "harga": 210000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "28 Apr 2026",
+          "qty": 1,
+          "harga": 6015186,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-PUTRA-Pangestu"
+        }
+      },
+      "volume": 88,
+      "tarif": 210000,
+      "hargaFinal": 17969641,
+      "tahap1": 18480000,
+      "tahap2": -510359
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Honor Mahmud Syah Alam",
+      "link": "-",
+      "qty": 90,
+      "satuan": "jam",
+      "harga": 140000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "28 Apr 2026",
+          "qty": 1,
+          "harga": 3769337,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-PUTRA-MahmudSy"
+        }
+      },
+      "volume": 90,
+      "tarif": 140000,
+      "hargaFinal": 11431990,
+      "tahap1": 12600000,
+      "tahap2": -1168010,
+      "kode_rekening": "9642771672130312"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tagihan Listrik Mei",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 7960000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "4 Mei 2026",
+          "qty": 1,
+          "harga": 7649029,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-PUTRA-TagihanL"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Riski Francisko",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 5800000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 5646479,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-PUTRA-RiskiFra"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Pangestu Wibisono",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 6300000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 6015186,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-PUTRA-Pangestu"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Mahmud Syah Alam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 4200000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 3789337,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-PUTRA-MahmudSy"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tagihan Listrik Juni",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 7111540,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "3 Jun 2026",
+          "qty": 1,
+          "harga": 7111540,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-TagihanL"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas Raport",
+      "link": "-",
+      "qty": 12,
+      "satuan": "rim",
+      "harga": 470000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 12,
+          "harga": 470000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-KertasRa"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas Concorde 160 gr",
+      "link": "-",
+      "qty": 30,
+      "satuan": "pak",
+      "harga": 19000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 30,
+          "harga": 19000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-KertasCo"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "CAT Tembok 25Kg",
+      "link": "-",
+      "qty": 11,
+      "satuan": "pail",
+      "harga": 2798000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 11,
+          "harga": 2798000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-CATTembo"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cat Dasar",
+      "link": "-",
+      "qty": 4,
+      "satuan": "pail",
+      "harga": 1570000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 4,
+          "harga": 1570000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-CatDasar"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Roll Cat",
+      "link": "-",
+      "qty": 8,
+      "satuan": "pcs",
+      "harga": 86000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 8,
+          "harga": 86000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-RollCat"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bak Cat",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pcs",
+      "harga": 22000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 5,
+          "harga": 22000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BakCat"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kuas 3 Inch",
+      "link": "-",
+      "qty": 4,
+      "satuan": "pcs",
+      "harga": 45000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 4,
+          "harga": 45000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-Kuas3Inc"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Amplas 120",
+      "link": "-",
+      "qty": 2,
+      "satuan": "roll",
+      "harga": 38000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 2,
+          "harga": 38000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-Amplas12"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Papan Tulis White Board",
+      "link": "-",
+      "qty": 5,
+      "satuan": "unit",
+      "harga": 750000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 5,
+          "harga": 750000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-PapanTul"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Lenovo IdeaPad Slim intel core i3 Gen 13",
+      "link": "-",
+      "qty": 3,
+      "satuan": "pcs",
+      "harga": 9585000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 3,
+          "harga": 9585000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-LenovoId"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Riski Francisko",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 5646479,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 1,
+          "harga": 5646479,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-RiskiFra"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Pangestu Wibisono",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 6015186,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 1,
+          "harga": 6015186,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-Pangestu"
+        }
+      }
+    },
+    {
+      "jenis": "Gaji",
+      "desc": "Mahmud Syah Alam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 3789337,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 1,
+          "harga": 3789337,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-MahmudSy"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku Scythe",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 87900,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 87900,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuScyt"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku Thunderhead",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 94000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 94000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuThun"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku Nak, Maafkan Bapak",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 106000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 106000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuNakM"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku I Want To Eat Your Pancreas",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 142000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 142000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuIWan"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku 48 Laws of Power",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 161000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 161000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-Buku48La"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku How to Win Friends and Influence People",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 220000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 220000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuHowt"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku Sisi Tergelap Surga",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 105000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 105000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuSisi"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku The Maxwell Daily Reader",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 108000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 108000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuTheM"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku The Happiness Advantage",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 377000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 377000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuTheH"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku Hyouka",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 74000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 74000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuHyou"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku HARGA SEBUAH PERCAYA",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 107000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 107000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuHARG"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku The Principle of Power",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 76000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 76000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuTheP"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku Seporsi Mie Ayam Sebelum Mati",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 109000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 109000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuSepo"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku Selesai Dengan Diri Sendiri",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 150000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 150000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BukuSele"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Bayna Yadayk Lil Muallim (Jilid 1)",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 500000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 1,
+          "harga": 500000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-PUTRA-BaynaYad"
+        }
+      }
+    },
+    {
+      "desc": "Amplop Coklat / casing D",
+      "volume": 28,
+      "qty": 28,
+      "satuan": "pak",
+      "tarif": 82000,
+      "harga": 82000,
+      "hargaFinal": 1960000,
+      "tahap1": 2296000,
+      "tahap2": -336000,
+      "bulan": "April",
+      "jenis": "Operasional",
+      "kode_rekening": "5.1.02.01.01.06.05.08"
+    }
+  ],
+  "2": [
+    {
+      "jenis": "Modal",
+      "desc": "Karpet permadani",
+      "link": "-",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 920000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "27 Feb 2026",
+          "qty": 2,
+          "harga": 920000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-MAHAD-Karpetpe"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "CCTV",
+      "link": "https://s.shopee.co.id/8fMQV1NNul?share_channel_code=1",
+      "qty": 4,
+      "satuan": "pcs",
+      "harga": 500000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "27 Feb 2026",
+          "qty": 4,
+          "harga": 500000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-MAHAD-CCTV"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Alat Gym",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 6790000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Mic stand",
+      "link": "https://tk.tokopedia.com/ZS56UVvor/",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 488700,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Wastafel stainless",
+      "link": "https://s.shopee.co.id/9zs6HGwo2n",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 685000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Ranjang UKS",
+      "link": "https://tk.tokopedia.com/ZSanALqXw/",
+      "qty": 1,
+      "satuan": "unit",
+      "harga": 2985000,
+      "bulan": "Desember"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "AC Gree 3pk",
+      "link": "https://tk.tokopedia.com/ZS56U1LaB/",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 5595000,
+      "bulan": "Desember"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Meja makan",
+      "link": "https://tk.tokopedia.com/ZS5jyXAHV/",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 5845000,
+      "bulan": "Desember"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Kursi makan",
+      "link": "https://tk.tokopedia.com/ZS5jyXb6G/",
+      "qty": 5,
+      "satuan": "pcs",
+      "harga": 200000,
+      "bulan": "Desember"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Mesin penghancur kertas Krisbow",
+      "link": "https://tk.tokopedia.com/ZS5hVLqWL/",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 1745000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Sofa perpustakaan (3 Seater)",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 4355000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta Printer HP Original 682 (Black dan Tricolor)",
+      "link": "-",
+      "qty": 4,
+      "satuan": "set",
+      "harga": 460000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 4,
+          "harga": 460000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-MAHAD-TintaPri"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Kursi kantor (Goto GC1003 BLACK)",
+      "link": "-",
+      "qty": 6,
+      "satuan": "pcs",
+      "harga": 550000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "13 Apr 2026",
+          "qty": 6,
+          "harga": 550000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-MAHAD-Kursikan"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola Basket MOLTEN BG 4550 Size 7",
+      "link": "-",
+      "qty": 3,
+      "satuan": "pcs",
+      "harga": 883000,
+      "bulan": "Maret",
+      "realisasi": {
+        "Maret": {
+          "tgl": "13 Apr 2026",
+          "qty": 3,
+          "harga": 883000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MAR-MAHAD-BolaBask"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola Futsal OrtusEight (Uk. 4)",
+      "link": "-",
+      "qty": 4,
+      "satuan": "pcs",
+      "harga": 373000,
+      "bulan": "Maret",
+      "realisasi": {
+        "Maret": {
+          "tgl": "13 Apr 2026",
+          "qty": 4,
+          "harga": 373000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MAR-MAHAD-BolaFuts"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Vacuum Cleaner",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 883061,
+      "bulan": "Maret",
+      "note": "Sudah direvisi harganya dari 833.061",
+      "realisasi": {
+        "Maret": {
+          "tgl": "13 Apr 2026",
+          "qty": 1,
+          "harga": 883061,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MAR-MAHAD-VacuumCl"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas A4",
+      "link": "-",
+      "qty": 70,
+      "satuan": "rim",
+      "harga": 70000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 70,
+          "harga": 70000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-MAHAD-KertasA4"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas F4",
+      "link": "-",
+      "qty": 35,
+      "satuan": "rim",
+      "harga": 80000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 35,
+          "harga": 80000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-MAHAD-KertasF4"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tali tambang 22mm (8 meter)",
+      "link": "-",
+      "qty": 8,
+      "satuan": "meter",
+      "harga": 32000,
+      "bulan": "April",
+      "note": "Sudah direvisi harganya dari 504.000",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 8,
+          "harga": 32000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-MAHAD-Talitamb"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Mic Imam Sholat",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 248000,
+      "bulan": "April",
+      "note": "Sudah di buat anggarannya",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 248000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-MAHAD-MicImamS"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Map Raport",
+      "link": "-",
+      "qty": 20,
+      "satuan": "pcs",
+      "harga": 75000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 20,
+          "harga": 75000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-MAHAD-MapRapor"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas Raport",
+      "link": "-",
+      "qty": 5,
+      "satuan": "rim",
+      "harga": 470000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 5,
+          "harga": 470000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-MAHAD-KertasRa"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas Concorde 160 gr",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pak",
+      "harga": 19000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 10,
+          "harga": 19000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-MAHAD-KertasCo"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Lemari Kantor Besi Kaca Arsip 2 pintu",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 2050000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 1,
+          "harga": 2050000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-MAHAD-LemariKa"
+        }
+      }
+    }
+  ],
+  "3": [
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas A4",
+      "link": "-",
+      "qty": 69,
+      "satuan": "rim",
+      "harga": 70000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas F4",
+      "link": "-",
+      "qty": 44,
+      "satuan": "rim",
+      "harga": 80000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Box File merk Bambi Biru dan hitam uk. Jumbo (1033)",
+      "link": "-",
+      "qty": 24,
+      "satuan": "pcs",
+      "harga": 59000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Soklin lantai 770 ml",
+      "link": "-",
+      "qty": 51,
+      "satuan": "pcs",
+      "harga": 19000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Mama lemon 680ml",
+      "link": "-",
+      "qty": 327,
+      "satuan": "pcs",
+      "harga": 13000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cling Pembersih Kaca 400ml",
+      "link": "-",
+      "qty": 18,
+      "satuan": "pcs",
+      "harga": 11000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pengharum Ruangan Gantung",
+      "link": "-",
+      "qty": 12,
+      "satuan": "pcs",
+      "harga": 19000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Glade matic device spray",
+      "link": "-",
+      "qty": 4,
+      "satuan": "pcs",
+      "harga": 97000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Refill pewangi spray Glade",
+      "link": "-",
+      "qty": 45,
+      "satuan": "pcs",
+      "harga": 43000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Trashbag Hitam 60x80",
+      "link": "-",
+      "qty": 45,
+      "satuan": "pak",
+      "harga": 32000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Trashbag Bening",
+      "link": "-",
+      "qty": 15,
+      "satuan": "pak",
+      "harga": 32000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tisu Wajah Nice",
+      "link": "-",
+      "qty": 100,
+      "satuan": "pcs",
+      "harga": 22000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tisu Toilet Nice",
+      "link": "-",
+      "qty": 75,
+      "satuan": "pcs",
+      "harga": 10000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Sapu ijuk",
+      "link": "-",
+      "qty": 30,
+      "satuan": "pcs",
+      "harga": 44000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Alat pel",
+      "link": "-",
+      "qty": 30,
+      "satuan": "pcs",
+      "harga": 44000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Wiper/Karet Pembersih Kaca Jendela",
+      "link": "-",
+      "qty": 15,
+      "satuan": "Pcs",
+      "harga": 56000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tiner Pembersih Meja/Kursi",
+      "link": "-",
+      "qty": 2,
+      "satuan": "Drigen/5ltr",
+      "harga": 66000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kantong Plastik Warna Merah No.28",
+      "link": "-",
+      "qty": 12,
+      "satuan": "pak",
+      "harga": 45000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kantong Plastik Warna Merah No.50",
+      "link": "-",
+      "qty": 30,
+      "satuan": "pak",
+      "harga": 84000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Baterai AA",
+      "link": "-",
+      "qty": 60,
+      "satuan": "pak / isi 6",
+      "harga": 38000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Baterai AAA",
+      "link": "-",
+      "qty": 60,
+      "satuan": "pak / isi 6",
+      "harga": 35000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta printer Epson 003 hitam",
+      "link": "https://tk.tokopedia.com/ZSPftkvRo/",
+      "qty": 15,
+      "satuan": "btl",
+      "harga": 123000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta printer Epson 003 biru",
+      "link": "https://tk.tokopedia.com/ZS5qFpgc6/",
+      "qty": 15,
+      "satuan": "btl",
+      "harga": 120000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta printer Epson 003 kuning",
+      "link": "https://tk.tokopedia.com/ZS5qFpgc6/",
+      "qty": 15,
+      "satuan": "btl",
+      "harga": 120000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta printer Epson 003 merah megenta",
+      "link": "https://tk.tokopedia.com/ZS5qFpgc6/",
+      "qty": 15,
+      "satuan": "btl",
+      "harga": 120000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta printer Canon G1020 warna hitam",
+      "link": "https://tk.tokopedia.com/ZSPfWpvdm/",
+      "qty": 15,
+      "satuan": "btl",
+      "harga": 187000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta printer Canon G1020 biru",
+      "link": "https://tk.tokopedia.com/ZS5qyM44Q/",
+      "qty": 15,
+      "satuan": "btl",
+      "harga": 162000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta printer Canon G1020 kuning",
+      "link": "https://tk.tokopedia.com/ZS5qyRmTu/",
+      "qty": 15,
+      "satuan": "btl",
+      "harga": 162000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta printer Canon G 1020 magenta",
+      "link": "https://tk.tokopedia.com/ZS5qy6Kjk/",
+      "qty": 15,
+      "satuan": "btl",
+      "harga": 162000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cartridge Canon G 1020 warna hitam (BH 70)",
+      "link": "https://tk.tokopedia.com/ZS5qPy3Ej/",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 800000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Catridge Canon G1020 Colour (CH 70)",
+      "link": "https://tk.tokopedia.com/ZS5qPAk8U/",
+      "qty": 6,
+      "satuan": "pcs",
+      "harga": 788000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cartridge Canon Ip 2770 hitam (810)",
+      "link": "https://tk.tokopedia.com/ZSP5f7HGy/",
+      "qty": 6,
+      "satuan": "pcs",
+      "harga": 319000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cartridge Canon IP 2770 colour (811)",
+      "link": "https://tk.tokopedia.com/ZS5qma1Ld/",
+      "qty": 6,
+      "satuan": "pcs",
+      "harga": 400000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Toner Cartridge Compatible Samsung MLT D105 SCX 4623",
+      "link": "https://tk.tokopedia.com/ZSP5aN5p2/",
+      "qty": 24,
+      "satuan": "pcs",
+      "harga": 150000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Sticky Note TJ-653 Neon",
+      "link": "https://tk.tokopedia.com/ZS5XQ1Q7M/",
+      "qty": 50,
+      "satuan": "pad",
+      "harga": 12000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Raket Bulu Tangkis",
+      "link": "https://tk.tokopedia.com/ZS5TucCb5/",
+      "qty": 15,
+      "satuan": "pcs",
+      "harga": 565000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Shuttelcok / Bola Bulu Tangkis JP gold",
+      "link": "https://tk.tokopedia.com/ZS53t6xG6/",
+      "qty": 10,
+      "satuan": "slop",
+      "harga": 226000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola kasti",
+      "link": "https://tk.tokopedia.com/ZSP5agdrE/",
+      "qty": 5,
+      "satuan": "slop / tabung",
+      "harga": 140000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Kit tes golongan darah",
+      "link": "https://id.shp.ee/savH3Sx",
+      "qty": 1,
+      "satuan": "set",
+      "harga": 647000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "KIT uji set makanan",
+      "link": "https://tk.tokopedia.com/ZSPf1YUmU/",
+      "qty": 1,
+      "satuan": "set",
+      "harga": 810000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Peta Indonesia size besar",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 165000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Peta Dunia size besar",
+      "link": "https://tk.tokopedia.com/ZSaTtMe8x/",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 299000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "KIT tenaga angin mini wind turbine generator",
+      "link": "https://tk.tokopedia.com/ZSaTtToc5/",
+      "qty": 1,
+      "satuan": "Pcs",
+      "harga": 218000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas A4",
+      "link": "Paperone 75 gsm",
+      "qty": 55,
+      "satuan": "rim",
+      "harga": 70000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas F4",
+      "link": "Paperone 75 gsm",
+      "qty": 30,
+      "satuan": "rim",
+      "harga": 80000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Konsumsi Pelatihan guru thinking Skill",
+      "link": "-",
+      "qty": 45,
+      "satuan": "orang",
+      "harga": 30000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Honor",
+      "desc": "Honor narasumber (IHT) Pelatihan guru thinking Skill",
+      "link": "-",
+      "qty": 2,
+      "satuan": "Jam/pertemuan",
+      "harga": 1500000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Matras (Olahraga) 100x200x10cm",
+      "link": "https://tk.tokopedia.com/ZSP5Ssu5d/",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 995000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Larutan Eosin 100ml",
+      "link": "-",
+      "qty": 1,
+      "satuan": "botol",
+      "harga": 100000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Minyak Sawit/Goreng 2000ml",
+      "link": "-",
+      "qty": 1,
+      "satuan": "botol",
+      "harga": 69000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Suntikan Aquascape 5ml",
+      "link": "-",
+      "qty": 20,
+      "satuan": "pcs",
+      "harga": 4000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Aquabidest 5 liter (air penyulingan)",
+      "link": "-",
+      "qty": 4,
+      "satuan": "jerigen",
+      "harga": 40000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pot sampel urine 60ml",
+      "link": "-",
+      "qty": 100,
+      "satuan": "pcs",
+      "harga": 4000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Soda Api 1000gr",
+      "link": "-",
+      "qty": 1,
+      "satuan": "kg",
+      "harga": 50000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Jangka",
+      "link": "-",
+      "qty": 40,
+      "satuan": "pcs",
+      "harga": 12000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Globe Dunia 30 cm",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 225000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Tuhan, Beri Aku Alasan untuk Tidak Menyerah",
+      "link": "-",
+      "qty": 2,
+      "satuan": "eks",
+      "harga": 94000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Cambridge Grammar and Writing Skills",
+      "link": "-",
+      "qty": 2,
+      "satuan": "eks",
+      "harga": 324000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Developing Skill for TOEFL iBT",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 137100,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "General Knowledge",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 218000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Wonderful World 1 Tempat-Tempat Indah Dan Menakjubkan",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 217000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Wonderful World 2 Tempat-Tempat Indah Dan Menakjubkan",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 274000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Wonderful World 3 Tempat-Tempat Indah Dan Menakjubkan",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 212000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Simply AI: Facts Made Fast - DK Simply - 9780241684176",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 398000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Simply Emerging Technology: Facts Made Fast - DK Simply - 978",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 411000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Simply Physics: Facts Made Fast - DK Simply - 9780241722756",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 436000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Tenang",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 106000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Buku tanya Jawab psikologi muslimah (aqwam)",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 55000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Binder Clip No. 260",
+      "link": "-",
+      "qty": 1,
+      "satuan": "gross",
+      "harga": 303000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 1,
+          "harga": 303000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-BinderCl"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Binder Clip No. 105",
+      "link": "-",
+      "qty": 1,
+      "satuan": "gross",
+      "harga": 50000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 1,
+          "harga": 50000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-BinderCl"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Binder Clip No. 107",
+      "link": "-",
+      "qty": 1,
+      "satuan": "gross",
+      "harga": 56000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 1,
+          "harga": 56000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-BinderCl"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pulpen Pilot Ballliner Hitam 0.8mm",
+      "link": "-",
+      "qty": 4,
+      "satuan": "Lusin",
+      "harga": 262000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 4,
+          "harga": 262000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-PulpenPi"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pulpen Pilot Ballliner Biru 0.8mm",
+      "link": "-",
+      "qty": 4,
+      "satuan": "Lusin",
+      "harga": 262000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 4,
+          "harga": 262000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-PulpenPi"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pulpen gel Zebra Sarasa 0.7 mm hitam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "Lusin",
+      "harga": 309000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 1,
+          "harga": 309000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Pulpenge"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pulpen gel Zebra Sarasa 0.7 mm biru",
+      "link": "-",
+      "qty": 1,
+      "satuan": "Lusin",
+      "harga": 309000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 1,
+          "harga": 309000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Pulpenge"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pulpen gel Zebra Sarasa 0.5 mm merah",
+      "link": "-",
+      "qty": 1,
+      "satuan": "Lusin",
+      "harga": 309000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 1,
+          "harga": 309000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Pulpenge"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pulpen gel Zebra Sarasa 0.5 mm coklat",
+      "link": "-",
+      "qty": 1,
+      "satuan": "Lusin",
+      "harga": 309000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 1,
+          "harga": 309000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Pulpenge"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pulpen gel Zebra Sarasa 0.5 mm hitam",
+      "link": "-",
+      "qty": 1,
+      "satuan": "Lusin",
+      "harga": 309000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 1,
+          "harga": 309000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Pulpenge"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pulpen gel Zebra Sarasa 0.5 mm biru",
+      "link": "-",
+      "qty": 1,
+      "satuan": "Lusin",
+      "harga": 309000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 1,
+          "harga": 309000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Pulpenge"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pensil Mekanik pentel 0.5",
+      "link": "-",
+      "qty": 12,
+      "satuan": "pcs",
+      "harga": 20000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 12,
+          "harga": 20000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-PensilMe"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Double Tape 1/2 inch",
+      "link": "-",
+      "qty": 40,
+      "satuan": "pcs",
+      "harga": 5000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 40,
+          "harga": 5000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-DoubleTa"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Double Tape 1 inch",
+      "link": "-",
+      "qty": 40,
+      "satuan": "pcs",
+      "harga": 8000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 40,
+          "harga": 8000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-DoubleTa"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Lakban bening 1/2 inch",
+      "link": "-",
+      "qty": 40,
+      "satuan": "pcs",
+      "harga": 6000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 40,
+          "harga": 6000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Lakbanbe"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Lakban bening 1 inch",
+      "link": "-",
+      "qty": 40,
+      "satuan": "pcs",
+      "harga": 10000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 40,
+          "harga": 10000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Lakbanbe"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Lakban bening 2 inch",
+      "link": "-",
+      "qty": 60,
+      "satuan": "pcs",
+      "harga": 12000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 60,
+          "harga": 12000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Lakbanbe"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Lakban Hitam 2 inch",
+      "link": "-",
+      "qty": 40,
+      "satuan": "pcs",
+      "harga": 22000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 40,
+          "harga": 22000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-LakbanHi"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Soklin lantai 770 ml",
+      "link": "-",
+      "qty": 45,
+      "satuan": "pcs",
+      "harga": 19000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 45,
+          "harga": 19000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Soklinla"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Mama lemon 680ml",
+      "link": "-",
+      "qty": 200,
+      "satuan": "pcs",
+      "harga": 13000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 200,
+          "harga": 13000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Mamalemo"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cling Pembersih Kaca 400ml",
+      "link": "-",
+      "qty": 18,
+      "satuan": "pcs",
+      "harga": 11000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 18,
+          "harga": 11000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-ClingPem"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pengharum Ruangan Gantung",
+      "link": "-",
+      "qty": 12,
+      "satuan": "pcs",
+      "harga": 19000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 12,
+          "harga": 19000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Pengharu"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Glade matic device spray",
+      "link": "-",
+      "qty": 4,
+      "satuan": "pcs",
+      "harga": 97000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 4,
+          "harga": 97000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Glademat"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Refill pewangi spray Glade",
+      "link": "-",
+      "qty": 45,
+      "satuan": "pcs",
+      "harga": 43000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 45,
+          "harga": 43000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Refillpe"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Trashbag Hitam 60x80",
+      "link": "-",
+      "qty": 45,
+      "satuan": "pak",
+      "harga": 32000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 45,
+          "harga": 32000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Trashbag"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Trashbag Bening",
+      "link": "-",
+      "qty": 15,
+      "satuan": "pak",
+      "harga": 32000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 15,
+          "harga": 32000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Trashbag"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tisu Wajah Nice",
+      "link": "-",
+      "qty": 100,
+      "satuan": "pcs",
+      "harga": 22000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 100,
+          "harga": 22000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-TisuWaja"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tisu Toilet Nice",
+      "link": "-",
+      "qty": 75,
+      "satuan": "pcs",
+      "harga": 10000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 75,
+          "harga": 10000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-TisuToil"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Sapu ijuk",
+      "link": "-",
+      "qty": 30,
+      "satuan": "pcs",
+      "harga": 44000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 30,
+          "harga": 44000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Sapuijuk"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Alat pel",
+      "link": "-",
+      "qty": 30,
+      "satuan": "pcs",
+      "harga": 44000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 30,
+          "harga": 44000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-Alatpel"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Wiper/Karet Pembersih Kaca Jendela",
+      "link": "-",
+      "qty": 15,
+      "satuan": "Pcs",
+      "harga": 56000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 15,
+          "harga": 56000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-WiperKar"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tiner Pembersih Meja/Kursi",
+      "link": "-",
+      "qty": 2,
+      "satuan": "liter/kaleng",
+      "harga": 66000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 2,
+          "harga": 66000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-TinerPem"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kantong Plastik Warna Merah No.28",
+      "link": "-",
+      "qty": 12,
+      "satuan": "pak",
+      "harga": 45000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 12,
+          "harga": 45000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-KantongP"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kantong Plastik Warna Merah No.50",
+      "link": "-",
+      "qty": 30,
+      "satuan": "pak",
+      "harga": 84000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "12 Mar 2026",
+          "qty": 30,
+          "harga": 84000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-BS-KantongP"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas A4",
+      "link": "-",
+      "qty": 55,
+      "satuan": "rim",
+      "harga": 70000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 55,
+          "harga": 70000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-KertasA4"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas F4",
+      "link": "-",
+      "qty": 30,
+      "satuan": "rim",
+      "harga": 80000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 30,
+          "harga": 80000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-KertasF4"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Spidol Permanent Warna Hitam",
+      "link": "-",
+      "qty": 10,
+      "satuan": "box",
+      "harga": 108000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 10,
+          "harga": 108000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-SpidolPe"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Spidol Marker Warna Silver",
+      "link": "-",
+      "qty": 5,
+      "satuan": "box",
+      "harga": 239000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 5,
+          "harga": 239000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-SpidolMa"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Spidol Marker Warna White",
+      "link": "-",
+      "qty": 5,
+      "satuan": "box",
+      "harga": 239000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 5,
+          "harga": 239000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-SpidolMa"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Map Bussines File Uk F4 Biru, Kuning, Oren, Hijau",
+      "link": "-",
+      "qty": 50,
+      "satuan": "lusin",
+      "harga": 32000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 50,
+          "harga": 32000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-MapBussi"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Box File merk Bambi Biru dan hitam uk. A4 Jumbo (1033)",
+      "link": "-",
+      "qty": 84,
+      "satuan": "pcs",
+      "harga": 59000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 84,
+          "harga": 59000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-BoxFilem"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Ordner Besar merk Bambi uk. A4 50mm (1015)",
+      "link": "-",
+      "qty": 60,
+      "satuan": "pcs",
+      "harga": 56000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 60,
+          "harga": 56000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-OrdnerBe"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Isi staples no.10-1M Max",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pak",
+      "harga": 88000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 10,
+          "harga": 88000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-Isistapl"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Sticky Note 3M Post-it (5 pad warna wami 76mm x 76mm)",
+      "link": "-",
+      "qty": 20,
+      "satuan": "pak",
+      "harga": 87000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 20,
+          "harga": 87000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-StickyNo"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Map L Bening Uk F4 Joyko",
+      "link": "-",
+      "qty": 33,
+      "satuan": "pcs",
+      "harga": 45000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 33,
+          "harga": 45000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-MapLBeni"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Map Bening Kancing/Resleting size folio",
+      "link": "-",
+      "qty": 150,
+      "satuan": "pcs",
+      "harga": 20000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 150,
+          "harga": 20000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-MapBenin"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Lem Fox 150 gr",
+      "link": "-",
+      "qty": 40,
+      "satuan": "pcs",
+      "harga": 17000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 40,
+          "harga": 17000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-LemFox15"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Correction Type kertas Joyko",
+      "link": "-",
+      "qty": 24,
+      "satuan": "pcs",
+      "harga": 9000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 24,
+          "harga": 9000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-Correcti"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "HVS A4 warna (biru/pink)",
+      "link": "-",
+      "qty": 2,
+      "satuan": "rim",
+      "harga": 94000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 2,
+          "harga": 94000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-HVSA4war"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "HVS F4 warna (biru/pink)",
+      "link": "-",
+      "qty": 2,
+      "satuan": "rim",
+      "harga": 109000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 2,
+          "harga": 109000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-HVSF4war"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Index & Mark Joyko Im 61",
+      "link": "-",
+      "qty": 50,
+      "satuan": "pcs",
+      "harga": 12000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 50,
+          "harga": 12000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-IndexMar"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Index & Mark Joyko Im 62",
+      "link": "-",
+      "qty": 50,
+      "satuan": "pcs",
+      "harga": 12000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 50,
+          "harga": 12000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-IndexMar"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas Concorde Putih 220gr",
+      "link": "-",
+      "qty": 40,
+      "satuan": "pak",
+      "harga": 22000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 40,
+          "harga": 22000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-KertasCo"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Soklin lantai 770 ml",
+      "link": "-",
+      "qty": 45,
+      "satuan": "pcs",
+      "harga": 19000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 45,
+          "harga": 19000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-Soklinla"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Mama lemon 680ml",
+      "link": "-",
+      "qty": 200,
+      "satuan": "pcs",
+      "harga": 13000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 200,
+          "harga": 13000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-Mamalemo"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cling Pembersih Kaca 400ml",
+      "link": "-",
+      "qty": 18,
+      "satuan": "pcs",
+      "harga": 11000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 18,
+          "harga": 11000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-ClingPem"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pengharum Ruangan Gantung",
+      "link": "-",
+      "qty": 12,
+      "satuan": "pcs",
+      "harga": 19000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 12,
+          "harga": 19000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-Pengharu"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Glade matic device spray",
+      "link": "-",
+      "qty": 4,
+      "satuan": "pcs",
+      "harga": 97000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 4,
+          "harga": 97000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-Glademat"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Refill pewangi spray Glade",
+      "link": "-",
+      "qty": 45,
+      "satuan": "pcs",
+      "harga": 43000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 45,
+          "harga": 43000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-Refillpe"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Trashbag Hitam 60x80",
+      "link": "-",
+      "qty": 45,
+      "satuan": "pak",
+      "harga": 32000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 45,
+          "harga": 32000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-Trashbag"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Trashbag Bening",
+      "link": "-",
+      "qty": 15,
+      "satuan": "pak",
+      "harga": 32000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 15,
+          "harga": 32000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-Trashbag"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tisu Wajah Nice",
+      "link": "-",
+      "qty": 100,
+      "satuan": "pcs",
+      "harga": 22000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 100,
+          "harga": 22000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-TisuWaja"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tisu Toilet Nice",
+      "link": "-",
+      "qty": 75,
+      "satuan": "pcs",
+      "harga": 10000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 75,
+          "harga": 10000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-TisuToil"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Sapu ijuk",
+      "link": "-",
+      "qty": 30,
+      "satuan": "pcs",
+      "harga": 44000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 30,
+          "harga": 44000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-Sapuijuk"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Alat pel",
+      "link": "-",
+      "qty": 30,
+      "satuan": "pcs",
+      "harga": 44000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 30,
+          "harga": 44000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-Alatpel"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Wiper/Karet Pembersih Kaca Jendela",
+      "link": "-",
+      "qty": 15,
+      "satuan": "pcs",
+      "harga": 56000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 15,
+          "harga": 56000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-WiperKar"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tiner Pembersih Meja/Kursi",
+      "link": "-",
+      "qty": 2,
+      "satuan": "liter/kaleng",
+      "harga": 51500,
+      "bulan": "April",
+      "note": "Revisi dari 1 Jerigen",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 2,
+          "harga": 66000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-BS-TinerPem"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "KODING DAN KECERDASAN ARTIFISIAL SMA/MA KLS.10/KM",
+      "link": "-",
+      "qty": 60,
+      "satuan": "eks",
+      "harga": 143000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 60,
+          "harga": 143000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-KODINGDA"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "MATEMATIKA SMA/MA TINGKAT LANJUT KLS.11/KM",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 202000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 202000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-MATEMATI"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "BIOLOGI SMA/MA KLS 11/KM",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 322000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 322000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-BIOLOGIS"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "FISIKA SMA/MA KLS.11/KM",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 249000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 249000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-FISIKASM"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "KIMIA SMA/MA KLS.XI/KM",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 204000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 204000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-KIMIASMA"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "EKONOMI SMA/MA KLS 11/KM REVISI",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 152000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 152000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-EKONOMIS"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "SOSIOLOGI SMA/MA KLS.11/KM REVISI",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 124000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 124000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-SOSIOLOG"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "GEOGRAFI SMA/MA KLS.11/KM REVISI",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 184000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 184000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-GEOGRAFI"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "MATEMATIKA SMA/MA TINGKAT LANJUT KLS.12/KM",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 219000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 219000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-MATEMATI"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "BIOLOGI SMA/MA KLS.12/KM",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 196000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 196000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-BIOLOGIS"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "FISIKA SMA/MA KLS.12/KM",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 178000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 178000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-FISIKASM"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "KIMIA SMA/MA KLS.XII/KM",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 146000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 146000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-KIMIASMA"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "EKONOMI SMA/MA KLS.12/KM REVISI",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 140000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 140000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-EKONOMIS"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "SOSIOLOGI SMA/MA KLS.12/KM",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 141000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 141000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-SOSIOLOG"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "GEOGRAFI SMA/MA KLS.12/KM",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 193000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "3 Jun 2026",
+          "qty": 10,
+          "harga": 193000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-BS-GEOGRAFI"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Map Raport",
+      "link": "-",
+      "qty": 80,
+      "satuan": "pcs",
+      "harga": 75000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 80,
+          "harga": 75000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-MapRapor"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas Raport",
+      "link": "-",
+      "qty": 5,
+      "satuan": "rim",
+      "harga": 470000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 5,
+          "harga": 470000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-KertasRa"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Larutan iodin/ iodium yodium 100 ml",
+      "link": "-",
+      "qty": 1,
+      "satuan": "botol",
+      "harga": 117156,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 1,
+          "harga": 117156,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Larutani"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Larutan Bivret (uji protein) 250ml",
+      "link": "-",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 88000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 2,
+          "harga": 88000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-LarutanB"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pita Magnesium (25 gram) 3,5 meter",
+      "link": "-",
+      "qty": 2,
+      "satuan": "roll",
+      "harga": 380000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 2,
+          "harga": 380000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-PitaMagn"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Gelas sloki",
+      "link": "-",
+      "qty": 30,
+      "satuan": "pcs",
+      "harga": 5000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 30,
+          "harga": 5000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Gelasslo"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Stearin",
+      "link": "-",
+      "qty": 15,
+      "satuan": "pak",
+      "harga": 10000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 15,
+          "harga": 10000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Stearin"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Minyak Sawit/Goreng 2000ml",
+      "link": "-",
+      "qty": 2,
+      "satuan": "botol",
+      "harga": 69000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 2,
+          "harga": 69000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-MinyakSa"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Vaseline jelly 50ml repairing gel",
+      "link": "-",
+      "qty": 3,
+      "satuan": "botol",
+      "harga": 44000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 3,
+          "harga": 44000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Vaseline"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Minyak Zaitun 1000ml",
+      "link": "-",
+      "qty": 3,
+      "satuan": "botol",
+      "harga": 137000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 3,
+          "harga": 137000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-MinyakZa"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Lenovo IdeaPad Slim Intel core i3 Gen 13",
+      "link": "-",
+      "qty": 3,
+      "satuan": "pcs",
+      "harga": 9585000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 3,
+          "harga": 9585000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-LenovoId"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Kimia 10 smart book",
+      "link": "-",
+      "qty": 25,
+      "satuan": "eks",
+      "harga": 146000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 25,
+          "harga": 146000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Kimia10s"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Kimia 11 smart book",
+      "link": "-",
+      "qty": 12,
+      "satuan": "eks",
+      "harga": 143000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 12,
+          "harga": 143000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Kimia11s"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Kimia 12 smart book",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 134000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 10,
+          "harga": 134000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Kimia12s"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Fisika 10 smart book",
+      "link": "-",
+      "qty": 25,
+      "satuan": "eks",
+      "harga": 146000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 25,
+          "harga": 146000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Fisika10"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Fisika 11 smart book",
+      "link": "-",
+      "qty": 6,
+      "satuan": "eks",
+      "harga": 143000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 6,
+          "harga": 143000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Fisika11"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Fisika 12 smart book",
+      "link": "-",
+      "qty": 8,
+      "satuan": "eks",
+      "harga": 150000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 8,
+          "harga": 150000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Fisika12"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Matematika 10 smart book",
+      "link": "-",
+      "qty": 30,
+      "satuan": "eks",
+      "harga": 146000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 30,
+          "harga": 146000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Matemati"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Matematika 11 smart book",
+      "link": "-",
+      "qty": 30,
+      "satuan": "eks",
+      "harga": 127000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 30,
+          "harga": 127000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Matemati"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Matematika 12 smart book",
+      "link": "-",
+      "qty": 20,
+      "satuan": "eks",
+      "harga": 112000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 20,
+          "harga": 112000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Matemati"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Matematika TL 11",
+      "link": "-",
+      "qty": 9,
+      "satuan": "eks",
+      "harga": 143000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 9,
+          "harga": 143000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Matemati"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Matematika TL 12",
+      "link": "-",
+      "qty": 14,
+      "satuan": "eks",
+      "harga": 132000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 14,
+          "harga": 132000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Matemati"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Biologi 10 smart book",
+      "link": "-",
+      "qty": 28,
+      "satuan": "eks",
+      "harga": 146000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 28,
+          "harga": 146000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Biologi1"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Biologi 11 smart book",
+      "link": "-",
+      "qty": 15,
+      "satuan": "eks",
+      "harga": 159000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 15,
+          "harga": 159000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Biologi1"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Biologi 12 smart book",
+      "link": "-",
+      "qty": 10,
+      "satuan": "eks",
+      "harga": 123000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 10,
+          "harga": 123000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Biologi1"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Ekonomi 10",
+      "link": "-",
+      "qty": 28,
+      "satuan": "eks",
+      "harga": 146000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 28,
+          "harga": 146000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Ekonomi1"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Ekonomi 11",
+      "link": "-",
+      "qty": 9,
+      "satuan": "eks",
+      "harga": 143000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 9,
+          "harga": 143000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Ekonomi1"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "Ekonomi 12",
+      "link": "-",
+      "qty": 14,
+      "satuan": "eks",
+      "harga": 143000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 14,
+          "harga": 143000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-Ekonomi1"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "INFORMATIKA SMA KLS X HET",
+      "link": "-",
+      "qty": 50,
+      "satuan": "eks",
+      "harga": 22500,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 50,
+          "harga": 22500,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-INFORMAT"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "INFORMATIKA SMA KLS XI HET",
+      "link": "-",
+      "qty": 60,
+      "satuan": "eks",
+      "harga": 25800,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 60,
+          "harga": 25800,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-INFORMAT"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "INFORMATIKA SMA KLS XII HET",
+      "link": "-",
+      "qty": 50,
+      "satuan": "eks",
+      "harga": 19000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "24 Jun 2026",
+          "qty": 50,
+          "harga": 19000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-BS-INFORMAT"
+        }
+      }
+    }
+  ],
+  "4": [
+    {
+      "jenis": "Operasional",
+      "desc": "Internet Indihome",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 1200000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "27 Feb 2026",
+          "qty": 1,
+          "harga": 1200000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-FDS-Internet"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Printer Canon pixma G3730 green",
+      "link": "https://tk.tokopedia.com/ZSajb17mK/, https://id.shp.ee/V2tps1k",
+      "qty": 1,
+      "satuan": "unit",
+      "harga": 3360000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "27 Feb 2026",
+          "qty": 1,
+          "harga": 3360000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-FDS-PrinterC"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Internet Indihome",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 1200000,
+      "bulan": "Juli"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Listrik Token",
+      "link": "-",
+      "qty": 4,
+      "satuan": "paket",
+      "harga": 1010000,
+      "bulan": "Juli"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Internet Indihome",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 1200000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Listrik Token",
+      "link": "-",
+      "qty": 5,
+      "satuan": "paket",
+      "harga": 1010000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Printer HP Smart Ink 525/520/580",
+      "link": "-",
+      "qty": 1,
+      "satuan": "unit",
+      "harga": 3006000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Proyektor Epson EB E600",
+      "link": "-",
+      "qty": 5,
+      "satuan": "unit",
+      "harga": 7150000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Internet Indihome",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 1200000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Listrik Token",
+      "link": "-",
+      "qty": 4,
+      "satuan": "paket",
+      "harga": 1010000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Lenovo IdeaPad Slim intel core i3 Gen 13",
+      "link": "https://tk.tokopedia.com/ZSaro9e6q/",
+      "qty": 2,
+      "satuan": "unit",
+      "harga": 9585000,
+      "bulan": "September"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Internet Indihome",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 1200000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Listrik Token",
+      "link": "-",
+      "qty": 4,
+      "satuan": "paket",
+      "harga": 1010000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Jas Laboratorium MIPA (Uk.L 8 pcs, Uk.XL 8 pcs, Uk.XXL 4 pcs)",
+      "link": "https://s.shopee.co.id/8zzVR4Yb2S?share_channel_code=1",
+      "qty": 26,
+      "satuan": "pcs",
+      "harga": 125000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Beaker Glass 500 mL",
+      "link": "https://id.shp.ee/M4aF7yM",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 95000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Beaker Glass 150 mL",
+      "link": "https://id.shp.ee/cEuh6o5",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 45000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Beaker Glass 100 mL",
+      "link": "https://id.shp.ee/kXk5i9N",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 40000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Beaker Glass 50 mL",
+      "link": "https://id.shp.ee/wEH99q1",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 35000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Batang pengaduk 7 x 15 mm",
+      "link": "https://id.shp.ee/i2Z7EVy",
+      "qty": 1,
+      "satuan": "set",
+      "harga": 25000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Buret 50 mL",
+      "link": "https://id.shp.ee/EKKWxHz",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 270000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Statif klem single",
+      "link": "https://id.shp.ee/nhC9Ai3",
+      "qty": 2,
+      "satuan": "set",
+      "harga": 255000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pipet gondok 10 mL",
+      "link": "https://id.shp.ee/RooV85b",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 90000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pipet pump 10 mL",
+      "link": "https://id.shp.ee/gKSL5LK",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 60000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Botol cokelat 200 mL",
+      "link": "https://id.shp.ee/7ZmsTYt",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 20000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Botol semprot",
+      "link": "https://id.shp.ee/J7s3T4N",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 40000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Botol pipet 60 ml",
+      "link": "https://id.shp.ee/JXt8k1j",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 20000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Elektroda karbon",
+      "link": "https://id.shp.ee/2z4wuu2",
+      "qty": 2,
+      "satuan": "set",
+      "harga": 85000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Erlenmeyer 100 mL",
+      "link": "https://id.shp.ee/qSXS8it",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 70000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Gelas Ukur 100 mL",
+      "link": "https://id.shp.ee/CbEJzX7",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 115000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Gelas Ukur 25 mL",
+      "link": "https://id.shp.ee/gDUq1WE",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 60000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Lampu pembakar spirtus 250 mL",
+      "link": "https://id.shp.ee/x7SMAL7",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 55000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Labu ukur 50 mL",
+      "link": "https://id.shp.ee/FZZcP1v",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 164224,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Labu ukur 100 mL",
+      "link": "https://id.shp.ee/jYJEcL6",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 175000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Sikat tabung reaksi",
+      "link": "https://id.shp.ee/gq1LzYa",
+      "qty": 5,
+      "satuan": "pcs",
+      "harga": 15000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pipa U sedang diameter 16 mm",
+      "link": "https://id.shp.ee/FiKYToj",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 65000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Sarung Tangan Medis",
+      "link": "https://shopee.co.id/Sarung-Tangan-Latex-Powder-Free-Box-isi-100-pcs-i.242558870.14292052895",
+      "qty": 4,
+      "satuan": "box",
+      "harga": 69000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Penjepit kayu",
+      "link": "https://tk.tokopedia.com/ZSanT5ex9/",
+      "qty": 4,
+      "satuan": "pcs",
+      "harga": 13000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Alkohol 70%",
+      "link": "https://www.tokopedia.com/rofalaboratorium/alkohol-70-alkohol-antiseptik-alkohol-untuk-luka-1-liter",
+      "qty": 1,
+      "satuan": "liter",
+      "harga": 88000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Zinc sulfat",
+      "link": "https://tk.tokopedia.com/ZSacnXFaq/",
+      "qty": 1,
+      "satuan": "kg",
+      "harga": 212000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "HCl 32%",
+      "link": "https://siplahbliblicom/product/asam-klorida-32-1-liter-botol-kaca-student-grade/SPKD-0001-00614",
+      "qty": 1,
+      "satuan": "liter",
+      "harga": 224000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Aqua dest 20 L",
+      "link": "https://siplahbliblicom/product/aquades-20-liter-student-grade/SPKD-0001-00604",
+      "qty": 1,
+      "satuan": "jerigen",
+      "harga": 268000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Asam sulfat 98%",
+      "link": "https://siplahbliblicom/product/asam-sulfat-98-1-liter-botol-kaca-student-grade/SPKD-0001-00625",
+      "qty": 1,
+      "satuan": "liter",
+      "harga": 143000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Barium klorida 500 gram",
+      "link": "https://id.shp.ee/NqBqHju",
+      "qty": 1,
+      "satuan": "botol",
+      "harga": 137000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Glukosa",
+      "link": "https://siplahbliblicom/product/glukosa-larutan-1-liter-student-grade/SPKD-0001-00661",
+      "qty": 1,
+      "satuan": "botol",
+      "harga": 119000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "NaOH 40% 500 mL",
+      "link": "https://id.shp.ee/m4kk4YD",
+      "qty": 1,
+      "satuan": "botol",
+      "harga": 187000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Urine reagent strip",
+      "link": "https://s.shopee.co.id/AUoJBuFDpL?share_channel_code=1",
+      "qty": 1,
+      "satuan": "set",
+      "harga": 162000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Alcohol swab",
+      "link": "https://s.shopee.co.id/2Vm1g5aNtn?share_channel_code=1",
+      "qty": 1,
+      "satuan": "box",
+      "harga": 25000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pen lancet device general",
+      "link": "https://s.shopee.co.id/4q9wTd9KXr?share_channel_code=1",
+      "qty": 3,
+      "satuan": "pcs",
+      "harga": 25000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Hidrogen peroksida 20%",
+      "link": "https://siplahbliblicom/product/hidrogen-peroksida-20-1-liter-student-grade/SPKD-0001-00668",
+      "qty": 1,
+      "satuan": "liter",
+      "harga": 97000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kit Pembuatan Nata",
+      "link": "https://s.shopee.co.id/AUoJGzscMv?share_channel_code=1",
+      "qty": 10,
+      "satuan": "paket",
+      "harga": 56000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Tensi Meter Digital",
+      "link": "https://s.shopee.co.id/9Uvm2c1x68?share_channel_code=1",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 485000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Strip blood test (Easy Touch)",
+      "link": "https://s.shopee.co.id/8AQOPiYXKg?share_channel_code=1",
+      "qty": 3,
+      "satuan": "set",
+      "harga": 574000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Easy Touch Digital",
+      "link": "https://shopee.co.id/Easy-Touch-Gchb-Multi-Function-Monitoring-System-i.935938658.22181420278",
+      "qty": 2,
+      "satuan": "set",
+      "harga": 485000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Torso Mata Manusia",
+      "link": "https://s.shopee.co.id/1La4KVtrUt?share_channel_code=1",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 370000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Torso Anatomi Telinga",
+      "link": "https://s.shopee.co.id/806yGrfX6H?share_channel_code=1",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 370000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Mikroskop Binokuler",
+      "link": "https://s.shopee.co.id/9Kb2EyvtC8",
+      "qty": 1,
+      "satuan": "unit",
+      "harga": 4355000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Neraca Laboratorium",
+      "link": "https://id.shp.ee/PBsq32v",
+      "qty": 1,
+      "satuan": "unit",
+      "harga": 1118000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Papan Tulis White Board",
+      "link": "https://tk.tokopedia.com/ZSQymxVrG/",
+      "qty": 3,
+      "satuan": "unit",
+      "harga": 750000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Kit tes golongan darah",
+      "link": "https://id.shp.ee/savH3Sx",
+      "qty": 1,
+      "satuan": "set",
+      "harga": 647000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Molymod (Model molekul kimia)",
+      "link": "https://tk.tokopedia.com/ZSanfv7dP/",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 585000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Microslaid jaringan",
+      "link": "https://tk.tokopedia.com/ZSanyDrkt/",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 63000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Kit Hidroponik + TDS & EC Meter Digital",
+      "link": "https://s.shopee.co.id/9zs2hM2kzM?share_channel_code=1",
+      "qty": 3,
+      "satuan": "pcs",
+      "harga": 460000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Buku ishara test 14 buta warna",
+      "link": "https://tk.tokopedia.com/ZSaLLwJM5/",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 38000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Internet Indihome",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 1200000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Listrik Token",
+      "link": "-",
+      "qty": 4,
+      "satuan": "paket",
+      "harga": 1010000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Internet Indihome",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 1200000,
+      "bulan": "Desember"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Listrik Token",
+      "link": "-",
+      "qty": 4,
+      "satuan": "paket",
+      "harga": 1010000,
+      "bulan": "Desember"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Meja Kerja Karyawan (100CM-Cokelat)",
+      "link": "https://id.shp.ee/KbofwqJ",
+      "qty": 4,
+      "satuan": "unit",
+      "harga": 400000,
+      "bulan": "Desember"
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Kursi kantor (Goto GC1003 BLACK)",
+      "link": "https://tk.tokopedia.com/ZS5jf8dYR/",
+      "qty": 4,
+      "satuan": "unit",
+      "harga": 550000,
+      "bulan": "Desember"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Internet Indihome",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 1200000,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "27 Feb 2026",
+          "qty": 1,
+          "harga": 1200000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-FDS-Internet"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Listrik Token",
+      "link": "-",
+      "qty": 2245,
+      "satuan": "kWh",
+      "harga": 900,
+      "bulan": "Februari",
+      "realisasi": {
+        "Februari": {
+          "tgl": "27 Feb 2026",
+          "qty": 2245,
+          "harga": 900,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-FEB-FDS-ListrikT"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Internet Indihome",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 1200000,
+      "bulan": "Maret",
+      "realisasi": {
+        "Maret": {
+          "tgl": "5 Mar 2026",
+          "qty": 1,
+          "harga": 1200000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MAR-FDS-Internet"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Listrik Token",
+      "link": "-",
+      "qty": 2245,
+      "satuan": "kWh",
+      "harga": 900,
+      "bulan": "Maret",
+      "realisasi": {
+        "Maret": {
+          "tgl": "5 Mar 2026",
+          "qty": 2245,
+          "harga": 900,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MAR-FDS-ListrikT"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Kipas Angin Philips berdiri",
+      "link": "-",
+      "qty": 3,
+      "satuan": "unit",
+      "harga": 510000,
+      "bulan": "Maret",
+      "realisasi": {
+        "Maret": {
+          "tgl": "13 Apr 2026",
+          "qty": 3,
+          "harga": 510000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MAR-FDS-KipasAng"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Internet Indihome",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 1200000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "7 Apr 2026",
+          "qty": 1,
+          "harga": 1200000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-Internet"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Listrik Token",
+      "link": "-",
+      "qty": 4,
+      "satuan": "paket",
+      "harga": 1010000,
+      "bulan": "April",
+      "note": "Revisi satuan dari kWh (di RKAS disatukan)",
+      "realisasi": {
+        "April": {
+          "tgl": "7 Apr 2026",
+          "qty": 1,
+          "harga": 4040000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-ListrikT"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas A4",
+      "link": "-",
+      "qty": 70,
+      "satuan": "rim",
+      "harga": 70000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 3640000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-KertasA4"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas F4",
+      "link": "-",
+      "qty": 80,
+      "satuan": "rim",
+      "harga": 80000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 4320000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-KertasF4"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Spidol Whiteboard",
+      "link": "-",
+      "qty": 9,
+      "satuan": "lusin / box",
+      "harga": 111000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 873000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-SpidolWh"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Spidol Whiteboard",
+      "link": "-",
+      "qty": 10,
+      "satuan": "lusin / box",
+      "harga": 111000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 970000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-SpidolWh"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Spidol Whiteboard",
+      "link": "-",
+      "qty": 6,
+      "satuan": "lusin / box",
+      "harga": 111000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 582000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-SpidolWh"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta Spidol Whiteboard",
+      "link": "-",
+      "qty": 45,
+      "satuan": "btl",
+      "harga": 27000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 900000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-TintaSpi"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta Spidol Whiteboard",
+      "link": "-",
+      "qty": 45,
+      "satuan": "btl",
+      "harga": 27000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 900000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-TintaSpi"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta Spidol Whiteboard",
+      "link": "-",
+      "qty": 45,
+      "satuan": "btl",
+      "harga": 27000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 900000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-TintaSpi"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Penghapus whiteboard joyco magnet",
+      "link": "-",
+      "qty": 48,
+      "satuan": "pcs",
+      "harga": 13000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 432000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-Penghapu"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Amplop coklat merk Airmail",
+      "link": "-",
+      "qty": 24,
+      "satuan": "pak",
+      "harga": 82000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 1632000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-Amplopco"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Map Bussines File Uk F4 Biru, Kuning, Oren, Hijau",
+      "link": "-",
+      "qty": 24,
+      "satuan": "lusin",
+      "harga": 32000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 720000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-MapBussi"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Box File merk Bambi Biru dan hitam uk. Jumbo (1033)",
+      "link": "-",
+      "qty": 24,
+      "satuan": "pcs",
+      "harga": 59000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 864000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-BoxFilem"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Ordner Besar merk Bambi uk. F4 75mm (1010)",
+      "link": "-",
+      "qty": 24,
+      "satuan": "pcs",
+      "harga": 40000,
+      "bulan": "April",
+      "note": "Revisi harga dari 50.000",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 960000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-OrdnerBe"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "TINTA PRINTER EPSON L120 (664) ORIGINAL HITAM",
+      "link": "-",
+      "qty": 32,
+      "satuan": "botol",
+      "harga": 107000,
+      "bulan": "April",
+      "note": "Revisi harga dari 120.000",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 3424000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-TINTAPRI"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "TINTA PRINTER EPSON L120 (664) ORIGINAL WARNA",
+      "link": "-",
+      "qty": 16,
+      "satuan": "botol",
+      "harga": 107000,
+      "bulan": "April",
+      "note": "Revisi harga dari 120.000",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 1712000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-TINTAPRI"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "TINTA PRINTER EPSON L120 (664) ORIGINAL WARNA",
+      "link": "-",
+      "qty": 16,
+      "satuan": "botol",
+      "harga": 107000,
+      "bulan": "April",
+      "note": "Revisi harga dari 120.000",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 1712000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-TINTAPRI"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "TINTA PRINTER EPSON L120 (664) ORIGINAL WARNA",
+      "link": "-",
+      "qty": 16,
+      "satuan": "botol",
+      "harga": 107000,
+      "bulan": "April",
+      "note": "Revisi harga dari 120.000",
+      "realisasi": {
+        "April": {
+          "tgl": "26 Mei 2026",
+          "qty": 1,
+          "harga": 1712000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-TINTAPRI"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "MATEMATIKA SMA/MA KLS 11/KM",
+      "link": "-",
+      "qty": 57,
+      "satuan": "eks",
+      "harga": 126000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 57,
+          "harga": 126000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-MATEMATI"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "MATEMATIKA SMA/MA TINGKAT LANJUT KLS.11/KM",
+      "link": "-",
+      "qty": 11,
+      "satuan": "eks",
+      "harga": 202000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 11,
+          "harga": 202000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-MATEMATI"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "SEJARAH SMA/MA KLS.11/KM",
+      "link": "-",
+      "qty": 57,
+      "satuan": "eks",
+      "harga": 164000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 57,
+          "harga": 164000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-SEJARAHS"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "BIOLOGI SMA/MA KLS.11/KM",
+      "link": "-",
+      "qty": 21,
+      "satuan": "eks",
+      "harga": 322000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 21,
+          "harga": 322000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-BIOLOGIS"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "FISIKA SMA/MA KLS.11/KM",
+      "link": "-",
+      "qty": 11,
+      "satuan": "eks",
+      "harga": 249000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 11,
+          "harga": 249000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-FISIKASM"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "KIMIA SMA/MA KLS.XI/KM",
+      "link": "-",
+      "qty": 21,
+      "satuan": "eks",
+      "harga": 204000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 21,
+          "harga": 204000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-KIMIASMA"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "EKONOMI SMA/MA KLS 11/KM REVISI",
+      "link": "-",
+      "qty": 31,
+      "satuan": "eks",
+      "harga": 152000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 31,
+          "harga": 152000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-EKONOMIS"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "SOSIOLOGI SMA/MA KLS.11/KM REVISI",
+      "link": "-",
+      "qty": 47,
+      "satuan": "eks",
+      "harga": 124000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 47,
+          "harga": 124000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-SOSIOLOG"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "GEOGRAFI SMA/MA KLS.11/KM REVISI",
+      "link": "-",
+      "qty": 11,
+      "satuan": "eks",
+      "harga": 184000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 11,
+          "harga": 184000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-GEOGRAFI"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "MATEMATIKA SMA/MA KLS 12/KM",
+      "link": "-",
+      "qty": 58,
+      "satuan": "eks",
+      "harga": 165000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 58,
+          "harga": 165000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-MATEMATI"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "MATEMATIKA SMA/MA TINGKAT LANJUT KLS.12/KM",
+      "link": "-",
+      "qty": 11,
+      "satuan": "eks",
+      "harga": 219000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 11,
+          "harga": 219000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-MATEMATI"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "SEJARAH SMA/MA KLS.12/KM",
+      "link": "-",
+      "qty": 58,
+      "satuan": "eks",
+      "harga": 141000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 58,
+          "harga": 141000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-SEJARAHS"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "BIOLOGI SMA/MA KLS 12/KM",
+      "link": "-",
+      "qty": 21,
+      "satuan": "eks",
+      "harga": 196000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 21,
+          "harga": 196000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-BIOLOGIS"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "FISIKA SMA/MA KLS.12/KM",
+      "link": "-",
+      "qty": 11,
+      "satuan": "eks",
+      "harga": 178000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 11,
+          "harga": 178000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-FISIKASM"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "KIMIA SMA/MA KLS.XII/KM",
+      "link": "-",
+      "qty": 21,
+      "satuan": "eks",
+      "harga": 146000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 21,
+          "harga": 146000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-KIMIASMA"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "EKONOMI SMA/MA KLS 12/KM REVISI",
+      "link": "-",
+      "qty": 31,
+      "satuan": "eks",
+      "harga": 140000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 31,
+          "harga": 140000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-EKONOMIS"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "SOSIOLOGI SMA/MA KLS.12/KM",
+      "link": "-",
+      "qty": 47,
+      "satuan": "eks",
+      "harga": 141000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 47,
+          "harga": 141000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-SOSIOLOG"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "GEOGRAFI SMA/MA KLS.12/KM",
+      "link": "-",
+      "qty": 11,
+      "satuan": "eks",
+      "harga": 193000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 11,
+          "harga": 193000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-GEOGRAFI"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "ERLANGGA RPUL INDONESIA & DUNIA UTK SD, SMP, SMA &",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 404000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 1,
+          "harga": 404000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-ERLANGGA"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "PANDUAN TANGGAP DARURAT BENCANA: BANJIR",
+      "link": "-",
+      "qty": 2,
+      "satuan": "eks",
+      "harga": 151000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 2,
+          "harga": 151000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-PANDUANT"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "PAKET ENSIKLOPEDIA SAINS",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 1375000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 1,
+          "harga": 1375000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-PAKETENS"
+        }
+      }
+    },
+    {
+      "jenis": "Buku",
+      "desc": "BUKU POSTER: PETA DUNIA",
+      "link": "-",
+      "qty": 1,
+      "satuan": "eks",
+      "harga": 193000,
+      "bulan": "April",
+      "note": "Digeser dari Juni",
+      "realisasi": {
+        "April": {
+          "tgl": "11 Mei 2026",
+          "qty": 1,
+          "harga": 193000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-FDS-BUKUPOST"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Internet Indihome",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 1200000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "4 Mei 2026",
+          "qty": 1,
+          "harga": 1200000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-FDS-Internet"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Listrik Token",
+      "link": "-",
+      "qty": 4,
+      "satuan": "paket",
+      "harga": 1010000,
+      "bulan": "Mei",
+      "realisasi": {
+        "Mei": {
+          "tgl": "4 Mei 2026",
+          "qty": 4,
+          "harga": 1010000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MEI-FDS-ListrikT"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Internet Indihome",
+      "link": "-",
+      "qty": 1,
+      "satuan": "bulan",
+      "harga": 1200000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "3 Jun 2026",
+          "qty": 1,
+          "harga": 1200000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-FDS-Internet"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Listrik Token",
+      "link": "-",
+      "qty": 4,
+      "satuan": "paket",
+      "harga": 1010000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "3 Jun 2026",
+          "qty": 4,
+          "harga": 1010000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-FDS-ListrikT"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Map Raport",
+      "link": "-",
+      "qty": 50,
+      "satuan": "pcs",
+      "harga": 75000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 50,
+          "harga": 75000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-FDS-MapRapor"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas Raport",
+      "link": "-",
+      "qty": 3,
+      "satuan": "rim",
+      "harga": 470000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 3,
+          "harga": 470000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-FDS-KertasRa"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Lemari Kantor Besi Kaca Arsip 2 pintu",
+      "link": "-",
+      "qty": 3,
+      "satuan": "unit",
+      "harga": 2050000,
+      "bulan": "Juni",
+      "realisasi": {
+        "Juni": {
+          "tgl": "26 Jun 2026",
+          "qty": 3,
+          "harga": 2050000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JUN-FDS-LemariKa"
+        }
+      }
+    }
+  ],
+  "5": [
+    {
+      "jenis": "Operasional",
+      "desc": "Map Raport",
+      "link": "-",
+      "qty": 135,
+      "satuan": "pcs",
+      "harga": 75000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 135,
+          "harga": 75000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-MapRapor"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas A4",
+      "link": "-",
+      "qty": 60,
+      "satuan": "rim",
+      "harga": 70000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 60,
+          "harga": 70000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-KertasA4"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas F4",
+      "link": "-",
+      "qty": 5,
+      "satuan": "rim",
+      "harga": 80000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 5,
+          "harga": 80000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-KertasF4"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Spidol whiteboard",
+      "link": "-",
+      "qty": 4,
+      "satuan": "lusin / box",
+      "harga": 111000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 4,
+          "harga": 111000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-Spidolwh"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta Spidol Whiteboard",
+      "link": "-",
+      "qty": 23,
+      "satuan": "btl",
+      "harga": 27000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 23,
+          "harga": 27000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-TintaSpi"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Penghapus whiteboard joyco magnet",
+      "link": "-",
+      "qty": 23,
+      "satuan": "pcs",
+      "harga": 13000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 23,
+          "harga": 13000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-Penghapu"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cutter L-500",
+      "link": "-",
+      "qty": 1,
+      "satuan": "box",
+      "harga": 251000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 1,
+          "harga": 251000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-CutterL5"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Isi Cutter L-500",
+      "link": "-",
+      "qty": 12,
+      "satuan": "pak",
+      "harga": 11000,
+      "bulan": "Januari",
+      "note": "Perlu direvisi di Perubahan",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 12,
+          "harga": 11000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-IsiCutte"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Binder Clip No. 260",
+      "link": "-",
+      "qty": 1,
+      "satuan": "gross",
+      "harga": 303000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 1,
+          "harga": 303000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-BinderCl"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Ballpoint Standard AE7 hitam",
+      "link": "-",
+      "qty": 15,
+      "satuan": "pak",
+      "harga": 32000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "27 Feb 2026",
+          "qty": 15,
+          "harga": 32000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-Ballpoin"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Ballpoint Standard AE7 merah",
+      "link": "-",
+      "qty": 15,
+      "satuan": "pak",
+      "harga": 32000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 15,
+          "harga": 32000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-Ballpoin"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Amplop putih 110 x 230 mm (90 pps)",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pak",
+      "harga": 39000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 10,
+          "harga": 39000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-Amploppu"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Amplop coklat merk Airmail",
+      "link": "-",
+      "qty": 4,
+      "satuan": "pak",
+      "harga": 82000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 4,
+          "harga": 82000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-Amplopco"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Double tape 1 inch",
+      "link": "-",
+      "qty": 12,
+      "satuan": "buah",
+      "harga": 8000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 12,
+          "harga": 8000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-Doubleta"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Lakban Bening 2 inch",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 12000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 10,
+          "harga": 12000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-LakbanBe"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Lakban Hitam 2 inch",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 22000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 10,
+          "harga": 22000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-LakbanHi"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Map Kertas Warna merk Diamond",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pak",
+      "harga": 113000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 5,
+          "harga": 113000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-MapKerta"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Lem kertas kenko stick 15gr",
+      "link": "-",
+      "qty": 8,
+      "satuan": "lusin",
+      "harga": 80000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 8,
+          "harga": 80000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-Lemkerta"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Isi staples no.10-1M Max",
+      "link": "-",
+      "qty": 4,
+      "satuan": "pak",
+      "harga": 88000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 4,
+          "harga": 88000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-Isistapl"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Staples joyko no. 10",
+      "link": "-",
+      "qty": 45,
+      "satuan": "pcs",
+      "harga": 17000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 45,
+          "harga": 17000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-Staplesj"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Penggaris Jangka 1 Set, matematika (Guru)",
+      "link": "-",
+      "qty": 5,
+      "satuan": "set",
+      "harga": 630000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "27 Feb 2026",
+          "qty": 5,
+          "harga": 630000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-Penggari"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Flasdisk SSD portable 512 GB merk V Gen",
+      "link": "-",
+      "qty": 1,
+      "satuan": "pcs",
+      "harga": 1885000,
+      "bulan": "Januari",
+      "realisasi": {
+        "Januari": {
+          "tgl": "2026-02-27",
+          "qty": 1,
+          "harga": 1885000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-JAN-RABBANI-Flasdisk"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas A4",
+      "link": "-",
+      "qty": 60,
+      "satuan": "rim",
+      "harga": 70000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 60,
+          "harga": 70000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-KertasA4"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta refill stampel (Hitam)",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 26000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 10,
+          "harga": 26000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Tintaref"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta refill stampel (Biru)",
+      "link": "-",
+      "qty": 15,
+      "satuan": "pcs",
+      "harga": 26000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 15,
+          "harga": 26000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Tintaref"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta refill stampel (Merah)",
+      "link": "-",
+      "qty": 15,
+      "satuan": "pcs",
+      "harga": 26000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 15,
+          "harga": 26000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Tintaref"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Soklin lantai 770 ml",
+      "link": "-",
+      "qty": 128,
+      "satuan": "pcs",
+      "harga": 19000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 128,
+          "harga": 19000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Soklinla"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cling Pembersih Kaca 400ml",
+      "link": "-",
+      "qty": 24,
+      "satuan": "pcs",
+      "harga": 11000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 24,
+          "harga": 11000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-ClingPem"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Handsoap/sabun cuci tangan",
+      "link": "-",
+      "qty": 12,
+      "satuan": "jerigen",
+      "harga": 63000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 12,
+          "harga": 63000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Handsoap"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pengharum Ruangan Gantung",
+      "link": "-",
+      "qty": 75,
+      "satuan": "pcs",
+      "harga": 19000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 75,
+          "harga": 19000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Pengharu"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Sapu ijuk",
+      "link": "-",
+      "qty": 8,
+      "satuan": "pcs",
+      "harga": 44000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 8,
+          "harga": 44000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Sapuijuk"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Wiper lantai",
+      "link": "-",
+      "qty": 8,
+      "satuan": "pcs",
+      "harga": 38000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 8,
+          "harga": 38000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Wiperlan"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pengki nagoya",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 38000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 10,
+          "harga": 38000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Pengkina"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tempat sampah Shinpo 10 liter",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 95000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 10,
+          "harga": 95000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Tempatsa"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Alat Pel Lantai / spin mop / peras otomatis",
+      "link": "-",
+      "qty": 8,
+      "satuan": "pcs",
+      "harga": 214000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 8,
+          "harga": 214000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-AlatPelL"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Ember",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 69000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 10,
+          "harga": 69000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Ember"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Keran",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 51000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 10,
+          "harga": 51000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Keran"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Gayung",
+      "link": "-",
+      "qty": 15,
+      "satuan": "pcs",
+      "harga": 26000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 15,
+          "harga": 26000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Gayung"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Baterai AA",
+      "link": "-",
+      "qty": 6,
+      "satuan": "pak / isi 6",
+      "harga": 38000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 6,
+          "harga": 38000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-BateraiA"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Lampu LED Philips 20 w putih",
+      "link": "-",
+      "qty": 25,
+      "satuan": "pcs",
+      "harga": 82000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 25,
+          "harga": 82000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-LampuLED"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Selang benang",
+      "link": "-",
+      "qty": 1,
+      "satuan": "roll / 100 m",
+      "harga": 438000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 1,
+          "harga": 438000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Selangbe"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Obeng amerika bolak balik",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pcs",
+      "harga": 27800,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 5,
+          "harga": 26000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-Obengame"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Isi Cutter L-500",
+      "link": "-",
+      "qty": 132,
+      "satuan": "tube",
+      "harga": 11000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 132,
+          "harga": 11000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-IsiCutte"
+        }
+      }
+    },
+    {
+      "jenis": "Modal",
+      "desc": "Globe Dunia 35 cm",
+      "link": "-",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 470000,
+      "bulan": "April",
+      "realisasi": {
+        "April": {
+          "tgl": "2026-05-26",
+          "qty": 2,
+          "harga": 470000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-APR-RABBANI-GlobeDun"
+        }
+      }
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas A4",
+      "link": "-",
+      "qty": 60,
+      "satuan": "rim",
+      "harga": 70000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas F4",
+      "link": "-",
+      "qty": 10,
+      "satuan": "rim",
+      "harga": 80000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Spidol whiteboard",
+      "link": "-",
+      "qty": 8,
+      "satuan": "lusin / box",
+      "harga": 111000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta Spidol Whiteboard",
+      "link": "-",
+      "qty": 46,
+      "satuan": "btl",
+      "harga": 27000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Penghapus whiteboard joyco magnet",
+      "link": "-",
+      "qty": 46,
+      "satuan": "pcs",
+      "harga": 13000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Box File merk Bambi Biru dan hitam uk. Jumbo (1033)",
+      "link": "-",
+      "qty": 84,
+      "satuan": "pcs",
+      "harga": 59000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Staples joyko no. 10",
+      "link": "-",
+      "qty": 45,
+      "satuan": "pcs",
+      "harga": 17000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Sticky Note Post-It 3M 654",
+      "link": "-",
+      "qty": 98,
+      "satuan": "pcs",
+      "harga": 21000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Map Bussines File Uk F4 Biru, Kuning, Oren, Hijau",
+      "link": "-",
+      "qty": 40,
+      "satuan": "lusin",
+      "harga": 32000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Buku Kuitansi",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 8000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pembolong kertas joyko 30XL",
+      "link": "-",
+      "qty": 90,
+      "satuan": "pcs",
+      "harga": 32000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Gunting Sedang joyko",
+      "link": "-",
+      "qty": 96,
+      "satuan": "pcs",
+      "harga": 12000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Plastik Laminating A4 & F4 @ 2 pak",
+      "link": "-",
+      "qty": 4,
+      "satuan": "pak",
+      "harga": 114000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas Concorde 160 gr",
+      "link": "-",
+      "qty": 100,
+      "satuan": "pak",
+      "harga": 19000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas foto glossy 210GR SPECTRA",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pak",
+      "harga": 38000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Plastik Fotocopy merk jeruk",
+      "link": "-",
+      "qty": 4,
+      "satuan": "roll",
+      "harga": 126000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Stabilo",
+      "link": "-",
+      "qty": 180,
+      "satuan": "pcs",
+      "harga": 8000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Penggaris besi 100 cm",
+      "link": "-",
+      "qty": 4,
+      "satuan": "pcs",
+      "harga": 95000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Penggaris besi 30 cm",
+      "link": "-",
+      "qty": 90,
+      "satuan": "pcs",
+      "harga": 16000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Penyangga buku besi (L)/pembatas buku",
+      "link": "-",
+      "qty": 90,
+      "satuan": "pcs",
+      "harga": 33000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tempat pensil meja",
+      "link": "-",
+      "qty": 90,
+      "satuan": "pcs",
+      "harga": 23000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Paperclip No 5",
+      "link": "-",
+      "qty": 10,
+      "satuan": "gross",
+      "harga": 69000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Paperclip No 3",
+      "link": "-",
+      "qty": 10,
+      "satuan": "gross",
+      "harga": 32000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta printer Epson 003 hitam",
+      "link": "-",
+      "qty": 40,
+      "satuan": "pcs",
+      "harga": 123000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta printer Epson 003 biru",
+      "link": "-",
+      "qty": 25,
+      "satuan": "pcs",
+      "harga": 120000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta printer Epson 003 kuning",
+      "link": "-",
+      "qty": 25,
+      "satuan": "pcs",
+      "harga": 120000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta printer Epson 003 merah megenta",
+      "link": "-",
+      "qty": 25,
+      "satuan": "pcs",
+      "harga": 120000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta mesin fotocopy xerox",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 628000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Materai 10 ribu",
+      "link": "-",
+      "qty": 50,
+      "satuan": "pcs",
+      "harga": 13000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta refill stampel (Hitam)",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 26000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta refill stampel (Biru)",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pcs",
+      "harga": 26000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta refill stampel (Merah)",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pcs",
+      "harga": 26000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola Voli Molten V5M5000 Flistatec Original",
+      "link": "-",
+      "qty": 5,
+      "satuan": "buah",
+      "harga": 1010000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Soklin lantai 770 ml",
+      "link": "-",
+      "qty": 128,
+      "satuan": "pcs",
+      "harga": 19000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Mama lemon 680ml",
+      "link": "-",
+      "qty": 48,
+      "satuan": "pcs",
+      "harga": 13000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cling Pembersih Kaca 400ml",
+      "link": "-",
+      "qty": 24,
+      "satuan": "pcs",
+      "harga": 11000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Harpic 450 ml",
+      "link": "-",
+      "qty": 40,
+      "satuan": "botol",
+      "harga": 38000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Handsoap/sabun cuci tangan",
+      "link": "-",
+      "qty": 12,
+      "satuan": "jerigen",
+      "harga": 63000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pengharum Ruangan Gantung",
+      "link": "-",
+      "qty": 75,
+      "satuan": "pcs",
+      "harga": 19000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tisu Wajah Nice",
+      "link": "-",
+      "qty": 48,
+      "satuan": "pcs",
+      "harga": 22000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Sapu ijuk",
+      "link": "-",
+      "qty": 8,
+      "satuan": "pcs",
+      "harga": 44000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Wiper lantai",
+      "link": "-",
+      "qty": 8,
+      "satuan": "pcs",
+      "harga": 38000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pengki nagoya",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 38000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tempat sampah Shinpo 10 liter",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 95000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Alat Pel Lantai / spin mop / peras otomatis",
+      "link": "-",
+      "qty": 8,
+      "satuan": "pcs",
+      "harga": 214000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Ember",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 69000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Keran",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 51000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Gayung",
+      "link": "-",
+      "qty": 15,
+      "satuan": "pcs",
+      "harga": 26000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Baterai AA",
+      "link": "-",
+      "qty": 6,
+      "satuan": "pak / isi 6",
+      "harga": 38000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Lampu LED Philips 20 w putih",
+      "link": "-",
+      "qty": 25,
+      "satuan": "pcs",
+      "harga": 82000,
+      "bulan": "Agustus"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas A4",
+      "link": "Paperone 75 gsm",
+      "qty": 60,
+      "satuan": "rim",
+      "harga": 70000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kertas F4",
+      "link": "Paperone 75 gsm",
+      "qty": 5,
+      "satuan": "rim",
+      "harga": 80000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Spidol whiteboard",
+      "link": "snowman",
+      "qty": 4,
+      "satuan": "lusin / box",
+      "harga": 111000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Tinta Spidol Whiteboard",
+      "link": "ink marking",
+      "qty": 23,
+      "satuan": "btl",
+      "harga": 27000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Penghapus whiteboard joyco magnet",
+      "link": "-",
+      "qty": 23,
+      "satuan": "pcs",
+      "harga": 13000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Box File merk Bambi Biru dan hitam uk. Jumbo (1033)",
+      "link": "Bambi",
+      "qty": 96,
+      "satuan": "pcs",
+      "harga": 59000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola Voli Molten V5M5000 Flistatec Original",
+      "link": "https://tk.tokopedia.com/ZSa8qXVYx/",
+      "qty": 5,
+      "satuan": "buah",
+      "harga": 1010000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Net Voli MITZUDA VN 285 Original",
+      "link": "https://tk.tokopedia.com/ZS5TpKs5X/",
+      "qty": 3,
+      "satuan": "pcs",
+      "harga": 935000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Pluit",
+      "link": "https://shopee.co.id/CALARY-Peluit-Wasit-120db",
+      "qty": 5,
+      "satuan": "pcs",
+      "harga": 38000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Raket Bulu Tangkis",
+      "link": "https://tk.tokopedia.com/ZS5TucCb5/",
+      "qty": 20,
+      "satuan": "pcs",
+      "harga": 565000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Shuttelcok / Bola Bulu Tangkis JP gold ",
+      "link": "https://tk.tokopedia.com/ZS53t6xG6/",
+      "qty": 50,
+      "satuan": "slop / tabung",
+      "harga": 226000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Minyak but but",
+      "link": "-",
+      "qty": 8,
+      "satuan": "botol",
+      "harga": 63000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Minyak Kayu Putih 120 ml",
+      "link": "-",
+      "qty": 8,
+      "satuan": "botol",
+      "harga": 63000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Plester Luka",
+      "link": "-",
+      "qty": 8,
+      "satuan": "pak / 10 lembar",
+      "harga": 13000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Obat Tetes Mata",
+      "link": "rohto / insto",
+      "qty": 4,
+      "satuan": "botol",
+      "harga": 27000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Betadine 5 ml",
+      "link": "-",
+      "qty": 4,
+      "satuan": "botol",
+      "harga": 16000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Obat maag",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pak",
+      "harga": 38000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Freshcare 10 ml",
+      "link": "-",
+      "qty": 10,
+      "satuan": "buah",
+      "harga": 26000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Revanol 300 ml",
+      "link": "-",
+      "qty": 4,
+      "satuan": "botol",
+      "harga": 19000,
+      "bulan": "Oktober"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola Futsal Adidas",
+      "link": "-",
+      "qty": 15,
+      "satuan": "pcs",
+      "harga": 502000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola Sepak Adidas",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pcs",
+      "harga": 625000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola Basket MOLTEN BG 4550 Size 7",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 883000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola Tenis Meja / Bola Pingpong DHS Bintang 3",
+      "link": "-",
+      "qty": 20,
+      "satuan": "pak",
+      "harga": 189000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Net Bulu Tangkis",
+      "link": "-",
+      "qty": 4,
+      "satuan": "pcs",
+      "harga": 690000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Score Table / scoreboard manual",
+      "link": "-",
+      "qty": 2,
+      "satuan": "pcs",
+      "harga": 502000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Skipping",
+      "link": "-",
+      "qty": 10,
+      "satuan": "pcs",
+      "harga": 120000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Stop Watch",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pcs",
+      "harga": 220000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cone Kerucut",
+      "link": "-",
+      "qty": 3,
+      "satuan": "pak isi 10 pcs",
+      "harga": 107000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Cone Mangkok",
+      "link": "-",
+      "qty": 3,
+      "satuan": "lusin",
+      "harga": 295000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Poster Planet",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pcs",
+      "harga": 26000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Poster Organ Tubuh",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pcs",
+      "harga": 26000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Peta Indonesia size besar",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pcs",
+      "harga": 165000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kabel roll merk Loyal",
+      "link": "-",
+      "qty": 10,
+      "satuan": "Roll",
+      "harga": 113000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kabel LAN Belden",
+      "link": "-",
+      "qty": 1,
+      "satuan": "Roll / 100 Meter",
+      "harga": 1443000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Connector RJ 45 Belden",
+      "link": "-",
+      "qty": 3,
+      "satuan": "pak",
+      "harga": 440000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kabel Ties",
+      "link": "-",
+      "qty": 5,
+      "satuan": "pak",
+      "harga": 23000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Kabel Listrik Serabut Transparan, tembaga",
+      "link": "-",
+      "qty": 1,
+      "satuan": "Roll / 100 meter",
+      "harga": 498000,
+      "bulan": "November"
+    },
+    {
+      "jenis": "Operasional",
+      "desc": "Bola Voli Molten V5M5000 Flistatec Original",
+      "link": "-",
+      "qty": 4,
+      "satuan": "buah",
+      "harga": 1010000,
+      "bulan": "Maret",
+      "note": "Sudah dikurangi 1",
+      "realisasi": {
+        "Maret": {
+          "tgl": "13 Apr 2026",
+          "qty": 4,
+          "harga": 1010000,
+          "link": "Sudah BKU (Verified Screenshot)",
+          "invoice": "BKU-MAR-RABBANI-BolaVoli"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1210 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Dashboard Bendahara BOS</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <span class="logo-icon">B</span>
+            <h2>BOSku</h2>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li class="active" id="navDashboard">
+            <a href="#"><i class="icon">📊</i> Dashboard BOSP</a>
+            <ul class="nav-submenu" id="sidebarYearSubmenu">
+              <li class="nav-year-item" data-year="2024"><a href="#">📜 BOS 2024 (Arsip)</a></li>
+              <li class="nav-year-item" data-year="2025"><a href="#">📜 BOS 2025 (Arsip)</a></li>
+              <li class="nav-year-item active" data-year="2026"><a href="#">⚡ BOS 2026 (Berjalan)</a></li>
+              <li class="nav-year-item" data-year="2027"><a href="#">📋 BOS 2027 (Estimasi)</a></li>
+            </ul>
+          </li>
+          <li id="navRAB"><a href="#"><i class="icon">📝</i> Perencanaan (RAB)</a></li>
+          <li id="navRealisasi"><a href="#"><i class="icon">💸</i> Realisasi & Transaksi</a></li>
+          <li id="navInventarisir"><a href="#"><i class="icon">📦</i> Inventarisir</a></li>
+          <li id="navPergeseran"><a href="#"><i class="icon">🔄</i> Histori Pergeseran & Perubahan</a></li>
+          <li><a href="#"><i class="icon">📚</i> BKU Resmi</a></li>
+          <li><a href="#"><i class="icon">🏦</i> Cetak SI Bank</a></li>
+          <li><a href="#"><i class="icon">📈</i> Laporan</a></li>
+        </ul>
+        <div class="sidebar-footer">
+          <a href="#" class="settings-link"><i class="icon">⚙️</i> Pengaturan</a>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header -->
+        <header class="topbar">
+          <div class="topbar-left">
+            <h1>Dashboard</h1>
+            <span class="subtitle">Ringkasan Pagu & Realisasi Dana BOS</span>
+          </div>
+          <div class="topbar-right">
+            <div class="notification-icon has-badge">
+              🔔
+              <span class="badge">3</span>
+            </div>
+            <div class="user-profile">
+              <div class="avatar">BY</div>
+              <div class="user-info">
+                <span class="user-name">Bendahara Yayasan</span>
+                <span class="user-role">Administrator</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+          <!-- Source Toggle -->
+          <div class="source-toggle" style="display: flex; gap: 12px; margin-bottom: -16px;">
+            <button class="btn btn-toggle active" data-target="bospContent">BOSP</button>
+            <button class="btn btn-toggle" data-target="bpmuContent">BPMU</button>
+          </div>
+
+          <!-- BOSP Content -->
+          <div id="bospContent" style="display: contents;">
+            <!-- Sub Menu Laporan Dana BOS per Tahun (Mulai 2024) -->
+            <div class="bosp-submenu-bar" style="grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; background: var(--bg-card); padding: 12px 20px; border-radius: 12px; border: 1px solid var(--glass-border); flex-wrap: wrap; gap: 12px; margin-bottom: 8px; box-shadow: var(--shadow-sm);">
+              <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                <div class="year-submenu-pills" style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <button class="btn-year-tab" data-year="2024">📜 TA 2024</button>
+                  <button class="btn-year-tab" data-year="2025">📜 TA 2025</button>
+                  <button class="btn-year-tab active" data-year="2026">⚡ TA 2026 (Berjalan)</button>
+                  <button class="btn-year-tab" data-year="2027">📋 TA 2027</button>
+                </div>
+              </div>
+              <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                <span id="bospYearBadge" class="bosp-status-badge active" style="font-size: 0.8rem; font-weight: 600; padding: 4px 10px; border-radius: 6px; background: rgba(16, 185, 129, 0.15); color: #059669; border: 1px solid rgba(16, 185, 129, 0.3);">● TA 2026 (Berjalan)</span>
+                <button id="btnExportBOSP" onclick="window.exportBOSPReport()" class="btn btn-primary" style="padding: 6px 14px; font-size: 0.85rem; display: flex; align-items: center; gap: 6px;">
+                  🖨️ Cetak / Export Laporan BOS
+                </button>
+              </div>
+            </div>
+
+
+
+            <!-- Overview Cards -->
+          <section class="summary-cards">
+            <!-- Card 1: Total Pagu Setahun -->
+            <div class="card stat-card primary">
+              <div class="card-top-header">
+                <h3>Total Pagu (1 Tahun)</h3>
+                <div class="card-icon">💰</div>
+              </div>
+              <p class="stat-value" id="totalPaguSetahun">Rp 0</p>
+              <div class="stat-breakdown" style="margin-top: 6px; font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>Tahap 1: <strong id="paguTahap1">Rp 0</strong></span>
+                  <span style="font-size: 0.65rem; padding: 2px 6px; background-color: var(--accent-success); color: #fff; border-radius: 4px; line-height: 1;">Sudah Cair</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>Tahap 2: <strong id="paguTahap2">Rp 0</strong></span>
+                  <span style="font-size: 0.65rem; padding: 2px 6px; background-color: var(--accent-warning); color: #fff; border-radius: 4px; line-height: 1;">Belum Cair</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Pagu Aktif -->
+            <div class="card stat-card success">
+              <div class="card-top-header">
+                <h3>Pagu Aktif (Tersedia)</h3>
+                <div class="card-icon">💵</div>
+              </div>
+              <p class="stat-value" id="paguAktif">Rp 0</p>
+              <div class="stat-breakdown" style="margin-top: 6px; font-size: 0.82rem; color: var(--text-muted);">
+                <span style="color: var(--accent-success); font-weight: 500;">✓ Dana sudah cair</span>
+              </div>
+            </div>
+
+            <!-- Card 3: Total Belanja -->
+            <div class="card stat-card warning">
+              <div class="card-top-header">
+                <h3>Total Realisasi</h3>
+                <div class="card-icon">🛒</div>
+              </div>
+              <p class="stat-value" id="totalBelanja">Rp 0</p>
+              <div class="stat-breakdown" style="margin-top: 6px; font-size: 0.82rem; color: var(--text-muted);">
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <strong id="persentaseBelanja">0%</strong>
+                  <span>terserap dari Pagu Aktif</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Sisa Saldo (Belum Dibelanjakan) -->
+            <div class="card stat-card primary">
+              <div class="card-top-header">
+                <h3>Sisa Dana (Belum Dibelanjakan)</h3>
+                <div class="card-icon">🏦</div>
+              </div>
+              <p class="stat-value" id="sisaSaldo">Rp 0</p>
+              <div class="stat-breakdown" style="margin-top: 6px; font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>Persentase Belum Dibelanjakan: <strong id="persentaseBelumDibelanjakan" style="color: var(--accent-primary);">0%</strong></span>
+                  <span style="font-size: 0.65rem; padding: 2px 6px; background-color: rgba(99, 102, 241, 0.1); color: var(--accent-primary); border-radius: 4px; font-weight: 700; line-height: 1;">Kas Tersedia</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="middle-section">
+            <!-- Charts Section -->
+            <section class="charts-section card">
+              <div class="card-header">
+                <h2>Alokasi & Serapan per Unit</h2>
+              </div>
+              <div class="chart-container">
+                <canvas id="budgetChart"></canvas>
+              </div>
+            </section>
+          </div>
+
+          <!-- Pie Chart Section: Persentase Belanja Berdasarkan Kategori -->
+          <section class="card category-pie-card" style="margin-top: 24px; padding: 24px; border-radius: 16px; border: 1px solid var(--glass-border); box-shadow: var(--shadow-md);">
+            <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid var(--glass-border); padding-bottom: 16px; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h2 id="categoryPieTitle" style="font-size: 1.2rem; font-weight: 700; color: var(--text-main); display: flex; align-items: center; gap: 8px;">
+                  🍕 Persentase Belanja Per Kategori & Status Realisasi
+                </h2>
+                <p id="categoryPieSub" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">
+                  Proporsi alokasi belanja konsolidasi per kategori beserta breakdown Realisasi vs Belum Realisasi
+                </p>
+              </div>
+              <div style="display: flex; gap: 8px; background: rgba(0,0,0,0.04); padding: 4px; border-radius: 8px; border: 1px solid var(--glass-border);">
+                <button id="btnPieModeCategory" onclick="window.switchPieMode('category')" style="padding: 6px 14px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; border: none; cursor: pointer; background: var(--accent-primary); color: white; transition: all 0.2s;">
+                  📊 Per Kategori Belanja
+                </button>
+                <button id="btnPieModeStatus" onclick="window.switchPieMode('status')" style="padding: 6px 14px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; border: none; cursor: pointer; background: transparent; color: var(--text-muted); transition: all 0.2s;">
+                  ⚖️ Realisasi vs Belum Realisasi
+                </button>
+              </div>
+            </div>
+            
+            <div class="category-pie-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 32px; align-items: center;">
+              <!-- Left: Canvas Doughnut/Pie Chart -->
+              <div class="pie-chart-container" style="height: 300px; position: relative;">
+                <canvas id="categoryPieChart"></canvas>
+              </div>
+
+              <!-- Right: Category Legend & Metrics Cards -->
+              <div id="categoryMetricsGrid" style="display: flex; flex-direction: column; gap: 12px;">
+                <!-- Populated dynamically by JS -->
+              </div>
+            </div>
+
+
+          <!-- Matrix Akumulasi Realisasi Belanja Per Unit Setiap Bulan Card -->
+          <section class="card monthly-matrix-card" style="margin-top: 24px; margin-bottom: 24px; padding: 24px; border-radius: 16px; border: 1px solid var(--glass-border); box-shadow: var(--shadow-md);">
+            <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 20px; border-bottom: 1px solid var(--glass-border); padding-bottom: 16px;">
+              <div>
+                <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main); display: flex; align-items: center; gap: 8px;">
+                  📊 Matrix Akumulasi Realisasi Belanja Per Unit Setiap Bulan (TA 2026)
+                </h2>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">
+                  Rekapitulasi nominal serapan dana BOS bulanan per unit sekolah hasil sinkronisasi BKU
+                </p>
+              </div>
+              <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                <div class="matrix-filter-pills" style="display: flex; background: rgba(0,0,0,0.04); padding: 4px; border-radius: 8px; border: 1px solid var(--glass-border);">
+                  <button class="btn-matrix-filter active" data-semester="all" style="padding: 6px 14px; font-size: 0.8rem; font-weight: 600; border-radius: 6px; border: none; cursor: pointer; transition: all 0.2s;">⚡ Semua Bulan (12 Bulan)</button>
+                  <button class="btn-matrix-filter" data-semester="sem1" style="padding: 6px 14px; font-size: 0.8rem; font-weight: 600; border-radius: 6px; border: none; cursor: pointer; transition: all 0.2s;">📜 Tahap 1 (Jan - Jun)</button>
+                  <button class="btn-matrix-filter" data-semester="sem2" style="padding: 6px 14px; font-size: 0.8rem; font-weight: 600; border-radius: 6px; border: none; cursor: pointer; transition: all 0.2s;">📋 Tahap 2 (Jul - Des)</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Matrix Table Container -->
+            <div class="table-responsive" style="overflow-x: auto; max-width: 100%; border-radius: 12px; border: 1px solid var(--glass-border); background: var(--bg-card);">
+              <table class="data-table monthly-matrix-table" style="width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.85rem;">
+                <thead>
+                  <tr id="monthlyMatrixHeaderRow" style="background: var(--bg-main);">
+                    <!-- Populated by JS -->
+                  </tr>
+                </thead>
+                <tbody id="monthlyMatrixTableBody">
+                  <!-- Populated by JS -->
+                </tbody>
+                <tfoot id="monthlyMatrixTableFoot" style="font-weight: 700; background: rgba(79, 70, 229, 0.08);">
+                  <!-- Populated by JS -->
+                </tfoot>
+              </table>
+            </div>
+          </section>
+
+          <!-- Bottom Section: Estimasi Pembagian -->
+          <div class="bottom-section" style="display: flex; flex-direction: column; gap: 24px;">
+            
+
+            <!-- Manajemen Unit & Akses Card -->
+            <section class="unit-management-section card">
+              <div class="card-header">
+                <h2>Manajemen Unit & Akses</h2>
+              </div>
+              
+              <div class="add-unit-form" style="display: flex; gap: 16px; margin-bottom: 24px; align-items: flex-end; flex-wrap: wrap;">
+                <div class="form-group">
+                  <label>Nama Unit Baru</label>
+                  <input type="text" id="newUnitName" placeholder="Contoh: Unit TK" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label>Username (Akses)</label>
+                  <input type="text" id="newUnitUser" placeholder="admin_tk" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="text" id="newUnitPass" placeholder="pass123" class="form-input" />
+                </div>
+                <button id="btnAddUnit" class="btn btn-primary" style="background-color: var(--accent-success);">+ Tambah Unit</button>
+              </div>
+
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Nama Unit</th>
+                      <th class="text-right">Jumlah Siswa</th>
+                      <th>Username</th>
+                      <th>Password</th>
+                      <th class="text-center">Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody id="unitAccessTableBody">
+                    <!-- Populated by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+
+          </div>
+          </div> <!-- Close BOSP Content -->
+
+          <!-- BPMU Content -->
+          <div id="bpmuContent" style="display: none; height: 60vh; justify-content: center; align-items: center; width: 100%;">
+            <div class="card warning" style="text-align: center; padding: 64px; max-width: 600px; border: 1px solid var(--accent-warning);">
+              <div class="card-icon" style="margin: 0 auto 24px; font-size: 4rem; display: flex; justify-content: center;">⚠️</div>
+              <h2 style="margin-bottom: 16px; font-size: 1.5rem; color: var(--text-main);">Informasi Penting</h2>
+              <p style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.6;">
+                BPMU sedang dibekukan oleh pemerintah daerah untuk semua satuan pendidikan di Provinsi Jawa Barat.
+              </p>
+            </div>
+          </div>
+
+          </div> <!-- Close Dashboard Content -->
+
+
+        <!-- Perencanaan (RAB) Content -->
+        <div id="rabContent" style="display: none; width: 100%; padding: 24px; overflow-y: auto;">
+          <div style="width: 100%; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;">
+            
+            <!-- Settings Card -->
+            <section class="settings-section card">
+              <div class="card-header">
+                <h2>Pengaturan Variabel Pembagian</h2>
+              </div>
+              <div class="settings-grid" id="settingsGrid">
+                <div class="form-group">
+                  <label>Pagu per Siswa (Rp)</label>
+                  <input type="number" id="inputPaguSiswa" value="1690000" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label>Iuran FKSS (Rp/Siswa)</label>
+                  <input type="number" id="inputIuranFKSS" value="25000" class="form-input" />
+                </div>
+                <!-- Dynamic Unit Inputs Will Be Injected Here -->
+              </div>
+              <div class="form-actions" style="margin-top: 16px; display: flex; justify-content: flex-end;">
+                <button id="btnHitung" class="btn btn-primary">Hitung & Perbarui</button>
+              </div>
+            </section>
+
+            <!-- Unit Distribution Pie Chart Card -->
+            <section class="card" style="padding: 24px;">
+              <div class="card-header" style="margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--glass-border); padding-bottom: 12px; flex-wrap: wrap; gap: 12px;">
+                <div>
+                  <h2 style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin: 0;">🍰 Diagram Rincian Pembagian Dana BOS per Unit</h2>
+                  <span style="font-size: 0.85rem; color: var(--text-muted);" id="unitPieSub">Persentase & Nominal Net Pembagian Dana BOS per Unit Sekolah</span>
+                </div>
+                <div class="badge" style="background: rgba(79, 70, 229, 0.12); color: var(--accent-primary); border: 1px solid rgba(79, 70, 229, 0.3); padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.85rem;" id="unitPieTotalBadge">
+                  Total Net: Rp 0
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: center;">
+                <!-- Pie/Doughnut Canvas -->
+                <div style="height: 300px; position: relative; display: flex; justify-content: center; align-items: center;">
+                  <canvas id="unitPaguPieChart"></canvas>
+                </div>
+
+                <!-- Custom Interactive Metrics Grid -->
+                <div id="unitPaguMetricsGrid" style="display: flex; flex-direction: column; gap: 10px;">
+                  <!-- Dynamic Legend Cards Injected by JS -->
+                </div>
+              </div>
+            </section>
+
+            <section class="table-section card">
+              <div class="card-header">
+                <h2>Rincian Penerimaan Tahap 1 & Tahap 2</h2>
+              </div>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Nama Unit</th>
+                      <th class="text-right">BOS REG P1 (Tahap 1)</th>
+                      <th class="text-right">BOS REG P2 (Tahap 2)</th>
+                      <th class="text-right">Total Gross</th>
+                      <th class="text-right text-danger">Potongan FKSS</th>
+                      <th class="text-right text-success">Net Pembagian</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tahapTableBody">
+                    <!-- Populated by JS -->
+                  </tbody>
+                  <tfoot id="tahapTableFoot">
+                    <!-- Populated by JS -->
+                  </tfoot>
+                </table>
+              </div>
+            </section>
+            <div class="card" style="padding: 24px;">
+              <h2 style="margin-bottom: 24px; font-size: 1.15rem; color: var(--text-main); border-bottom: 1px solid var(--glass-border); padding-bottom: 8px;">Rincian Anggaran Belanja (RAB) per Unit</h2>
+              
+              <div id="rabAccordionContainer" style="display: flex; flex-direction: column; gap: 12px;">
+                <!-- Accordions will be injected here via JS -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Realisasi Content -->
+        <div id="realisasiContent" style="display: none; width: 100%; padding: 24px; overflow-y: auto;">
+          <div style="width: 100%; margin: 0 auto;">
+            <div class="card" style="padding: 24px; border: 1px solid var(--accent-primary); box-shadow: var(--shadow-md);">
+              <div style="margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--glass-border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                <h2 style="font-size: 1.15rem; color: var(--accent-primary); margin: 0;">Linimasa (Timeline) Rencana Belanja</h2>
+                <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Unit:</label>
+                    <select id="filterTimelineUnit" onchange="window.filterTimeline()" style="padding: 6px 12px; border-radius: 6px; border: 1px solid var(--glass-border); font-size: 0.85rem; background: var(--bg-main);">
+                      <option value="all">Semua Unit</option>
+                      <!-- Options populated by JS -->
+                    </select>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Kategori:</label>
+                    <select id="filterTimelineJenis" onchange="window.filterTimeline()" style="padding: 6px 12px; border-radius: 6px; border: 1px solid var(--glass-border); font-size: 0.85rem; background: var(--bg-main);">
+                      <option value="all">Semua Kategori</option>
+                      <option value="Operasional">Operasional</option>
+                      <option value="Gaji">Gaji</option>
+                      <option value="Buku">Buku</option>
+                      <option value="Modal">Belanja Modal</option>
+                    </select>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Invoice:</label>
+                    <select id="filterTimelineInvoice" onchange="window.filterTimeline()" style="padding: 6px 12px; border-radius: 6px; border: 1px solid var(--glass-border); font-size: 0.85rem; background: var(--bg-main);">
+                      <option value="all">Semua Invoice</option>
+                    </select>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 6px;">
+                    <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">📅 Tgl Realisasi:</label>
+                    <input type="date" id="filterTimelineTglAwal" onchange="window.filterTimeline()" style="padding: 5px 10px; border-radius: 6px; border: 1px solid var(--glass-border); font-size: 0.85rem; background: var(--bg-main); color: var(--text-main);" title="Tanggal Mulai Realisasi" />
+                    <span style="font-size: 0.85rem; color: var(--text-muted);">s/d</span>
+                    <input type="date" id="filterTimelineTglAkhir" onchange="window.filterTimeline()" style="padding: 5px 10px; border-radius: 6px; border: 1px solid var(--glass-border); font-size: 0.85rem; background: var(--bg-main); color: var(--text-main);" title="Tanggal Akhir Realisasi" />
+                  </div>
+                </div>
+              </div>
+              
+              <div id="timelineContainer" style="display: flex; flex-direction: column; gap: 0; width: 100%;">
+                <!-- Timeline will be injected here via JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Histori Pergeseran & Perubahan Content -->
+        <div id="pergeseranContent" style="display: none; width: 100%; padding: 24px; overflow-y: auto;">
+          <div style="width: 100%; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;">
+
+            <!-- Header Info & Version Tabs -->
+            <section class="card" style="padding: 20px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+                <div>
+                  <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main); margin: 0;">📜 Log & Histori Perubahan Anggaran (Multi-Versi)</h2>
+                  <span style="font-size: 0.85rem; color: var(--text-muted);">Pantau rincian alokasi per unit & bulan: Sebelum Pergeseran 1, Pergeseran 1, dan Pergeseran 2</span>
+                </div>
+                <div style="display: flex; gap: 12px; align-items: center;">
+                  <div class="badge" style="background: rgba(16, 185, 129, 0.12); color: #059669; border: 1px solid rgba(16, 185, 129, 0.3); padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.85rem;">
+                    Total Pagu: Rp 1.350.310.000
+                  </div>
+                </div>
+              </div>
+
+              <!-- Version Switcher Tabs -->
+              <div class="pergeseran-tabs" style="margin-bottom: 0;">
+                <button class="pergeseran-tab active" data-histori-tab="sebelum1" onclick="window.switchHistoriTab('sebelum1')">📜 Sebelum Pergeseran 1</button>
+                <button class="pergeseran-tab" data-histori-tab="pergeseran1" onclick="window.switchHistoriTab('pergeseran1')">🔄 Pergeseran 1 (Upload/Edit)</button>
+                <button class="pergeseran-tab" data-histori-tab="pergeseran2" onclick="window.switchHistoriTab('pergeseran2')">🔄 Pergeseran 2 (Upload/Edit)</button>
+                <button class="pergeseran-tab" data-histori-tab="matriksLog" onclick="window.switchHistoriTab('matriksLog')">📊 Log Matriks Selisih Perubahan</button>
+              </div>
+            </section>
+
+            <!-- Table Card Area -->
+            <section class="card" style="padding: 24px; overflow-x: auto;">
+              <div class="card-header" style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                <div>
+                  <h2 style="font-size: 1.15rem;" id="historiTableTitle">Tabel Anggaran — Sebelum Pergeseran 1</h2>
+                  <span style="font-size: 0.85rem; color: var(--text-muted);" id="historiTableSub">Data rincian realisasi & pagu per unit per bulan</span>
+                </div>
+                <div id="historiActionButtons" style="display: flex; gap: 8px;">
+                  <!-- Dynamic Actions by JS -->
+                </div>
+              </div>
+
+              <div class="table-responsive" id="historiTableContainer">
+                <!-- Table generated by JS -->
+              </div>
+            </section>
+
+          </div>
+        </div>
+
+        <!-- Modal Geser Item -->
+        <div id="modalGeserItem" class="modal-overlay">
+          <div class="modal-content">
+            <div class="modal-header">Pergeseran Item Belanja</div>
+            <div class="modal-body">
+              <input type="hidden" id="geserItemUnitId" />
+              <input type="hidden" id="geserItemIndex" />
+              
+              <div class="form-group">
+                <label style="font-weight: 600; font-size: 0.85rem; color: var(--text-muted);">Unit</label>
+                <div id="geserItemUnitName" style="font-weight: 700; color: var(--text-main); margin-top: 4px;">-</div>
+              </div>
+              <div class="form-group">
+                <label style="font-weight: 600; font-size: 0.85rem; color: var(--text-muted);">Item</label>
+                <div id="geserItemDesc" style="font-weight: 700; color: var(--text-main); margin-top: 4px;">-</div>
+              </div>
+
+              <hr style="border: none; border-top: 1px solid var(--glass-border); margin: 12px 0;" />
+
+              <div class="form-group" style="display: flex; gap: 16px;">
+                <div style="flex: 1;">
+                  <label>Bulan Awal</label>
+                  <div id="geserItemBulanAwal" class="geser-readonly-field">-</div>
+                </div>
+                <div style="display: flex; align-items: flex-end; padding-bottom: 8px; font-size: 1.3rem; color: var(--accent-primary);">→</div>
+                <div style="flex: 1;">
+                  <label>Bulan Baru</label>
+                  <select id="geserItemBulanBaru" class="form-input">
+                    <option value="Januari">Januari</option>
+                    <option value="Februari">Februari</option>
+                    <option value="Maret">Maret</option>
+                    <option value="April">April</option>
+                    <option value="Mei">Mei</option>
+                    <option value="Juni">Juni</option>
+                    <option value="Juli">Juli</option>
+                    <option value="Agustus">Agustus</option>
+                    <option value="September">September</option>
+                    <option value="Oktober">Oktober</option>
+                    <option value="November">November</option>
+                    <option value="Desember">Desember</option>
+                    <option value="Rutin Bulanan">Rutin Bulanan</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group" style="display: flex; gap: 16px;">
+                <div style="flex: 1;">
+                  <label>Harga Satuan Awal (Rp)</label>
+                  <div id="geserItemHargaAwal" class="geser-readonly-field">-</div>
+                </div>
+                <div style="display: flex; align-items: flex-end; padding-bottom: 8px; font-size: 1.3rem; color: var(--accent-primary);">→</div>
+                <div style="flex: 1;">
+                  <label>Harga Satuan Baru (Rp)</label>
+                  <input type="number" id="geserItemHargaBaru" class="form-input" />
+                </div>
+              </div>
+
+              <div class="form-group" style="display: flex; gap: 16px;">
+                <div style="flex: 1;">
+                  <label>Qty Awal</label>
+                  <div id="geserItemQtyAwal" class="geser-readonly-field">-</div>
+                </div>
+                <div style="display: flex; align-items: flex-end; padding-bottom: 8px; font-size: 1.3rem; color: var(--accent-primary);">→</div>
+                <div style="flex: 1;">
+                  <label>Qty Baru</label>
+                  <input type="number" id="geserItemQtyBaru" class="form-input" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Keterangan Pergeseran</label>
+                <input type="text" id="geserItemKeterangan" placeholder="Alasan pergeseran..." class="form-input" />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button onclick="window.closeModalGeserItem()" class="btn" style="background-color: transparent; border: 1px solid var(--text-muted); color: var(--text-main);">Batal</button>
+              <button onclick="window.simpanGeserItem()" class="btn btn-primary">Simpan Pergeseran</button>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Inventarisir Content -->
+        <div id="inventarisirContent" style="display: none; width: 100%; padding: 24px; overflow-y: auto;">
+          <div style="width: 100%; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;">
+
+            <!-- Header & Action Bar -->
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+              <div>
+                <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--text-main); margin: 0; display: flex; align-items: center; gap: 8px;">
+                  <span>📦</span> Inventarisir Belanja Aset, Buku & Operasional Barang
+                </h2>
+                <p style="margin: 4px 0 0 0; color: var(--text-muted); font-size: 0.88rem;">
+                  Daftar lengkap realisasi barang fisik yang bersumber dari halaman Realisasi & Transaksi
+                </p>
+              </div>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <button id="btnExportInventarisCSV" class="btn" style="background: rgba(16, 185, 129, 0.12); color: #059669; border: 1px solid rgba(16, 185, 129, 0.3); font-weight: 700; display: flex; align-items: center; gap: 6px;">
+                  <span>📥</span> Ekspor Excel/CSV
+                </button>
+                <button id="btnPrintInventaris" class="btn" style="background: rgba(79, 70, 229, 0.12); color: var(--accent-primary); border: 1px solid rgba(79, 70, 229, 0.3); font-weight: 700; display: flex; align-items: center; gap: 6px;">
+                  <span>🖨️</span> Cetak Inventaris
+                </button>
+              </div>
+            </div>
+
+            <!-- Summary Stat Cards -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+              <div class="card" style="padding: 16px 20px; border-left: 4px solid #6366f1; background: var(--glass-bg);">
+                <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">TOTAL ITEM INVENTARIS</div>
+                <div id="invStatTotalItems" style="font-size: 1.6rem; font-weight: 800; color: var(--accent-primary); margin-top: 4px;">0 Item</div>
+                <div id="invStatSubItems" style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Realisasi Barang Fisik</div>
+              </div>
+              
+              <div class="card" style="padding: 16px 20px; border-left: 4px solid #10b981; background: var(--glass-bg);">
+                <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">TOTAL NILAI INVENTARIS</div>
+                <div id="invStatTotalRp" style="font-size: 1.5rem; font-weight: 800; color: #10b981; margin-top: 4px;">Rp 0</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Total Realisasi Inventaris</div>
+              </div>
+
+              <div class="card" style="padding: 16px 20px; border-left: 4px solid #ec4899; background: var(--glass-bg);">
+                <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">BELANJA MODAL / ASET</div>
+                <div id="invStatModalRp" style="font-size: 1.4rem; font-weight: 800; color: #ec4899; margin-top: 4px;">Rp 0</div>
+                <div id="invStatModalCount" style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">0 Item Aset</div>
+              </div>
+
+              <div class="card" style="padding: 16px 20px; border-left: 4px solid #3b82f6; background: var(--glass-bg);">
+                <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">BELANJA BUKU</div>
+                <div id="invStatBukuRp" style="font-size: 1.4rem; font-weight: 800; color: #3b82f6; margin-top: 4px;">Rp 0</div>
+                <div id="invStatBukuCount" style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">0 Item Buku</div>
+              </div>
+
+              <div class="card" style="padding: 16px 20px; border-left: 4px solid #f59e0b; background: var(--glass-bg);">
+                <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">OPERASIONAL (BARANG)</div>
+                <div id="invStatOperasionalRp" style="font-size: 1.4rem; font-weight: 800; color: #f59e0b; margin-top: 4px;">Rp 0</div>
+                <div id="invStatOpCount" style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">0 Item Barang Habis Pakai</div>
+              </div>
+            </div>
+
+            <!-- Filter Controls -->
+            <section class="card" style="padding: 18px 20px;">
+              <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-end;">
+                <div style="flex: 1; min-width: 180px;">
+                  <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 6px;">CARI ITEM / INVOICE</label>
+                  <input type="text" id="filterInvSearch" placeholder="🔍 Cari nama barang, merk, atau nota..." class="form-input" style="width: 100%;" />
+                </div>
+                
+                <div style="width: 180px;">
+                  <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 6px;">UNIT / SEKOLAH</label>
+                  <select id="filterInvUnit" class="form-input" style="width: 100%;">
+                    <option value="all">Semua Unit</option>
+                  </select>
+                </div>
+
+                <div style="width: 220px;">
+                  <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 6px;">KATEGORI BELANJA</label>
+                  <select id="filterInvKategori" class="form-input" style="width: 100%;">
+                    <option value="all">Semua Kategori (Modal, Buku, Barang)</option>
+                    <option value="Belanja Modal / Aset">📦 Belanja Modal / Aset</option>
+                    <option value="Belanja Buku">📚 Belanja Buku</option>
+                    <option value="Belanja Operasional (Barang)">🧹 Belanja Operasional (Barang)</option>
+                  </select>
+                </div>
+
+                <div style="width: 160px;">
+                  <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 6px;">BULAN REALISASI</label>
+                  <select id="filterInvBulan" class="form-input" style="width: 100%;">
+                    <option value="all">Semua Bulan</option>
+                    <option value="Januari">Januari</option>
+                    <option value="Februari">Februari</option>
+                    <option value="Maret">Maret</option>
+                    <option value="April">April</option>
+                    <option value="Mei">Mei</option>
+                    <option value="Juni">Juni</option>
+                    <option value="Juli">Juli</option>
+                    <option value="Agustus">Agustus</option>
+                    <option value="September">September</option>
+                    <option value="Oktober">Oktober</option>
+                    <option value="November">November</option>
+                    <option value="Desember">Desember</option>
+                  </select>
+                </div>
+
+                <button id="btnResetInvFilter" class="btn" style="background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); font-weight: 600;">
+                  🔄 Reset Filter
+                </button>
+              </div>
+            </section>
+
+            <!-- Table Card -->
+            <section class="card" style="padding: 0; overflow: hidden; border-radius: 12px;">
+              <div style="padding: 16px 20px; background: rgba(79, 70, 229, 0.04); border-bottom: 1px solid var(--glass-border); display: flex; justify-content: space-between; align-items: center;">
+                <div style="font-weight: 700; color: var(--text-main); font-size: 0.98rem; display: flex; align-items: center; gap: 8px;">
+                  <span>📋</span> Daftar Realisasi Inventaris
+                  <span id="invTableCountBadge" style="font-size: 0.78rem; background: rgba(79, 70, 229, 0.15); color: var(--accent-primary); padding: 2px 10px; border-radius: 12px; font-weight: 700;">0 items</span>
+                </div>
+              </div>
+              
+              <div style="overflow-x: auto;">
+                <table class="data-table" style="width: 100%; border-collapse: collapse;">
+                  <thead>
+                    <tr style="background: rgba(0, 0, 0, 0.02); border-bottom: 2px solid var(--glass-border);">
+                      <th style="padding: 12px 14px; text-align: center; width: 50px;">No</th>
+                      <th style="padding: 12px 14px; text-align: left; min-width: 110px;">Tgl Realisasi</th>
+                      <th style="padding: 12px 14px; text-align: left; min-width: 250px;">Nama Item / Barang</th>
+                      <th style="padding: 12px 14px; text-align: center; min-width: 180px;">Kategori</th>
+                      <th style="padding: 12px 14px; text-align: left; min-width: 140px;">Unit / Sekolah</th>
+                      <th style="padding: 12px 14px; text-align: center; min-width: 100px;">Volume</th>
+                      <th style="padding: 12px 14px; text-align: right; min-width: 120px;">Harga Satuan</th>
+                      <th style="padding: 12px 14px; text-align: right; min-width: 140px;">Total Nominal (Rp)</th>
+                      <th style="padding: 12px 14px; text-align: left; min-width: 150px;">No. Invoice / Nota</th>
+                    </tr>
+                  </thead>
+                  <tbody id="inventarisTableBody">
+                    <!-- Populated by JS -->
+                  </tbody>
+                  <tfoot id="inventarisTableFoot" style="background: rgba(16, 185, 129, 0.05); font-weight: 700;">
+                    <!-- Populated by JS -->
+                  </tfoot>
+                </table>
+              </div>
+            </section>
+
+          </div>
+        </div>
+
+      </main>
+    </div>
+
+    <!-- Modal Input/Edit Item Estimasi Belanja Unit -->
+    <div id="modalItemEstimasi" class="modal-overlay">
+      <div class="modal-content" style="max-width: 550px;">
+        <div class="modal-header" id="modalItemEstimasiTitle">Tambah Barang Estimasi Belanja</div>
+        <div class="modal-body">
+          <input type="hidden" id="estimasiEditIndex" value="-1" />
+          
+          <div class="form-group">
+            <label>Kategori / Tab *</label>
+            <select id="inputItemJenis" class="form-input">
+              <option value="Operasional">Barang Habis Pakai (Operasional)</option>
+              <option value="Buku">Buku</option>
+              <option value="Modal">Modal / Aset</option>
+              <option value="Gaji">Honor & Gaji</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Nama Barang *</label>
+            <input type="text" id="inputItemNama" placeholder="Contoh: Sabun cuci piring (Mama Lime)" class="form-input" required />
+          </div>
+
+          <div class="form-group">
+            <label>Merk / Tipe / Link Pembelian</label>
+            <input type="text" id="inputItemMerk" placeholder="Contoh: Drigen/ 5 liter atau SIPLah" class="form-input" />
+          </div>
+
+          <div class="form-group" style="display: flex; gap: 16px;">
+            <div style="flex: 1;">
+              <label>Jumlah Barang (Qty) *</label>
+              <input type="number" id="inputItemQty" placeholder="1" min="1" class="form-input" required />
+            </div>
+            <div style="flex: 1;">
+              <label>Satuan *</label>
+              <input type="text" id="inputItemSatuan" placeholder="pcs, Rim, Botol, Unit, Box, dll." class="form-input" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Harga Satuan (Rp) *</label>
+            <input type="number" id="inputItemHarga" placeholder="0" min="0" class="form-input" required />
+          </div>
+
+          <div class="form-group">
+            <label>Total Estimasi (Auto)</label>
+            <div id="inputItemTotalCalc" style="font-weight: 700; color: var(--accent-primary); font-size: 1.1rem; padding: 8px 12px; background: rgba(79,70,229,0.05); border-radius: 8px; border: 1px solid var(--glass-border);">Rp 0</div>
+          </div>
+
+          <div class="form-group">
+            <label>Keterangan Pembelian (Bulan) *</label>
+            <select id="inputItemBulan" class="form-input">
+              <option value="Januari">Januari</option>
+              <option value="Februari">Februari</option>
+              <option value="Maret">Maret</option>
+              <option value="April">April</option>
+              <option value="Mei">Mei</option>
+              <option value="Juni">Juni</option>
+              <option value="Juli">Juli</option>
+              <option value="Agustus">Agustus</option>
+              <option value="September">September</option>
+              <option value="Oktober">Oktober</option>
+              <option value="November">November</option>
+              <option value="Desember">Desember</option>
+              <option value="Januari, April, Juli, September">Januari, April, Juli, September</option>
+              <option value="Juni, Desember">Juni, Desember</option>
+              <option value="Mei, Agustus">Mei, Agustus</option>
+              <option value="Maret, September, November">Maret, September, November</option>
+              <option value="Februari, September">Februari, September</option>
+              <option value="Rutin Bulanan">Rutin Bulanan (Tiap Bulan)</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button onclick="window.closeModalItemEstimasi()" class="btn" style="background-color: transparent; border: 1px solid var(--text-muted); color: var(--text-main);">Batal</button>
+          <button onclick="window.simpanItemEstimasi()" class="btn btn-primary">Simpan Barang</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal Input Realisasi -->
+    <div id="modalRealisasi" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-header">Input Data Realisasi</div>
+        <div class="modal-body">
+          <input type="hidden" id="realisasiUnitId" />
+          <input type="hidden" id="realisasiRabIndex" />
+          <input type="hidden" id="realisasiTargetMonth" />
+          
+          <div class="form-group">
+            <label style="font-weight: 600; font-size: 0.85rem; color: var(--text-muted);">Deskripsi Barang</label>
+            <div id="realisasiDesc" style="font-weight: 700; color: var(--text-main); margin-top: 4px;">-</div>
+          </div>
+          <div class="form-group">
+            <label>Status Realisasi</label>
+            <select id="inputRealisasiStatus" class="form-input" onchange="window.toggleRealisasiFields()">
+              <option value="Selesai">Selesai Dibelanjakan</option>
+              <option value="Batal">Batal Dibelanjakan</option>
+            </select>
+          </div>
+          
+          <div id="realisasiDetailFields">
+            <div class="form-group">
+              <label>Tanggal Pembelian</label>
+              <input type="date" id="inputRealisasiTgl" class="form-input" />
+            </div>
+            <div class="form-group" style="display: flex; gap: 12px;">
+              <div style="flex: 1;">
+                <label>Qty Aktual</label>
+                <input type="number" id="inputRealisasiQty" step="any" class="form-input" />
+              </div>
+              <div style="flex: 1;">
+                <label>Harga Satuan Aktual</label>
+                <input type="number" id="inputRealisasiHarga" class="form-input" />
+              </div>
+            </div>
+            <div class="form-group" style="display: flex; gap: 12px;">
+              <div style="flex: 1;">
+                <label>Nomor Invoice / Nota</label>
+                <input type="text" id="inputRealisasiInvoice" placeholder="Contoh: INV-2026-001" class="form-input" />
+              </div>
+              <div style="flex: 1;">
+                <label>Link Bukti (Nota/Struk SIPLah)</label>
+                <input type="text" id="inputRealisasiLink" placeholder="https://..." class="form-input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button onclick="window.closeModalRealisasi()" class="btn" style="background-color: transparent; border: 1px solid var(--text-muted); color: var(--text-main);">Batal</button>
+          <button onclick="window.saveRealisasi()" class="btn btn-primary">Simpan Realisasi</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal Input Realisasi Massal (Bulk Approval) -->
+    <div id="modalBulkRealisasi" class="modal-overlay">
+      <div class="modal-content" style="max-width: 540px;">
+        <div class="modal-header" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; border-radius: 12px 12px 0 0; padding: 16px 20px;">
+          💸 Input Realisasi Massal (Bulk Approval)
+        </div>
+        <div class="modal-body" style="padding: 20px;">
+          <div style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; color: #047857; font-size: 0.88rem; font-weight: 600;">
+            ℹ️ <span id="bulkModalCount">0</span> transaksi terpilih akan diset sebagai <strong style="color: #065f46;">"Selesai Dibelanjakan"</strong> secara serentak.
+          </div>
+          <div class="form-group">
+            <label style="font-weight: 600; font-size: 0.85rem; color: var(--text-main);">📅 Tanggal Pembelian / Realisasi BKU</label>
+            <input type="date" id="inputBulkTgl" class="form-input" style="margin-top: 4px;" />
+          </div>
+          <div class="form-group" style="display: flex; gap: 12px; margin-top: 12px;">
+            <div style="flex: 1;">
+              <label style="font-weight: 600; font-size: 0.85rem; color: var(--text-main);">📄 Nomor Invoice / BKU (Opsional)</label>
+              <input type="text" id="inputBulkInvoice" placeholder="Misal: BKU-2026-AUG" class="form-input" style="margin-top: 4px;" />
+            </div>
+            <div style="flex: 1;">
+              <label style="font-weight: 600; font-size: 0.85rem; color: var(--text-main);">🔗 Link Bukti SIPLah (Opsional)</label>
+              <input type="text" id="inputBulkLink" placeholder="Sudah BKU (Verified)" class="form-input" style="margin-top: 4px;" />
+            </div>
+          </div>
+          <div class="form-group" style="margin-top: 12px;">
+            <label style="font-weight: 600; font-size: 0.85rem; color: var(--text-main);">💰 Skema Qty & Harga Realisasi</label>
+            <select id="inputBulkScheme" class="form-input" style="margin-top: 4px;">
+              <option value="rab">Sesuai Anggaran RAB (Rencana)</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer" style="padding: 16px 20px; background: #f8fafc; border-top: 1px solid var(--glass-border); border-radius: 0 0 12px 12px;">
+          <button onclick="window.closeModalBulkRealisasi()" class="btn" style="background-color: transparent; border: 1px solid var(--text-muted); color: var(--text-main);">Batal</button>
+          <button onclick="window.saveBulkRealisasi()" class="btn" style="background: #10b981; color: white; font-weight: 700; border: none; padding: 8px 18px; border-radius: 6px; cursor: pointer;">✅ Simpan Realisasi Massal</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Input Item / Transaksi Baru -->
+    <div id="modalAddNewItem" class="modal-overlay">
+      <div class="modal-content" style="max-width: 580px;">
+        <div class="modal-header" style="background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%); color: white; border-radius: 12px 12px 0 0; padding: 16px 20px; font-weight: 700; font-size: 1.1rem; display: flex; align-items: center; justify-content: space-between;">
+          <span>➕ Tambah Item / Transaksi Belanja Baru</span>
+          <button onclick="window.closeModalAddNewItem()" style="background: transparent; border: none; color: white; font-size: 1.3rem; cursor: pointer;">✕</button>
+        </div>
+        <div class="modal-body" style="padding: 20px; max-height: 78vh; overflow-y: auto;">
+          <div style="background: rgba(79, 70, 229, 0.08); border: 1px solid rgba(79, 70, 229, 0.2); border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; color: var(--accent-primary); font-size: 0.88rem; font-weight: 600;">
+            ℹ️ Item baru akan langsung ditambahkan ke RAB unit & terintegrasi ke seluruh grafik, tabel matrix, serta timeline realisasi.
+          </div>
+
+          <div class="form-group" style="display: flex; gap: 12px;">
+            <div style="flex: 1;">
+              <label style="font-weight: 600;">Unit Sekolah *</label>
+              <select id="newItemUnit" class="form-input" style="margin-top: 4px;">
+                <option value="1">🏢 FG PUTRA</option>
+                <option value="2">🏢 FG MAHAD</option>
+                <option value="3">🏢 FG PUTRI BS</option>
+                <option value="4">🏢 FG PUTRI FDS</option>
+                <option value="5">🏢 RABBANI</option>
+              </select>
+            </div>
+            <div style="flex: 1;">
+              <label style="font-weight: 600;">Bulan Target Belanja *</label>
+              <select id="newItemBulan" class="form-input" style="margin-top: 4px;">
+                <option value="Januari">Januari</option>
+                <option value="Februari">Februari</option>
+                <option value="Maret">Maret</option>
+                <option value="April">April</option>
+                <option value="Mei">Mei</option>
+                <option value="Juni">Juni</option>
+                <option value="Juli">Juli</option>
+                <option value="Agustus">Agustus</option>
+                <option value="September">September</option>
+                <option value="Oktober">Oktober</option>
+                <option value="November">November</option>
+                <option value="Desember">Desember</option>
+                <option value="Rutin Bulanan">Rutin Bulanan (Tiap Bulan)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 12px;">
+            <label style="font-weight: 600;">Jenis / Kategori Belanja *</label>
+            <select id="newItemJenis" class="form-input" style="margin-top: 4px;">
+              <option value="Operasional">Barang Habis Pakai (Operasional)</option>
+              <option value="Gaji">Honor & Gaji / Jasa Guru-Karyawan</option>
+              <option value="Buku">Buku & Bahan Ajar</option>
+              <option value="Modal">Modal / Aset Mesin & Bangunan</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin-top: 12px;">
+            <label style="font-weight: 600;">Nama / Deskripsi Belanja *</label>
+            <input type="text" id="newItemDesc" placeholder="Contoh: Belanja Alat Laboratorium IPA" class="form-input" style="margin-top: 4px;" required />
+          </div>
+
+          <div class="form-group" style="display: flex; gap: 12px; margin-top: 12px;">
+            <div style="flex: 1;">
+              <label style="font-weight: 600;">Volume (Qty) *</label>
+              <input type="number" id="newItemQty" value="1" min="1" step="any" class="form-input" style="margin-top: 4px;" oninput="window.calcNewItemTotal()" required />
+            </div>
+            <div style="flex: 1;">
+              <label style="font-weight: 600;">Satuan *</label>
+              <input type="text" id="newItemSatuan" placeholder="pcs, unit, paket, set, dll." class="form-input" style="margin-top: 4px;" required />
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 12px;">
+            <label style="font-weight: 600;">Harga Satuan (Rp) *</label>
+            <input type="number" id="newItemHarga" placeholder="0" min="0" class="form-input" style="margin-top: 4px;" oninput="window.calcNewItemTotal()" required />
+          </div>
+
+          <div class="form-group" style="margin-top: 12px;">
+            <label style="font-weight: 600;">Total Estimasi (Otomatis)</label>
+            <div id="newItemTotalCalc" style="font-weight: 800; color: #4f46e5; font-size: 1.15rem; padding: 10px 14px; background: rgba(79,70,229,0.06); border-radius: 8px; border: 1px solid rgba(79,70,229,0.2); margin-top: 4px;">Rp 0</div>
+          </div>
+
+          <div class="form-group" style="margin-top: 12px;">
+            <label style="font-weight: 600;">Link SIPLah / Keterangan (Opsional)</label>
+            <input type="text" id="newItemLink" placeholder="https://..." class="form-input" style="margin-top: 4px;" />
+          </div>
+
+          <!-- Direct BKU Realization Option -->
+          <div style="margin-top: 16px; padding: 14px; background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 10px;">
+            <label style="display: flex; align-items: center; gap: 8px; font-weight: 700; color: #047857; cursor: pointer;">
+              <input type="checkbox" id="chkDirectRealisasi" onchange="window.toggleDirectRealisasiFields()" style="width: 18px; height: 18px; accent-color: #10b981;" />
+              <span>Langsung Tandai Sebagai Realisasi BKU?</span>
+            </label>
+
+            <div id="directRealisasiFields" style="display: none; margin-top: 12px; border-top: 1px dashed #a7f3d0; padding-top: 12px;">
+              <div class="form-group">
+                <label style="font-weight: 600; font-size: 0.85rem; color: #065f46;">Tanggal Pembelian Realisasi</label>
+                <input type="date" id="directRealTgl" class="form-input" style="margin-top: 4px;" />
+              </div>
+              <div class="form-group" style="display: flex; gap: 12px; margin-top: 8px;">
+                <div style="flex: 1;">
+                  <label style="font-weight: 600; font-size: 0.85rem; color: #065f46;">No. Invoice / Nota</label>
+                  <input type="text" id="directRealInvoice" placeholder="Contoh: INV-2026-08" class="form-input" style="margin-top: 4px;" />
+                </div>
+                <div style="flex: 1;">
+                  <label style="font-weight: 600; font-size: 0.85rem; color: #065f46;">Link Bukti Nota</label>
+                  <input type="text" id="directRealLink" placeholder="https://..." class="form-input" style="margin-top: 4px;" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="padding: 16px 20px; background: #f8fafc; border-top: 1px solid var(--glass-border); border-radius: 0 0 12px 12px;">
+          <button onclick="window.closeModalAddNewItem()" class="btn" style="background-color: transparent; border: 1px solid var(--text-muted); color: var(--text-main);">Batal</button>
+          <button onclick="window.saveAddNewItem()" class="btn btn-primary" style="background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%); font-weight: 700; border: none; padding: 10px 22px; border-radius: 8px; cursor: pointer;">➕ Tambahkan Item Baru</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Add Button for Realisasi & Transaksi -->
+    <div id="floatingAddContainer" style="display: none; position: fixed; bottom: 32px; right: 32px; z-index: 99999;">
+      <button onclick="window.openModalAddNewItem()" id="btnFloatingAddItem" style="display: flex; align-items: center; gap: 10px; padding: 14px 22px; background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%); color: #ffffff; border: none; border-radius: 50px; font-weight: 700; font-size: 0.95rem; box-shadow: 0 10px 30px rgba(79, 70, 229, 0.45); cursor: pointer; transition: all 0.25s ease;" title="Tambah Item Transaksi Belanja Baru">
+        <span style="font-size: 1.3rem; line-height: 1;">➕</span>
+        <span>Tambah Item Baru</span>
+      </button>
+    </div>
+
+    <!-- Fixed Floating Bottom Bulk Action Toolbar (Root Level) -->
+    <div id="bulkActionBar" style="display: none; position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); z-index: 900000; width: 92%; max-width: 980px; box-sizing: border-box; background: #ffffff; border: 2px solid #4f46e5; border-radius: 14px; padding: 14px 22px; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); pointer-events: auto; opacity: 1;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span style="background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%); color: white; border-radius: 20px; padding: 5px 16px; font-weight: 800; font-size: 0.9rem; box-shadow: 0 2px 6px rgba(79,70,229,0.3);" id="bulkSelectedCount">0 item dipilih</span>
+        <span style="font-size: 0.95rem; font-weight: 700; color: #0f172a;">⚡ Aksi Massal (Bulk Operation):</span>
+      </div>
+      <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+        <button onclick="window.openModalBulkEditItem()" style="background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%); color: white; border: none; padding: 9px 18px; border-radius: 8px; font-size: 0.85rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 10px rgba(234,179,8,0.35);" title="Edit data item belanja yang dipilih">
+          ✏️ Edit Terpilih
+        </button>
+        <button onclick="window.openModalCopyItem()" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: white; border: none; padding: 9px 18px; border-radius: 8px; font-size: 0.85rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 10px rgba(2,132,199,0.35);" title="Salin/Copy item terpilih ke bulan lain">
+          📋 Copy / Salin Item
+        </button>
+        <button onclick="window.openModalShiftMonth()" style="background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%); color: white; border: none; padding: 9px 18px; border-radius: 8px; font-size: 0.85rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 10px rgba(139,92,246,0.35);" title="Geser/pindahkan bulan alokasi anggaran item terpilih">
+          📅 Pindah Bulan / Geser
+        </button>
+        <button onclick="window.openModalBulkRealisasi()" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; border: none; padding: 9px 18px; border-radius: 8px; font-size: 0.85rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 10px rgba(16,185,129,0.35);" title="Setel transaksi terpilih menjadi Selesai Realisasi BKU">
+          💸 + Input Realisasi Terpilih
+        </button>
+        <button onclick="window.bulkCancelRealisasi()" style="background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%); color: white; border: none; padding: 9px 18px; border-radius: 8px; font-size: 0.85rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 10px rgba(225,29,72,0.35);" title="Batalkan status transaksi yang dipilih">
+          🚫 Batal Belanja Terpilih
+        </button>
+        <button onclick="window.bulkRestoreRealisasi()" style="background: #0284c7; color: white; border: none; padding: 9px 16px; border-radius: 8px; font-size: 0.83rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Aktifkan kembali transaksi yang pernah dibatalkan">
+          🔄 Aktifkan Terpilih
+        </button>
+        <button onclick="window.bulkDeleteRealisasi()" style="background: #475569; color: white; border: none; padding: 9px 16px; border-radius: 8px; font-size: 0.83rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Reset data realisasi ke status Rencana Belanja (RAB)">
+          🗑️ Reset
+        </button>
+        <button onclick="window.bulkDeleteRABItem()" style="background: #b91c1c; color: white; border: none; padding: 9px 16px; border-radius: 8px; font-size: 0.83rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 10px rgba(185,28,28,0.35);" title="Hapus permanen item terpilih dari Rencana Anggaran (RAB)">
+          ❌ Hapus Item RAB
+        </button>
+        <span style="border-left: 1px solid #cbd5e1; height: 26px; margin: 0 4px;"></span>
+        <button onclick="window.toggleSelectAllVisibleTimeline(true)" style="background: #f1f5f9; border: 1px solid #cbd5e1; color: #334155; padding: 8px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 4px;" title="Pilih Semua Transaksi Tampil">☑️ Pilih Semua</button>
+        <button onclick="window.toggleSelectAllVisibleTimeline(false)" style="background: #f1f5f9; border: 1px solid #cbd5e1; color: #334155; padding: 8px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 4px;" title="Batalkan Pilihan">⬛ Batal Pilih</button>
+      </div>
+    </div>
+
+    <!-- Modal Edit Massal / Edit Item Terpilih -->
+    <div class="modal-overlay" id="modalBulkEditItem">
+      <div class="modal-content" style="max-width: 540px; border-radius: 16px; border: 1px solid var(--glass-border); box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+        <div class="modal-header" style="background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%); color: white; padding: 18px 24px; border-top-left-radius: 16px; border-top-right-radius: 16px;">
+          <h2 style="color: white; font-size: 1.15rem; font-weight: 700; display: flex; align-items: center; gap: 8px;">✏️ Edit Item Belanja Terpilih</h2>
+          <button class="close-modal" onclick="window.closeModalBulkEditItem()" style="color: white; font-size: 1.5rem; background: none; border: none; cursor: pointer;">&times;</button>
+        </div>
+        <div class="modal-body" style="padding: 24px;">
+          <p style="font-size: 0.88rem; color: #475569; margin-bottom: 16px;">
+            Edit data untuk <strong><span id="bulkEditModalCount">0</span> item terpilih</strong>. Isikan bidang yang ingin diubah, bidang yang dikosongkan tidak akan merubah data asli.
+          </p>
+
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label style="font-weight: 700; font-size: 0.82rem; color: #1e293b; margin-bottom: 6px; display: block;">📝 Nama / Deskripsi Barang:</label>
+            <input type="text" id="inputBulkEditDesc" class="form-control" placeholder="(Kosongkan jika tidak ingin mengubah nama)" style="width: 100%; padding: 9px 12px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.88rem;" />
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+            <div class="form-group">
+              <label style="font-weight: 700; font-size: 0.82rem; color: #1e293b; margin-bottom: 6px; display: block;">🏷️ Kategori / Jenis:</label>
+              <select id="inputBulkEditJenis" class="form-control" style="width: 100%; padding: 9px 12px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.88rem;">
+                <option value="">-- Tetapkan Kategori Asli --</option>
+                <option value="Operasional">Operasional</option>
+                <option value="Honor">Honor</option>
+                <option value="Modal">Modal</option>
+                <option value="Buku">Buku</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label style="font-weight: 700; font-size: 0.82rem; color: #1e293b; margin-bottom: 6px; display: block;">📅 Alokasi Bulan:</label>
+              <select id="inputBulkEditBulan" class="form-control" style="width: 100%; padding: 9px 12px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.88rem;">
+                <option value="">-- Tetapkan Bulan Asli --</option>
+                <option value="Januari">Januari</option>
+                <option value="Februari">Februari</option>
+                <option value="Maret">Maret</option>
+                <option value="April">April</option>
+                <option value="Mei">Mei</option>
+                <option value="Juni">Juni</option>
+                <option value="Juli">Juli</option>
+                <option value="Agustus">Agustus</option>
+                <option value="September">September</option>
+                <option value="Oktober">Oktober</option>
+                <option value="November">November</option>
+                <option value="Desember">Desember</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+            <div class="form-group">
+              <label style="font-weight: 700; font-size: 0.82rem; color: #1e293b; margin-bottom: 6px; display: block;">📦 Jumlah (Qty):</label>
+              <input type="number" step="any" id="inputBulkEditQty" class="form-control" placeholder="(Asli)" style="width: 100%; padding: 9px 12px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.88rem;" />
+            </div>
+            <div class="form-group">
+              <label style="font-weight: 700; font-size: 0.82rem; color: #1e293b; margin-bottom: 6px; display: block;">📏 Satuan:</label>
+              <input type="text" id="inputBulkEditSatuan" class="form-control" placeholder="(Asli)" style="width: 100%; padding: 9px 12px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.88rem;" />
+            </div>
+            <div class="form-group">
+              <label style="font-weight: 700; font-size: 0.82rem; color: #1e293b; margin-bottom: 6px; display: block;">💰 Harga Satuan:</label>
+              <input type="number" step="any" id="inputBulkEditHarga" class="form-control" placeholder="(Asli)" style="width: 100%; padding: 9px 12px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.88rem;" />
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label style="font-weight: 700; font-size: 0.82rem; color: #1e293b; margin-bottom: 6px; display: block;">🔗 Link SIPLah / Spesifikasi:</label>
+            <input type="text" id="inputBulkEditLink" class="form-control" placeholder="(Kosongkan jika tidak ingin mengubah link)" style="width: 100%; padding: 9px 12px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.88rem;" />
+          </div>
+
+          <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px;">
+            <button onclick="window.closeModalBulkEditItem()" class="btn" style="padding: 10px 18px; border-radius: 8px; border: 1px solid #cbd5e1; background: #f1f5f9; color: #475569; font-weight: 600; cursor: pointer;">Batal</button>
+            <button onclick="window.submitBulkEditItem()" class="btn btn-primary" style="padding: 10px 22px; border-radius: 8px; background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%); color: white; border: none; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(234,179,8,0.3);">✏️ Simpan Perubahan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Copy / Salin Item Belanja -->
+    <div class="modal-overlay" id="modalCopyItem">
+      <div class="modal-content" style="max-width: 520px; border-radius: 16px; border: 1px solid var(--glass-border); box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: white; padding: 18px 24px; border-top-left-radius: 16px; border-top-right-radius: 16px;">
+          <h2 style="color: white; font-size: 1.15rem; font-weight: 700; display: flex; align-items: center; gap: 8px;">📋 Copy / Salin Item Belanja</h2>
+          <button class="close-modal" onclick="window.closeModalCopyItem()" style="color: white; font-size: 1.5rem; background: none; border: none; cursor: pointer;">&times;</button>
+        </div>
+        <div class="modal-body" style="padding: 24px;">
+          <p style="font-size: 0.88rem; color: #475569; margin-bottom: 16px;">
+            Salin <strong><span id="copyModalCount">0</span> item terpilih</strong> (<span id="copyModalNominal" style="font-weight: 700; color: #0284c7;">Rp 0</span>) ke bulan tujuan sebagai rencana belanja baru.
+          </p>
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label style="font-weight: 700; font-size: 0.85rem; color: #1e293b; margin-bottom: 8px; display: block;">📅 Pilih Bulan Tujuan Salinan:</label>
+            <select id="selectCopyTargetMonth" class="form-control" style="width: 100%; padding: 10px 14px; border-radius: 8px; border: 1px solid #cbd5e1; font-weight: 600; font-size: 0.9rem;">
+              <option value="Januari">Januari</option>
+              <option value="Februari">Februari</option>
+              <option value="Maret">Maret</option>
+              <option value="April">April</option>
+              <option value="Mei">Mei</option>
+              <option value="Juni">Juni</option>
+              <option value="Juli">Juli</option>
+              <option value="Agustus">Agustus</option>
+              <option value="September">September</option>
+              <option value="Oktober">Oktober</option>
+              <option value="November">November</option>
+              <option value="Desember">Desember</option>
+            </select>
+          </div>
+          <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 24px;">
+            <button onclick="window.closeModalCopyItem()" class="btn" style="padding: 10px 18px; border-radius: 8px; border: 1px solid #cbd5e1; background: #f1f5f9; color: #475569; font-weight: 600; cursor: pointer;">Batal</button>
+            <button onclick="window.submitBulkCopyItem()" class="btn btn-primary" style="padding: 10px 22px; border-radius: 8px; background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: white; border: none; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(2,132,199,0.3);">📋 Salin Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Geser Bulan Item Belanja -->
+    <div class="modal-overlay" id="modalShiftMonth">
+      <div class="modal-content" style="max-width: 520px;">
+        <div class="modal-header" style="background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%); color: white;">
+          <h2 style="color: white;">📅 Pergeseran Bulan Item Belanja</h2>
+          <button class="close-modal" onclick="window.closeModalShiftMonth()" style="color: white;">&times;</button>
+        </div>
+        <div class="modal-body" style="padding: 20px;">
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">
+            Pindahkan alokasi bulan belanja untuk <strong id="shiftMonthSelectedCount" style="color: #6d28d9;">0 item</strong> yang Anda pilih.
+          </p>
+
+          <div class="form-group">
+            <label style="font-weight: 600; font-size: 0.9rem;">Pilih Bulan Alokasi Anggaran Baru *</label>
+            <select id="selectShiftTargetMonth" class="form-input" style="margin-top: 6px; font-weight: 600; padding: 10px 14px;">
+              <option value="Januari">Januari</option>
+              <option value="Februari">Februari</option>
+              <option value="Maret">Maret</option>
+              <option value="April">April</option>
+              <option value="Mei">Mei</option>
+              <option value="Juni">Juni</option>
+              <option value="Juli">Juli</option>
+              <option value="Agustus">Agustus</option>
+              <option value="September">September</option>
+              <option value="Oktober">Oktober</option>
+              <option value="November">November</option>
+              <option value="Desember">Desember</option>
+              <option value="Rutin Bulanan">Rutin Bulanan (Bagi 12 Bulan)</option>
+            </select>
+          </div>
+
+          <div style="background: rgba(139,92,246,0.08); border: 1px solid rgba(139,92,246,0.25); border-radius: 10px; padding: 14px; margin-top: 18px; font-size: 0.82rem; color: #5b21b6; line-height: 1.5;">
+            💡 <strong>Sinkronisasi Otomatis Sistem:</strong><br>
+            • Item belanja akan langsung berpindah ke bulan alokasi baru.<br>
+            • Tabel <strong>📊 Matrix Akumulasi Realisasi Belanja Per Unit</strong> dan <strong>Dashboard</strong> akan otomatis menyesuaikan total akumulasi belanja di bulan asal (berkurang) dan bulan baru (bertambah).
+          </div>
+
+          <div class="form-actions" style="margin-top: 24px; display: flex; justify-content: flex-end; gap: 10px;">
+            <button type="button" class="btn btn-secondary" onclick="window.closeModalShiftMonth()">Batal</button>
+            <button type="button" class="btn btn-primary" onclick="window.executeShiftMonth()" style="background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%); border: none; padding: 10px 20px; font-weight: 700;">
+              ✅ Proses Pindah Bulan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
