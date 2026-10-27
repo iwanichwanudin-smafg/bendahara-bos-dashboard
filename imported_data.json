@@ -874,12 +874,7 @@
           "link": "Sudah BKU (Verified Screenshot)",
           "invoice": "BKU-MAR-PUTRA-TagihanL"
         }
-      },
-      "volume": 6793,
-      "tarif": 950,
-      "hargaFinal": 6310697,
-      "tahap1": 6453350,
-      "tahap2": -142653
+      }
     },
     {
       "jenis": "Gaji",
@@ -952,12 +947,7 @@
           "link": "Sudah BKU (Verified Screenshot)",
           "invoice": "BKU-APR-PUTRA-TagihanL"
         }
-      },
-      "volume": 1,
-      "tarif": 12000000,
-      "hargaFinal": 8930727,
-      "tahap1": 12000000,
-      "tahap2": -3069273
+      }
     },
     {
       "jenis": "Operasional",
@@ -1012,11 +1002,6 @@
           "invoice": "BKU-APR-PUTRA-RiskiFra"
         }
       },
-      "volume": 80,
-      "tarif": 190000,
-      "hargaFinal": 11052271,
-      "tahap1": 15200000,
-      "tahap2": -4147729,
       "kode_rekening": "7959770671130342"
     },
     {
@@ -1035,12 +1020,7 @@
           "link": "Sudah BKU (Verified Screenshot)",
           "invoice": "BKU-APR-PUTRA-Pangestu"
         }
-      },
-      "volume": 88,
-      "tarif": 210000,
-      "hargaFinal": 17969641,
-      "tahap1": 18480000,
-      "tahap2": -510359
+      }
     },
     {
       "jenis": "Gaji",
@@ -1059,11 +1039,6 @@
           "invoice": "BKU-APR-PUTRA-MahmudSy"
         }
       },
-      "volume": 90,
-      "tarif": 140000,
-      "hargaFinal": 11431990,
-      "tahap1": 12600000,
-      "tahap2": -1168010,
       "kode_rekening": "9642771672130312"
     },
     {
@@ -1662,14 +1637,9 @@
     },
     {
       "desc": "Amplop Coklat / casing D",
-      "volume": 28,
       "qty": 28,
       "satuan": "pak",
-      "tarif": 82000,
       "harga": 82000,
-      "hargaFinal": 1960000,
-      "tahap1": 2296000,
-      "tahap2": -336000,
       "bulan": "April",
       "jenis": "Operasional",
       "kode_rekening": "5.1.02.01.01.06.05.08"
@@ -3838,7 +3808,7 @@
       "link": "-",
       "qty": 2,
       "satuan": "liter/kaleng",
-      "harga": 51500,
+      "harga": 66000,
       "bulan": "April",
       "note": "Revisi dari 1 Jerigen",
       "realisasi": {
