@@ -11,6 +11,12 @@ node_modules
 dist
 dist-ssr
 *.local
+.vercel
+
+# Backups and temporary files
+*.backup.*
+downloaded_si/
+scratch/
 
 # Editor directories and files
 .vscode/*
