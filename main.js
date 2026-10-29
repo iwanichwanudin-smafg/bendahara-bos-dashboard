@@ -390,9 +390,9 @@ function renderBudgetBarChart(metrics) {
         {
           label: 'Plafon Pagu BOS',
           data: paguData,
-          backgroundColor: '#e2e8f0',
-          hoverBackgroundColor: '#cbd5e1',
-          borderColor: '#cbd5e1',
+          backgroundColor: '#6366f1',
+          hoverBackgroundColor: '#4f46e5',
+          borderColor: '#4f46e5',
           borderWidth: 1,
           borderRadius: 6,
           borderSkipped: false,
