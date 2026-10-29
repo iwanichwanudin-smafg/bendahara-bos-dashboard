@@ -693,8 +693,8 @@ body {
   display: inline-block;
 }
 
-.legend-box.pagu { background: #059669; }
-.legend-box.realisasi { background: #0284c7; }
+.legend-box.pagu { background: linear-gradient(135deg, #0891b2, #22d3ee); box-shadow: 0 1px 3px rgba(6, 182, 212, 0.3); }
+.legend-box.realisasi { background: linear-gradient(135deg, #e11d48, #fb7185); box-shadow: 0 1px 3px rgba(244, 63, 94, 0.3); }
 
 /* =========================================================
    5 KARTU METRIK EKSEKUTIF PER UNIT

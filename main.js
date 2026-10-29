@@ -382,6 +382,21 @@ function renderBudgetBarChart(metrics) {
     budgetBarChartInstance.destroy();
   }
 
+  // Linear vertical gradients for sleek, premium executive look
+  function createBarGradient(colorBottom, colorTop) {
+    return function(context) {
+      const chart = context.chart;
+      const { ctx, chartArea } = chart;
+      if (!chartArea) {
+        return colorTop;
+      }
+      const gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
+      gradient.addColorStop(0, colorBottom);
+      gradient.addColorStop(1, colorTop);
+      return gradient;
+    };
+  }
+
   budgetBarChartInstance = new Chart(canvas, {
     type: 'bar',
     data: {
@@ -390,11 +405,11 @@ function renderBudgetBarChart(metrics) {
         {
           label: 'Plafon Pagu BOS',
           data: paguData,
-          backgroundColor: '#059669',
-          hoverBackgroundColor: '#047857',
-          borderColor: '#047857',
-          borderWidth: 1,
-          borderRadius: 6,
+          backgroundColor: createBarGradient('#0891b2', '#22d3ee'),
+          hoverBackgroundColor: createBarGradient('#0e7490', '#67e8f9'),
+          borderColor: '#06b6d4',
+          borderWidth: 1.5,
+          borderRadius: 8,
           borderSkipped: false,
           barPercentage: 0.65,
           categoryPercentage: 0.6,
@@ -402,11 +417,11 @@ function renderBudgetBarChart(metrics) {
         {
           label: 'Realisasi Belanja SI',
           data: realisasiData,
-          backgroundColor: '#0284c7',
-          hoverBackgroundColor: '#0369a1',
-          borderColor: '#0284c7',
-          borderWidth: 1,
-          borderRadius: 6,
+          backgroundColor: createBarGradient('#e11d48', '#fb7185'),
+          hoverBackgroundColor: createBarGradient('#be123c', '#fda4af'),
+          borderColor: '#f43f5e',
+          borderWidth: 1.5,
+          borderRadius: 8,
           borderSkipped: false,
           barPercentage: 0.65,
           categoryPercentage: 0.6,
