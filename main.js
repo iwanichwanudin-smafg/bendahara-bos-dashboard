@@ -531,7 +531,48 @@ function renderCategoryPieChart(kategoriStats) {
   const canvas = document.getElementById('categoryPieChart');
   if (!canvas) return;
 
-  const colors = ['#0284c7', '#7c3aed', '#f59e0b', '#ec4899'];
+  const gradientPairs = [
+    ['#1d4ed8', '#38bdf8'], // Operasional: Royal Blue -> Sky Blue
+    ['#6d28d9', '#c084fc'], // Modal: Deep Violet -> Luminous Purple
+    ['#d97706', '#fcd34d'], // Buku: Amber Gold -> Radiant Yellow
+    ['#be185d', '#f472b6']  // Honor: Deep Rose -> Vivid Bright Pink
+  ];
+
+  const legendGradients = [
+    'linear-gradient(135deg, #1d4ed8, #38bdf8)',
+    'linear-gradient(135deg, #6d28d9, #c084fc)',
+    'linear-gradient(135deg, #d97706, #fcd34d)',
+    'linear-gradient(135deg, #be185d, #f472b6)'
+  ];
+
+  function getPieSliceGradient(context) {
+    const chart = context.chart;
+    const { ctx, chartArea } = chart;
+    if (!chartArea) {
+      return gradientPairs[context.dataIndex % gradientPairs.length][0];
+    }
+    const idx = context.dataIndex % gradientPairs.length;
+    const pair = gradientPairs[idx];
+    const gradient = ctx.createLinearGradient(chartArea.left, chartArea.top, chartArea.right, chartArea.bottom);
+    gradient.addColorStop(0, pair[0]);
+    gradient.addColorStop(1, pair[1]);
+    return gradient;
+  }
+
+  function getPieSliceHoverGradient(context) {
+    const chart = context.chart;
+    const { ctx, chartArea } = chart;
+    if (!chartArea) {
+      return gradientPairs[context.dataIndex % gradientPairs.length][1];
+    }
+    const idx = context.dataIndex % gradientPairs.length;
+    const pair = gradientPairs[idx];
+    const gradient = ctx.createLinearGradient(chartArea.left, chartArea.bottom, chartArea.right, chartArea.top);
+    gradient.addColorStop(0, pair[1]);
+    gradient.addColorStop(1, pair[0]);
+    return gradient;
+  }
+
   const labels = kategoriStats.map(k => k.kategori);
   const data = kategoriStats.map(k => k.total);
   const totalAll = data.reduce((a, b) => a + b, 0);
@@ -573,7 +614,7 @@ function renderCategoryPieChart(kategoriStats) {
       legendsEl.innerHTML = kategoriStats.map((k, idx) => `
         <div class="legend-card">
           <div class="legend-title">
-            <span class="legend-dot" style="background: ${colors[idx]}; color: ${colors[idx]};"></span>
+            <span class="legend-dot" style="background: ${legendGradients[idx]}; box-shadow: 0 1px 4px ${gradientPairs[idx][1]}60;"></span>
             <span>${k.kategori} (0%)</span>
           </div>
           <div class="legend-value">Rp 0</div>
@@ -589,12 +630,13 @@ function renderCategoryPieChart(kategoriStats) {
       labels: labels,
       datasets: [{
         data: data,
-        backgroundColor: colors,
-        borderWidth: 3,
+        backgroundColor: getPieSliceGradient,
+        hoverBackgroundColor: getPieSliceHoverGradient,
+        borderWidth: 2.5,
         borderColor: '#ffffff',
         spacing: 4,
-        borderRadius: 6,
-        hoverOffset: 6
+        borderRadius: 8,
+        hoverOffset: 8
       }]
     },
     options: {
@@ -626,13 +668,13 @@ function renderCategoryPieChart(kategoriStats) {
     }
   });
 
-  // Render Legends Grid
+  // Render Legends Grid with luminous gradients
   const legendsEl = document.getElementById('categoryLegends');
   if (legendsEl) {
     legendsEl.innerHTML = kategoriStats.map((k, idx) => `
       <div class="legend-card">
         <div class="legend-title">
-          <span class="legend-dot" style="background: ${colors[idx]}; color: ${colors[idx]};"></span>
+          <span class="legend-dot" style="background: ${legendGradients[idx]}; box-shadow: 0 1px 4px ${gradientPairs[idx][1]}60;"></span>
           <span>${k.kategori} (${k.pct}%)</span>
         </div>
         <div class="legend-value">${formatRupiah(k.total)}</div>
