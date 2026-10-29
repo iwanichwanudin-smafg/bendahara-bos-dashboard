@@ -10,13 +10,14 @@
   <body>
     <div class="app-container">
       <!-- Sidebar Navigation -->
-      <aside class="sidebar">
+      <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
           <div class="logo-icon-box">B</div>
           <div class="logo-text">
             <h2>BOSku</h2>
             <span>SMAS FUTURE GATE</span>
           </div>
+          <button class="btn-sidebar-close" id="btnSidebarClose" aria-label="Tutup Menu">✕</button>
         </div>
 
         <nav class="sidebar-nav">
@@ -60,13 +61,21 @@
         </div>
       </aside>
 
+      <!-- Sidebar Mobile Backdrop Overlay -->
+      <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
       <!-- Main Content Area -->
       <div class="main-wrapper">
         <!-- Topbar -->
         <header class="topbar">
           <div class="topbar-left">
-            <h1 id="pageTitle">Dashboard Ringkas</h1>
-            <span class="subtitle" id="pageSubtitle">Ringkasan Pagu & Realisasi SI yang Sudah Ditransaksikan</span>
+            <button class="btn-mobile-toggle" id="btnMobileToggle" aria-label="Buka Menu">
+              <span class="hamburger-icon">☰</span>
+            </button>
+            <div class="topbar-title-group">
+              <h1 id="pageTitle">Dashboard Ringkas</h1>
+              <span class="subtitle" id="pageSubtitle">Ringkasan Pagu & Realisasi SI yang Sudah Ditransaksikan</span>
+            </div>
           </div>
           <div class="topbar-right">
             <div class="badge-ta">⚡ TA 2026 (Berjalan)</div>

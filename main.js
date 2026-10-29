@@ -1780,6 +1780,28 @@ function setupNavigation() {
   const navs = [navDashboard, navTransaksi, navCetakSI, navPagu].filter(Boolean);
   const views = [viewDashboard, viewTransaksi, viewCetakSI, viewPagu].filter(Boolean);
 
+  // Mobile sidebar drawer elements
+  const btnMobileToggle = document.getElementById('btnMobileToggle');
+  const btnSidebarClose = document.getElementById('btnSidebarClose');
+  const sidebarBackdrop = document.getElementById('sidebarBackdrop');
+  const sidebar = document.getElementById('sidebar');
+
+  function openMobileSidebar() {
+    sidebar?.classList.add('mobile-open');
+    sidebarBackdrop?.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMobileSidebar() {
+    sidebar?.classList.remove('mobile-open');
+    sidebarBackdrop?.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  btnMobileToggle?.addEventListener('click', openMobileSidebar);
+  btnSidebarClose?.addEventListener('click', closeMobileSidebar);
+  sidebarBackdrop?.addEventListener('click', closeMobileSidebar);
+
   function switchPage(activeNav, activeView, title, subtitle) {
     navs.forEach(n => n.classList.remove('active'));
     views.forEach(v => v.classList.remove('active'));
@@ -1789,6 +1811,9 @@ function setupNavigation() {
 
     if (pageTitle) pageTitle.textContent = title;
     if (pageSubtitle) pageSubtitle.textContent = subtitle;
+
+    // Auto close sidebar on mobile after navigation
+    closeMobileSidebar();
 
     // Refresh chart if going to dashboard
     if (activeView === viewDashboard) {
