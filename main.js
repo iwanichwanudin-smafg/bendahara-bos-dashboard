@@ -17,6 +17,10 @@ import {
   formatDate,
   terbilang
 } from './src/utils/format.js';
+import {
+  initRekonsiliasi,
+  renderRekonsiliasi
+} from './src/modules/rekonsiliasiModule.js';
 
 // =========================================================
 // 1. STATE MANAGEMENT & LOCAL STORAGE PERSISTENCE
@@ -1814,6 +1818,7 @@ function renderAll() {
   renderTransaksi();
   renderCetakSI();
   renderPagu();
+  renderRekonsiliasi();
 }
 
 // =========================================================
@@ -1825,17 +1830,19 @@ function setupNavigation() {
   const navTransaksi = document.getElementById('navTransaksi');
   const navCetakSI = document.getElementById('navCetakSI');
   const navPagu = document.getElementById('navPagu');
+  const navRekonsiliasi = document.getElementById('navRekonsiliasi');
 
   const viewDashboard = document.getElementById('viewDashboard');
   const viewTransaksi = document.getElementById('viewTransaksi');
   const viewCetakSI = document.getElementById('viewCetakSI');
   const viewPagu = document.getElementById('viewPagu');
+  const viewRekonsiliasi = document.getElementById('viewRekonsiliasi');
 
   const pageTitle = document.getElementById('pageTitle');
   const pageSubtitle = document.getElementById('pageSubtitle');
 
-  const navs = [navDashboard, navTransaksi, navCetakSI, navPagu].filter(Boolean);
-  const views = [viewDashboard, viewTransaksi, viewCetakSI, viewPagu].filter(Boolean);
+  const navs = [navDashboard, navTransaksi, navCetakSI, navPagu, navRekonsiliasi].filter(Boolean);
+  const views = [viewDashboard, viewTransaksi, viewCetakSI, viewPagu, viewRekonsiliasi].filter(Boolean);
 
   // Mobile sidebar drawer elements
   const btnMobileToggle = document.getElementById('btnMobileToggle');
@@ -1881,6 +1888,8 @@ function setupNavigation() {
       renderTransaksi();
     } else if (activeView === viewPagu) {
       renderPagu();
+    } else if (activeView === viewRekonsiliasi) {
+      renderRekonsiliasi();
     }
   }
 
@@ -1892,6 +1901,8 @@ function setupNavigation() {
       switchPage(navCetakSI, viewCetakSI, 'Cetak Dokumen SI Bank', 'Surat Instruksi Pemindahbukuan & Lampiran Rekap Transfer Resmi BJB');
     } else if (hash === '#pagu') {
       switchPage(navPagu, viewPagu, 'Pagu & Anggaran Unit', 'Rencana Alokasi Pagu Dana BOS per Unit Sekolah TA 2026');
+    } else if (hash === '#rekonsiliasi') {
+      switchPage(navRekonsiliasi, viewRekonsiliasi, 'Rekonsiliasi Bank & Rekening Koran', 'Pencatatan Buku Kas Bank BJB BOSP TA 2026 dan Verifikasi SI');
     } else {
       switchPage(navDashboard, viewDashboard, 'Dashboard Ringkas', 'Ringkasan Pagu & Realisasi SI yang Sudah Ditransaksikan');
     }
@@ -1903,6 +1914,7 @@ function setupNavigation() {
   navTransaksi?.addEventListener('click', () => { window.location.hash = '#transaksi'; });
   navCetakSI?.addEventListener('click', () => { window.location.hash = '#cetak-si'; });
   navPagu?.addEventListener('click', () => { window.location.hash = '#pagu'; });
+  navRekonsiliasi?.addEventListener('click', () => { window.location.hash = '#rekonsiliasi'; });
 
   document.getElementById('btnGoToCetakSI')?.addEventListener('click', () => { window.location.hash = '#cetak-si'; });
   document.getElementById('btnLihatSemuaPagu')?.addEventListener('click', () => { window.location.hash = '#pagu'; });
@@ -2600,6 +2612,7 @@ function setupFormAndModals() {
 
 document.addEventListener('DOMContentLoaded', () => {
   loadData();
+  initRekonsiliasi(() => siBatches, showToast);
   setupNavigation();
   setupFormAndModals();
   renderAll();

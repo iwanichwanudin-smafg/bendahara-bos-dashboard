@@ -37,7 +37,7 @@
             </li>
             <li class="nav-item" id="navCetakSI">
               <a href="#cetak-si">
-                <span class="icon">🏦</span>
+                <span class="icon">🖨️</span>
                 <span>Cetak Dokumen SI Bank</span>
               </a>
             </li>
@@ -45,6 +45,12 @@
               <a href="#pagu">
                 <span class="icon">📋</span>
                 <span>Pagu & Anggaran Unit</span>
+              </a>
+            </li>
+            <li class="nav-item" id="navRekonsiliasi">
+              <a href="#rekonsiliasi">
+                <span class="icon">🏛️</span>
+                <span>Rekonsiliasi Bank</span>
               </a>
             </li>
           </ul>
@@ -482,6 +488,310 @@
               </table>
             </div>
           </section>
+
+          <!-- ============================================== -->
+          <!-- 5. REKONSILIASI BANK & REKENING KORAN VIEW     -->
+          <!-- ============================================== -->
+          <section id="viewRekonsiliasi" class="view-section">
+            <!-- Bank Account Header Card -->
+            <div class="si-batch-card no-print" style="margin-bottom: 20px; border-left: 4px solid #0284c7; background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                <div style="display: flex; gap: 14px; align-items: center;">
+                  <div style="width: 52px; height: 52px; border-radius: 12px; background: #0284c7; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 4px 10px rgba(2, 132, 199, 0.25);">
+                    🏛️
+                  </div>
+                  <div>
+                    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                      <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: #0f172a;">Rekening Koran & Rekonsiliasi Bank BJB</h3>
+                      <span class="badge" style="background: #0284c7; color: #ffffff; font-weight: 700; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;">BOSP REGULER 2026</span>
+                      <span class="badge" style="background: #dcfce7; color: #166534; font-weight: 700; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;">🟢 Rekon Terhubung</span>
+                    </div>
+                    <div style="margin-top: 4px; font-size: 0.85rem; color: #475569; display: flex; gap: 16px; flex-wrap: wrap;">
+                      <span>Bank: <strong>Bank BJB KCP Jatiasih Bekasi</strong></span>
+                      <span>No. Rek: <strong style="font-family: var(--font-mono); color: #0284c7;">0120640100100</strong></span>
+                      <span>A.N: <strong>SMAS FUTURE GATE</strong></span>
+                      <span>Sumber: <strong id="rekonSumberFileInfo">Mutasi BJB BOSP 2026.xlsx (Sheet: Rek Koran)</strong></span>
+                    </div>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                  <button type="button" class="btn btn-outline" id="btnSyncExcelRekKoran" onclick="window.openUploadRekKoranModal()" style="border-color: #0284c7; color: #0284c7; font-weight: 600;">
+                    🔄 Unggah / Sinkron Excel
+                  </button>
+                  <button type="button" class="btn btn-outline" id="btnExportExcelRekKoran" onclick="window.exportRekKoranToExcel()" style="border-color: #10b981; color: #10b981; font-weight: 600;">
+                    📥 Ekspor Excel (.xlsx)
+                  </button>
+                  <button type="button" class="btn btn-emerald" id="btnPrintRekKoran" onclick="window.printRekKoranOfficial()">
+                    🖨️ Cetak Rekening Koran (A4)
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 Metric Cards -->
+            <div class="stat-cards-grid no-print" style="margin-bottom: 24px;">
+              <!-- Saldo Awal -->
+              <div class="stat-card" style="border-top: 3px solid #64748b;">
+                <div class="stat-card-header">
+                  <span class="stat-label">SALDO AWAL (31 DES 2025)</span>
+                  <span class="stat-icon" style="background: #f1f5f9; color: #475569;">⏮️</span>
+                </div>
+                <div class="stat-value" id="rekonStatSaldoAwal" style="font-size: 1.35rem; font-family: var(--font-mono); color: #334155;">Rp 3.939.563</div>
+                <div class="stat-meta">
+                  <span style="color: #64748b; font-size: 0.75rem;">Saldo carry-over dari tahun buku lalu</span>
+                </div>
+              </div>
+
+              <!-- Total Debet -->
+              <div class="stat-card" style="border-top: 3px solid #10b981;">
+                <div class="stat-card-header">
+                  <span class="stat-label">TOTAL PENERIMAAN (DEBET)</span>
+                  <span class="stat-icon" style="background: #dcfce7; color: #15803d;">📥</span>
+                </div>
+                <div class="stat-value" id="rekonStatTotalDebit" style="color: #15803d; font-size: 1.35rem; font-family: var(--font-mono);">Rp 1.355.989.540</div>
+                <div class="stat-meta">
+                  <span style="color: #15803d; font-size: 0.75rem;">BOS Tahap 1 & 2 + Akumulasi Bunga</span>
+                </div>
+              </div>
+
+              <!-- Total Kredit -->
+              <div class="stat-card" style="border-top: 3px solid #f43f5e;">
+                <div class="stat-card-header">
+                  <span class="stat-label">TOTAL PENGELUARAN (KREDIT)</span>
+                  <span class="stat-icon" style="background: #ffe4e6; color: #e11d48;">📤</span>
+                </div>
+                <div class="stat-value" id="rekonStatTotalKredit" style="color: #e11d48; font-size: 1.35rem; font-family: var(--font-mono);">Rp 1.172.522.920</div>
+                <div class="stat-meta">
+                  <span style="color: #e11d48; font-size: 0.75rem;">31 Penarikan Pemindahbukuan SI</span>
+                </div>
+              </div>
+
+              <!-- Saldo Akhir -->
+              <div class="stat-card" style="border-top: 3px solid #0284c7;">
+                <div class="stat-card-header">
+                  <span class="stat-label">SALDO AKHIR REKENING BANK</span>
+                  <span class="stat-icon" style="background: #e0f2fe; color: #0284c7;">💰</span>
+                </div>
+                <div class="stat-value" id="rekonStatSaldoAkhir" style="color: #0284c7; font-size: 1.35rem; font-family: var(--font-mono);">Rp 183.466.620</div>
+                <div class="stat-meta">
+                  <span style="color: #0284c7; font-size: 0.75rem;">Posisi Kas Riil Bank BJB Saat Ini</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rekonsiliasi Audit Comparison Box -->
+            <div class="no-print" style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 18px 20px; margin-bottom: 24px; box-shadow: var(--shadow-sm);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="font-size: 1.3rem;">⚖️</span>
+                  <div>
+                    <h4 style="margin: 0; font-size: 1rem; font-weight: 700; color: var(--text-main);">Status Rekonsiliasi: Bank BJB vs Catatan Dokumen SI BOSku</h4>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Pencocokan otomatis penarikan kredit rekening koran dengan 30 dokumen SI terbitan sekolah</span>
+                  </div>
+                </div>
+                <div id="rekonMatchBadgeContainer">
+                  <span class="rekon-badge rekon-badge-match" style="font-size: 0.82rem; padding: 4px 10px;">
+                    🟢 30 SI Sistem Terverifikasi 100% Cocok
+                  </span>
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px;">
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 14px;">
+                  <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Total Kredit Bank BJB (31 Trx)</div>
+                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: var(--text-main); margin-top: 3px;" id="rekonBoxTotalBank">Rp 1.172.522.920</div>
+                  <div style="font-size: 0.75rem; color: #64748b; margin-top: 2px;">Seluruh transaksi kredit di buku bank</div>
+                </div>
+
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 14px;">
+                  <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Total SI di Sistem BOSku (30 SI)</div>
+                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #0284c7; margin-top: 3px;" id="rekonBoxTotalSI">Rp 1.155.943.654</div>
+                  <div style="font-size: 0.75rem; color: #0284c7; margin-top: 2px;">Total dokumen SI resmi yang dicatat</div>
+                </div>
+
+                <div style="background: #fefce8; border: 1px solid #fef08a; border-radius: 8px; padding: 12px 14px;">
+                  <div style="font-size: 0.72rem; color: #854d0e; font-weight: 700; text-transform: uppercase;">Selisih Rekonsiliasi (1 Item Baru)</div>
+                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #d97706; margin-top: 3px;" id="rekonBoxSelisih">Rp 16.579.266</div>
+                  <div style="font-size: 0.75rem; color: #854d0e; margin-top: 2px;">SI 4 (Gaji Okt) terekam di bank</div>
+                </div>
+
+                <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 12px 14px;">
+                  <div style="font-size: 0.72rem; color: #166534; font-weight: 700; text-transform: uppercase;">Tingkat Keselarasan SI</div>
+                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #16a34a; margin-top: 3px;" id="rekonBoxPersen">100% Cocok (30/30 SI)</div>
+                  <div style="font-size: 0.75rem; color: #166534; margin-top: 2px;">Seluruh SI sekolah terbukti cair</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sub Navigation Tabs for Rekonsiliasi -->
+            <div class="no-print" style="display: flex; gap: 10px; margin-bottom: 16px; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; flex-wrap: wrap;">
+              <button type="button" class="rekon-tab-btn active" id="btnTabRekKoranMutasi">
+                <span>📑</span> Mutasi Rekening Koran (43 Transaksi)
+              </button>
+              <button type="button" class="rekon-tab-btn" id="btnTabRekKoranPencocokan">
+                <span>⚖️</span> Audit Pencocokan SI vs Bank
+              </button>
+              <button type="button" class="rekon-tab-btn" id="btnTabRekKoranBunga">
+                <span>📈</span> Akumulasi Bunga Bank (10 Trx)
+              </button>
+            </div>
+
+            <!-- Filter & Search Controls Bar -->
+            <div class="filter-action-bar no-print" style="margin-bottom: 18px;">
+              <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap; flex: 1;">
+                <div class="form-group" style="margin-bottom: 0; min-width: 170px;">
+                  <select id="rekonFilterTipe" class="filter-select" style="font-weight: 600;">
+                    <option value="ALL">Semua Jenis Transaksi</option>
+                    <option value="PENERIMAAN">📥 Hanya Penerimaan (Debet)</option>
+                    <option value="PENGELUARAN">📤 Hanya Pengeluaran SI (Kredit)</option>
+                    <option value="BUNGA_BANK">📈 Hanya Bunga Bank</option>
+                    <option value="PENCAIRAN_BOS">🏛️ Hanya Pencairan BOS</option>
+                  </select>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 0; min-width: 150px;">
+                  <select id="rekonFilterBulan" class="filter-select" style="font-weight: 600;">
+                    <option value="ALL">Semua Bulan (Jan - Okt)</option>
+                    <option value="01">Januari 2026</option>
+                    <option value="02">Februari 2026</option>
+                    <option value="03">Maret 2026</option>
+                    <option value="04">April 2026</option>
+                    <option value="05">Mei 2026</option>
+                    <option value="06">Juni 2026</option>
+                    <option value="07">Juli 2026</option>
+                    <option value="08">Agustus 2026</option>
+                    <option value="09">September 2026</option>
+                    <option value="10">Oktober 2026</option>
+                  </select>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 0; min-width: 160px;">
+                  <select id="rekonFilterStatus" class="filter-select" style="font-weight: 600;">
+                    <option value="ALL">Semua Status Rekon</option>
+                    <option value="MATCHED">🟢 Cocok dengan SI</option>
+                    <option value="UNMATCHED">🟡 Item Belum Rekon / Penyesuaian</option>
+                  </select>
+                </div>
+
+                <div style="flex: 1; min-width: 200px;">
+                  <input type="text" id="rekonSearchInput" class="form-control" placeholder="🔍 Cari uraian transaksi, nomor SI, atau nominal..." style="padding: 7px 12px; font-size: 0.85rem;" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Dynamic Sub-Tab 1: Mutasi Rekening Koran Table -->
+            <div id="rekonContainerMutasi" class="no-print">
+              <div class="table-responsive">
+                <table class="data-table" id="rekonTableMutasi">
+                  <thead>
+                    <tr>
+                      <th style="width: 45px; text-align: center;">NO</th>
+                      <th style="width: 110px;">TANGGAL</th>
+                      <th>URAIAN TRANSAKSI REK. KORAN</th>
+                      <th>KATEGORI</th>
+                      <th style="width: 190px;">DOKUMEN SI TERKAIT</th>
+                      <th class="table-num" style="color: #166534; width: 130px;">MASUK (DEBET)</th>
+                      <th class="table-num" style="color: #991b1b; width: 130px;">KELUAR (KREDIT)</th>
+                      <th class="table-num" style="color: #0284c7; width: 140px;">SALDO BERJALAN</th>
+                      <th style="text-align: center; width: 115px;">STATUS REKON</th>
+                    </tr>
+                  </thead>
+                  <tbody id="rekonTableBodyMutasi">
+                    <!-- Dynamically populated rows -->
+                  </tbody>
+                  <tfoot style="background: #f8fafc; font-weight: 700; border-top: 2px solid var(--border-color);">
+                    <tr>
+                      <td colspan="5" style="text-align: right; padding: 10px 14px;">TOTAL MUTASI:</td>
+                      <td class="table-num" id="rekonFooterDebit" style="color: #166534; font-family: var(--font-mono); font-size: 0.92rem;">Rp 1.355.989.540</td>
+                      <td class="table-num" id="rekonFooterKredit" style="color: #991b1b; font-family: var(--font-mono); font-size: 0.92rem;">Rp 1.172.522.920</td>
+                      <td class="table-num" id="rekonFooterSaldo" style="color: #0284c7; font-family: var(--font-mono); font-size: 0.95rem;">Rp 183.466.620</td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px; font-size: 0.82rem; color: var(--text-muted); flex-wrap: wrap; gap: 8px;">
+                <span id="rekonRowCountText">Menampilkan 43 transaksi mutasi</span>
+                <span style="font-style: italic;">* Saldo Kas Bank BJB BOSP TA 2026: Rp 183.466.620</span>
+              </div>
+            </div>
+
+            <!-- Dynamic Sub-Tab 2: Audit Pencocokan Dokumen SI vs Bank -->
+            <div id="rekonContainerPencocokan" class="no-print" style="display: none;">
+              <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; font-size: 0.84rem; color: #1e40af; line-height: 1.5;">
+                ℹ️ <strong>Informasi Rekonsiliasi:</strong> Tabel berikut membandingkan setiap Surat Instruksi (SI) yang dicatat di BOSku dengan data mutasi debit/kredit pada Rekening Koran Bank BJB. Semua 30 dokumen SI terbitan sekolah telah diverifikasi 100% terealisasi di bank.
+              </div>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 40px; text-align: center;">NO</th>
+                      <th style="width: 175px;">NO. SI SISTEM</th>
+                      <th style="width: 100px;">TGL SI</th>
+                      <th class="table-num" style="width: 120px;">NOMINAL SI</th>
+                      <th style="width: 100px;">TGL BANK</th>
+                      <th>URAIAN PADA REK. KORAN</th>
+                      <th class="table-num" style="width: 120px;">REALISASI BANK</th>
+                      <th class="table-num" style="width: 90px;">SELISIH</th>
+                      <th style="text-align: center; width: 110px;">STATUS AUDIT</th>
+                    </tr>
+                  </thead>
+                  <tbody id="rekonTableBodyPencocokan">
+                    <!-- Dynamically populated rows -->
+                  </tbody>
+                  <tfoot style="background: #f8fafc; font-weight: 700; border-top: 2px solid var(--border-color);">
+                    <tr>
+                      <td colspan="3" style="text-align: right; padding: 10px 14px;">TOTAL:</td>
+                      <td class="table-num" id="rekonAuditFooterSI" style="color: #0284c7; font-family: var(--font-mono);">Rp 1.155.943.654</td>
+                      <td></td>
+                      <td></td>
+                      <td class="table-num" id="rekonAuditFooterBank" style="color: #991b1b; font-family: var(--font-mono);">Rp 1.172.522.920</td>
+                      <td class="table-num" id="rekonAuditFooterDiff" style="color: #d97706; font-family: var(--font-mono);">Rp 16.579.266</td>
+                      <td style="text-align: center; font-size: 0.75rem; color: #15803d;">30 MATCH / 1 BARU</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+
+            <!-- Dynamic Sub-Tab 3: Akumulasi Bunga Bank -->
+            <div id="rekonContainerBunga" class="no-print" style="display: none;">
+              <div style="background: #fefce8; border: 1px solid #fef08a; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; font-size: 0.84rem; color: #854d0e; line-height: 1.5;">
+                📈 <strong>Pendapatan Jasa Giro / Bunga Bank:</strong> Bunga bank dikreditkan secara otomatis oleh Bank BJB setiap tanggal 22 atau akhir bulan berjalan. Akumulasi bunga merupakan pendapatan tambahan rekening giro sekolah yang tercatat pada rekening koran.
+              </div>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 45px; text-align: center;">NO</th>
+                      <th style="width: 120px;">TANGGAL BUKU</th>
+                      <th>PERIODE BUNGA</th>
+                      <th>URAIAN PADA REK. KORAN</th>
+                      <th class="table-num" style="color: #166534; width: 150px;">BUNGA BULANAN (RP)</th>
+                      <th class="table-num" style="color: #0284c7; width: 170px;">AKUMULASI BUNGA (RP)</th>
+                      <th style="width: 120px; text-align: center;">STATUS</th>
+                    </tr>
+                  </thead>
+                  <tbody id="rekonTableBodyBunga">
+                    <!-- Dynamically populated rows -->
+                  </tbody>
+                  <tfoot style="background: #f8fafc; font-weight: 700; border-top: 2px solid var(--border-color);">
+                    <tr>
+                      <td colspan="4" style="text-align: right; padding: 10px 14px;">TOTAL PENDAPATAN BUNGA (TA 2026):</td>
+                      <td class="table-num" id="rekonBungaFooterTotal" style="color: #166534; font-family: var(--font-mono); font-size: 0.95rem;">Rp 5.679.540</td>
+                      <td class="table-num" style="color: #0284c7; font-family: var(--font-mono); font-size: 0.95rem;">Rp 5.679.540</td>
+                      <td style="text-align: center; font-size: 0.75rem; color: #166534;">🟢 SELESAI</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+
+            <!-- Print Area Container for Official Bank Statement / Reconciliation Report -->
+            <div id="rekonPrintArea" class="rekon-print-doc">
+              <!-- Dynamically populated when printing -->
+            </div>
+          </section>
         </main>
       </div>
     </div>
@@ -785,6 +1095,60 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-outline" id="btnCancelEditSI" onclick="window.closeEditSIModal()">Batal</button>
           <button type="button" class="btn btn-primary" id="btnSaveEditedSI" onclick="window.saveEditedSI()">💾 Simpan Perubahan SI</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- MODAL: UPLOAD / SINKRON REKENING KORAN EXCEL   -->
+    <!-- ============================================== -->
+    <div class="modal-overlay" id="modalUploadRekKoran">
+      <div class="modal-content" style="max-width: 680px;">
+        <div class="modal-header">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 40px; height: 40px; border-radius: var(--radius-md); background: #e0f2fe; color: #0284c7; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">🏛️</div>
+            <div>
+              <h3 style="margin: 0; font-size: 1.15rem; color: var(--text-main);">Sinkron Rekening Koran Bank BJB</h3>
+              <p style="margin: 0; font-size: 0.82rem; color: var(--text-muted);">Pilih file Excel Mutasi BJB BOSP 2026 atau unggah file baru</p>
+            </div>
+          </div>
+          <button class="modal-close-btn" id="btnCloseModalUploadRekKoran" onclick="window.closeUploadRekKoranModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <!-- Fast Sync Option -->
+          <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
+            <div style="font-weight: 700; color: #166534; font-size: 0.9rem; margin-bottom: 4px;">⚡ Sinkronisasi Cepat Default</div>
+            <p style="font-size: 0.82rem; color: #15803d; margin: 0 0 10px 0;">
+              Muat ulang data resmi dari file master <strong>Mutasi BJB BOSP 2026.xlsx</strong> (fokus Sheet: <code>Rek Koran</code>).
+            </p>
+            <button type="button" class="btn btn-emerald" id="btnFastSyncDefaultExcel" style="font-size: 0.82rem; padding: 6px 14px;">
+              🔄 Muat Ulang File Mutasi BJB BOSP 2026 (Sheet: Rek Koran)
+            </button>
+          </div>
+
+          <div style="text-align: center; margin: 12px 0; color: var(--text-muted); font-size: 0.8rem; font-weight: 600;">
+            ── ATAU UNGGAH FILE EXCEL BARU ──
+          </div>
+
+          <!-- Drag and Drop Area -->
+          <div class="upload-dropzone" id="rekKoranDropzone" style="border: 2px dashed #93c5fd; border-radius: 8px; padding: 24px; text-align: center; background: #f8fafc; cursor: pointer; transition: all 0.2s ease;">
+            <input type="file" id="rekKoranFileInput" accept=".xlsx, .xls" style="display: none;" />
+            <div style="font-size: 2rem; margin-bottom: 6px;">📂</div>
+            <div style="font-weight: 700; color: var(--text-main); font-size: 0.95rem;">Klik untuk pilih file Excel atau drag & drop file ke sini</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Format didukung: Mutasi BJB BOSP 2026.xlsx (.xlsx / .xls)</div>
+          </div>
+
+          <!-- Upload Status & Summary Box -->
+          <div id="rekKoranUploadPreview" style="display: none; margin-top: 14px; background: #f8fafc; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 16px;">
+            <div style="font-weight: 700; color: #0284c7; font-size: 0.88rem; margin-bottom: 6px;" id="rekKoranPreviewFileName">File: Mutasi BJB BOSP 2026.xlsx</div>
+            <div style="font-size: 0.82rem; color: var(--text-main); line-height: 1.6;" id="rekKoranPreviewDetails">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" onclick="window.closeUploadRekKoranModal()">Batal</button>
+          <button type="button" class="btn btn-primary" id="btnSaveUploadedRekKoran" disabled>💾 Terapkan Data ke Rekonsiliasi</button>
         </div>
       </div>
     </div>
