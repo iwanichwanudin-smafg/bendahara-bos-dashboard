@@ -6,6 +6,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <title>BOSku — Dashboard Bendahara BOS SMAS Future Gate</title>
     <link rel="stylesheet" href="/style.css" />
+    <style>body:not(.auth-ok) .app-container{display:none !important}</style>
   </head>
   <body>
     <div class="app-container">
@@ -61,7 +62,7 @@
             <span class="bank-icon">🏛️</span>
             <div class="bank-meta">
               <span class="label">Rekening Bank BJB</span>
-              <span class="rekening">0120640100100</span>
+              <span class="rekening" data-fill="noRekening"></span>
             </div>
           </div>
         </div>
@@ -292,7 +293,7 @@
                 </div>
                 <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
                   <button class="btn btn-emerald" id="btnUploadSIDashboard" onclick="window.openUploadSIModal()">📤 Upload SI (Excel)</button>
-                  <button class="btn btn-outline" id="btnSyncSIDashboard" onclick="window.resetKe30SIResmi()" style="border-color: #0284c7; color: #0284c7;" title="Sinkronkan ulang seluruh 30 Dokumen SI Resmi (Februari - Oktober 2026)">🔄 Sinkron 30 SI Resmi</button>
+                  <button class="btn btn-outline" id="btnSyncSIDashboard" onclick="window.resetKe30SIResmi()" style="border-color: #0284c7; color: #0284c7;" title="Muat ulang seluruh data dari server">🔄 Muat Ulang Data</button>
                   <button class="btn btn-outline" id="btnEditSIDashboard" onclick="window.openEditSIModal()" style="border-color: #0284c7; color: #0284c7; display: none;" title="Edit nomor, tanggal, perihal, atau rincian transfer SI aktif">✏️ Edit SI</button>
                   <button class="btn btn-outline" id="btnHapusSIDashboard" onclick="window.deleteActiveSI()" style="border-color: #f43f5e; color: #f43f5e; display: none;" title="Hapus dokumen SI ini beserta transaksi terkait">🗑️ Hapus SI</button>
                   <button class="btn btn-outline" id="btnKosongkanDashboard" style="border-color: #f43f5e; color: #f43f5e;" onclick="window.kosongkanSemuaTransaksi()">🗑️ Kosongkan Transaksi</button>
@@ -508,7 +509,7 @@
                     </div>
                     <div style="margin-top: 4px; font-size: 0.85rem; color: #475569; display: flex; gap: 16px; flex-wrap: wrap;">
                       <span>Bank: <strong>Bank BJB KCP Jatiasih Bekasi</strong></span>
-                      <span>No. Rek: <strong style="font-family: var(--font-mono); color: #0284c7;">0120640100100</strong></span>
+                      <span>No. Rek: <strong style="font-family: var(--font-mono); color: #0284c7;" data-fill="noRekening"></strong></span>
                       <span>A.N: <strong>SMAS FUTURE GATE</strong></span>
                       <span>Sumber: <strong id="rekonSumberFileInfo">Mutasi BJB BOSP 2026.xlsx (Sheet: Rek Koran)</strong></span>
                     </div>
@@ -938,7 +939,6 @@
             </p>
             <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
               <button type="button" class="btn btn-primary" id="btnBrowseFile">📁 Pilih File dari Komputer</button>
-              <button type="button" class="btn btn-outline" id="btnLoadSampleSI" style="border-color: #0284c7; color: #0284c7; background: #f0f9ff;">⚡ Muat Contoh: SI BJB - BOSP (Februari 1)</button>
             </div>
           </div>
 
@@ -1047,11 +1047,11 @@
             </div>
             <div class="form-group">
               <label class="form-label" for="editBankSumberSI">Bank Sumber & Cabang</label>
-              <input type="text" id="editBankSumberSI" class="form-control" value="Bank BJB KCP Jatiasih di Bekasi" />
+              <input type="text" id="editBankSumberSI" class="form-control" />
             </div>
             <div class="form-group">
               <label class="form-label" for="editRekSumberSI">Nomor Rekening Sumber</label>
-              <input type="text" id="editRekSumberSI" class="form-control" value="0120640100100" />
+              <input type="text" id="editRekSumberSI" class="form-control" />
             </div>
             <div class="form-group full-width">
               <label class="form-label" for="editPerihalSI">Perihal Dokumen</label>
@@ -1109,25 +1109,14 @@
             <div style="width: 40px; height: 40px; border-radius: var(--radius-md); background: #e0f2fe; color: #0284c7; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">🏛️</div>
             <div>
               <h3 style="margin: 0; font-size: 1.15rem; color: var(--text-main);">Sinkron Rekening Koran Bank BJB</h3>
-              <p style="margin: 0; font-size: 0.82rem; color: var(--text-muted);">Pilih file Excel Mutasi BJB BOSP 2026 atau unggah file baru</p>
+              <p style="margin: 0; font-size: 0.82rem; color: var(--text-muted);">Unggah file Excel mutasi rekening BJB untuk memperbarui data</p>
             </div>
           </div>
           <button class="modal-close-btn" id="btnCloseModalUploadRekKoran" onclick="window.closeUploadRekKoranModal()">&times;</button>
         </div>
         <div class="modal-body">
-          <!-- Fast Sync Option -->
-          <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-            <div style="font-weight: 700; color: #166534; font-size: 0.9rem; margin-bottom: 4px;">⚡ Sinkronisasi Cepat Default</div>
-            <p style="font-size: 0.82rem; color: #15803d; margin: 0 0 10px 0;">
-              Muat ulang data resmi dari file master <strong>Mutasi BJB BOSP 2026.xlsx</strong> (fokus Sheet: <code>Rek Koran</code>).
-            </p>
-            <button type="button" class="btn btn-emerald" id="btnFastSyncDefaultExcel" style="font-size: 0.82rem; padding: 6px 14px;">
-              🔄 Muat Ulang File Mutasi BJB BOSP 2026 (Sheet: Rek Koran)
-            </button>
-          </div>
-
           <div style="text-align: center; margin: 12px 0; color: var(--text-muted); font-size: 0.8rem; font-weight: 600;">
-            ── ATAU UNGGAH FILE EXCEL BARU ──
+            ── UNGGAH FILE EXCEL MUTASI REKENING ──
           </div>
 
           <!-- Drag and Drop Area -->

@@ -8,9 +8,11 @@ import * as XLSX from 'xlsx';
 import {
   PROFIL_SEKOLAH,
   PAGU_DATA,
-  INITIAL_SI_BATCHES,
-  INITIAL_TRANSAKSI_LIST
+  applyReferenceData
 } from './src/data/initialData.js';
+import { applyRekeningInfo } from './src/data/rekeningKoranData.js';
+import { requireLogin, mountUserBadge, showFatal } from './src/lib/auth.js';
+import { loadAll, createSyncQueue } from './src/lib/repository.js';
 import {
   formatRupiah,
   formatNumber,
@@ -19,15 +21,13 @@ import {
 } from './src/utils/format.js';
 import {
   initRekonsiliasi,
-  renderRekonsiliasi
+  renderRekonsiliasi,
+  setRekKoranData
 } from './src/modules/rekonsiliasiModule.js';
 
 // =========================================================
-// 1. STATE MANAGEMENT & LOCAL STORAGE PERSISTENCE
+// 1. STATE MANAGEMENT & PENYIMPANAN (SUPABASE)
 // =========================================================
-
-const STORAGE_KEY_TRX = 'bosku_transaksi_items_2026';
-const STORAGE_KEY_SI = 'bosku_si_batches_2026';
 
 let transaksiList = [];
 let siBatches = [];
@@ -90,126 +90,83 @@ export function sortTransaksiChronological(items) {
   });
 }
 
-const CURRENT_DATA_VERSION = 'bosku_30_si_official_clean_v11';
+// Sesi pengguna yang sedang login: { user, peran, canWrite }
+let session = null;
+let setSyncStatus = () => {};
 
-function loadData() {
-  const currentVersionInStorage = localStorage.getItem('bosku_dataset_version');
-  const isUserExplicitEmpty = localStorage.getItem('bosku_explicit_empty') === 'true';
-
-  if (isUserExplicitEmpty) {
-    siBatches = [];
-    transaksiList = [];
-    activeSIBatchId = null;
-    return;
+const syncQueue = createSyncQueue((status, message) => {
+  setSyncStatus(status, message);
+  if (status === 'error') {
+    showToast('⚠️ <strong>Gagal menyimpan ke server.</strong> ' + (message || 'Periksa koneksi internet Anda.'));
   }
+});
 
-  // If storage is from an old version or unversioned, purge cache and initialize clean 30 SI
-  if (currentVersionInStorage !== CURRENT_DATA_VERSION) {
-    console.log('🔄 Menginisialisasi 30 SI Resmi BJB (Feb - Okt 2026)...');
-    localStorage.removeItem(STORAGE_KEY_SI);
-    localStorage.removeItem(STORAGE_KEY_TRX);
-    localStorage.removeItem('bosku_explicit_empty');
-    localStorage.setItem('bosku_dataset_version', CURRENT_DATA_VERSION);
-
-    siBatches = sortSIBatchesChronological(JSON.parse(JSON.stringify(INITIAL_SI_BATCHES)));
-    transaksiList = sortTransaksiChronological(JSON.parse(JSON.stringify(INITIAL_TRANSAKSI_LIST)));
-    activeSIBatchId = 'ALL';
-    saveData();
-    return;
-  }
-
-  let savedSIList = [];
-  let savedTrxList = [];
-
-  try {
-    const rawSI = localStorage.getItem(STORAGE_KEY_SI);
-    if (rawSI) savedSIList = JSON.parse(rawSI);
-  } catch (e) {
-    console.error('Error parsing saved SI:', e);
-  }
-
-  try {
-    const rawTrx = localStorage.getItem(STORAGE_KEY_TRX);
-    if (rawTrx) savedTrxList = JSON.parse(rawTrx);
-  } catch (e) {
-    console.error('Error parsing saved Transaksi:', e);
-  }
-
-  // Gunakan data tersimpan dari user secara langsung (tanpa merge paksa yg membangkitkan transaksi lama)
-  if (Array.isArray(savedSIList) && savedSIList.length > 0) {
-    siBatches = sortSIBatchesChronological(savedSIList);
-  } else {
-    siBatches = sortSIBatchesChronological(JSON.parse(JSON.stringify(INITIAL_SI_BATCHES)));
-  }
-
-  if (Array.isArray(savedTrxList) && savedTrxList.length > 0) {
-    // Pastikan tidak ada ID transaksi duplikat
-    const seenIds = new Set();
-    const cleanTrx = [];
-    savedTrxList.forEach(t => {
-      if (t && t.id && !seenIds.has(t.id)) {
-        seenIds.add(t.id);
-        cleanTrx.push(t);
-      }
-    });
-    transaksiList = sortTransaksiChronological(cleanTrx);
-  } else {
-    transaksiList = sortTransaksiChronological(JSON.parse(JSON.stringify(INITIAL_TRANSAKSI_LIST)));
-  }
-
+function applyServerState(state) {
+  applyReferenceData(state.profil, state.pagu);
+  applyRekeningInfo(state.rekeningInfo);
+  setRekKoranData(state.rekKoran);
+  siBatches = sortSIBatchesChronological(state.siBatches);
+  transaksiList = sortTransaksiChronological(state.transaksi);
   if (!activeSIBatchId || (activeSIBatchId !== 'ALL' && !siBatches.some(b => b.id === activeSIBatchId))) {
     activeSIBatchId = 'ALL';
   }
+}
 
-  saveData();
+async function reloadFromServer() {
+  const state = await loadAll();
+  applyServerState(state);
+  renderAll();
 }
 
 function saveData() {
-  try {
-    siBatches = sortSIBatchesChronological(siBatches);
-    const seenIds = new Set();
-    transaksiList = transaksiList.filter(t => {
-      if (!t || !t.id) return false;
-      if (seenIds.has(t.id)) return false;
-      seenIds.add(t.id);
-      return true;
-    });
-    transaksiList = sortTransaksiChronological(transaksiList);
-    localStorage.setItem(STORAGE_KEY_TRX, JSON.stringify(transaksiList));
-    localStorage.setItem(STORAGE_KEY_SI, JSON.stringify(siBatches));
-    localStorage.setItem('bosku_dataset_version', CURRENT_DATA_VERSION);
-  } catch (e) {
-    console.error('Error saving data to localStorage:', e);
+  siBatches = sortSIBatchesChronological(siBatches);
+  const seenIds = new Set();
+  transaksiList = transaksiList.filter(t => {
+    if (!t || !t.id) return false;
+    if (seenIds.has(t.id)) return false;
+    seenIds.add(t.id);
+    return true;
+  });
+  transaksiList = sortTransaksiChronological(transaksiList);
+
+  if (!session?.canWrite) {
+    // Akun hanya-baca: batalkan perubahan lokal dengan memuat ulang dari server
+    showToast('🔒 <strong>Akun Anda hanya dapat melihat data.</strong> Perubahan tidak disimpan.');
+    setTimeout(() => reloadFromServer().catch(console.error), 1200);
+    return;
   }
+  syncQueue.scheduleSI(siBatches, transaksiList);
 }
 
-window.resetKe30SIResmi = function() {
-  const confirmed = confirm('Reset dan tampilkan ulang 30 Dokumen SI Resmi BJB (Februari - Oktober 2026)?\n\nSemua nomor surat, tanggal, dan rincian belanja akan disinkronkan kembali.');
-  if (confirmed) {
-    localStorage.removeItem(STORAGE_KEY_SI);
-    localStorage.removeItem(STORAGE_KEY_TRX);
-    localStorage.removeItem('bosku_explicit_empty');
-    localStorage.setItem('bosku_dataset_version', CURRENT_DATA_VERSION);
-
-    siBatches = sortSIBatchesChronological(JSON.parse(JSON.stringify(INITIAL_SI_BATCHES)));
-    transaksiList = sortTransaksiChronological(JSON.parse(JSON.stringify(INITIAL_TRANSAKSI_LIST)));
-    activeSIBatchId = 'ALL';
-    saveData();
-    renderAll();
-    showToast('✅ <strong>30 SI Resmi Berhasil Disinkronkan!</strong> Data tampil bersih dan terurut.');
+window.resetKe30SIResmi = async function() {
+  try {
+    await syncQueue.flush();
+    await reloadFromServer();
+    showToast('✅ <strong>Data berhasil dimuat ulang dari server.</strong>');
+  } catch (err) {
+    console.error(err);
+    showToast('❌ Gagal memuat ulang data: ' + err.message);
   }
 };
 
 window.kosongkanSemuaTransaksi = function() {
-  const confirmed = confirm('Apakah Anda yakin ingin mengosongkan SELURUH data transaksi dan dokumen SI?\n\nDashboard akan kembali bersih (0 realisasi, 100% saldo kas) siap untuk mengunggah dokumen SI yang sebenarnya.');
-  if (confirmed) {
+  if (!session?.canWrite) {
+    showToast('🔒 Hanya akun Bendahara yang dapat menghapus data.');
+    return;
+  }
+  const typed = prompt(
+    'PERINGATAN: ini akan MENGHAPUS SELURUH dokumen SI dan transaksi dari server (berlaku untuk semua pengguna).\n\n' +
+    'Ketik HAPUS (huruf besar) untuk melanjutkan.'
+  );
+  if (typed === 'HAPUS') {
     transaksiList = [];
     siBatches = [];
     activeSIBatchId = null;
-    localStorage.setItem('bosku_explicit_empty', 'true');
     saveData();
     renderAll();
-    showToast('🗑️ <strong>Semua data transaksi & SI berhasil dikosongkan.</strong> Dashboard sekarang siap untuk upload dokumen SI baru.');
+    showToast('🗑️ <strong>Semua data transaksi & SI berhasil dikosongkan.</strong> Dashboard siap untuk upload dokumen SI baru.');
+  } else if (typed !== null) {
+    showToast('Dibatalkan: kata konfirmasi tidak sesuai.');
   }
 };
 
@@ -890,7 +847,7 @@ function renderSIDashboardSection(metrics) {
       if (btnHapusSIDashboard) btnHapusSIDashboard.style.display = 'inline-flex';
 
       if (siDisplayTitle) siDisplayTitle.textContent = `🏦 Surat Instruksi (SI) Yang Ditransaksikan: ${activeBatch.nomorSI}`;
-      if (siDisplayMeta) siDisplayMeta.innerHTML = `Tanggal: <strong>${activeBatch.tanggalFormat || formatDate(activeBatch.tanggal)}</strong> | Bank: <strong>${activeBatch.namaBank || 'Bank BJB KCP Jatiasih'}</strong> | Rekening: <strong>${activeBatch.rekeningSumber || '0120640100100'}</strong> (${activeBatch.atasNamaSumber || 'SMAS FUTURE GATE'})`;
+      if (siDisplayMeta) siDisplayMeta.innerHTML = `Tanggal: <strong>${activeBatch.tanggalFormat || formatDate(activeBatch.tanggal)}</strong> | Bank: <strong>${activeBatch.namaBank || 'Bank BJB KCP Jatiasih'}</strong> | Rekening: <strong>${activeBatch.rekeningSumber || PROFIL_SEKOLAH.noRekening || ''}</strong> (${activeBatch.atasNamaSumber || 'SMAS FUTURE GATE'})`;
       if (siStatusBadge) {
         siStatusBadge.style.display = 'inline-flex';
         siStatusBadge.textContent = `✓ ${activeBatch.statusBadge || '100% LUNAS / DITRANSAKSIKAN'}`;
@@ -1505,8 +1462,8 @@ window.openEditSIModal = function(batchId) {
   if (inputBatchId) inputBatchId.value = batch.id;
   if (inputNomorSI) inputNomorSI.value = batch.nomorSI || '';
   if (inputTanggalSI) inputTanggalSI.value = batch.tanggal ? batch.tanggal.slice(0, 10) : '';
-  if (inputBankSumberSI) inputBankSumberSI.value = batch.namaBank || 'Bank BJB KCP Jatiasih di Bekasi';
-  if (inputRekSumberSI) inputRekSumberSI.value = batch.rekeningSumber || '0120640100100';
+  if (inputBankSumberSI) inputBankSumberSI.value = batch.namaBank || PROFIL_SEKOLAH.namaBank || '';
+  if (inputRekSumberSI) inputRekSumberSI.value = batch.rekeningSumber || PROFIL_SEKOLAH.noRekening || '';
   if (inputPerihalSI) inputPerihalSI.value = batch.perihal || 'Surat Perintah Pemindahbukuan (SI BJB - BOSP Reguler)';
 
   // Deep clone rincian transfer
@@ -1652,8 +1609,8 @@ window.saveEditedSI = function() {
 
   const nomorSI = document.getElementById('editNomorSI')?.value.trim();
   const tanggalSI = document.getElementById('editTanggalSI')?.value;
-  const bankSumber = document.getElementById('editBankSumberSI')?.value.trim() || 'Bank BJB KCP Jatiasih di Bekasi';
-  const rekSumber = document.getElementById('editRekSumberSI')?.value.trim() || '0120640100100';
+  const bankSumber = document.getElementById('editBankSumberSI')?.value.trim() || PROFIL_SEKOLAH.namaBank || '';
+  const rekSumber = document.getElementById('editRekSumberSI')?.value.trim() || PROFIL_SEKOLAH.noRekening || '';
   const perihal = document.getElementById('editPerihalSI')?.value.trim() || 'Surat Perintah Pemindahbukuan (SI BJB - BOSP Reguler)';
 
   if (!nomorSI) {
@@ -2003,7 +1960,7 @@ function parseSIExcel(arrayBuffer, fileName) {
   let namaKegiatan = '';
   let bulan = '';
   let tahun = '2026';
-  let noTabungan = '0120640100100';
+  let noTabungan = PROFIL_SEKOLAH.noRekening || '';
   let tglSelesai = '';
   let kepsek = '';
   let bendahara = '';
@@ -2416,8 +2373,8 @@ function setupUploadSIModal() {
       tanggal: tanggal,
       tanggalFormat: formatDate(tanggal),
       perihal: perihal,
-      namaBank: 'Bank BJB KCP Jatiasih di Bekasi',
-      rekeningSumber: currentParsedSI.noTabungan || '0120640100100',
+      namaBank: PROFIL_SEKOLAH.namaBank ? PROFIL_SEKOLAH.namaBank + ' di Bekasi' : 'Bank BJB KCP Jatiasih di Bekasi',
+      rekeningSumber: currentParsedSI.noTabungan || PROFIL_SEKOLAH.noRekening || '',
       atasNamaSumber: PROFIL_SEKOLAH.namaRekening,
       totalNominal: totalNetto,
       status: 'SELESAI TRANSAKSI',
@@ -2461,7 +2418,6 @@ function setupUploadSIModal() {
       activeSIBatchId = newBatch.id;
     }
 
-    localStorage.removeItem('bosku_explicit_empty');
     saveData();
     renderAll();
     closeUploadModal();
@@ -2610,10 +2566,38 @@ function setupFormAndModals() {
 // 7. INITIALIZATION
 // =========================================================
 
-document.addEventListener('DOMContentLoaded', () => {
-  loadData();
-  initRekonsiliasi(() => siBatches, showToast);
+document.addEventListener('DOMContentLoaded', async () => {
+  // Aplikasi tidak menampilkan atau memuat data apa pun sebelum pengguna login.
+  session = await requireLogin();
+  setSyncStatus = mountUserBadge(session);
+
+  try {
+    applyServerState(await loadAll());
+  } catch (err) {
+    console.error(err);
+    showFatal('Gagal memuat data', err.message);
+    return;
+  }
+
+  // Isi nomor rekening di sidebar dan header rekonsiliasi dari data server
+  const noRek = PROFIL_SEKOLAH.noRekening || '';
+  document.querySelectorAll('[data-fill="noRekening"]').forEach(n => { n.textContent = noRek; });
+  document.querySelectorAll('[data-fill="namaBankRekening"]').forEach(n => { n.textContent = PROFIL_SEKOLAH.namaBank || ''; });
+  document.querySelectorAll('[data-fill="namaRekening"]').forEach(n => { n.textContent = PROFIL_SEKOLAH.namaRekening || ''; });
+
+  initRekonsiliasi(() => siBatches, showToast, {
+    canWrite: session.canWrite,
+    onChange: (list) => syncQueue.scheduleRek(list)
+  });
   setupNavigation();
   setupFormAndModals();
   renderAll();
+
+  // Peringatkan jika pengguna menutup halaman saat masih ada perubahan yang belum terkirim
+  window.addEventListener('beforeunload', (e) => {
+    if (syncQueue.hasPending()) {
+      e.preventDefault();
+      e.returnValue = '';
+    }
+  });
 });

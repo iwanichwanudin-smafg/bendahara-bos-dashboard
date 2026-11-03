@@ -5,13 +5,13 @@
 
 import * as XLSX from 'xlsx';
 import { formatRupiah, formatNumber, formatDate } from '../utils/format.js';
-import { REKENING_INFO, INITIAL_REKENING_KORAN } from '../data/rekeningKoranData.js';
-import { INITIAL_SI_BATCHES } from '../data/initialData.js';
+import { REKENING_INFO } from '../data/rekeningKoranData.js';
 
-const STORAGE_KEY_REK_KORAN = 'bosku_rekening_koran_data_2026';
-
-let rekKoranList = JSON.parse(JSON.stringify(INITIAL_REKENING_KORAN));
-let getSIBatches = () => (Array.isArray(INITIAL_SI_BATCHES) ? INITIAL_SI_BATCHES : []);
+// Data mutasi dimuat dari Supabase (lihat setRekKoranData) dan disimpan lewat callback onChange.
+let rekKoranList = [];
+let getSIBatches = () => [];
+let canWrite = false;
+let onRekChange = () => {};
 let notifyToast = (msg) => console.log(msg);
 let currentSubTab = 'mutasi'; // 'mutasi', 'pencocokan', 'bunga'
 let pendingUploadedTransactions = null;
@@ -35,36 +35,17 @@ function excelDateToISO(serial) {
   return date_info.toISOString().split('T')[0];
 }
 
-// Load data from LocalStorage or default
-export function loadRekKoranData() {
-  if (typeof localStorage !== 'undefined') {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY_REK_KORAN);
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          rekKoranList = parsed;
-          return;
-        }
-      }
-    } catch (err) {
-      console.error('Gagal membaca data rekening koran dari storage:', err);
-    }
-  }
-  rekKoranList = JSON.parse(JSON.stringify(INITIAL_REKENING_KORAN));
+// Diisi dari server setelah login
+export function setRekKoranData(list) {
+  rekKoranList = Array.isArray(list) ? JSON.parse(JSON.stringify(list)) : [];
 }
 
-// Load immediately on module load
-loadRekKoranData();
-
 export function saveRekKoranData() {
-  if (typeof localStorage !== 'undefined') {
-    try {
-      localStorage.setItem(STORAGE_KEY_REK_KORAN, JSON.stringify(rekKoranList));
-    } catch (err) {
-      console.error('Gagal menyimpan data rekening koran:', err);
-    }
+  if (!canWrite) {
+    notifyToast('🔒 Akun Anda hanya dapat melihat data. Perubahan tidak disimpan.');
+    return;
   }
+  onRekChange(rekKoranList);
 }
 
 // Rekonsiliasi matcher: hubungkan baris bank dengan SI batches
@@ -577,7 +558,7 @@ export function printRekKoranOfficial() {
           <p style="margin: 2px 0 0 0; font-size: 11px; color: #475569;">Laporan Resmi Mutasi Rekening Dana Bantuan Operasional Satuan Pendidikan</p>
         </div>
         <div style="text-align: right; font-size: 11px; color: #334155; line-height: 1.5;">
-          <div>No. Rekening : <strong style="font-family: monospace; font-size: 13px; color: #0284c7;">0120640100100</strong></div>
+          <div>No. Rekening : <strong style="font-family: monospace; font-size: 13px; color: #0284c7;">${REKENING_INFO.nomorRekening || ''}</strong></div>
           <div>Nama Rekening: <strong>SMAS FUTURE GATE</strong></div>
           <div>Mata Uang    : <strong>IDR (Indonesian Rupiah)</strong></div>
           <div>Periode Buka : <strong>01 Jan 2026 s/d 31 Okt 2026</strong></div>
@@ -675,37 +656,6 @@ export function closeUploadRekKoranModal() {
   const modal = document.getElementById('modalUploadRekKoran');
   if (modal) modal.classList.remove('active');
   pendingUploadedTransactions = null;
-}
-
-export async function fastSyncDefaultExcel() {
-  try {
-    notifyToast('⏳ Memuat file resmi Mutasi BJB BOSP 2026.xlsx...');
-    const response = await fetch('/Mutasi BJB BOSP 2026.xlsx');
-    if (!response.ok) {
-      throw new Error('File Mutasi BJB BOSP 2026.xlsx tidak ditemukan di server.');
-    }
-    const arrayBuffer = await response.arrayBuffer();
-    const wb = XLSX.read(arrayBuffer, { type: 'array' });
-
-    const ws = wb.Sheets['Rek Koran'];
-    if (!ws) {
-      throw new Error("Sheet 'Rek Koran' tidak ditemukan di dalam workbook.");
-    }
-
-    const parsed = parseRekKoranSheet(ws);
-    if (!parsed || parsed.length === 0) {
-      throw new Error('Tidak ada baris data valid di sheet Rek Koran.');
-    }
-
-    rekKoranList = parsed;
-    saveRekKoranData();
-    renderRekonsiliasi();
-    closeUploadRekKoranModal();
-    notifyToast(`✅ Berhasil menyinkronkan ${parsed.length} transaksi dari Sheet Rek Koran!`);
-  } catch (err) {
-    console.error('Fast sync error:', err);
-    notifyToast('❌ Sinkronisasi gagal: ' + err.message);
-  }
 }
 
 export function handleFileSelection(file) {
@@ -843,11 +793,11 @@ function escapeHtml(str) {
 // INITIALIZE REKONSILIASI MODULE & EVENT LISTENERS
 // =========================================================
 
-export function initRekonsiliasi(siBatchesProvider, toastNotifier) {
+export function initRekonsiliasi(siBatchesProvider, toastNotifier, options = {}) {
   getSIBatches = siBatchesProvider || (() => []);
   notifyToast = toastNotifier || ((msg) => console.log(msg));
-
-  loadRekKoranData();
+  canWrite = Boolean(options.canWrite);
+  onRekChange = options.onChange || (() => {});
 
   // Tab switching buttons
   const btnTabMutasi = document.getElementById('btnTabRekKoranMutasi');
@@ -893,7 +843,6 @@ export function initRekonsiliasi(siBatchesProvider, toastNotifier) {
   document.getElementById('rekonSearchInput')?.addEventListener('input', () => renderRekonsiliasi());
 
   // Upload Modal Events
-  document.getElementById('btnFastSyncDefaultExcel')?.addEventListener('click', fastSyncDefaultExcel);
   document.getElementById('btnSaveUploadedRekKoran')?.addEventListener('click', applyPendingUploadedData);
 
   const dropzone = document.getElementById('rekKoranDropzone');
