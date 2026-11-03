@@ -29,11 +29,14 @@ function injectStyle() {
   .auth-card button.link{background:none;border:0;color:#1d4ed8;font-size:.85rem;cursor:pointer;margin-top:12px;width:100%}
   .auth-error{background:#fef2f2;border:1px solid #fecaca;color:#b91c1c;border-radius:9px;padding:10px 12px;font-size:.85rem;margin-bottom:14px}
   .auth-note{font-size:.78rem;color:#94a3b8;text-align:center;margin-top:16px}
-  .user-badge{margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.08);font-size:.78rem}
-  .user-badge .who{font-weight:700;word-break:break-all}
-  .user-badge .role{display:inline-block;margin-top:4px;padding:1px 8px;border-radius:999px;background:rgba(255,255,255,.18);font-size:.7rem;text-transform:uppercase;letter-spacing:.04em}
-  .user-badge .sync{margin-top:6px;font-size:.72rem;opacity:.85}
-  .user-badge button{margin-top:8px;width:100%;padding:6px;border-radius:8px;border:1px solid rgba(255,255,255,.35);background:transparent;color:inherit;cursor:pointer;font-size:.78rem}
+  .auth-user-card{display:block;box-sizing:border-box;width:100%;margin-top:10px;padding:8px 10px;border-radius:10px;
+    background:#eef2ff;border:1px solid #c7d2fe;color:#1e293b;font-size:.74rem;line-height:1.35}
+  .auth-user-card .auth-who{display:block;font-weight:700;overflow-wrap:anywhere;word-break:normal}
+  .auth-user-card .auth-row{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:4px}
+  .auth-user-card .auth-role{display:inline-block;padding:1px 8px;border-radius:999px;background:#1d4ed8;color:#fff;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+  .auth-user-card .auth-sync{display:block;margin-top:4px;font-size:.7rem;color:#475569}
+  .auth-user-card .auth-logout{display:block;width:100%;margin-top:6px;padding:5px;border-radius:8px;border:1px solid #94a3b8;background:#fff;color:#334155;cursor:pointer;font-size:.74rem}
+  .auth-user-card .auth-logout:hover{background:#f1f5f9}
   .readonly-banner{background:#fef3c7;color:#92400e;border-bottom:1px solid #fde68a;padding:8px 16px;font-size:.82rem;text-align:center}
   `;
   const el = document.createElement('style');
@@ -186,12 +189,14 @@ const PERAN_LABEL = { bendahara: 'Bendahara', kepsek: 'Kepala Sekolah', pembaca:
 export function mountUserBadge(session) {
   injectStyle();
   const footer = document.querySelector('.sidebar-footer');
-  const syncLine = el('div', { class: 'sync', text: session.canWrite ? 'Tersimpan' : 'Mode lihat saja' });
-  const logoutBtn = el('button', { type: 'button', text: 'Keluar' });
+  const syncLine = el('span', { class: 'auth-sync', text: session.canWrite ? 'Tersimpan' : 'Mode lihat saja' });
+  const logoutBtn = el('button', { type: 'button', class: 'auth-logout', text: 'Keluar' });
   logoutBtn.addEventListener('click', logout);
-  const badge = el('div', { class: 'user-badge' }, [
-    el('div', { class: 'who', text: session.user.email }),
-    el('span', { class: 'role', text: PERAN_LABEL[session.peran] || session.peran }),
+  const badge = el('div', { class: 'auth-user-card' }, [
+    el('span', { class: 'auth-who', text: session.user.email }),
+    el('div', { class: 'auth-row' }, [
+      el('span', { class: 'auth-role', text: PERAN_LABEL[session.peran] || session.peran })
+    ]),
     syncLine,
     logoutBtn
   ]);
