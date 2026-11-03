@@ -185,6 +185,33 @@ export function requireLogin() {
 
 const PERAN_LABEL = { bendahara: 'Bendahara', kepsek: 'Kepala Sekolah', pembaca: 'Pembaca' };
 
+function titleCase(text) {
+  const t = String(text || '').trim();
+  if (!t) return t;
+  // Nama yang ditulis HURUF BESAR semua diubah menjadi huruf kapital di awal kata saja
+  if (t !== t.toUpperCase()) return t;
+  return t.toLowerCase().replace(/(^|[\s.'-])([a-z])/g, (_, sep, ch) => sep + ch.toUpperCase());
+}
+
+function initials(text) {
+  const parts = String(text || '').split(/[\s.]+/).filter(Boolean);
+  const letters = (parts[0]?.[0] || '') + (parts[1]?.[0] || '');
+  return (letters || '?').toUpperCase();
+}
+
+/** Perbarui kotak profil di header agar menampilkan akun yang sedang login. */
+function updateTopbarProfile(session) {
+  const card = document.querySelector('.topbar-right .user-badge');
+  if (!card) return;
+  const nama = titleCase(session.nama);
+  const avatar = card.querySelector('.user-avatar');
+  const name = card.querySelector('.user-name');
+  const role = card.querySelector('.user-role');
+  if (avatar) avatar.textContent = initials(nama);
+  if (name) name.textContent = nama;
+  if (role) role.textContent = (PERAN_LABEL[session.peran] || session.peran) + ' — SMAS FG';
+}
+
 /** Badge pengguna + tombol keluar di sidebar; mengembalikan fungsi untuk memperbarui status simpan. */
 export function mountUserBadge(session) {
   injectStyle();
@@ -201,6 +228,7 @@ export function mountUserBadge(session) {
     logoutBtn
   ]);
   (footer || document.body).appendChild(badge);
+  updateTopbarProfile(session);
 
   if (!session.canWrite) {
     const banner = el('div', { class: 'readonly-banner', text: 'Akun Anda hanya dapat melihat data. Perubahan tidak akan disimpan.' });
