@@ -185,7 +185,7 @@ export function requireLogin() {
 
 const PERAN_LABEL = { bendahara: 'Bendahara', kepsek: 'Kepala Sekolah', pembaca: 'Pembaca' };
 
-function titleCase(text) {
+export function titleCase(text) {
   const t = String(text || '').trim();
   if (!t) return t;
   // Nama yang ditulis HURUF BESAR semua diubah menjadi huruf kapital di awal kata saja
@@ -193,7 +193,7 @@ function titleCase(text) {
   return t.toLowerCase().replace(/(^|[\s.'-])([a-z])/g, (_, sep, ch) => sep + ch.toUpperCase());
 }
 
-function initials(text) {
+export function initials(text) {
   const parts = String(text || '').split(/[\s.]+/).filter(Boolean);
   const letters = (parts[0]?.[0] || '') + (parts[1]?.[0] || '');
   return (letters || '?').toUpperCase();

@@ -9,7 +9,13 @@
 //  - Penyimpanan memakai diff terhadap snapshot terakhir: hanya baris yang berubah
 //    yang dikirim ke server.
 // =========================================================
-import { supabase } from './supabaseClient.js';
+import { supabase as defaultClient } from './supabaseClient.js';
+
+// Klien database. Bisa diganti dengan klien tiruan saat menjalankan test.
+let supabase = defaultClient;
+export function __useClientForTests(client) {
+  supabase = client;
+}
 
 const PAGE_SIZE = 1000;
 const CHUNK = 100;
