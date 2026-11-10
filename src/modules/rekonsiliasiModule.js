@@ -85,7 +85,7 @@ export function renderRekonsiliasi() {
   const totalDebit = enrichedData.reduce((acc, r) => acc + (r.debit || 0), 0);
   const totalKredit = enrichedData.reduce((acc, r) => acc + (r.kredit || 0), 0);
   const saldoAkhir = enrichedData.length > 0 ? enrichedData[enrichedData.length - 1].saldo : 0;
-  const saldoAwal = enrichedData.length > 0 && enrichedData[0].saldo ? enrichedData[0].saldo : 3939563;
+  const saldoAwal = enrichedData.length > 0 && enrichedData[0].saldo ? enrichedData[0].saldo : 0;
 
   const statSaldoAwal = document.getElementById('rekonStatSaldoAwal');
   const statTotalDebit = document.getElementById('rekonStatTotalDebit');
@@ -109,6 +109,13 @@ export function renderRekonsiliasi() {
   const rekonBoxSelisih = document.getElementById('rekonBoxSelisih');
   const rekonBoxPersen = document.getElementById('rekonBoxPersen');
   const badgeContainer = document.getElementById('rekonMatchBadgeContainer');
+
+  // Label yang memuat jumlah (tidak boleh tertulis tetap di HTML)
+  const setLabel = (key, text) => document.querySelectorAll(`[data-dyn="${key}"]`).forEach((el) => { el.textContent = text; });
+  setLabel('labelKreditBank', `Total Kredit Bank BJB (${enrichedData.filter((r) => (r.kredit || 0) > 0).length} Trx)`);
+  setLabel('labelTotalSI', `Total SI di Sistem BOSku (${totalSIBatches} SI)`);
+  setLabel('labelTabMutasi', `Mutasi Rekening Koran (${enrichedData.length} Transaksi)`);
+  setLabel('catatanSaldo', `* Saldo Kas Bank BJB BOSP${REKENING_INFO.tahunAnggaran ? ' TA ' + REKENING_INFO.tahunAnggaran : ''}: ${formatRupiah(saldoAkhir)}`);
 
   if (rekonBoxTotalBank) rekonBoxTotalBank.textContent = formatRupiah(totalKredit);
   if (rekonBoxTotalSI) rekonBoxTotalSI.textContent = formatRupiah(totalNominalSI);
@@ -461,6 +468,8 @@ function renderBungaTable(bankData) {
 
   const footerBunga = document.getElementById('rekonBungaFooterTotal');
   if (footerBunga) footerBunga.textContent = formatRupiah(runningBunga);
+  const footerBunga2 = document.getElementById('rekonBungaFooterTotal2');
+  if (footerBunga2) footerBunga2.textContent = formatRupiah(runningBunga);
 }
 
 // =========================================================
@@ -532,7 +541,7 @@ export function printRekKoranOfficial() {
   const totalDebit = enriched.reduce((acc, r) => acc + (r.debit || 0), 0);
   const totalKredit = enriched.reduce((acc, r) => acc + (r.kredit || 0), 0);
   const saldoAkhir = enriched.length > 0 ? enriched[enriched.length - 1].saldo : 0;
-  const saldoAwal = enriched.length > 0 ? enriched[0].saldo : 3939563;
+  const saldoAwal = enriched.length > 0 ? enriched[0].saldo : 0;
 
   let rowsHtml = '';
   enriched.forEach((r, i) => {
@@ -717,14 +726,19 @@ export function applyPendingUploadedData() {
 }
 
 // Parser for sheet 'Rek Koran'
-function parseRekKoranSheet(ws) {
+export function parseRekKoranSheet(ws) {
   const rawData = XLSX.utils.sheet_to_json(ws, { header: 1 });
   const transactions = [];
   let lastDate = '';
 
-  for (let i = 2; i <= 44 && i < rawData.length; i++) {
+  // Baca semua baris data mulai baris ke-3. Baris kosong (hanya berisi saldo bawaan) dilewati,
+  // dan pembacaan berhenti di baris rekap ("TOTAL MUTASI DEBIT", "TOTAL MUTASI KREDIT", "SALDO").
+  for (let i = 2; i < rawData.length; i++) {
     const r = rawData[i];
     if (!r || r.length === 0) continue;
+
+    const labelRekap = typeof r[1] === 'string' ? r[1].trim() : '';
+    if (/^(TOTAL\b|SALDO\s*$)/i.test(labelRekap) && !excelDateToISO(r[0])) break;
 
     let dStr = excelDateToISO(r[0]);
     if (dStr) lastDate = dStr;

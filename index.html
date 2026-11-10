@@ -90,10 +90,10 @@
           <div class="topbar-right">
             <div class="badge-ta">⚡ TA 2026 (Berjalan)</div>
             <div class="user-badge">
-              <div class="user-avatar">II</div>
+              <div class="user-avatar">–</div>
               <div class="user-details">
-                <span class="user-name">Iwan Ichwanudin</span>
-                <span class="user-role">Bendahara BOS SMAS FG</span>
+                <span class="user-name">–</span>
+                <span class="user-role">–</span>
               </div>
             </div>
           </div>
@@ -113,10 +113,10 @@
                   <span class="stat-card-title">Total Pagu BOS 2026</span>
                   <div class="stat-card-icon">💰</div>
                 </div>
-                <div class="stat-card-value" id="cardPaguTotal">Rp 1.350.310.000</div>
+                <div class="stat-card-value" id="cardPaguTotal">–</div>
                 <div class="stat-card-footer">
                   <span class="stat-badge blue">Alokasi BOS BJB</span>
-                  <span>799 Siswa (5 Unit)</span>
+                  <span data-dyn="siswaUnitRingkas">–</span>
                 </div>
               </div>
 
@@ -139,7 +139,7 @@
                   <span class="stat-card-title">Sisa Saldo Kas BOS</span>
                   <div class="stat-card-icon">🛡️</div>
                 </div>
-                <div class="stat-card-value" id="cardSisaKas" style="color: #34d399;">Rp 1.350.310.000</div>
+                <div class="stat-card-value" id="cardSisaKas" style="color: #34d399;">–</div>
                 <div class="stat-card-footer">
                   <span class="stat-badge green">Saldo Tersedia</span>
                   <span>Di Rekening BJB Jatiasih</span>
@@ -213,12 +213,12 @@
                   </div>
                   <h4 id="dashPaguTitle">Alokasi Pagu, Realisasi Belanja SI, & Sisa Anggaran per Unit</h4>
                   <div class="si-batch-meta" id="dashPaguMeta">
-                    Berdasarkan <strong>799 siswa</strong> x <strong>Rp 1.690.000</strong> = Total Pagu Bank BJB <strong>Rp 1.350.310.000</strong>. Realisasi dihitung otomatis dari 30 Dokumen SI resmi (112 transaksi).
+                    <span data-dyn="infoPaguDashboard">–</span>
                   </div>
                 </div>
                 <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
                   <button type="button" class="btn btn-outline" id="btnExportPaguExcel" onclick="window.exportPaguExcel()" style="border-color: #059669; color: #059669;" title="Unduh tabel pagu & realisasi unit ke Excel">📥 Export Pagu (Excel)</button>
-                  <a href="#transaksi" class="btn btn-primary" style="text-decoration: none;" id="btnGoToTransaksiFromPagu">📒 Lihat Rincian Belanja (112 Trx) →</a>
+                  <a href="#transaksi" class="btn btn-primary" style="text-decoration: none;" id="btnGoToTransaksiFromPagu"><span data-dyn="btnLihatRincian">📒 Lihat Rincian Belanja →</span></a>
                 </div>
               </div>
 
@@ -226,29 +226,29 @@
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin-top: 16px;">
                 <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 12px 14px; border-radius: 8px;">
                   <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700;">TOTAL ALOKASI BOS BJB</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: var(--text-main);">Rp 1.350.310.000</div>
-                  <div style="font-size: 0.72rem; color: var(--text-muted);">799 Siswa (5 Unit Sekolah)</div>
+                  <div data-dyn="paguTotal" style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: var(--text-main);">–</div>
+                  <div data-dyn="siswaUnitSekolah" style="font-size: 0.72rem; color: var(--text-muted);">–</div>
                 </div>
                 <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 12px 14px; border-radius: 8px;">
-                  <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700;">TOTAL REALISASI (30 SI)</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #e11d48;" id="dashPaguTotalRealisasi">Rp 1.155.943.654</div>
-                  <div style="font-size: 0.72rem; color: #e11d48;" id="dashPaguTotalPct">85,61% Terserap</div>
+                  <div data-dyn="labelTotalRealisasi" style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700;">TOTAL REALISASI</div>
+                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #e11d48;" id="dashPaguTotalRealisasi">–</div>
+                  <div style="font-size: 0.72rem; color: #e11d48;" id="dashPaguTotalPct">–</div>
                 </div>
                 <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 12px 14px; border-radius: 8px;">
                   <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700;">SISA SALDO KAS BJB</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #059669;" id="dashPaguTotalSisa">Rp 194.366.346</div>
-                  <div style="font-size: 0.72rem; color: #059669;">14,39% Tersedia</div>
+                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #059669;" id="dashPaguTotalSisa">–</div>
+                  <div data-dyn="persenTersedia" style="font-size: 0.72rem; color: #059669;">–</div>
                 </div>
                 <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 12px 14px; border-radius: 8px;">
                   <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700;">TALANGAN FKSS (PUTRA)</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #d97706;">Rp 19.975.000</div>
+                  <div data-dyn="talanganTotal" style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #d97706;">–</div>
                   <div style="font-size: 0.72rem; color: #d97706;">Kompensasi Kas Internal</div>
                 </div>
               </div>
 
               <!-- Mechanism Info Banner -->
               <div style="margin-top: 14px; padding: 12px 16px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; font-size: 0.83rem; color: #1e40af; line-height: 1.5;">
-                💡 <strong>Catatan Kompensasi FKSS:</strong> Iuran FKSS (799 siswa x Rp 25.000 = Rp 19.975.000) ditalangi terlebih dahulu oleh kas internal FG Putra di luar BOS. Sebagai penggantian, jatah dana BOS FG Putra di Bank BJB menjadi <strong>Rp 517.810.000</strong> (Pagu Netto Rp 497,8 Jt + FKSS Rp 19,9 Jt), sedangkan 4 unit lainnya menerima pagu belanja bersih (Netto).
+                <span data-dyn="bannerFKSS">–</span>
               </div>
 
               <!-- Table Pagu & Anggaran per Unit -->
@@ -259,7 +259,7 @@
                       <th style="width: 40px; text-align: center;">NO</th>
                       <th>NAMA UNIT SEKOLAH</th>
                       <th class="table-num">SISWA</th>
-                      <th class="table-num">PAGU MURNI (RP)</th>
+                      <th class="table-num">JATAH NETTO (RP)</th>
                       <th class="table-num">TALANGAN FKSS</th>
                       <th class="table-num">TOTAL PAGU BJB (RP)</th>
                       <th class="table-num">REALISASI SI (RP)</th>
@@ -442,34 +442,37 @@
             <div class="si-batch-card" style="margin-bottom: 24px;">
               <h4 style="margin-bottom: 8px;">📋 Struktur Alokasi Dana BOS 2026 SMAS Future Gate</h4>
               <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
-                Berdasarkan jumlah siswa penerima dana BOS sebanyak <strong>799 siswa</strong> dengan alokasi resmi Rp 1.690.000 / siswa / tahun.
+                <span data-dyn="infoStruktur">–</span>
               </p>
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
                 <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 14px; border-radius: 8px;">
                   <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">TOTAL ALOKASI BOS (BJB)</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: var(--text-main);">Rp 1.350.310.000</div>
-                  <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;">5 Unit Sekolah (799 Siswa)</div>
+                  <div data-dyn="paguTotal" style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: var(--text-main);">–</div>
+                  <div data-dyn="siswaUnitSekolah2" style="font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;">–</div>
                 </div>
                 <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 14px; border-radius: 8px;">
                   <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">IURAN FKSS (DITALANGI PUTRA)</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #d97706;">Rp 19.975.000</div>
+                  <div data-dyn="talanganTotal" style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #d97706;">–</div>
                   <div style="font-size: 0.72rem; color: #d97706; margin-top: 2px;">Ditalangi kas non-BOS Putra</div>
                 </div>
                 <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 14px; border-radius: 8px;">
                   <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">PAGU FG PUTRA (+KOMPENSASI)</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #0284c7;">Rp 517.810.000</div>
-                  <div style="font-size: 0.72rem; color: #0284c7; margin-top: 2px;">Netto Rp 497,8 Jt + FKSS Rp 19,9 Jt</div>
+                  <div data-dyn="paguPenalang" style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #0284c7;">–</div>
+                  <div data-dyn="paguPenalangSub" style="font-size: 0.72rem; color: #0284c7; margin-top: 2px;">–</div>
                 </div>
                 <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 14px; border-radius: 8px;">
                   <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">PAGU 4 UNIT LAINNYA</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #059669;">Rp 832.500.000</div>
+                  <div data-dyn="paguLainnya" style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #059669;">–</div>
                   <div style="font-size: 0.72rem; color: #059669; margin-top: 2px;">Mahad, BS, FDS, Rabbani (Netto)</div>
                 </div>
               </div>
               <div style="margin-top: 14px; padding: 12px 16px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; font-size: 0.85rem; color: #1e40af; line-height: 1.5;">
-                💡 <strong>Mekanisme Iuran FKSS:</strong> Iuran FKSS (799 siswa x Rp 25.000 = Rp 19.975.000) ditalangi terlebih dahulu oleh kas internal FG Putra di luar BOS. Sebagai kompensasi penggantian kas talangan tersebut, jatah dana BOS FG Putra di rekening Bank BJB ditambahkan senilai Rp 19.975.000 (menjadi <strong>Rp 517.810.000</strong>), sedangkan 4 unit lainnya mendapatkan jatah belanja BOS bersih (Netto).
+                <span data-dyn="bannerFKSS">–</span>
               </div>
             </div>
+
+            <!-- Rincian jatah per unit: bruto, iuran FKSS, netto (diisi dari data setelah login) -->
+            <div id="paguRincianJatah"></div>
 
             <!-- Table Pagu per Unit -->
             <div class="table-responsive">
@@ -540,7 +543,7 @@
                   <span class="stat-label">SALDO AWAL (31 DES 2025)</span>
                   <span class="stat-icon" style="background: #f1f5f9; color: #475569;">⏮️</span>
                 </div>
-                <div class="stat-value" id="rekonStatSaldoAwal" style="font-size: 1.35rem; font-family: var(--font-mono); color: #334155;">Rp 3.939.563</div>
+                <div class="stat-value" id="rekonStatSaldoAwal" style="font-size: 1.35rem; font-family: var(--font-mono); color: #334155;">–</div>
                 <div class="stat-meta">
                   <span style="color: #64748b; font-size: 0.75rem;">Saldo carry-over dari tahun buku lalu</span>
                 </div>
@@ -552,7 +555,7 @@
                   <span class="stat-label">TOTAL PENERIMAAN (DEBET)</span>
                   <span class="stat-icon" style="background: #dcfce7; color: #15803d;">📥</span>
                 </div>
-                <div class="stat-value" id="rekonStatTotalDebit" style="color: #15803d; font-size: 1.35rem; font-family: var(--font-mono);">Rp 1.355.989.540</div>
+                <div class="stat-value" id="rekonStatTotalDebit" style="color: #15803d; font-size: 1.35rem; font-family: var(--font-mono);">–</div>
                 <div class="stat-meta">
                   <span style="color: #15803d; font-size: 0.75rem;">BOS Tahap 1 & 2 + Akumulasi Bunga</span>
                 </div>
@@ -564,7 +567,7 @@
                   <span class="stat-label">TOTAL PENGELUARAN (KREDIT)</span>
                   <span class="stat-icon" style="background: #ffe4e6; color: #e11d48;">📤</span>
                 </div>
-                <div class="stat-value" id="rekonStatTotalKredit" style="color: #e11d48; font-size: 1.35rem; font-family: var(--font-mono);">Rp 1.172.522.920</div>
+                <div class="stat-value" id="rekonStatTotalKredit" style="color: #e11d48; font-size: 1.35rem; font-family: var(--font-mono);">–</div>
                 <div class="stat-meta">
                   <span style="color: #e11d48; font-size: 0.75rem;">31 Penarikan Pemindahbukuan SI</span>
                 </div>
@@ -576,7 +579,7 @@
                   <span class="stat-label">SALDO AKHIR REKENING BANK</span>
                   <span class="stat-icon" style="background: #e0f2fe; color: #0284c7;">💰</span>
                 </div>
-                <div class="stat-value" id="rekonStatSaldoAkhir" style="color: #0284c7; font-size: 1.35rem; font-family: var(--font-mono);">Rp 183.466.620</div>
+                <div class="stat-value" id="rekonStatSaldoAkhir" style="color: #0284c7; font-size: 1.35rem; font-family: var(--font-mono);">–</div>
                 <div class="stat-meta">
                   <span style="color: #0284c7; font-size: 0.75rem;">Posisi Kas Riil Bank BJB Saat Ini</span>
                 </div>
@@ -590,38 +593,38 @@
                   <span style="font-size: 1.3rem;">⚖️</span>
                   <div>
                     <h4 style="margin: 0; font-size: 1rem; font-weight: 700; color: var(--text-main);">Status Rekonsiliasi: Bank BJB vs Catatan Dokumen SI BOSku</h4>
-                    <span style="font-size: 0.8rem; color: var(--text-muted);">Pencocokan otomatis penarikan kredit rekening koran dengan 30 dokumen SI terbitan sekolah</span>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Pencocokan otomatis penarikan kredit rekening koran dengan dokumen SI terbitan sekolah</span>
                   </div>
                 </div>
                 <div id="rekonMatchBadgeContainer">
                   <span class="rekon-badge rekon-badge-match" style="font-size: 0.82rem; padding: 4px 10px;">
-                    🟢 30 SI Sistem Terverifikasi 100% Cocok
+                    ⏳ Memeriksa pencocokan…
                   </span>
                 </div>
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px;">
                 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 14px;">
-                  <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Total Kredit Bank BJB (31 Trx)</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: var(--text-main); margin-top: 3px;" id="rekonBoxTotalBank">Rp 1.172.522.920</div>
+                  <div data-dyn="labelKreditBank" style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Total Kredit Bank BJB</div>
+                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: var(--text-main); margin-top: 3px;" id="rekonBoxTotalBank">–</div>
                   <div style="font-size: 0.75rem; color: #64748b; margin-top: 2px;">Seluruh transaksi kredit di buku bank</div>
                 </div>
 
                 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 14px;">
-                  <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Total SI di Sistem BOSku (30 SI)</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #0284c7; margin-top: 3px;" id="rekonBoxTotalSI">Rp 1.155.943.654</div>
+                  <div data-dyn="labelTotalSI" style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Total SI di Sistem BOSku</div>
+                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #0284c7; margin-top: 3px;" id="rekonBoxTotalSI">–</div>
                   <div style="font-size: 0.75rem; color: #0284c7; margin-top: 2px;">Total dokumen SI resmi yang dicatat</div>
                 </div>
 
                 <div style="background: #fefce8; border: 1px solid #fef08a; border-radius: 8px; padding: 12px 14px;">
                   <div style="font-size: 0.72rem; color: #854d0e; font-weight: 700; text-transform: uppercase;">Selisih Rekonsiliasi (1 Item Baru)</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #d97706; margin-top: 3px;" id="rekonBoxSelisih">Rp 16.579.266</div>
+                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #d97706; margin-top: 3px;" id="rekonBoxSelisih">–</div>
                   <div style="font-size: 0.75rem; color: #854d0e; margin-top: 2px;">SI 4 (Gaji Okt) terekam di bank</div>
                 </div>
 
                 <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 12px 14px;">
                   <div style="font-size: 0.72rem; color: #166534; font-weight: 700; text-transform: uppercase;">Tingkat Keselarasan SI</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #16a34a; margin-top: 3px;" id="rekonBoxPersen">100% Cocok (30/30 SI)</div>
+                  <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #16a34a; margin-top: 3px;" id="rekonBoxPersen">–</div>
                   <div style="font-size: 0.75rem; color: #166534; margin-top: 2px;">Seluruh SI sekolah terbukti cair</div>
                 </div>
               </div>
@@ -630,7 +633,7 @@
             <!-- Sub Navigation Tabs for Rekonsiliasi -->
             <div class="no-print" style="display: flex; gap: 10px; margin-bottom: 16px; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; flex-wrap: wrap;">
               <button type="button" class="rekon-tab-btn active" id="btnTabRekKoranMutasi">
-                <span>📑</span> Mutasi Rekening Koran (43 Transaksi)
+                <span>📑</span> <span data-dyn="labelTabMutasi">Mutasi Rekening Koran</span>
               </button>
               <button type="button" class="rekon-tab-btn" id="btnTabRekKoranPencocokan">
                 <span>⚖️</span> Audit Pencocokan SI vs Bank
@@ -706,17 +709,17 @@
                   <tfoot style="background: #f8fafc; font-weight: 700; border-top: 2px solid var(--border-color);">
                     <tr>
                       <td colspan="5" style="text-align: right; padding: 10px 14px;">TOTAL MUTASI:</td>
-                      <td class="table-num" id="rekonFooterDebit" style="color: #166534; font-family: var(--font-mono); font-size: 0.92rem;">Rp 1.355.989.540</td>
-                      <td class="table-num" id="rekonFooterKredit" style="color: #991b1b; font-family: var(--font-mono); font-size: 0.92rem;">Rp 1.172.522.920</td>
-                      <td class="table-num" id="rekonFooterSaldo" style="color: #0284c7; font-family: var(--font-mono); font-size: 0.95rem;">Rp 183.466.620</td>
+                      <td class="table-num" id="rekonFooterDebit" style="color: #166534; font-family: var(--font-mono); font-size: 0.92rem;">–</td>
+                      <td class="table-num" id="rekonFooterKredit" style="color: #991b1b; font-family: var(--font-mono); font-size: 0.92rem;">–</td>
+                      <td class="table-num" id="rekonFooterSaldo" style="color: #0284c7; font-family: var(--font-mono); font-size: 0.95rem;">–</td>
                       <td></td>
                     </tr>
                   </tfoot>
                 </table>
               </div>
               <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px; font-size: 0.82rem; color: var(--text-muted); flex-wrap: wrap; gap: 8px;">
-                <span id="rekonRowCountText">Menampilkan 43 transaksi mutasi</span>
-                <span style="font-style: italic;">* Saldo Kas Bank BJB BOSP TA 2026: Rp 183.466.620</span>
+                <span id="rekonRowCountText">–</span>
+                <span data-dyn="catatanSaldo" style="font-style: italic;">–</span>
               </div>
             </div>
 
@@ -746,11 +749,11 @@
                   <tfoot style="background: #f8fafc; font-weight: 700; border-top: 2px solid var(--border-color);">
                     <tr>
                       <td colspan="3" style="text-align: right; padding: 10px 14px;">TOTAL:</td>
-                      <td class="table-num" id="rekonAuditFooterSI" style="color: #0284c7; font-family: var(--font-mono);">Rp 1.155.943.654</td>
+                      <td class="table-num" id="rekonAuditFooterSI" style="color: #0284c7; font-family: var(--font-mono);">–</td>
                       <td></td>
                       <td></td>
-                      <td class="table-num" id="rekonAuditFooterBank" style="color: #991b1b; font-family: var(--font-mono);">Rp 1.172.522.920</td>
-                      <td class="table-num" id="rekonAuditFooterDiff" style="color: #d97706; font-family: var(--font-mono);">Rp 16.579.266</td>
+                      <td class="table-num" id="rekonAuditFooterBank" style="color: #991b1b; font-family: var(--font-mono);">–</td>
+                      <td class="table-num" id="rekonAuditFooterDiff" style="color: #d97706; font-family: var(--font-mono);">–</td>
                       <td style="text-align: center; font-size: 0.75rem; color: #15803d;">30 MATCH / 1 BARU</td>
                     </tr>
                   </tfoot>
@@ -782,8 +785,8 @@
                   <tfoot style="background: #f8fafc; font-weight: 700; border-top: 2px solid var(--border-color);">
                     <tr>
                       <td colspan="4" style="text-align: right; padding: 10px 14px;">TOTAL PENDAPATAN BUNGA (TA 2026):</td>
-                      <td class="table-num" id="rekonBungaFooterTotal" style="color: #166534; font-family: var(--font-mono); font-size: 0.95rem;">Rp 5.679.540</td>
-                      <td class="table-num" style="color: #0284c7; font-family: var(--font-mono); font-size: 0.95rem;">Rp 5.679.540</td>
+                      <td class="table-num" id="rekonBungaFooterTotal" style="color: #166534; font-family: var(--font-mono); font-size: 0.95rem;">–</td>
+                      <td class="table-num" id="rekonBungaFooterTotal2" style="color: #0284c7; font-family: var(--font-mono); font-size: 0.95rem;">–</td>
                       <td style="text-align: center; font-size: 0.75rem; color: #166534;">🟢 SELESAI</td>
                     </tr>
                   </tfoot>
@@ -952,7 +955,7 @@
                 <span style="font-size: 1.3rem;">✅</span>
                 <div>
                   <strong style="color: #065f46; font-size: 0.92rem;" id="previewFileInfo">File Berhasil Dibaca</strong>
-                  <div style="font-size: 0.8rem; color: #047857;" id="previewFileMeta">5 Transfer | Total: Rp 14.307.281</div>
+                  <div style="font-size: 0.8rem; color: #047857;" id="previewFileMeta">–</div>
                 </div>
               </div>
               <button type="button" class="btn btn-outline" id="btnReuploadFile" style="font-size: 0.8rem; padding: 5px 12px;">🔄 Ganti File</button>

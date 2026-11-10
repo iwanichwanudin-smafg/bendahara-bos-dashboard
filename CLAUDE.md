@@ -30,6 +30,9 @@ deploy di Vercel (project `bendahara-bos-dashboard-o68i`).
 2. **Jangan menaruh data sekolah di kode atau folder `public/`**: nomor rekening, nama penerima transfer,
    daftar transaksi, file Excel keuangan. Semua data hidup di database dan hanya dimuat setelah login.
    Data untuk test harus **karangan** (lihat `tests/fixtures.mjs`).
+   Berlaku juga untuk `index.html`: HTML bisa dibaca sebelum login, jadi **jangan menulis angka keuangan, jumlah
+   data, atau nama orang di dalamnya**. Beri tanda "–" dan isi lewat atribut `data-dyn` (lihat `fillStaticLabels`
+   di `main.js`) atau lewat `id` yang diisi program setelah login.
 3. **RLS harus tetap aktif di semua tabel.** Jangan mematikan RLS atau menambah policy untuk role `anon`.
    Setiap tabel baru wajib: aktifkan RLS, baca = peran terdaftar, tulis = hanya `bendahara`.
 4. **Perubahan skema database dicatat** di `supabase/schema_bendahara_bos.sql` dan daftar kolom di

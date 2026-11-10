@@ -13,6 +13,7 @@ import {
 import { applyRekeningInfo } from './src/data/rekeningKoranData.js';
 import { requireLogin, mountUserBadge, showFatal } from './src/lib/auth.js';
 import { loadAll, createSyncQueue } from './src/lib/repository.js';
+import { hitungRincianPagu } from './src/lib/pagu.js';
 import {
   formatRupiah,
   formatNumber,
@@ -187,8 +188,12 @@ function getMetrics() {
       .reduce((sum, item) => sum + (Number(item.totalNominal || item.nominal || item.netto) || 0), 0);
     const sisa = unit.pagu - realisasiUnit;
     const pct = unit.pagu > 0 ? ((realisasiUnit / unit.pagu) * 100).toFixed(1) : 0;
+    const iuranFKSS = (Number(unit.siswa) || 0) * (Number(PAGU_DATA.iuranFKSSPerSiswa) || 0);
     return {
       ...unit,
+      iuranFKSS: iuranFKSS,
+      jatahNetto: Number(unit.paguMurni) || 0,
+      jatahBruto: (Number(unit.paguMurni) || 0) + iuranFKSS,
       realisasi: realisasiUnit,
       sisa: sisa,
       pct: pct
@@ -929,8 +934,10 @@ window.exportPaguExcel = function() {
     'No': idx + 1,
     'Nama Unit': u.nama,
     'Jumlah Siswa': u.siswa,
-    'Pagu Murni (Rp)': u.paguMurni,
-    'Talangan FKSS (Rp)': u.talanganFKSS,
+    'Jatah Bruto - sebelum iuran (Rp)': u.jatahBruto,
+    'Iuran FKSS (Rp)': u.iuranFKSS,
+    'Jatah Netto - setelah iuran (Rp)': u.jatahNetto,
+    'Iuran FKSS Diberikan ke Putra (Rp)': u.talanganFKSS,
     'Total Pagu BOS BJB (Rp)': u.pagu,
     'Realisasi Belanja SI (Rp)': u.realisasi,
     'Sisa Anggaran (Rp)': u.sisa,
@@ -950,8 +957,10 @@ window.exportPaguExcel = function() {
     'No': 'TOTAL',
     'Nama Unit': '5 Unit Sekolah',
     'Jumlah Siswa': totalSiswa,
-    'Pagu Murni (Rp)': totalPaguMurni,
-    'Talangan FKSS (Rp)': totalTalanganFKSS,
+    'Jatah Bruto - sebelum iuran (Rp)': unitStats.reduce((sum, u) => sum + (u.jatahBruto || 0), 0),
+    'Iuran FKSS (Rp)': unitStats.reduce((sum, u) => sum + (u.iuranFKSS || 0), 0),
+    'Jatah Netto - setelah iuran (Rp)': totalPaguMurni,
+    'Iuran FKSS Diberikan ke Putra (Rp)': totalTalanganFKSS,
     'Total Pagu BOS BJB (Rp)': totalPaguBJB,
     'Realisasi Belanja SI (Rp)': totalRealisasi,
     'Sisa Anggaran (Rp)': totalSisa,
@@ -1301,12 +1310,86 @@ function renderCetakSI() {
 }
 
 // --- PAGU & ANGGARAN UNIT ---
+// Tabel rincian jatah per unit: bruto (sebelum iuran), iuran FKSS, netto (setelah iuran)
+function renderRincianJatah(metrics) {
+  const el = document.getElementById('paguRincianJatah');
+  if (!el) return;
+
+  const rate = Number(PAGU_DATA.iuranFKSSPerSiswa) || 0;
+  const r = hitungRincianPagu(metrics.unitStats, rate);
+  const penalang = r.penalang ? r.penalang.nama : 'unit penalang';
+
+  const rowsHtml = r.rows.map((u, idx) => `
+    <tr>
+      <td style="font-weight: 700; text-align: center;">${idx + 1}</td>
+      <td><span class="tag-unit ${String(u.id).toLowerCase()}" style="font-size: 0.85rem;">${u.nama}</span></td>
+      <td class="table-num">${u.siswa} Siswa</td>
+      <td class="table-num" style="font-weight: 700;">${formatRupiah(u.jatahBruto)}</td>
+      <td class="table-num" style="color: #d97706; font-weight: 700;">&minus;${formatRupiah(u.iuranFKSS)}</td>
+      <td class="table-num" style="color: #059669; font-weight: 700;">${formatRupiah(u.jatahNetto)}</td>
+      <td class="table-num" style="color: ${u.tambahanIuran > 0 ? '#d97706' : 'var(--text-dim)'}; font-weight: ${u.tambahanIuran > 0 ? '700' : 'normal'};">
+        ${u.tambahanIuran > 0 ? '+' + formatRupiah(u.tambahanIuran) : '-'}
+      </td>
+      <td class="table-num" style="color: #0284c7; font-weight: 800;">${formatRupiah(u.paguRKAS)}</td>
+    </tr>`).join('');
+
+  const t = r.totals;
+  const peringatan = r.selisihTalangan !== 0
+    ? `<div style="margin-top: 10px; padding: 10px 14px; background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; color: #b91c1c; font-size: 0.82rem;">
+         ⚠️ <strong>Periksa data pagu:</strong> total iuran semua unit (${formatRupiah(t.iuranFKSS)}) tidak sama dengan tambahan iuran di ${penalang} (${formatRupiah(t.tambahanIuran)}). Selisih ${formatRupiah(Math.abs(r.selisihTalangan))}.
+       </div>`
+    : '';
+
+  el.innerHTML = `
+    <div class="si-batch-card" style="margin-bottom: 24px;">
+      <h4 style="margin-bottom: 4px;">🧮 Rincian Jatah BOS per Unit: Bruto, Iuran FKSS, dan Netto</h4>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px;">
+        Iuran FKSS = jumlah siswa &times; ${formatRupiah(rate)} per siswa. Jatah netto = jatah bruto (sebelum iuran) dikurangi iuran FKSS.
+      </p>
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th style="width: 40px; text-align: center;">NO</th>
+              <th>NAMA UNIT SEKOLAH</th>
+              <th class="table-num">SISWA</th>
+              <th class="table-num">JATAH BRUTO<br><span style="font-weight: 500; font-size: 0.68rem;">(sebelum iuran)</span></th>
+              <th class="table-num">IURAN FKSS<br><span style="font-weight: 500; font-size: 0.68rem;">(dikurangkan)</span></th>
+              <th class="table-num">JATAH NETTO<br><span style="font-weight: 500; font-size: 0.68rem;">(setelah iuran)</span></th>
+              <th class="table-num">IURAN DIBERIKAN<br><span style="font-weight: 500; font-size: 0.68rem;">ke ${penalang}</span></th>
+              <th class="table-num">PAGU RKAS<br><span style="font-weight: 500; font-size: 0.68rem;">(rekening BJB)</span></th>
+            </tr>
+          </thead>
+          <tbody>${rowsHtml}</tbody>
+          <tfoot style="font-weight: 800; background: #f8fafc; border-top: 2px solid var(--border-color);">
+            <tr>
+              <td colspan="2" style="padding-left: 14px;">TOTAL ${r.rows.length} UNIT</td>
+              <td class="table-num">${t.siswa} Siswa</td>
+              <td class="table-num">${formatRupiah(t.jatahBruto)}</td>
+              <td class="table-num" style="color: #d97706;">&minus;${formatRupiah(t.iuranFKSS)}</td>
+              <td class="table-num" style="color: #059669;">${formatRupiah(t.jatahNetto)}</td>
+              <td class="table-num" style="color: #d97706;">+${formatRupiah(t.tambahanIuran)}</td>
+              <td class="table-num" style="color: #0284c7;">${formatRupiah(t.paguRKAS)}</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div style="margin-top: 14px; padding: 12px 16px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; font-size: 0.83rem; color: #1e40af; line-height: 1.55;">
+        💡 <strong>Keterangan:</strong> Nominal iuran FKSS dari setiap unit (kolom <em>Iuran FKSS</em>) diberikan kepada <strong>${penalang}</strong>,
+        karena ${penalang} yang menalangi seluruh biaya iuran FKSS di luar dana BOS. Karena itu pagu RKAS ${penalang}
+        = jatah netto + total iuran semua unit (${formatRupiah(t.iuranFKSS)}), sedangkan unit lainnya menerima sebesar jatah netto.
+      </div>
+      ${peringatan}
+    </div>`;
+}
+
 function renderPagu() {
   const tbody = document.getElementById('paguTableBody');
   if (!tbody) return;
 
   const metrics = getMetrics();
   renderPaguDashboardTable(metrics);
+  renderRincianJatah(metrics);
 
   tbody.innerHTML = metrics.unitStats.map((u, idx) => `
     <tr>
@@ -1770,12 +1853,63 @@ function exportToExcel() {
 }
 
 // Render All Components
+// Mengisi teks pada index.html yang bergantung pada data (ditandai atribut data-dyn).
+// Angka keuangan tidak boleh ditulis tetap di HTML karena HTML bisa dibaca sebelum login.
+function escapeHtmlText(value) {
+  return String(value ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+function fillStaticLabels() {
+  const metrics = getMetrics();
+  const unitStats = metrics.unitStats;
+  const rate = Number(PAGU_DATA.iuranFKSSPerSiswa) || 0;
+  const r = hitungRincianPagu(unitStats, rate);
+  const totalSiswa = r.totals.siswa;
+  const jumlahUnit = unitStats.length;
+  const totalPagu = r.totals.paguRKAS;
+  const totalRealisasi = unitStats.reduce((sum, u) => sum + (u.realisasi || 0), 0);
+  const pctTerserap = totalPagu > 0 ? (totalRealisasi / totalPagu) * 100 : 0;
+  const penalang = r.penalang ? escapeHtmlText(r.penalang.nama) : '';
+  const lainnya = r.rows.filter((u) => !r.penalang || u.id !== r.penalang.id);
+
+  const setText = (key, text) => document.querySelectorAll(`[data-dyn="${key}"]`).forEach((el) => { el.textContent = text; });
+  const setHtml = (key, html) => document.querySelectorAll(`[data-dyn="${key}"]`).forEach((el) => { el.innerHTML = html; });
+
+  setText('siswaUnitRingkas', `${totalSiswa} Siswa (${jumlahUnit} Unit)`);
+  setText('siswaUnitSekolah', `${totalSiswa} Siswa (${jumlahUnit} Unit Sekolah)`);
+  setText('siswaUnitSekolah2', `${jumlahUnit} Unit Sekolah (${totalSiswa} Siswa)`);
+  setText('paguTotal', formatRupiah(PAGU_DATA.totalPaguGross || totalPagu));
+  setText('labelTotalRealisasi', `TOTAL REALISASI (${siBatches.length} SI)`);
+  setText('persenTersedia', `${Math.max(0, 100 - pctTerserap).toFixed(2)}% Tersedia`);
+  setText('talanganTotal', formatRupiah(r.totals.tambahanIuran));
+  setText('btnLihatRincian', `📒 Lihat Rincian Belanja (${transaksiList.length} Trx) →`);
+  setHtml('infoPaguDashboard',
+    `Berdasarkan <strong>${totalSiswa} siswa</strong> x <strong>${formatRupiah(PAGU_DATA.nominalPerSiswa)}</strong> = Total Pagu Bank BJB <strong>${formatRupiah(PAGU_DATA.totalPaguGross || totalPagu)}</strong>. Realisasi dihitung otomatis dari ${siBatches.length} Dokumen SI resmi (${transaksiList.length} transaksi).`);
+  setHtml('infoStruktur',
+    `Berdasarkan jumlah siswa penerima dana BOS sebanyak <strong>${totalSiswa} siswa</strong> dengan alokasi resmi ${formatRupiah(PAGU_DATA.nominalPerSiswa)} / siswa / tahun.`);
+
+  if (r.penalang) {
+    setText('paguPenalang', formatRupiah(r.penalang.paguRKAS));
+    setText('paguPenalangSub', `Netto ${formatRupiah(r.penalang.jatahNetto)} + iuran FKSS ${formatRupiah(r.totals.iuranFKSS)}`);
+    setText('paguLainnya', formatRupiah(lainnya.reduce((sum, u) => sum + u.paguRKAS, 0)));
+    setHtml('bannerFKSS',
+      `💡 <strong>Catatan Iuran FKSS:</strong> Iuran FKSS (${totalSiswa} siswa x ${formatRupiah(rate)} = ${formatRupiah(r.totals.iuranFKSS)}) dikurangkan dari jatah BOS tiap unit (jatah bruto menjadi jatah netto). Nominal iuran FKSS setiap unit diberikan kepada <strong>${penalang}</strong>, karena ${penalang} yang menalangi seluruh biaya iuran di luar dana BOS. Karena itu pagu ${penalang} di Bank BJB menjadi <strong>${formatRupiah(r.penalang.paguRKAS)}</strong> (jatah netto ${formatRupiah(r.penalang.jatahNetto)} + iuran semua unit ${formatRupiah(r.totals.iuranFKSS)}), sedangkan unit lainnya menerima sebesar jatah netto.`);
+  } else {
+    setText('paguPenalang', '-');
+    setText('paguPenalangSub', '');
+    setText('paguLainnya', '-');
+    setHtml('bannerFKSS',
+      `💡 <strong>Catatan Iuran FKSS:</strong> Iuran FKSS (${totalSiswa} siswa x ${formatRupiah(rate)} = ${formatRupiah(r.totals.iuranFKSS)}) dikurangkan dari jatah BOS tiap unit (jatah bruto menjadi jatah netto).`);
+  }
+}
+
 function renderAll() {
   renderDashboard();
   renderTransaksi();
   renderCetakSI();
   renderPagu();
   renderRekonsiliasi();
+  fillStaticLabels();
 }
 
 // =========================================================
