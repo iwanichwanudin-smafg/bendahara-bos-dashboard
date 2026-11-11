@@ -115,6 +115,18 @@ export function renderRekonsiliasi() {
   setLabel('labelKreditBank', `Total Kredit Bank BJB (${enrichedData.filter((r) => (r.kredit || 0) > 0).length} Trx)`);
   setLabel('labelTotalSI', `Total SI di Sistem BOSku (${totalSIBatches} SI)`);
   setLabel('labelTabMutasi', `Mutasi Rekening Koran (${enrichedData.length} Transaksi)`);
+  const belumCocok = creditItems.filter((r) => !r.isMatched);
+  const jumlahBunga = enrichedData.filter((r) => r.kategori === 'BUNGA_BANK').length;
+  setLabel('labelPenarikan', `${creditItems.length} Penarikan Pemindahbukuan SI`);
+  setLabel('labelSelisih', `Selisih Rekonsiliasi (${belumCocok.length} Item Baru)`);
+  setLabel('ketSelisih', belumCocok.length === 0
+    ? 'Seluruh penarikan bank sudah cocok dengan SI'
+    : `${belumCocok.slice(0, 2).map((r) => r.uraian).join(', ')}${belumCocok.length > 2 ? ` dan ${belumCocok.length - 2} lainnya` : ''} terekam di bank`);
+  setLabel('labelTabBunga', `Akumulasi Bunga Bank (${jumlahBunga} Trx)`);
+  setLabel('footerMatch', `${matchedCount} MATCH / ${belumCocok.length} BARU`);
+  setLabel('infoRekonStatus', totalSIBatches > 0 && matchedCount === totalSIBatches
+    ? `Semua ${totalSIBatches} dokumen SI terbitan sekolah telah diverifikasi 100% terealisasi di bank.`
+    : `${matchedCount} dari ${totalSIBatches} dokumen SI cocok dengan rekening koran bank; sisanya perlu diperiksa.`);
   setLabel('catatanSaldo', `* Saldo Kas Bank BJB BOSP${REKENING_INFO.tahunAnggaran ? ' TA ' + REKENING_INFO.tahunAnggaran : ''}: ${formatRupiah(saldoAkhir)}`);
 
   if (rekonBoxTotalBank) rekonBoxTotalBank.textContent = formatRupiah(totalKredit);

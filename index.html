@@ -569,7 +569,7 @@
                 </div>
                 <div class="stat-value" id="rekonStatTotalKredit" style="color: #e11d48; font-size: 1.35rem; font-family: var(--font-mono);">–</div>
                 <div class="stat-meta">
-                  <span style="color: #e11d48; font-size: 0.75rem;">31 Penarikan Pemindahbukuan SI</span>
+                  <span data-dyn="labelPenarikan" style="color: #e11d48; font-size: 0.75rem;">Penarikan Pemindahbukuan SI</span>
                 </div>
               </div>
 
@@ -617,9 +617,9 @@
                 </div>
 
                 <div style="background: #fefce8; border: 1px solid #fef08a; border-radius: 8px; padding: 12px 14px;">
-                  <div style="font-size: 0.72rem; color: #854d0e; font-weight: 700; text-transform: uppercase;">Selisih Rekonsiliasi (1 Item Baru)</div>
+                  <div data-dyn="labelSelisih" style="font-size: 0.72rem; color: #854d0e; font-weight: 700; text-transform: uppercase;">Selisih Rekonsiliasi</div>
                   <div style="font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); color: #d97706; margin-top: 3px;" id="rekonBoxSelisih">–</div>
-                  <div style="font-size: 0.75rem; color: #854d0e; margin-top: 2px;">SI 4 (Gaji Okt) terekam di bank</div>
+                  <div data-dyn="ketSelisih" style="font-size: 0.75rem; color: #854d0e; margin-top: 2px;">–</div>
                 </div>
 
                 <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 12px 14px;">
@@ -639,7 +639,7 @@
                 <span>⚖️</span> Audit Pencocokan SI vs Bank
               </button>
               <button type="button" class="rekon-tab-btn" id="btnTabRekKoranBunga">
-                <span>📈</span> Akumulasi Bunga Bank (10 Trx)
+                <span>📈</span> <span data-dyn="labelTabBunga">Akumulasi Bunga Bank</span>
               </button>
             </div>
 
@@ -658,7 +658,7 @@
 
                 <div class="form-group" style="margin-bottom: 0; min-width: 150px;">
                   <select id="rekonFilterBulan" class="filter-select" style="font-weight: 600;">
-                    <option value="ALL">Semua Bulan (Jan - Okt)</option>
+                    <option value="ALL">Semua Bulan</option>
                     <option value="01">Januari 2026</option>
                     <option value="02">Februari 2026</option>
                     <option value="03">Maret 2026</option>
@@ -669,6 +669,8 @@
                     <option value="08">Agustus 2026</option>
                     <option value="09">September 2026</option>
                     <option value="10">Oktober 2026</option>
+                    <option value="11">November 2026</option>
+                    <option value="12">Desember 2026</option>
                   </select>
                 </div>
 
@@ -726,7 +728,7 @@
             <!-- Dynamic Sub-Tab 2: Audit Pencocokan Dokumen SI vs Bank -->
             <div id="rekonContainerPencocokan" class="no-print" style="display: none;">
               <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; font-size: 0.84rem; color: #1e40af; line-height: 1.5;">
-                ℹ️ <strong>Informasi Rekonsiliasi:</strong> Tabel berikut membandingkan setiap Surat Instruksi (SI) yang dicatat di BOSku dengan data mutasi debit/kredit pada Rekening Koran Bank BJB. Semua 30 dokumen SI terbitan sekolah telah diverifikasi 100% terealisasi di bank.
+                ℹ️ <strong>Informasi Rekonsiliasi:</strong> Tabel berikut membandingkan setiap Surat Instruksi (SI) yang dicatat di BOSku dengan data mutasi debit/kredit pada Rekening Koran Bank BJB. <span data-dyn="infoRekonStatus">–</span>
               </div>
               <div class="table-responsive">
                 <table class="data-table">
@@ -754,7 +756,7 @@
                       <td></td>
                       <td class="table-num" id="rekonAuditFooterBank" style="color: #991b1b; font-family: var(--font-mono);">–</td>
                       <td class="table-num" id="rekonAuditFooterDiff" style="color: #d97706; font-family: var(--font-mono);">–</td>
-                      <td style="text-align: center; font-size: 0.75rem; color: #15803d;">30 MATCH / 1 BARU</td>
+                      <td data-dyn="footerMatch" style="text-align: center; font-size: 0.75rem; color: #15803d;">–</td>
                     </tr>
                   </tfoot>
                 </table>
