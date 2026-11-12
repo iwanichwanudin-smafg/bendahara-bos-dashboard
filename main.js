@@ -2072,10 +2072,10 @@ function renderAll() {
 }
 
 // =========================================================
-// 4B. MODUL HISTORI PAGU & BELANJA (2024 & 2025)
+// 4B. MODUL HISTORI PAGU & BELANJA (2024, 2025 & 2026)
 // =========================================================
 
-let historiTahunAktif = 2025;
+let historiTahunAktif = 2026;
 let historiData = {
   2025: {
     totalPagu: 0,
@@ -2097,15 +2097,18 @@ let historiData = {
 
 window.switchHistoriTahun = function(tahun) {
   historiTahunAktif = tahun;
+  const btn2026 = document.getElementById('btnTabHistori2026');
   const btn2025 = document.getElementById('btnTabHistori2025');
   const btn2024 = document.getElementById('btnTabHistori2024');
 
-  if (tahun === 2025) {
+  [btn2026, btn2025, btn2024].forEach(b => b?.classList.remove('active'));
+
+  if (tahun === 2026) {
+    btn2026?.classList.add('active');
+  } else if (tahun === 2025) {
     btn2025?.classList.add('active');
-    btn2024?.classList.remove('active');
   } else {
     btn2024?.classList.add('active');
-    btn2025?.classList.remove('active');
   }
 
   renderHistoriPagu();
@@ -2113,7 +2116,25 @@ window.switchHistoriTahun = function(tahun) {
 
 window.filterHistoriBelanja = function() {
   const kw = (document.getElementById('historiSearchInput')?.value || '').toLowerCase().trim();
-  const currentBelanja = historiData[historiTahunAktif]?.belanjaRows || [];
+  let currentBelanja = [];
+
+  if (historiTahunAktif === 2026) {
+    currentBelanja = transaksiList.map(t => ({
+      tanggal: t.tanggal,
+      unit: t.unitNama,
+      unitId: t.unitId,
+      kategori: t.kategori,
+      namaBarang: t.namaBarang,
+      qty: t.qty,
+      satuan: t.satuan,
+      hargaSatuan: t.hargaSatuan,
+      totalNominal: Number(t.totalNominal || t.nominal || t.netto) || 0,
+      keterangan: t.keterangan || t.noSI || '-'
+    }));
+  } else {
+    currentBelanja = historiData[historiTahunAktif]?.belanjaRows || [];
+  }
+
   const filtered = currentBelanja.filter(b => 
     (b.namaBarang || '').toLowerCase().includes(kw) ||
     (b.keterangan || '').toLowerCase().includes(kw) ||
@@ -2125,7 +2146,42 @@ window.filterHistoriBelanja = function() {
 
 function renderHistoriPagu() {
   const tahun = historiTahunAktif;
-  const d = historiData[tahun] || { totalPagu: 0, totalRealisasi: 0, sisa: 0, persen: '0%', unitRows: [], belanjaRows: [] };
+  let d;
+
+  if (tahun === 2026) {
+    // Ambil data live tahun 2026 langsung dari state sistem berjalan
+    const m = getMetrics();
+    d = {
+      totalPagu: m.totalPagu,
+      totalRealisasi: m.totalRealisasi,
+      sisa: m.sisaKas,
+      persen: `${m.pctRealisasi}%`,
+      unitRows: m.unitStats.map(u => ({
+        nama: u.nama,
+        siswa: u.siswa,
+        paguMurni: u.jatahNetto,
+        iuranFKSS: u.iuranFKSS,
+        totalPagu: u.pagu,
+        realisasi: u.realisasi,
+        sisa: u.sisa,
+        pct: `${u.pct}%`
+      })),
+      belanjaRows: transaksiList.map(t => ({
+        tanggal: t.tanggal,
+        unit: t.unitNama,
+        unitId: t.unitId,
+        kategori: t.kategori,
+        namaBarang: t.namaBarang,
+        qty: t.qty,
+        satuan: t.satuan,
+        hargaSatuan: t.hargaSatuan,
+        totalNominal: Number(t.totalNominal || t.nominal || t.netto) || 0,
+        keterangan: t.keterangan || t.noSI || '-'
+      }))
+    };
+  } else {
+    d = historiData[tahun] || { totalPagu: 0, totalRealisasi: 0, sisa: 0, persen: '0%', unitRows: [], belanjaRows: [] };
+  }
 
   const lblTahunPagu = document.getElementById('historiLabelTahunPagu');
   const tblTahunPagu = document.getElementById('historiTableTahunPagu');
@@ -2299,7 +2355,7 @@ function setupNavigation() {
     } else if (hash === '#rekonsiliasi') {
       switchPage(navRekonsiliasi, viewRekonsiliasi, 'Rekonsiliasi Bank & Rekening Koran', 'Pencatatan Buku Kas Bank BJB BOSP TA 2026 dan Verifikasi SI');
     } else if (hash === '#histori-pagu') {
-      switchPage(navHistoriPagu, viewHistoriPagu, 'Histori Pagu & Belanja (2024-2025)', 'Arsip Total Alokasi Pagu Anggaran & Realisasi Belanja BOS Tahun Lalu');
+      switchPage(navHistoriPagu, viewHistoriPagu, 'Histori & Analisa Pagu (2024-2026)', 'Arsip Total Alokasi Pagu Anggaran & Realisasi Belanja BOS per Tahun');
     } else {
       switchPage(navDashboard, viewDashboard, 'Dashboard Ringkas', 'Ringkasan Pagu & Realisasi SI yang Sudah Ditransaksikan');
     }
