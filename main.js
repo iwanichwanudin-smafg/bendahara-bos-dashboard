@@ -2166,6 +2166,8 @@ window.switchHistoriTahun = function(tahun) {
 
 window.filterHistoriBelanja = function() {
   const kw = (document.getElementById('historiSearchInput')?.value || '').toLowerCase().trim();
+  const selectedUnit = document.getElementById('historiUnitFilter')?.value || '';
+  const selectedKat = document.getElementById('historiKategoriFilter')?.value || '';
   let currentBelanja = [];
 
   if (historiTahunAktif === 2026) {
@@ -2185,12 +2187,19 @@ window.filterHistoriBelanja = function() {
     currentBelanja = historiData[historiTahunAktif]?.belanjaRows || [];
   }
 
-  const filtered = currentBelanja.filter(b => 
-    (b.namaBarang || '').toLowerCase().includes(kw) ||
-    (b.keterangan || '').toLowerCase().includes(kw) ||
-    (b.unit || '').toLowerCase().includes(kw) ||
-    (b.kategori || '').toLowerCase().includes(kw)
-  );
+  const filtered = currentBelanja.filter(b => {
+    const matchesKw = !kw || 
+      (b.namaBarang || '').toLowerCase().includes(kw) ||
+      (b.keterangan || '').toLowerCase().includes(kw) ||
+      (b.unit || '').toLowerCase().includes(kw) ||
+      (b.kategori || '').toLowerCase().includes(kw);
+
+    const matchesUnit = !selectedUnit || (b.unit || '').toLowerCase().includes(selectedUnit.toLowerCase().replace('fg ', '').replace(' sma', ''));
+    const matchesKat = !selectedKat || (b.kategori || '').toLowerCase() === selectedKat.toLowerCase();
+
+    return matchesKw && matchesUnit && matchesKat;
+  });
+
   renderHistoriBelanjaTable(filtered);
 };
 
@@ -2305,7 +2314,10 @@ function renderHistoriBelanjaTable(rows) {
       <td style="font-family: var(--font-mono); font-size: 0.8rem;">${b.tanggal || '-'}</td>
       <td><span class="tag-unit ${String(b.unitId || '').toLowerCase()}">${b.unit || '-'}</span></td>
       <td><span class="tag-kategori ${(b.kategori || '').toLowerCase()}">${b.kategori || 'Operasional'}</span></td>
-      <td style="font-weight: 600;">${b.namaBarang || '-'}</td>
+      <td style="font-weight: 600;">
+        ${b.namaBarang || '-'}
+        ${b.linkFoto ? `<a href="${b.linkFoto}" target="_blank" style="margin-left: 6px; font-size: 0.75rem; color: #0284c7; text-decoration: underline;" title="Lihat Foto Bukti Barang">📷 Foto</a>` : ''}
+      </td>
       <td style="text-align: center; font-family: var(--font-mono);">${b.qty || 1} ${b.satuan || ''}</td>
       <td class="table-num">${formatRupiah(b.hargaSatuan || 0)}</td>
       <td class="table-num" style="font-weight: 700; color: #0284c7;">${formatRupiah(b.totalNominal || 0)}</td>

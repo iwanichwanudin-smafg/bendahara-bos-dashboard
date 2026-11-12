@@ -1,4 +1,5 @@
 // DATA HISTORIS RINCIAN BELANJA BOS SMAS FUTURE GATE TAHUN 2025
+// Disinkronkan dengan Data Kategori Belanja & Siplah Unit (Sheet Aset, Ops & Buku)
 export const HISTORI_BELANJA_2025 = [
   {
     "tanggal": "2025-01-28",
@@ -10,7 +11,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 5225103.0,
     "totalNominal": 5225103.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -23,7 +24,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 1015000.0,
     "totalNominal": 3045000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -36,7 +37,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1942500.0,
     "totalNominal": 1942500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -49,7 +50,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 4995000.0,
     "totalNominal": 4995000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -62,7 +63,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1199250.0,
     "totalNominal": 1199250.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -75,7 +76,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang / bulan",
     "hargaSatuan": 1000000.0,
     "totalNominal": 1000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -88,7 +89,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -101,7 +102,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -114,7 +115,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -127,7 +128,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -140,7 +141,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -153,7 +154,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -166,7 +167,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -179,7 +180,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -192,7 +193,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -205,7 +206,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -218,7 +219,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -231,7 +232,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -244,7 +245,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -257,7 +258,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -270,7 +271,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -283,7 +284,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -296,7 +297,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -309,7 +310,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -322,7 +323,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang/ bulan",
     "hargaSatuan": 2860000.0,
     "totalNominal": 2860000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Januari)"
   },
   {
@@ -335,7 +336,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 5770000.0,
     "totalNominal": 23080000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -348,7 +349,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 4141000.0,
     "totalNominal": 4141000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -361,59 +362,59 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 135000.0,
     "totalNominal": 2025000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.1.02.03.02.0311",
-    "kategori": "Modal",
+    "kategori": "Operasional",
     "namaBarang": "Perangkat Pemeliharaan Mikroskop",
     "qty": 1.0,
     "satuan": "paket",
     "hargaSatuan": 250000.0,
     "totalNominal": 250000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.03.0011",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Bola Voli",
     "qty": 6.0,
     "satuan": "buah",
     "hargaSatuan": 250000.0,
     "totalNominal": 1500000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.03.0011",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Bola Sepak",
     "qty": 6.0,
     "satuan": "buah",
     "hargaSatuan": 210000.0,
     "totalNominal": 1260000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.03.0011",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Bola Basket",
     "qty": 6.0,
     "satuan": "buah",
     "hargaSatuan": 200000.0,
     "totalNominal": 1200000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -426,7 +427,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 8000000.0,
     "totalNominal": 8000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -439,7 +440,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 1950000.0,
     "totalNominal": 1950000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -452,7 +453,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 35000.0,
     "totalNominal": 245000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -465,7 +466,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 3000000.0,
     "totalNominal": 3000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -478,98 +479,98 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "botol",
     "hargaSatuan": 370000.0,
     "totalNominal": 1850000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.01.0013",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Microsop Binokuler",
     "qty": 1.0,
     "satuan": "unit",
     "hargaSatuan": 8000000.0,
     "totalNominal": 8000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Kit Listrik dan Magnet",
     "qty": 1.0,
     "satuan": "buah",
     "hargaSatuan": 90000.0,
     "totalNominal": 90000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Avometer Digital",
     "qty": 5.0,
     "satuan": "buah",
     "hargaSatuan": 600000.0,
     "totalNominal": 3000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Kabel jumper male to male",
     "qty": 5.0,
     "satuan": "unit",
     "hargaSatuan": 13000.0,
     "totalNominal": 65000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Kabel jumper male to male",
     "qty": 5.0,
     "satuan": "unit",
     "hargaSatuan": 15000.0,
     "totalNominal": 75000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Kit Optika",
     "qty": 1.0,
     "satuan": "paket",
     "hargaSatuan": 1600000.0,
     "totalNominal": 1600000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.1.02.01.01.0029",
-    "kategori": "Modal",
+    "kategori": "Operasional",
     "namaBarang": "Tinta/Catridge Printer-1 SET CMYK Cartridge Epson T188 Tinta (WF-7711 7710 7611 7211 7111 7610)",
     "qty": 3.0,
     "satuan": "set",
     "hargaSatuan": 600000.0,
     "totalNominal": 1800000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -582,7 +583,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "box",
     "hargaSatuan": 75000.0,
     "totalNominal": 75000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -595,7 +596,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 7934679.0,
     "totalNominal": 7934679.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -608,7 +609,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 1003000.0,
     "totalNominal": 7021000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -621,7 +622,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1942500.0,
     "totalNominal": 1942500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -634,7 +635,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 4995000.0,
     "totalNominal": 4995000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -647,7 +648,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1199250.0,
     "totalNominal": 1199250.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -660,7 +661,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang / bulan",
     "hargaSatuan": 1000000.0,
     "totalNominal": 1000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -673,7 +674,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -686,7 +687,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -699,7 +700,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -712,7 +713,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -725,7 +726,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -738,7 +739,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -751,7 +752,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -764,7 +765,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -777,7 +778,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -790,7 +791,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -803,7 +804,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -816,7 +817,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -829,7 +830,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -842,7 +843,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -855,7 +856,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -868,7 +869,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -881,7 +882,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -894,7 +895,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -907,7 +908,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang/ bulan",
     "hargaSatuan": 2860000.0,
     "totalNominal": 2860000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Februari)"
   },
   {
@@ -920,7 +921,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 8758701.0,
     "totalNominal": 8758701.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -933,7 +934,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 1003000.0,
     "totalNominal": 6018000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -946,7 +947,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1942500.0,
     "totalNominal": 1942500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -959,7 +960,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 4995000.0,
     "totalNominal": 4995000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -972,7 +973,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1199250.0,
     "totalNominal": 1199250.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -985,7 +986,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang / bulan",
     "hargaSatuan": 1000000.0,
     "totalNominal": 1000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -998,7 +999,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1011,7 +1012,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1024,7 +1025,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1037,7 +1038,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1050,7 +1051,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1063,7 +1064,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1076,7 +1077,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1089,7 +1090,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1102,7 +1103,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1115,7 +1116,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1128,7 +1129,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1141,7 +1142,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1154,7 +1155,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1167,7 +1168,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1180,7 +1181,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1193,7 +1194,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1206,7 +1207,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1219,7 +1220,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1232,7 +1233,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang/ bulan",
     "hargaSatuan": 2860000.0,
     "totalNominal": 2860000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Maret)"
   },
   {
@@ -1245,7 +1246,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 2400000.0,
     "totalNominal": 2400000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1258,7 +1259,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 2350000.0,
     "totalNominal": 2350000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1271,7 +1272,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 675000.0,
     "totalNominal": 675000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1284,7 +1285,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 11250000.0,
     "totalNominal": 11250000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1297,46 +1298,46 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 250000.0,
     "totalNominal": 500000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.05.01.02.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "kamera DSLR-DSLR",
     "qty": 1.0,
     "satuan": "unit",
     "hargaSatuan": 27720000.0,
     "totalNominal": 27720000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.08.03.0011",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Matras",
     "qty": 14.0,
     "satuan": "buah",
     "hargaSatuan": 225000.0,
     "totalNominal": 3150000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.08.03.0011",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "meja tenis meja (pingpong) standar pertandingan + net",
     "qty": 1.0,
     "satuan": "set",
     "hargaSatuan": 6709000.0,
     "totalNominal": 6709000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1349,7 +1350,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 6095000.0,
     "totalNominal": 6095000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1362,59 +1363,59 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 500000.0,
     "totalNominal": 500000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Jangka Sorong/Sigmat",
     "qty": 2.0,
     "satuan": "buah",
     "hargaSatuan": 85000.0,
     "totalNominal": 170000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Mikrometer Sekrup",
     "qty": 5.0,
     "satuan": "buah",
     "hargaSatuan": 85000.0,
     "totalNominal": 425000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Rangkaian Hamabtan jembatan Seri",
     "qty": 9.0,
     "satuan": "set",
     "hargaSatuan": 85000.0,
     "totalNominal": 765000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Lain-lain",
     "qty": 1.0,
     "satuan": "set",
     "hargaSatuan": 185000.0,
     "totalNominal": 185000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1427,7 +1428,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "lusin",
     "hargaSatuan": 450000.0,
     "totalNominal": 450000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1440,7 +1441,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 735000.0,
     "totalNominal": 735000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1453,7 +1454,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 80000.0,
     "totalNominal": 160000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1466,7 +1467,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 40000.0,
     "totalNominal": 200000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1479,7 +1480,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 35000.0,
     "totalNominal": 175000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1492,7 +1493,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 5377149.0,
     "totalNominal": 5377149.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1505,7 +1506,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 1003000.0,
     "totalNominal": 6018000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1518,7 +1519,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1942500.0,
     "totalNominal": 1942500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1531,7 +1532,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 4995000.0,
     "totalNominal": 4995000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1544,7 +1545,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1199250.0,
     "totalNominal": 1199250.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1557,7 +1558,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang / bulan",
     "hargaSatuan": 1000000.0,
     "totalNominal": 1000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1570,7 +1571,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1583,7 +1584,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1596,7 +1597,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1609,7 +1610,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1622,7 +1623,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1635,7 +1636,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1648,7 +1649,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1661,7 +1662,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1674,7 +1675,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1687,7 +1688,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1700,7 +1701,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1713,7 +1714,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1726,7 +1727,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1739,7 +1740,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1752,7 +1753,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1765,7 +1766,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1778,7 +1779,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1791,7 +1792,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1804,7 +1805,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang/ bulan",
     "hargaSatuan": 2860000.0,
     "totalNominal": 2860000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (April)"
   },
   {
@@ -1817,20 +1818,20 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 920000.0,
     "totalNominal": 18400000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
     "tanggal": "2025-05-28",
     "bulan": "Mei",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Tabung Resonansi",
     "qty": 1.0,
     "satuan": "set",
     "hargaSatuan": 2200000.0,
     "totalNominal": 2200000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1843,7 +1844,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "box/lusin",
     "hargaSatuan": 107000.0,
     "totalNominal": 214000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1856,7 +1857,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 70000.0,
     "totalNominal": 1400000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1869,7 +1870,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 75000.0,
     "totalNominal": 7500000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1882,7 +1883,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 470000.0,
     "totalNominal": 1410000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1895,7 +1896,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 5766174.0,
     "totalNominal": 5766174.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1908,7 +1909,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 1003000.0,
     "totalNominal": 6018000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1921,7 +1922,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1942500.0,
     "totalNominal": 1942500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1934,7 +1935,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 4995000.0,
     "totalNominal": 4995000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1947,7 +1948,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1199250.0,
     "totalNominal": 1199250.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1960,7 +1961,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang / bulan",
     "hargaSatuan": 1000000.0,
     "totalNominal": 1000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1973,7 +1974,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1986,7 +1987,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -1999,7 +2000,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2012,7 +2013,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2025,7 +2026,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2038,7 +2039,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2051,7 +2052,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2064,7 +2065,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2077,7 +2078,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2090,7 +2091,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2103,7 +2104,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2116,7 +2117,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2129,7 +2130,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2142,7 +2143,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2155,7 +2156,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2168,7 +2169,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2181,7 +2182,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2194,7 +2195,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2207,7 +2208,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang/ bulan",
     "hargaSatuan": 2860000.0,
     "totalNominal": 2860000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Mei)"
   },
   {
@@ -2220,20 +2221,20 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 920000.0,
     "totalNominal": 46000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
     "tanggal": "2025-06-28",
     "bulan": "Juni",
     "kodeRekening": "5.2.02.08.03.0011",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Barbel",
     "qty": 6.0,
     "satuan": "buah",
     "hargaSatuan": 395000.0,
     "totalNominal": 2370000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2246,7 +2247,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 452942.0,
     "totalNominal": 452942.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2259,7 +2260,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 10000.0,
     "totalNominal": 50000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2272,7 +2273,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 180000.0,
     "totalNominal": 540000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2285,33 +2286,33 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buku",
     "hargaSatuan": 30000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
     "tanggal": "2025-06-28",
     "bulan": "Juni",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Osiloscope",
     "qty": 1.0,
     "satuan": "unit",
     "hargaSatuan": 3700000.0,
     "totalNominal": 3700000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
     "tanggal": "2025-06-28",
     "bulan": "Juni",
     "kodeRekening": "5.1.02.01.01.0024",
-    "kategori": "Modal",
+    "kategori": "Operasional",
     "namaBarang": "Tinta Refill Printer",
     "qty": 2.0,
     "satuan": "set",
     "hargaSatuan": 227250.0,
     "totalNominal": 454500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2324,7 +2325,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 70000.0,
     "totalNominal": 1400000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2337,20 +2338,20 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 80000.0,
     "totalNominal": 1760000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
     "tanggal": "2025-06-28",
     "bulan": "Juni",
     "kodeRekening": "5.1.02.01.01.0029",
-    "kategori": "Modal",
+    "kategori": "Operasional",
     "namaBarang": "Tinta/Catridge Printer-1 SET CMYK Cartridge Epson T188 Tinta (WF-7711 7710 7611 7211 7111 7610)",
     "qty": 2.0,
     "satuan": "set",
     "hargaSatuan": 600000.0,
     "totalNominal": 1200000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2363,7 +2364,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 75000.0,
     "totalNominal": 375000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2376,7 +2377,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 470000.0,
     "totalNominal": 4230000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2389,7 +2390,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "pak",
     "hargaSatuan": 20000.0,
     "totalNominal": 1200000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2402,7 +2403,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 7385058.0,
     "totalNominal": 7385058.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2415,7 +2416,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 1003000.0,
     "totalNominal": 6018000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2428,7 +2429,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1942500.0,
     "totalNominal": 1942500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2441,7 +2442,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 4995000.0,
     "totalNominal": 4995000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2454,7 +2455,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1199250.0,
     "totalNominal": 1199250.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2467,7 +2468,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang / bulan",
     "hargaSatuan": 1000000.0,
     "totalNominal": 1000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2480,7 +2481,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2493,7 +2494,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2506,7 +2507,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2519,7 +2520,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2532,7 +2533,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2545,7 +2546,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2558,7 +2559,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2571,7 +2572,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2584,7 +2585,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2597,7 +2598,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2610,7 +2611,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2623,7 +2624,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 7920000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2636,7 +2637,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2649,7 +2650,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2662,7 +2663,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2675,7 +2676,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2688,7 +2689,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 7920000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2701,7 +2702,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 7920000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2714,7 +2715,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang/ bulan",
     "hargaSatuan": 2860000.0,
     "totalNominal": 2860000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2727,7 +2728,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 6375960.0,
     "totalNominal": 6375960.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2740,7 +2741,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 1003000.0,
     "totalNominal": 4012000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2753,7 +2754,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1942500.0,
     "totalNominal": 1942500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2766,7 +2767,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 4995000.0,
     "totalNominal": 4995000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2779,7 +2780,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1199250.0,
     "totalNominal": 1199250.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2792,7 +2793,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang / bulan",
     "hargaSatuan": 1000000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2805,7 +2806,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2818,7 +2819,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2831,7 +2832,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2844,7 +2845,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2857,7 +2858,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2870,7 +2871,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2883,7 +2884,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2896,7 +2897,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2909,7 +2910,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2922,7 +2923,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2935,7 +2936,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2948,7 +2949,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2961,7 +2962,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2974,7 +2975,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -2987,7 +2988,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -3000,7 +3001,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -3013,7 +3014,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -3026,7 +3027,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -3039,7 +3040,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang/ bulan",
     "hargaSatuan": 2860000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Juli)"
   },
   {
@@ -3052,7 +3053,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 337734.0,
     "totalNominal": 337734.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3065,345 +3066,345 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 910000.0,
     "totalNominal": 5460000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "MAP POWER",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 137000.0,
     "totalNominal": 137000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI LITERASI AKADEMIA: PRESENTASI DAN PUBLIC SPEAKING",
     "qty": 2.0,
     "satuan": "eksemplar",
     "hargaSatuan": 85000.0,
     "totalNominal": 170000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI PANDUAN PIARA: KUCING-PANDUAN BERSAHABAT DG KUCING",
     "qty": 2.0,
     "satuan": "eksemplar",
     "hargaSatuan": 75000.0,
     "totalNominal": 150000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "KARIERKU DI MASA DEPAN: BEKERJA SEBAGAI PENULIS",
     "qty": 2.0,
     "satuan": "eksemplar",
     "hargaSatuan": 92000.0,
     "totalNominal": 184000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "WIRAUSAHA SEJAK DINI: BERANI WUJUDKAN MIMPI",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 82000.0,
     "totalNominal": 82000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI INDONESIA KAYA: KERAMIK UNTUK PEMULA",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 94000.0,
     "totalNominal": 94000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI INDONESIA KAYA: KRIYA BATIK",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 91000.0,
     "totalNominal": 91000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI BECAUSE YOU ASKED: LINGK. SEHAT: RUMAH & SEKOLAH",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 54000.0,
     "totalNominal": 54000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI GREEN TECH: BONGKAR TURBIN ANGIN II",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 85000.0,
     "totalNominal": 85000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI GREEN TECH: BONGKAR TURBIN ANGIN II",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 85000.0,
     "totalNominal": 85000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "PERPUSTAKAAN IDAMAN: PANDUAN PRAKTIS MENGELOLA PERPUSTAKAAN",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 90000.0,
     "totalNominal": 90000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "100 IDE U/ GURU: CODING",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 90000.0,
     "totalNominal": 90000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "BETAPA MUDAH MEMBUAT MODUL AJAR",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 90000.0,
     "totalNominal": 90000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "BETAPA MUDAH MEMBUAT ASESMEN KONTEMPORER",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 82000.0,
     "totalNominal": 82000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI LULUS SKU PRAMUKA: SIAGA MULA",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 94000.0,
     "totalNominal": 94000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI LULUS SKU PRAMUKA: SIAGA BANTU",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 86000.0,
     "totalNominal": 86000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI LULUS SKU PRAMUKA: SIAGA TATA",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 94000.0,
     "totalNominal": 94000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI LULUS SKU PRAMUKA: PENGGALANG RAMU",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 114000.0,
     "totalNominal": 114000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI LULUS SKU PRAMUKA: PENGGALANG RAKIT",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 86000.0,
     "totalNominal": 86000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI LULUS SKU PRAMUKA: PENGGALANG TERAP",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 77000.0,
     "totalNominal": 77000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI LULUS SKU PRAMUKA: PENEGAK BANTARA",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 140000.0,
     "totalNominal": 140000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI LULUS SKU PRAMUKA: PENEGAK LAKSANA",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 140000.0,
     "totalNominal": 140000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "SERI LULUS SKU PRAMUKA: PENEGAK PANDEGA",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 94000.0,
     "totalNominal": 94000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "EKSPLORASI ESAI",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 70000.0,
     "totalNominal": 70000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "KELAS SKENARIO",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 129000.0,
     "totalNominal": 129000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "POP-UP 3D: TUBUH MANUSIA",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 275000.0,
     "totalNominal": 275000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3416,7 +3417,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 175000.0,
     "totalNominal": 175000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3429,7 +3430,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 175000.0,
     "totalNominal": 175000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3442,85 +3443,85 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 175000.0,
     "totalNominal": 175000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "DUWIT PLAN",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 92000.0,
     "totalNominal": 92000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "INSTANT MARKETING FOR BUSY PEOPLE",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 107000.0,
     "totalNominal": 107000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "REPUTATION DRIVEN: CSR#",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 146000.0,
     "totalNominal": 146000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "MASAKAN POPULER & SAMBAL NUSANTARA",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 123000.0,
     "totalNominal": 123000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "HIDANGAN LEZAT SATE NUSANTARA#",
     "qty": 1.0,
     "satuan": "eksemplar",
     "hargaSatuan": 60000.0,
     "totalNominal": 60000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "MIRA LESMANA: MENJADI KREATIF DI DUNIA KREATIF",
     "qty": 2.0,
     "satuan": "eksemplar",
     "hargaSatuan": 55000.0,
     "totalNominal": 110000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3533,20 +3534,20 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 80000.0,
     "totalNominal": 80000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.2.05.01.01.0001",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Audiolib",
     "qty": 25.0,
     "satuan": "eksemplar",
     "hargaSatuan": 400000.0,
     "totalNominal": 10000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3559,7 +3560,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 89000.0,
     "totalNominal": 5518000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3572,7 +3573,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 96000.0,
     "totalNominal": 2592000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3585,7 +3586,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 87000.0,
     "totalNominal": 1566000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3598,7 +3599,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 79000.0,
     "totalNominal": 4898000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3611,7 +3612,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 72000.0,
     "totalNominal": 4464000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3624,7 +3625,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 96000.0,
     "totalNominal": 4320000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3637,7 +3638,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 75000.0,
     "totalNominal": 4200000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3650,7 +3651,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 66000.0,
     "totalNominal": 5016000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3663,7 +3664,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 82000.0,
     "totalNominal": 1394000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3676,7 +3677,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 100000.0,
     "totalNominal": 6200000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3689,7 +3690,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 71000.0,
     "totalNominal": 4402000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3702,7 +3703,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 111000.0,
     "totalNominal": 2886000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3715,7 +3716,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 82000.0,
     "totalNominal": 1640000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3728,7 +3729,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 108000.0,
     "totalNominal": 6696000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3741,7 +3742,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 1950000.0,
     "totalNominal": 1950000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3754,7 +3755,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 2300000.0,
     "totalNominal": 2300000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3767,7 +3768,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 850000.0,
     "totalNominal": 850000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3780,7 +3781,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 1500000.0,
     "totalNominal": 1500000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3793,7 +3794,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 810000.0,
     "totalNominal": 810000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3806,7 +3807,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 1220000.0,
     "totalNominal": 1220000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3819,7 +3820,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 485000.0,
     "totalNominal": 1455000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3832,7 +3833,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 375000.0,
     "totalNominal": 750000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3845,7 +3846,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 920000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3858,7 +3859,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 6800000.0,
     "totalNominal": 34000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3871,7 +3872,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 10000.0,
     "totalNominal": 50000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3884,7 +3885,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 40000.0,
     "totalNominal": 2000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3897,7 +3898,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 5000.0,
     "totalNominal": 1000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3910,7 +3911,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 4500.0,
     "totalNominal": 810000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3923,20 +3924,20 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "lembar",
     "hargaSatuan": 6000.0,
     "totalNominal": 3600000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.1.02.01.01.0024",
-    "kategori": "Modal",
+    "kategori": "Operasional",
     "namaBarang": "Cartridge Printer",
     "qty": 14.0,
     "satuan": "buah",
     "hargaSatuan": 250000.0,
     "totalNominal": 3500000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3949,7 +3950,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 70000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -3962,46 +3963,46 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 80000.0,
     "totalNominal": 0.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.1.02.01.01.0024",
-    "kategori": "Modal",
+    "kategori": "Operasional",
     "namaBarang": "Tinta Printer Brother Magenta",
     "qty": 1.0,
     "satuan": "botol",
     "hargaSatuan": 169000.0,
     "totalNominal": 169000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.1.02.01.01.0024",
-    "kategori": "Modal",
+    "kategori": "Operasional",
     "namaBarang": "Tinta Printer Brother Yellow",
     "qty": 1.0,
     "satuan": "botol",
     "hargaSatuan": 169000.0,
     "totalNominal": 169000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
     "tanggal": "2025-08-28",
     "bulan": "Agustus",
     "kodeRekening": "5.1.02.01.01.0024",
-    "kategori": "Modal",
+    "kategori": "Operasional",
     "namaBarang": "Tinta Printer Brother Cyan",
     "qty": 1.0,
     "satuan": "botol",
     "hargaSatuan": 169000.0,
     "totalNominal": 169000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4014,7 +4015,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "pak",
     "hargaSatuan": 30000.0,
     "totalNominal": 1500000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4027,7 +4028,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 7000000.0,
     "totalNominal": 7000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4040,7 +4041,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 1003000.0,
     "totalNominal": 6018000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4053,7 +4054,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1942500.0,
     "totalNominal": 1942500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4066,7 +4067,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 4995000.0,
     "totalNominal": 4995000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4079,7 +4080,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1199250.0,
     "totalNominal": 1199250.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4092,7 +4093,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang / bulan",
     "hargaSatuan": 1000000.0,
     "totalNominal": 1000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4105,7 +4106,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4118,7 +4119,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4131,7 +4132,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4144,7 +4145,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4157,7 +4158,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4170,7 +4171,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4183,7 +4184,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4196,7 +4197,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4209,7 +4210,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4222,7 +4223,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4235,7 +4236,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4248,7 +4249,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4261,7 +4262,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4274,7 +4275,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4287,7 +4288,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4300,7 +4301,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4313,7 +4314,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4326,7 +4327,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4339,7 +4340,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang/ bulan",
     "hargaSatuan": 2860000.0,
     "totalNominal": 2860000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Agustus)"
   },
   {
@@ -4352,7 +4353,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 98000.0,
     "totalNominal": 2156000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4365,7 +4366,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 64000.0,
     "totalNominal": 2048000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4378,7 +4379,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 92000.0,
     "totalNominal": 2668000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4391,7 +4392,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 79000.0,
     "totalNominal": 869000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4404,7 +4405,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 66000.0,
     "totalNominal": 3960000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4417,7 +4418,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 35000.0,
     "totalNominal": 1785000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4430,7 +4431,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 35000.0,
     "totalNominal": 1855000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4443,7 +4444,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 56000.0,
     "totalNominal": 3360000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4456,7 +4457,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 49000.0,
     "totalNominal": 2989000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4469,7 +4470,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 61000.0,
     "totalNominal": 610000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4482,7 +4483,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 56000.0,
     "totalNominal": 3696000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4495,7 +4496,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 90000.0,
     "totalNominal": 3960000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4508,7 +4509,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 76000.0,
     "totalNominal": 2432000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4521,7 +4522,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 20000.0,
     "totalNominal": 400000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4534,7 +4535,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 15000.0,
     "totalNominal": 450000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4547,7 +4548,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "lusin",
     "hargaSatuan": 110000.0,
     "totalNominal": 1100000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4560,7 +4561,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "lusin",
     "hargaSatuan": 110000.0,
     "totalNominal": 1100000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4573,7 +4574,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 75000.0,
     "totalNominal": 7500000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4586,20 +4587,20 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 470000.0,
     "totalNominal": 1410000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
     "tanggal": "2025-09-28",
     "bulan": "September",
     "kodeRekening": "5.1.02.01.01.0029",
-    "kategori": "Modal",
+    "kategori": "Operasional",
     "namaBarang": "Tinta/Catridge Printer-1 SET CMYK Cartridge Epson T188 Tinta (WF-7711 7710 7611 7211 7111 7610)",
     "qty": 20.0,
     "satuan": "set",
     "hargaSatuan": 600000.0,
     "totalNominal": 12000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4612,7 +4613,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 10000000.0,
     "totalNominal": 10000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4625,7 +4626,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 1003000.0,
     "totalNominal": 6018000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4638,7 +4639,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1942500.0,
     "totalNominal": 1942500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4651,7 +4652,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 4995000.0,
     "totalNominal": 4995000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4664,7 +4665,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1199250.0,
     "totalNominal": 1199250.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4677,7 +4678,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang / bulan",
     "hargaSatuan": 1000000.0,
     "totalNominal": 1000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4690,7 +4691,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4703,7 +4704,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4716,7 +4717,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4729,7 +4730,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4742,7 +4743,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4755,7 +4756,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4768,7 +4769,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4781,7 +4782,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4794,7 +4795,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4807,7 +4808,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4820,7 +4821,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4833,7 +4834,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4846,7 +4847,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4859,7 +4860,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4872,7 +4873,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4885,7 +4886,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4898,7 +4899,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4911,7 +4912,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4924,7 +4925,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang/ bulan",
     "hargaSatuan": 2860000.0,
     "totalNominal": 2860000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4937,7 +4938,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 98000.0,
     "totalNominal": 1568000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -4950,7 +4951,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 64000.0,
     "totalNominal": 2432000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -4963,7 +4964,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 92000.0,
     "totalNominal": 4968000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -4976,7 +4977,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 35000.0,
     "totalNominal": 2800000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -4989,7 +4990,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 35000.0,
     "totalNominal": 1785000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5002,7 +5003,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 56000.0,
     "totalNominal": 6048000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5015,7 +5016,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 35000.0,
     "totalNominal": 1820000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5028,7 +5029,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 49000.0,
     "totalNominal": 5782000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5041,7 +5042,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 61000.0,
     "totalNominal": 2318000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5054,7 +5055,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "eksemplar",
     "hargaSatuan": 76000.0,
     "totalNominal": 4788000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5067,7 +5068,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 70000.0,
     "totalNominal": 6300000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5080,7 +5081,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 80000.0,
     "totalNominal": 6720000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5093,7 +5094,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 10000000.0,
     "totalNominal": 10000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5106,7 +5107,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 1003000.0,
     "totalNominal": 6018000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5119,7 +5120,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1942500.0,
     "totalNominal": 1942500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5132,7 +5133,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 4995000.0,
     "totalNominal": 4995000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5145,7 +5146,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1199250.0,
     "totalNominal": 1199250.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5158,7 +5159,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang / bulan",
     "hargaSatuan": 1000000.0,
     "totalNominal": 1000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5171,7 +5172,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5184,7 +5185,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5197,7 +5198,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5210,7 +5211,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5223,7 +5224,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5236,7 +5237,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5249,7 +5250,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5262,7 +5263,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5275,7 +5276,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5288,7 +5289,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5301,7 +5302,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5314,7 +5315,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5327,7 +5328,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5340,7 +5341,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5353,7 +5354,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5366,7 +5367,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5379,7 +5380,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5392,7 +5393,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5405,7 +5406,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang/ bulan",
     "hargaSatuan": 2860000.0,
     "totalNominal": 2860000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5418,7 +5419,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 920000.0,
     "totalNominal": 13800000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5431,85 +5432,85 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "liter",
     "hargaSatuan": 20000.0,
     "totalNominal": 80000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
     "tanggal": "2025-11-28",
     "bulan": "November",
     "kodeRekening": "5.2.02.08.01.0013",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Sikat Tabung Reaksi Besar Kecil",
     "qty": 15.0,
     "satuan": "buah",
     "hargaSatuan": 8000.0,
     "totalNominal": 120000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
     "tanggal": "2025-11-28",
     "bulan": "November",
     "kodeRekening": "5.2.02.08.01.0013",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Pipet Tetes",
     "qty": 30.0,
     "satuan": "pcs",
     "hargaSatuan": 5000.0,
     "totalNominal": 150000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
     "tanggal": "2025-11-28",
     "bulan": "November",
     "kodeRekening": "5.2.02.08.01.0013",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Thermometer Digital",
     "qty": 1.0,
     "satuan": "buah",
     "hargaSatuan": 200000.0,
     "totalNominal": 200000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
     "tanggal": "2025-11-28",
     "bulan": "November",
     "kodeRekening": "5.2.02.08.03.0005",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Respirometer",
     "qty": 5.0,
     "satuan": "buah",
     "hargaSatuan": 100000.0,
     "totalNominal": 500000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
     "tanggal": "2025-11-28",
     "bulan": "November",
     "kodeRekening": "5.2.02.08.03.0005",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Model Torso Wanita",
     "qty": 1.0,
     "satuan": "set",
     "hargaSatuan": 750000.0,
     "totalNominal": 750000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
     "tanggal": "2025-11-28",
     "bulan": "November",
     "kodeRekening": "5.2.02.08.03.0005",
-    "kategori": "Modal",
+    "kategori": "Buku",
     "namaBarang": "Timbangan Digital",
     "qty": 1.0,
     "satuan": "unit",
     "hargaSatuan": 185000.0,
     "totalNominal": 185000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5522,7 +5523,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "pak",
     "hargaSatuan": 35000.0,
     "totalNominal": 350000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5535,7 +5536,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "pak",
     "hargaSatuan": 33000.0,
     "totalNominal": 330000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5548,7 +5549,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 10000000.0,
     "totalNominal": 10000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5561,7 +5562,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 1003000.0,
     "totalNominal": 6018000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5574,7 +5575,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1942500.0,
     "totalNominal": 1942500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5587,7 +5588,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 4995000.0,
     "totalNominal": 4995000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5600,7 +5601,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1199250.0,
     "totalNominal": 1199250.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5613,7 +5614,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang / bulan",
     "hargaSatuan": 1000000.0,
     "totalNominal": 1000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5626,7 +5627,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5639,7 +5640,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5652,7 +5653,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5665,7 +5666,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5678,7 +5679,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5691,7 +5692,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5704,7 +5705,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5717,7 +5718,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5730,7 +5731,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5743,7 +5744,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5756,7 +5757,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5769,7 +5770,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5782,7 +5783,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5795,7 +5796,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5808,7 +5809,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5821,7 +5822,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5834,7 +5835,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5847,7 +5848,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5860,7 +5861,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang/ bulan",
     "hargaSatuan": 2860000.0,
     "totalNominal": 2860000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (November)"
   },
   {
@@ -5873,7 +5874,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 10000000.0,
     "totalNominal": 10000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -5886,7 +5887,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 1003000.0,
     "totalNominal": 6018000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -5899,7 +5900,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1942500.0,
     "totalNominal": 1942500.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -5912,7 +5913,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 4995000.0,
     "totalNominal": 4995000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -5925,7 +5926,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1199250.0,
     "totalNominal": 1199250.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -5938,7 +5939,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang / bulan",
     "hargaSatuan": 1000000.0,
     "totalNominal": 1000000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -5951,7 +5952,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -5964,7 +5965,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -5977,7 +5978,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -5990,7 +5991,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6003,7 +6004,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6016,7 +6017,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6029,7 +6030,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6042,7 +6043,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6055,7 +6056,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6068,7 +6069,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6081,7 +6082,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6094,7 +6095,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6107,7 +6108,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6120,7 +6121,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6133,7 +6134,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6146,7 +6147,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6159,7 +6160,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6172,7 +6173,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "bulan",
     "hargaSatuan": 1980000.0,
     "totalNominal": 1980000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   },
   {
@@ -6185,7 +6186,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "orang/ bulan",
     "hargaSatuan": 2860000.0,
     "totalNominal": 2860000.0,
-    "unit": "FG Putra",
+    "unit": "FG Putra SMA",
     "keterangan": "RAPBS BOSP 2025 (Desember)"
   }
 ];

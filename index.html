@@ -940,10 +940,29 @@
 
             <!-- Tabel Rincian Belanja Tahun Lalu -->
             <div class="dashboard-panel">
-              <div class="panel-header">
-                <h3>📒 Rincian Realisasi Belanja & Transaksi (<span id="historiTableTahunBelanja">2025</span>)</h3>
-                <div style="display: flex; gap: 8px;">
-                  <input type="text" id="historiSearchInput" placeholder="🔍 Cari nama barang / uraian belanja..." class="filter-select" style="min-width: 250px;" oninput="window.filterHistoriBelanja()">
+              <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                <div>
+                  <h3 style="margin: 0;">📒 Rincian Realisasi Belanja & Transaksi (<span id="historiTableTahunBelanja">2025</span>)</h3>
+                  <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
+                    Data terintegrasi dari Kertas Kerja RAPBS & Detail Belanja SIPLAH per Unit
+                  </div>
+                </div>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+                  <select id="historiUnitFilter" class="filter-select" onchange="window.filterHistoriBelanja()" style="min-width: 170px;">
+                    <option value="">Semua Unit Sekolah</option>
+                    <option value="FG Putra SMA">FG Putra SMA</option>
+                    <option value="FG Mahad Putra">FG Mahad Putra</option>
+                    <option value="FG Putri Boarding (BD)">FG Putri Boarding (BD)</option>
+                    <option value="FG Putri Fullday (FD)">FG Putri Fullday (FD)</option>
+                  </select>
+                  <select id="historiKategoriFilter" class="filter-select" onchange="window.filterHistoriBelanja()" style="min-width: 150px;">
+                    <option value="">Semua Kategori</option>
+                    <option value="Modal">Modal / Aset</option>
+                    <option value="Buku">Buku & Modul</option>
+                    <option value="Operasional">Operasional Rutin</option>
+                    <option value="Honor">Honor Guru & Tendik</option>
+                  </select>
+                  <input type="text" id="historiSearchInput" placeholder="🔍 Cari barang / SI..." class="filter-select" style="min-width: 220px;" oninput="window.filterHistoriBelanja()">
                 </div>
               </div>
               <div class="table-responsive">
