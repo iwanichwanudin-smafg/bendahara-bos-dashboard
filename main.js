@@ -2080,9 +2080,9 @@ let historiTahunAktif = 2026;
 let historiData = {
   2025: {
     totalPagu: 1210040000,
-    totalRealisasi: 1170540000,
-    sisa: 39500000,
-    persen: '96.7%',
+    totalRealisasi: 1210040000,
+    sisa: 0,
+    persen: '100%',
     unitRows: [],
     belanjaRows: HISTORI_BELANJA_2025 || []
   },
@@ -2603,7 +2603,7 @@ function parseSIExcel(arrayBuffer, fileName) {
 
       // Auto-detect Category
       let kategori = 'Operasional';
-      if (combinedText.includes('honor') || combinedText.includes('gaji') || combinedText.includes('insentif') || combinedText.includes('narasumber')) {
+      if (combinedText.includes('honor') || combinedText.includes('gaji') || combinedText.includes('insentif') || combinedText.includes('narasumber') || combinedText.includes('satpam') || combinedText.includes('kebersihan')) {
         kategori = 'Honor';
       } else if (combinedText.includes('balanja modal') || combinedText.includes('belanja modal')) {
         kategori = 'Modal';
@@ -2611,7 +2611,7 @@ function parseSIExcel(arrayBuffer, fileName) {
         kategori = 'Operasional';
       } else if (combinedText.includes('buku') || combinedText.includes('kitab') || combinedText.includes('lks') || combinedText.includes('modul')) {
         kategori = 'Buku';
-      } else if (combinedText.includes('modal') || combinedText.includes('aset') || combinedText.includes('manekin') || combinedText.includes('printer canon') || combinedText.includes('cctv') || combinedText.includes('karpet') || combinedText.includes('laptop') || combinedText.includes('meja printer') || combinedText.includes('kursi') || combinedText.includes('monitor') || combinedText.includes('keyboard')) {
+      } else if (combinedText.includes('modal') || combinedText.includes('aset') || combinedText.includes('bola') || combinedText.includes('olahraga') || combinedText.includes('manekin') || combinedText.includes('printer canon') || combinedText.includes('cctv') || combinedText.includes('karpet') || combinedText.includes('laptop') || combinedText.includes('meja printer') || combinedText.includes('kursi') || combinedText.includes('monitor') || combinedText.includes('keyboard')) {
         kategori = 'Modal';
       }
 
