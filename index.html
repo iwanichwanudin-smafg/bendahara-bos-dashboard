@@ -906,27 +906,30 @@
 
             <!-- Tabel Alokasi Pagu per Unit Tahun Lalu -->
             <div class="dashboard-panel" style="margin-bottom: 24px;">
-              <div class="panel-header">
-                <h3>📋 Alokasi Pagu Anggaran per Unit (<span id="historiTableTahunPagu">2025</span>)</h3>
+              <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                <h3 style="margin: 0;">📋 Alokasi Pagu Anggaran & Rincian Potongan per Unit (<span id="historiTableTahunPagu">2025</span>)</h3>
+                <span class="badge" style="background: #e0f2fe; color: #0284c7; font-weight: 700; font-size: 0.78rem;">Sesuai Estimasi RAPBS & BPOW</span>
               </div>
               <div class="table-responsive">
                 <table class="data-table">
-                  <thead>
+                  <thead id="historiUnitThead">
                     <tr>
-                      <th style="width: 50px; text-align: center;">No</th>
+                      <th style="width: 40px; text-align: center;">No</th>
                       <th>Unit Sekolah</th>
-                      <th style="text-align: right;">Jumlah Siswa</th>
-                      <th style="text-align: right;">Pagu Murni (Netto)</th>
-                      <th style="text-align: right;">Iuran FKSS</th>
-                      <th style="text-align: right;">Total Pagu Unit (Rp)</th>
-                      <th style="text-align: right;">Realisasi Belanja</th>
-                      <th style="text-align: right;">Sisa (Rp)</th>
-                      <th style="text-align: center;">Penyerapan</th>
+                      <th style="text-align: right;">Siswa</th>
+                      <th style="text-align: right;">Pagu Bruto</th>
+                      <th style="text-align: right; color: #dc2626;">FKSS</th>
+                      <th style="text-align: right; color: #dc2626;">MKKS</th>
+                      <th style="text-align: right; color: #dc2626;">Ijazah</th>
+                      <th style="text-align: right; color: #dc2626;">PMI</th>
+                      <th style="text-align: right; color: #15803d;">Net Pembagian</th>
+                      <th style="text-align: right; color: #0284c7;">Pagu Real RKAS</th>
+                      <th style="text-align: center;">Status</th>
                     </tr>
                   </thead>
                   <tbody id="historiPaguUnitTableBody">
                     <tr>
-                      <td colspan="9" style="text-align: center; padding: 24px; color: var(--text-muted);">
+                      <td colspan="11" style="text-align: center; padding: 24px; color: var(--text-muted);">
                         ⏳ Menunggu data historis dari database / file arsip...
                       </td>
                     </tr>

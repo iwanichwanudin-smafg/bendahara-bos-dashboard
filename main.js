@@ -2088,40 +2088,48 @@ let historiData = {
         nama: 'FG Putra SMA',
         siswa: 325,
         paguMurni: 549250000,
-        iuranFKSS: 16250000,
-        totalPagu: 573580000,
-        realisasi: 573580000,
-        sisa: 0,
+        fkss: 8125000,
+        mkks: 8125000,
+        ijasah: 0,
+        pmi: 0,
+        netPembagian: 533000000,
+        paguRealRkas: 573580000,
         pct: '100%'
       },
       {
         nama: 'FG Mahad Putra',
         siswa: 41,
         paguMurni: 69290000,
-        iuranFKSS: 2455000,
-        totalPagu: 668350000,
-        realisasi: 668350000,
-        sisa: 0,
+        fkss: 1025000,
+        mkks: 1025000,
+        ijasah: 200000,
+        pmi: 205000,
+        netPembagian: 66835000,
+        paguRealRkas: 66835000,
         pct: '100%'
       },
       {
         nama: 'FG Putri Boarding (BD)',
         siswa: 188,
         paguMurni: 317720000,
-        iuranFKSS: 11740000,
-        totalPagu: 305980000,
-        realisasi: 305980000,
-        sisa: 0,
+        fkss: 4700000,
+        mkks: 4700000,
+        ijasah: 1400000,
+        pmi: 940000,
+        netPembagian: 30598000,
+        paguRealRkas: 305980000,
         pct: '100%'
       },
       {
         nama: 'FG Putri Fullday (FD)',
         siswa: 162,
         paguMurni: 273780000,
-        iuranFKSS: 10135000,
-        totalPagu: 263645000,
-        realisasi: 263645000,
-        sisa: 0,
+        fkss: 4050000,
+        mkks: 4050000,
+        ijasah: 1225000,
+        pmi: 810000,
+        netPembagian: 263645000,
+        paguRealRkas: 263645000,
         pct: '100%'
       }
     ],
@@ -2249,7 +2257,7 @@ function renderHistoriPagu() {
     if (!d.unitRows || d.unitRows.length === 0) {
       tbodyUnit.innerHTML = `
         <tr>
-          <td colspan="9" style="text-align: center; padding: 24px; color: var(--text-muted);">
+          <td colspan="11" style="text-align: center; padding: 24px; color: var(--text-muted);">
             ⏳ Belum ada data alokasi pagu tahun <strong>${tahun}</strong>. Data siap diisikan.
           </td>
         </tr>
@@ -2260,11 +2268,13 @@ function renderHistoriPagu() {
           <td style="text-align: center; font-weight: 700;">${idx + 1}</td>
           <td><strong>${u.nama}</strong></td>
           <td class="table-num">${u.siswa || 0} Siswa</td>
-          <td class="table-num">${formatRupiah(u.paguMurni || 0)}</td>
-          <td class="table-num">${formatRupiah(u.iuranFKSS || 0)}</td>
-          <td class="table-num" style="font-weight: 700; color: #7c3aed;">${formatRupiah(u.totalPagu || 0)}</td>
-          <td class="table-num" style="color: #15803d; font-weight: 700;">${formatRupiah(u.realisasi || 0)}</td>
-          <td class="table-num">${formatRupiah(u.sisa || 0)}</td>
+          <td class="table-num" style="font-weight: 600;">${formatRupiah(u.paguMurni || 0)}</td>
+          <td class="table-num" style="color: #dc2626;">${u.fkss ? '-' + formatRupiah(u.fkss) : '–'}</td>
+          <td class="table-num" style="color: #dc2626;">${u.mkks ? '-' + formatRupiah(u.mkks) : '–'}</td>
+          <td class="table-num" style="color: #dc2626;">${u.ijasah ? '-' + formatRupiah(u.ijasah) : '–'}</td>
+          <td class="table-num" style="color: #dc2626;">${u.pmi ? '-' + formatRupiah(u.pmi) : '–'}</td>
+          <td class="table-num" style="font-weight: 700; color: #15803d;">${formatRupiah(u.netPembagian || 0)}</td>
+          <td class="table-num" style="font-weight: 800; color: #0284c7;">${formatRupiah(u.paguRealRkas || u.totalPagu || 0)}</td>
           <td style="text-align: center;"><span class="badge" style="background: #dcfce7; color: #166534; font-weight: 700;">${u.pct || '100%'}</span></td>
         </tr>
       `).join('');
