@@ -63,6 +63,12 @@
                 <span>Rekonsiliasi Bank</span>
               </a>
             </li>
+            <li class="nav-item" id="navHistoriPagu">
+              <a href="#histori-pagu">
+                <span class="icon">📜</span>
+                <span>Histori Pagu & Belanja (2024-2025)</span>
+              </a>
+            </li>
           </ul>
         </nav>
 
@@ -811,6 +817,153 @@
             <!-- Print Area Container for Official Bank Statement / Reconciliation Report -->
             <div id="rekonPrintArea" class="rekon-print-doc">
               <!-- Dynamically populated when printing -->
+            </div>
+          </section>
+
+          <!-- ============================================== -->
+          <!-- 6. HISTORI PAGU & BELANJA (2024 & 2025) VIEW   -->
+          <!-- ============================================== -->
+          <section id="viewHistoriPagu" class="view-section">
+            <!-- Header Card -->
+            <div class="si-batch-card no-print" style="margin-bottom: 20px; border-left: 4px solid #7c3aed; background: linear-gradient(135deg, #f5f3ff 0%, #ffffff 100%);">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                <div style="display: flex; gap: 14px; align-items: center;">
+                  <div style="width: 52px; height: 52px; border-radius: 12px; background: #7c3aed; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 4px 10px rgba(124, 58, 237, 0.25);">
+                    📜
+                  </div>
+                  <div>
+                    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                      <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: #0f172a;">Histori Pagu & Rincian Belanja BOS</h3>
+                      <span class="badge" style="background: #7c3aed; color: #ffffff; font-weight: 700; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;">ARSIP TAHUN LALU</span>
+                    </div>
+                    <div style="margin-top: 4px; font-size: 0.85rem; color: #475569;">
+                      Arsip realisasi dan alokasi pagu tahun buku <strong>2024 & 2025</strong> SMAS Future Gate
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Year Filter Tabs -->
+                <div class="rekon-tabs-wrapper" style="display: flex; gap: 8px;">
+                  <button type="button" class="rekon-tab-btn active" id="btnTabHistori2025" onclick="window.switchHistoriTahun(2025)">
+                    📅 Tahun 2025
+                  </button>
+                  <button type="button" class="rekon-tab-btn" id="btnTabHistori2024" onclick="window.switchHistoriTahun(2024)">
+                    📅 Tahun 2024
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Metric Cards Tahun Terpilih -->
+            <div class="stat-cards-grid no-print" style="margin-bottom: 24px;">
+              <div class="stat-card" style="border-top: 3px solid #7c3aed;">
+                <div class="stat-card-header">
+                  <span class="stat-label">TOTAL PAGU BOS (<span id="historiLabelTahunPagu">2025</span>)</span>
+                  <span class="stat-icon" style="background: #f5f3ff; color: #7c3aed;">💰</span>
+                </div>
+                <div class="stat-value" id="historiTotalPagu" style="font-size: 1.35rem; font-family: var(--font-mono); color: #0f172a;">–</div>
+                <div class="stat-meta">
+                  <span style="color: #64748b; font-size: 0.75rem;" id="historiMetaPagu">Total alokasi pagu anggaran</span>
+                </div>
+              </div>
+
+              <div class="stat-card" style="border-top: 3px solid #10b981;">
+                <div class="stat-card-header">
+                  <span class="stat-label">TOTAL REALISASI BELANJA</span>
+                  <span class="stat-icon" style="background: #dcfce7; color: #15803d;">🛍️</span>
+                </div>
+                <div class="stat-value" id="historiTotalRealisasi" style="color: #15803d; font-size: 1.35rem; font-family: var(--font-mono);">–</div>
+                <div class="stat-meta">
+                  <span style="color: #15803d; font-size: 0.75rem;" id="historiMetaRealisasi">Realisasi terserap 100%</span>
+                </div>
+              </div>
+
+              <div class="stat-card" style="border-top: 3px solid #0284c7;">
+                <div class="stat-card-header">
+                  <span class="stat-label">SISA SALDO KAS</span>
+                  <span class="stat-icon" style="background: #e0f2fe; color: #0369a1;">🏛️</span>
+                </div>
+                <div class="stat-value" id="historiSisaSaldo" style="color: #0284c7; font-size: 1.35rem; font-family: var(--font-mono);">–</div>
+                <div class="stat-meta">
+                  <span style="color: #0284c7; font-size: 0.75rem;">Sisa kas akhir tahun buku</span>
+                </div>
+              </div>
+
+              <div class="stat-card" style="border-top: 3px solid #d97706;">
+                <div class="stat-card-header">
+                  <span class="stat-label">STATUS PENYERAPAN</span>
+                  <span class="stat-icon" style="background: #fef3c7; color: #b45309;">📊</span>
+                </div>
+                <div class="stat-value" id="historiPersenSerap" style="color: #b45309; font-size: 1.35rem; font-family: var(--font-mono);">–</div>
+                <div class="stat-meta">
+                  <span style="color: #b45309; font-size: 0.75rem;">Persentase anggaran terserap</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tabel Alokasi Pagu per Unit Tahun Lalu -->
+            <div class="dashboard-panel" style="margin-bottom: 24px;">
+              <div class="panel-header">
+                <h3>📋 Alokasi Pagu Anggaran per Unit (<span id="historiTableTahunPagu">2025</span>)</h3>
+              </div>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 50px; text-align: center;">No</th>
+                      <th>Unit Sekolah</th>
+                      <th style="text-align: right;">Jumlah Siswa</th>
+                      <th style="text-align: right;">Pagu Murni (Netto)</th>
+                      <th style="text-align: right;">Iuran FKSS</th>
+                      <th style="text-align: right;">Total Pagu Unit (Rp)</th>
+                      <th style="text-align: right;">Realisasi Belanja</th>
+                      <th style="text-align: right;">Sisa (Rp)</th>
+                      <th style="text-align: center;">Penyerapan</th>
+                    </tr>
+                  </thead>
+                  <tbody id="historiPaguUnitTableBody">
+                    <tr>
+                      <td colspan="9" style="text-align: center; padding: 24px; color: var(--text-muted);">
+                        ⏳ Menunggu data historis dari database / file arsip...
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Tabel Rincian Belanja Tahun Lalu -->
+            <div class="dashboard-panel">
+              <div class="panel-header">
+                <h3>📒 Rincian Realisasi Belanja & Transaksi (<span id="historiTableTahunBelanja">2025</span>)</h3>
+                <div style="display: flex; gap: 8px;">
+                  <input type="text" id="historiSearchInput" placeholder="🔍 Cari nama barang / uraian belanja..." class="filter-select" style="min-width: 250px;" oninput="window.filterHistoriBelanja()">
+                </div>
+              </div>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 50px; text-align: center;">No</th>
+                      <th>Tanggal</th>
+                      <th>Unit</th>
+                      <th>Kategori</th>
+                      <th>Nama Barang / Uraian Belanja</th>
+                      <th style="text-align: center;">Qty</th>
+                      <th style="text-align: right;">Harga Satuan (Rp)</th>
+                      <th style="text-align: right;">Total Nominal (Rp)</th>
+                      <th>No SI / Keterangan</th>
+                    </tr>
+                  </thead>
+                  <tbody id="historiBelanjaTableBody">
+                    <tr>
+                      <td colspan="9" style="text-align: center; padding: 24px; color: var(--text-muted);">
+                        ⏳ Menunggu data rincian belanja dari database / file arsip...
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </section>
         </main>

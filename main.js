@@ -2066,8 +2066,144 @@ function renderAll() {
   renderCetakSI();
   renderPagu();
   renderRekonsiliasi();
+  renderHistoriPagu();
   fillStaticLabels();
   if (document.getElementById('viewVisualUnit')?.classList.contains('active')) renderVisualUnit();
+}
+
+// =========================================================
+// 4B. MODUL HISTORI PAGU & BELANJA (2024 & 2025)
+// =========================================================
+
+let historiTahunAktif = 2025;
+let historiData = {
+  2025: {
+    totalPagu: 0,
+    totalRealisasi: 0,
+    sisa: 0,
+    persen: '0%',
+    unitRows: [],
+    belanjaRows: []
+  },
+  2024: {
+    totalPagu: 0,
+    totalRealisasi: 0,
+    sisa: 0,
+    persen: '0%',
+    unitRows: [],
+    belanjaRows: []
+  }
+};
+
+window.switchHistoriTahun = function(tahun) {
+  historiTahunAktif = tahun;
+  const btn2025 = document.getElementById('btnTabHistori2025');
+  const btn2024 = document.getElementById('btnTabHistori2024');
+
+  if (tahun === 2025) {
+    btn2025?.classList.add('active');
+    btn2024?.classList.remove('active');
+  } else {
+    btn2024?.classList.add('active');
+    btn2025?.classList.remove('active');
+  }
+
+  renderHistoriPagu();
+};
+
+window.filterHistoriBelanja = function() {
+  const kw = (document.getElementById('historiSearchInput')?.value || '').toLowerCase().trim();
+  const currentBelanja = historiData[historiTahunAktif]?.belanjaRows || [];
+  const filtered = currentBelanja.filter(b => 
+    (b.namaBarang || '').toLowerCase().includes(kw) ||
+    (b.keterangan || '').toLowerCase().includes(kw) ||
+    (b.unit || '').toLowerCase().includes(kw) ||
+    (b.kategori || '').toLowerCase().includes(kw)
+  );
+  renderHistoriBelanjaTable(filtered);
+};
+
+function renderHistoriPagu() {
+  const tahun = historiTahunAktif;
+  const d = historiData[tahun] || { totalPagu: 0, totalRealisasi: 0, sisa: 0, persen: '0%', unitRows: [], belanjaRows: [] };
+
+  const lblTahunPagu = document.getElementById('historiLabelTahunPagu');
+  const tblTahunPagu = document.getElementById('historiTableTahunPagu');
+  const tblTahunBelanja = document.getElementById('historiTableTahunBelanja');
+
+  if (lblTahunPagu) lblTahunPagu.textContent = tahun;
+  if (tblTahunPagu) tblTahunPagu.textContent = tahun;
+  if (tblTahunBelanja) tblTahunBelanja.textContent = tahun;
+
+  const statPagu = document.getElementById('historiTotalPagu');
+  const statRealisasi = document.getElementById('historiTotalRealisasi');
+  const statSisa = document.getElementById('historiSisaSaldo');
+  const statPersen = document.getElementById('historiPersenSerap');
+
+  if (statPagu) statPagu.textContent = d.totalPagu > 0 ? formatRupiah(d.totalPagu) : 'Rp 0';
+  if (statRealisasi) statRealisasi.textContent = d.totalRealisasi > 0 ? formatRupiah(d.totalRealisasi) : 'Rp 0';
+  if (statSisa) statSisa.textContent = formatRupiah(d.sisa || 0);
+  if (statPersen) statPersen.textContent = d.persen || '0%';
+
+  // Render Tabel Unit
+  const tbodyUnit = document.getElementById('historiPaguUnitTableBody');
+  if (tbodyUnit) {
+    if (!d.unitRows || d.unitRows.length === 0) {
+      tbodyUnit.innerHTML = `
+        <tr>
+          <td colspan="9" style="text-align: center; padding: 24px; color: var(--text-muted);">
+            ⏳ Belum ada data alokasi pagu tahun <strong>${tahun}</strong>. Data siap diisikan.
+          </td>
+        </tr>
+      `;
+    } else {
+      tbodyUnit.innerHTML = d.unitRows.map((u, idx) => `
+        <tr>
+          <td style="text-align: center; font-weight: 700;">${idx + 1}</td>
+          <td><strong>${u.nama}</strong></td>
+          <td class="table-num">${u.siswa || 0} Siswa</td>
+          <td class="table-num">${formatRupiah(u.paguMurni || 0)}</td>
+          <td class="table-num">${formatRupiah(u.iuranFKSS || 0)}</td>
+          <td class="table-num" style="font-weight: 700; color: #7c3aed;">${formatRupiah(u.totalPagu || 0)}</td>
+          <td class="table-num" style="color: #15803d; font-weight: 700;">${formatRupiah(u.realisasi || 0)}</td>
+          <td class="table-num">${formatRupiah(u.sisa || 0)}</td>
+          <td style="text-align: center;"><span class="badge" style="background: #dcfce7; color: #166534; font-weight: 700;">${u.pct || '100%'}</span></td>
+        </tr>
+      `).join('');
+    }
+  }
+
+  renderHistoriBelanjaTable(d.belanjaRows);
+}
+
+function renderHistoriBelanjaTable(rows) {
+  const tbodyBelanja = document.getElementById('historiBelanjaTableBody');
+  if (!tbodyBelanja) return;
+
+  if (!rows || rows.length === 0) {
+    tbodyBelanja.innerHTML = `
+      <tr>
+        <td colspan="9" style="text-align: center; padding: 24px; color: var(--text-muted);">
+          ⏳ Belum ada rincian transaksi belanja tahun <strong>${historiTahunAktif}</strong>. Data siap disinkronkan.
+        </td>
+      </tr>
+    `;
+    return;
+  }
+
+  tbodyBelanja.innerHTML = rows.map((b, idx) => `
+    <tr>
+      <td style="text-align: center;">${idx + 1}</td>
+      <td style="font-family: var(--font-mono); font-size: 0.8rem;">${b.tanggal || '-'}</td>
+      <td><span class="tag-unit ${String(b.unitId || '').toLowerCase()}">${b.unit || '-'}</span></td>
+      <td><span class="tag-kategori ${(b.kategori || '').toLowerCase()}">${b.kategori || 'Operasional'}</span></td>
+      <td style="font-weight: 600;">${b.namaBarang || '-'}</td>
+      <td style="text-align: center; font-family: var(--font-mono);">${b.qty || 1} ${b.satuan || ''}</td>
+      <td class="table-num">${formatRupiah(b.hargaSatuan || 0)}</td>
+      <td class="table-num" style="font-weight: 700; color: #0284c7;">${formatRupiah(b.totalNominal || 0)}</td>
+      <td style="font-size: 0.8rem; color: var(--text-muted);">${b.keterangan || b.noSI || '-'}</td>
+    </tr>
+  `).join('');
 }
 
 // =========================================================
@@ -2081,6 +2217,7 @@ function setupNavigation() {
   const navCetakSI = document.getElementById('navCetakSI');
   const navPagu = document.getElementById('navPagu');
   const navRekonsiliasi = document.getElementById('navRekonsiliasi');
+  const navHistoriPagu = document.getElementById('navHistoriPagu');
 
   const viewDashboard = document.getElementById('viewDashboard');
   const viewVisualUnit = document.getElementById('viewVisualUnit');
@@ -2088,12 +2225,13 @@ function setupNavigation() {
   const viewCetakSI = document.getElementById('viewCetakSI');
   const viewPagu = document.getElementById('viewPagu');
   const viewRekonsiliasi = document.getElementById('viewRekonsiliasi');
+  const viewHistoriPagu = document.getElementById('viewHistoriPagu');
 
   const pageTitle = document.getElementById('pageTitle');
   const pageSubtitle = document.getElementById('pageSubtitle');
 
-  const navs = [navDashboard, navVisualUnit, navTransaksi, navCetakSI, navPagu, navRekonsiliasi].filter(Boolean);
-  const views = [viewDashboard, viewVisualUnit, viewTransaksi, viewCetakSI, viewPagu, viewRekonsiliasi].filter(Boolean);
+  const navs = [navDashboard, navVisualUnit, navTransaksi, navCetakSI, navPagu, navRekonsiliasi, navHistoriPagu].filter(Boolean);
+  const views = [viewDashboard, viewVisualUnit, viewTransaksi, viewCetakSI, viewPagu, viewRekonsiliasi, viewHistoriPagu].filter(Boolean);
 
   // Mobile sidebar drawer elements
   const btnMobileToggle = document.getElementById('btnMobileToggle');
@@ -2143,6 +2281,8 @@ function setupNavigation() {
       renderPagu();
     } else if (activeView === viewRekonsiliasi) {
       renderRekonsiliasi();
+    } else if (activeView === viewHistoriPagu) {
+      renderHistoriPagu();
     }
   }
 
@@ -2158,6 +2298,8 @@ function setupNavigation() {
       switchPage(navPagu, viewPagu, 'Pagu & Anggaran Unit', 'Rencana Alokasi Pagu Dana BOS per Unit Sekolah TA 2026');
     } else if (hash === '#rekonsiliasi') {
       switchPage(navRekonsiliasi, viewRekonsiliasi, 'Rekonsiliasi Bank & Rekening Koran', 'Pencatatan Buku Kas Bank BJB BOSP TA 2026 dan Verifikasi SI');
+    } else if (hash === '#histori-pagu') {
+      switchPage(navHistoriPagu, viewHistoriPagu, 'Histori Pagu & Belanja (2024-2025)', 'Arsip Total Alokasi Pagu Anggaran & Realisasi Belanja BOS Tahun Lalu');
     } else {
       switchPage(navDashboard, viewDashboard, 'Dashboard Ringkas', 'Ringkasan Pagu & Realisasi SI yang Sudah Ditransaksikan');
     }
@@ -2171,6 +2313,7 @@ function setupNavigation() {
   navCetakSI?.addEventListener('click', () => { window.location.hash = '#cetak-si'; });
   navPagu?.addEventListener('click', () => { window.location.hash = '#pagu'; });
   navRekonsiliasi?.addEventListener('click', () => { window.location.hash = '#rekonsiliasi'; });
+  navHistoriPagu?.addEventListener('click', () => { window.location.hash = '#histori-pagu'; });
 
   document.getElementById('btnGoToCetakSI')?.addEventListener('click', () => { window.location.hash = '#cetak-si'; });
   document.getElementById('btnLihatSemuaPagu')?.addEventListener('click', () => { window.location.hash = '#pagu'; });
