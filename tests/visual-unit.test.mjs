@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { hitungBelanjaPerUnit, nominalItem } from '../src/lib/visualUnit.js';
+import { hitungBelanjaPerUnit, nominalItem, warnaAman, WARNA_UNIT_CADANGAN } from '../src/lib/visualUnit.js';
 
 // Data KARANGAN
 const UNITS = [
@@ -64,4 +64,16 @@ test('nominalItem mengikuti aturan Dashboard (totalNominal, lalu nominal, lalu n
   assert.equal(nominalItem({ netto: 7 }), 7);
   assert.equal(nominalItem({}), 0);
   assert.equal(nominalItem(null), 0);
+});
+
+test('warna identitas unit dibawa dan hanya format hex yang diterima', () => {
+  const [a, b] = hitungBelanjaPerUnit([
+    { id: 'A', nama: 'A', siswa: 1, pagu: 1, color: '#3b82f6' },
+    { id: 'B', nama: 'B', siswa: 1, pagu: 1, color: 'red;"><script>' }
+  ], []);
+  assert.equal(a.warna, '#3b82f6');
+  assert.equal(b.warna, WARNA_UNIT_CADANGAN);
+  assert.equal(warnaAman('#fff'), '#fff');
+  assert.equal(warnaAman(undefined), WARNA_UNIT_CADANGAN);
+  assert.equal(warnaAman('#12345'), WARNA_UNIT_CADANGAN);
 });

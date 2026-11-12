@@ -1949,7 +1949,7 @@ function renderVisualUnit() {
     </div>`;
 
   // ---- Satu kartu per unit ----
-  gridEl.innerHTML = units.map((u) => {
+  gridEl.innerHTML = units.map((u, idx) => {
     const r = rincian[u.id];
     const nama = escapeHtmlText(u.nama);
     const lebar = Math.min(100, Math.max(0, u.persenSerapan));
@@ -1979,30 +1979,39 @@ function renderVisualUnit() {
       </tr>` : '';
 
     return `
-      <div class="vu-card">
+      <div class="vu-card" style="--uc:${u.warna};">
+        <div class="vu-strip"></div>
         <div class="vu-head">
-          <span class="tag-unit ${String(u.id).toLowerCase()}" style="font-size:0.95rem;">${nama}</span>
-          <span class="vu-siswa">${u.siswa} siswa &bull; ${u.jumlahItem} item belanja</span>
+          <span class="vu-name"><span class="vu-badge">${idx + 1}</span>${nama}</span>
+          <span class="vu-meta">Unit ${idx + 1} dari ${units.length}<br>${u.siswa} siswa &bull; ${u.jumlahItem} item belanja</span>
         </div>
-        <div class="vu-kpis">
-          <div class="vu-kpi"><div class="vu-label">Jatah (pagu RKAS)</div><div class="vu-value" style="color:#0284c7;">${formatRupiah(u.jatah)}</div></div>
-          <div class="vu-kpi"><div class="vu-label">Belanja rinci</div><div class="vu-value" style="color:#e11d48;">${formatRupiah(u.realisasi)}</div></div>
-          <div class="vu-kpi"><div class="vu-label">Sisa jatah</div><div class="vu-value" style="color:${warnaSisa};">${formatRupiah(u.sisa)}</div></div>
-          <div class="vu-kpi"><div class="vu-label">Serapan</div><div class="vu-value">${u.persenSerapan}%</div></div>
-        </div>
-        ${catatanJatah ? `<div class="vu-note">${catatanJatah}</div>` : ''}
-        <div class="vu-progress"><div style="width:${lebar}%;"></div></div>
-        <div class="vu-progress-label">${u.persenSerapan}% dari jatah sudah dibelanjakan</div>
-        <div class="vu-body">
-          <div class="vu-chart">
-            <canvas id="unitPie_${escapeHtmlText(u.id)}"></canvas>
-            <div class="vu-center"><span class="vu-center-label">Belanja</span><span class="vu-center-value">${formatRupiah(u.realisasi)}</span></div>
+        <div class="vu-sec">
+          <div class="vu-kpis">
+            <div class="vu-kpi"><div class="vu-label">Jatah (pagu RKAS)</div><div class="vu-value" style="color:#0284c7;">${formatRupiah(u.jatah)}</div></div>
+            <div class="vu-kpi"><div class="vu-label">Belanja rinci</div><div class="vu-value" style="color:#e11d48;">${formatRupiah(u.realisasi)}</div></div>
+            <div class="vu-kpi"><div class="vu-label">Sisa jatah</div><div class="vu-value" style="color:${warnaSisa};">${formatRupiah(u.sisa)}</div></div>
+            <div class="vu-kpi"><div class="vu-label">Serapan</div><div class="vu-value">${u.persenSerapan}%</div></div>
           </div>
-          <table class="vu-table">
-            <thead><tr><th>Kategori</th><th class="num">Belanja</th><th class="num">%</th><th class="num">Item</th></tr></thead>
-            <tbody>${barisKategori}${barisLain}</tbody>
-            <tfoot><tr><td>Total belanja</td><td class="num">${formatRupiah(u.realisasi)}</td><td class="num">${u.realisasi > 0 ? '100%' : '0%'}</td><td class="num">${u.jumlahItem}</td></tr></tfoot>
-          </table>
+        </div>
+        <div class="vu-sec">
+          ${catatanJatah ? `<div class="vu-note">${catatanJatah}</div>` : ''}
+          <div class="vu-progress"><div style="width:${lebar}%;"></div></div>
+          <div class="vu-progress-label">${u.persenSerapan}% dari jatah sudah dibelanjakan</div>
+        </div>
+        <div class="vu-sec">
+          <div class="vu-body">
+            <div class="vu-chart">
+              <canvas id="unitPie_${escapeHtmlText(u.id)}"></canvas>
+              <div class="vu-center"><span class="vu-center-label">Belanja</span><span class="vu-center-value">${formatRupiah(u.realisasi)}</span></div>
+            </div>
+            <div class="vu-table-wrap">
+              <table class="vu-table">
+                <thead><tr><th>Kategori</th><th class="num">Belanja</th><th class="num">%</th><th class="num">Item</th></tr></thead>
+                <tbody>${barisKategori}${barisLain}</tbody>
+                <tfoot><tr><td>Total belanja</td><td class="num">${formatRupiah(u.realisasi)}</td><td class="num">${u.realisasi > 0 ? '100%' : '0%'}</td><td class="num">${u.jumlahItem}</td></tr></tfoot>
+              </table>
+            </div>
+          </div>
         </div>
       </div>`;
   }).join('');

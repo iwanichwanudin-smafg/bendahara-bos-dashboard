@@ -18,6 +18,12 @@ export function nominalItem(item) {
   return Number(item && (item.totalNominal || item.nominal || item.netto)) || 0;
 }
 
+// Warna identitas unit (dari database) dipakai di atribut style, jadi hanya format hex yang diterima.
+export const WARNA_UNIT_CADANGAN = '#64748b';
+export function warnaAman(warna) {
+  return /^#[0-9a-fA-F]{3}([0-9a-fA-F]{3})?$/.test(String(warna || '')) ? String(warna) : WARNA_UNIT_CADANGAN;
+}
+
 const jumlah = (rows) => rows.reduce((acc, r) => acc + nominalItem(r), 0);
 const persen = (bagian, total) => (total > 0 ? Math.round((bagian / total) * 1000) / 10 : 0);
 
@@ -41,6 +47,7 @@ export function hitungBelanjaPerUnit(units, transaksiList) {
     return {
       id: unit.id,
       nama: unit.nama,
+      warna: warnaAman(unit.color),
       siswa: Number(unit.siswa) || 0,
       jatah,
       realisasi,

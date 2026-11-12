@@ -1879,42 +1879,56 @@ body {
    HALAMAN VISUAL PER UNIT
    ========================================================= */
 .vu-summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 14px; }
-.vu-stat { background: #fff; border: 1px solid var(--border-color); border-radius: 14px; padding: 14px 16px; }
+.vu-stat { background: #fff; border: 1px solid var(--border-color); border-radius: 14px; padding: 14px 16px; min-width: 0; }
 .vu-stat .vu-label { font-size: 0.7rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .03em; }
-.vu-stat .vu-value { font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); margin-top: 4px; }
+.vu-stat .vu-value { font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); margin-top: 4px; overflow-wrap: anywhere; }
 .vu-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
-.vu-chip { display: inline-flex; align-items: center; gap: 8px; background: #fff; border: 1px solid var(--border-color); border-radius: 999px; padding: 6px 14px; font-size: 0.8rem; }
+.vu-chip { display: inline-flex; align-items: center; gap: 8px; background: #fff; border: 1px solid var(--border-color); border-radius: 999px; padding: 6px 14px; font-size: 0.8rem; max-width: 100%; flex-wrap: wrap; }
 .vu-chip strong { font-family: var(--font-mono); }
 .vu-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
 
-.vu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-.vu-card { background: #fff; border: 1px solid var(--border-color); border-radius: 16px; padding: 20px; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05); }
-.vu-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
-.vu-head .vu-siswa { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; }
-.vu-kpis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 12px; }
-.vu-kpi { background: #f8fafc; border: 1px solid var(--border-color); border-radius: 10px; padding: 10px 12px; }
+/* Satu kartu per baris, tersusun dari atas ke bawah. Warna identitas unit lewat variabel --uc */
+.vu-grid { display: flex; flex-direction: column; gap: 24px; }
+.vu-card { --uc: #64748b; background: #fff; border: 2px solid var(--uc); border-radius: 14px; min-width: 0; overflow: hidden; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06); }
+.vu-strip { height: 6px; background: var(--uc); }
+.vu-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px; flex-wrap: wrap; background: #f1f5f9; background: color-mix(in srgb, var(--uc) 13%, transparent); }
+.vu-name { display: flex; align-items: center; gap: 12px; font-size: 1.1rem; font-weight: 800; }
+.vu-badge { width: 32px; height: 32px; border-radius: 9px; background: var(--uc); color: #fff; text-shadow: 0 0 3px rgba(0, 0, 0, 0.4); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 800; flex: none; }
+.vu-meta { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; text-align: right; line-height: 1.45; }
+.vu-sec { padding: 14px 18px; border-top: 1.5px solid var(--uc); border-top: 1.5px solid color-mix(in srgb, var(--uc) 45%, transparent); }
+.vu-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.vu-kpi { background: #f8fafc; background: color-mix(in srgb, var(--uc) 8%, transparent); border: 1px solid var(--border-color); border: 1px solid color-mix(in srgb, var(--uc) 40%, transparent); border-radius: 10px; padding: 11px 13px; min-width: 0; }
 .vu-kpi .vu-label { font-size: 0.66rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .03em; }
-.vu-kpi .vu-value { font-size: 0.98rem; font-weight: 800; font-family: var(--font-mono); margin-top: 3px; word-break: break-word; }
-.vu-note { font-size: 0.76rem; color: #475569; background: #f1f5f9; border-radius: 8px; padding: 8px 10px; margin-bottom: 12px; line-height: 1.5; }
-.vu-progress { height: 8px; background: #e2e8f0; border-radius: 999px; overflow: hidden; margin-bottom: 4px; }
-.vu-progress > div { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #2563eb, #38bdf8); }
-.vu-progress-label { font-size: 0.72rem; color: var(--text-muted); margin-bottom: 14px; text-align: right; }
-.vu-body { display: grid; grid-template-columns: minmax(170px, 210px) minmax(0, 1fr); gap: 18px; align-items: center; }
-.vu-chart { position: relative; height: 200px; }
+.vu-kpi .vu-value { font-size: 1rem; font-weight: 800; font-family: var(--font-mono); margin-top: 3px; overflow-wrap: anywhere; }
+.vu-note { font-size: 0.78rem; color: #475569; line-height: 1.55; margin-bottom: 12px; overflow-wrap: anywhere; }
+.vu-progress { height: 9px; background: #e2e8f0; background: color-mix(in srgb, var(--uc) 18%, transparent); border-radius: 999px; overflow: hidden; }
+.vu-progress > div { height: 100%; border-radius: 999px; background: var(--uc); }
+.vu-progress-label { font-size: 0.72rem; color: var(--text-muted); margin-top: 4px; text-align: right; }
+.vu-body { display: grid; grid-template-columns: minmax(200px, 250px) minmax(0, 1fr); gap: 24px; align-items: center; }
+.vu-chart { position: relative; height: 230px; min-width: 0; }
 .vu-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; pointer-events: none; text-align: center; }
 .vu-center .vu-center-label { font-size: 0.62rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; }
-.vu-center .vu-center-value { font-size: 0.78rem; font-weight: 800; font-family: var(--font-mono); max-width: 110px; word-break: break-word; }
-.vu-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
-.vu-table th { text-align: left; font-size: 0.66rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; padding: 4px 6px; border-bottom: 1px solid var(--border-color); }
-.vu-table th.num, .vu-table td.num { text-align: right; }
-.vu-table td { padding: 7px 6px; border-bottom: 1px solid #f1f5f9; }
-.vu-table td.num { font-family: var(--font-mono); white-space: nowrap; }
-.vu-table tfoot td { font-weight: 800; border-top: 2px solid var(--border-color); border-bottom: 0; }
-.vu-kat { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; }
+.vu-center .vu-center-value { font-size: 0.8rem; font-weight: 800; font-family: var(--font-mono); max-width: 120px; overflow-wrap: anywhere; }
 
-@media (max-width: 1100px) { .vu-grid { grid-template-columns: minmax(0, 1fr); } }
+/* Tabel selalu berada di dalam kartu; bila layar sangat sempit ia bergulir di dalam pembungkusnya */
+.vu-table-wrap { min-width: 0; max-width: 100%; overflow-x: auto; }
+.vu-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.vu-table th { text-align: left; font-size: 0.66rem; font-weight: 700; color: var(--text-main); text-transform: uppercase; padding: 6px 8px; background: #f1f5f9; background: color-mix(in srgb, var(--uc) 14%, transparent); border-bottom: 2px solid var(--uc); white-space: nowrap; }
+.vu-table th.num, .vu-table td.num { text-align: right; }
+.vu-table td { padding: 8px; border-bottom: 1px solid #f1f5f9; vertical-align: middle; }
+.vu-table td.num { font-family: var(--font-mono); white-space: nowrap; }
+.vu-table tfoot td { font-weight: 800; border-top: 2px solid var(--uc); border-bottom: 0; background: #f8fafc; background: color-mix(in srgb, var(--uc) 8%, transparent); }
+.vu-kat { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; white-space: nowrap; }
+
+@media (max-width: 1000px) {
+  .vu-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .vu-body { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .vu-chart { height: 240px; max-width: 280px; margin: 0 auto; width: 100%; }
+}
 @media (max-width: 760px) {
   .vu-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .vu-body { grid-template-columns: minmax(0, 1fr); }
-  .vu-chart { height: 220px; max-width: 260px; margin: 0 auto; }
+  .vu-head, .vu-sec { padding-left: 14px; padding-right: 14px; }
+  .vu-meta { text-align: left; }
 }
