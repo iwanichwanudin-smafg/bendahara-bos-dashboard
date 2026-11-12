@@ -5,6 +5,7 @@
 
 import Chart from 'chart.js/auto';
 import * as XLSX from 'xlsx';
+import { HISTORI_BELANJA_2025 } from './src/data/historiData2025.js';
 import {
   PROFIL_SEKOLAH,
   PAGU_DATA,
@@ -2078,12 +2079,12 @@ function renderAll() {
 let historiTahunAktif = 2026;
 let historiData = {
   2025: {
-    totalPagu: 0,
-    totalRealisasi: 0,
-    sisa: 0,
-    persen: '0%',
+    totalPagu: 1210040000,
+    totalRealisasi: 1170540000,
+    sisa: 39500000,
+    persen: '96.7%',
     unitRows: [],
-    belanjaRows: []
+    belanjaRows: HISTORI_BELANJA_2025 || []
   },
   2024: {
     totalPagu: 0,
