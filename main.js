@@ -2214,17 +2214,43 @@ function setupNavigation() {
 
 function parseIndonesianDateToISO(dateStr) {
   if (!dateStr) return new Date().toISOString().slice(0, 10);
+
+  // Tangani jika input adalah angka serial Excel (misal: 46083)
+  if (typeof dateStr === 'number' || (!isNaN(Number(dateStr)) && Number(dateStr) > 30000 && Number(dateStr) < 70000)) {
+    const serial = Number(dateStr);
+    const utcDays = Math.floor(serial - 25569);
+    return new Date(utcDays * 86400 * 1000).toISOString().slice(0, 10);
+  }
+
+  const str = String(dateStr).trim();
+
+  // Tangani format standar ISO YYYY-MM-DD
+  if (/^\d{4}-\d{2}-\d{2}$/.test(str)) return str;
+
+  // Tangani format numerik DD/MM/YYYY atau DD-MM-YYYY
+  const slashMatch = str.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
+  if (slashMatch) {
+    const d = slashMatch[1].padStart(2, '0');
+    const m = slashMatch[2].padStart(2, '0');
+    const y = slashMatch[3];
+    return `${y}-${m}-${d}`;
+  }
+
+  // Tangani teks bulan Indonesia (contoh: "15 Februari 2026" atau "Bekasi, 15 Feb 2026")
+  const cleanStr = str.replace(/^[a-zA-Z\s]+,\s*/, '');
   const months = {
     januari: '01', februari: '02', maret: '03', april: '04',
     mei: '05', juni: '06', juli: '07', agustus: '08',
-    september: '09', oktober: '10', november: '11', desember: '12'
+    september: '09', oktober: '10', november: '11', desember: '12',
+    jan: '01', feb: '02', mar: '03', apr: '04', mei: '05', jun: '06',
+    jul: '07', agu: '08', ags: '08', sep: '09', okt: '10', nov: '11', des: '12'
   };
-  const parts = String(dateStr).trim().split(/\s+/);
+  const parts = cleanStr.split(/\s+/);
   if (parts.length >= 3) {
-    const day = parts[0].padStart(2, '0');
+    const day = parts[0].replace(/\D/g, '').padStart(2, '0');
     const month = months[parts[1].toLowerCase()] || '02';
-    const year = parts[2];
-    if (!isNaN(parseInt(year)) && !isNaN(parseInt(day))) {
+    const year = parts[2].replace(/\D/g, '');
+    if (year.length === 4 && day.length > 0) {
       return `${year}-${month}-${day}`;
     }
   }

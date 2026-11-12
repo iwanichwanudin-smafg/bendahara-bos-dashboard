@@ -57,10 +57,24 @@ export function matchBankWithSIBatches() {
     let matchedBatch = null;
 
     if (item.tipe === 'PENGELUARAN' && item.kredit > 0) {
-      // Prioritas 1: Cocokkan persis berdasarkan total nominal kredit
-      matchedBatch = batches.find(b => b.totalNominal === item.kredit && !matchedBatchIds.has(b.id));
+      // Prioritas 1: Cocokkan nominal dan pertimbangkan tanggal jika ada
+      const itemTime = item.tanggal ? new Date(item.tanggal).getTime() : 0;
 
-      // Jika ada multi-match, tandai ID yang terpakai
+      // Cari batch yang nominalnya sama persis dan belum terpakai
+      const candidates = batches.filter(b => b.totalNominal === item.kredit && !matchedBatchIds.has(b.id));
+
+      if (candidates.length === 1) {
+        matchedBatch = candidates[0];
+      } else if (candidates.length > 1) {
+        // Jika ada beberapa SI dengan nominal kembar, pilih yang tanggalnya paling dekat
+        matchedBatch = candidates.slice().sort((a, b) => {
+          const tglA = a.tanggal ? new Date(a.tanggal).getTime() : 0;
+          const tglB = b.tanggal ? new Date(b.tanggal).getTime() : 0;
+          return Math.abs(tglA - itemTime) - Math.abs(tglB - itemTime);
+        })[0];
+      }
+
+      // Jika ada match, tandai ID yang terpakai
       if (matchedBatch) {
         matchedBatchIds.add(matchedBatch.id);
       }
@@ -84,8 +98,17 @@ export function renderRekonsiliasi() {
   // 1. Update Metrics Cards
   const totalDebit = enrichedData.reduce((acc, r) => acc + (r.debit || 0), 0);
   const totalKredit = enrichedData.reduce((acc, r) => acc + (r.kredit || 0), 0);
-  const saldoAkhir = enrichedData.length > 0 ? enrichedData[enrichedData.length - 1].saldo : 0;
-  const saldoAwal = enrichedData.length > 0 && enrichedData[0].saldo ? enrichedData[0].saldo : 0;
+
+  // Urutkan data secara kronologis (tanggal / index terlama -> terbaru) agar Saldo Awal dan Akhir tidak tertukar jika file Excel terbalik
+  const sortedForBalance = enrichedData.slice().sort((a, b) => {
+    const tA = a.tanggal ? new Date(a.tanggal).getTime() : (a.serialDate || 0);
+    const tB = b.tanggal ? new Date(b.tanggal).getTime() : (b.serialDate || 0);
+    if (tA !== tB) return tA - tB;
+    return (a.rowIndex || 0) - (b.rowIndex || 0);
+  });
+
+  const saldoAwal = sortedForBalance.length > 0 && sortedForBalance[0].saldo ? sortedForBalance[0].saldo : 0;
+  const saldoAkhir = sortedForBalance.length > 0 ? sortedForBalance[sortedForBalance.length - 1].saldo : 0;
 
   const statSaldoAwal = document.getElementById('rekonStatSaldoAwal');
   const statTotalDebit = document.getElementById('rekonStatTotalDebit');
