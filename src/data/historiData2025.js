@@ -337,7 +337,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 5770000.0,
     "totalNominal": 23080000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1ijCrOHJP6VPmd-PgXzxgOzf40OdZpktS/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
@@ -349,8 +350,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 4141000.0,
     "totalNominal": 4141000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "unit": "FG Mahad Putra",
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/174JxLyRAbsg_X8ZCzH2WTy6iMgZyjMW2/view?usp=sharing\n\nhttps://drive.google.com/file/d/1YxJz6lqSsrEGn8mdyfsrhTbXDYGpPuSm/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
@@ -363,7 +365,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 135000.0,
     "totalNominal": 2025000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1uSDxYLVpVP0ARDA4K1RhvbMa1QwmW4G_/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
@@ -376,46 +379,50 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 250000.0,
     "totalNominal": 250000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1iM9i3NY7b9LGjN1MgchTZCRbUF7zfqCx/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.03.0011",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Bola Voli",
     "qty": 6.0,
     "satuan": "buah",
     "hargaSatuan": 250000.0,
     "totalNominal": 1500000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1BTekJgRulvCY1dO_bS7pg0zuneWoRp25/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.03.0011",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Bola Sepak",
     "qty": 6.0,
     "satuan": "buah",
     "hargaSatuan": 210000.0,
     "totalNominal": 1260000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1aE6KtALgWH5jlwkkBlu4U2fI25s5AAzB/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.03.0011",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Bola Basket",
     "qty": 6.0,
     "satuan": "buah",
     "hargaSatuan": 200000.0,
     "totalNominal": 1200000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1TYATBZfEALOLkMIhiUZmg8_zU9zD1n_o/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
@@ -428,7 +435,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 8000000.0,
     "totalNominal": 8000000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1R6iJzHzptJ8dqsKVEn9CqGbP6CsPry4O/view?usp=sharing\n\nhttps://drive.google.com/file/d/1M_-9yU6F2Saw_3F98TarTSDuR4GOwl-6/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
@@ -441,20 +449,22 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 1950000.0,
     "totalNominal": 1950000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1K8D-vwdfzTIEOO4IG-vFIZjwW9wc_Cva/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.10.02.0005",
-    "kategori": "Modal",
+    "kategori": "Operasional",
     "namaBarang": "Mouse Logitech B100 USB",
     "qty": 7.0,
     "satuan": "buah",
     "hargaSatuan": 35000.0,
     "totalNominal": 245000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1iA_1Nr6gcx6SNIh16B_jN-pg67-2dS-0/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
@@ -473,40 +483,43 @@ export const HISTORI_BELANJA_2025 = [
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.1.02.01.01.0002",
-    "kategori": "Operasional",
+    "kategori": "Modal",
     "namaBarang": "Bahan kimia cair.-Electrolyte Filling solution for DO probe",
     "qty": 5.0,
     "satuan": "botol",
     "hargaSatuan": 370000.0,
     "totalNominal": 1850000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1eqJq8N8v3khJ1dgMeCuR6aKIM7L0LrR5/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.01.0013",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Microsop Binokuler",
     "qty": 1.0,
     "satuan": "unit",
     "hargaSatuan": 8000000.0,
     "totalNominal": 8000000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1v3FWj-E53eJe3DC9NvEjpSvr52KjJu4N/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Buku",
+    "kategori": "Operasional",
     "namaBarang": "Kit Listrik dan Magnet",
     "qty": 1.0,
     "satuan": "buah",
     "hargaSatuan": 90000.0,
     "totalNominal": 90000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1hRsZRn3oF5-Pu5ZPDSH5459l0ptAAp4w/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
@@ -525,40 +538,43 @@ export const HISTORI_BELANJA_2025 = [
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Buku",
+    "kategori": "Operasional",
     "namaBarang": "Kabel jumper male to male",
     "qty": 5.0,
     "satuan": "unit",
     "hargaSatuan": 13000.0,
     "totalNominal": 65000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1cibglqmNqv_wEzcCaxMQ1W99Ap3gGsvd/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Buku",
+    "kategori": "Operasional",
     "namaBarang": "Kabel jumper male to male",
     "qty": 5.0,
     "satuan": "unit",
     "hargaSatuan": 15000.0,
     "totalNominal": 75000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1gSjALKK2kWnfs-NMT7XBOIutnFJEORrY/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
     "bulan": "Februari",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Kit Optika",
     "qty": 1.0,
     "satuan": "paket",
     "hargaSatuan": 1600000.0,
     "totalNominal": 1600000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1TvaKgujpZIXJ41peNfJemHQD3GNeE-nh/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
@@ -571,7 +587,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 600000.0,
     "totalNominal": 1800000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1YtZNducTtrkwPphfjs3PFjTxjHPet76r/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
@@ -584,7 +601,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 75000.0,
     "totalNominal": 75000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Februari)"
+    "keterangan": "RAPBS BOSP 2025 (Februari)",
+    "linkFoto": "https://drive.google.com/file/d/1RbBhBNYGLmWGh51RzbQGMYlAPqxKLFYm/view?usp=sharing"
   },
   {
     "tanggal": "2025-02-28",
@@ -1247,7 +1265,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 2400000.0,
     "totalNominal": 2400000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/1iiY98O4NERai9pOkKj89-3BQQ3or1mYs/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
@@ -1260,20 +1279,22 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 2350000.0,
     "totalNominal": 2350000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/14c2jmunDxy8qv0Uf8T77W83gh_Y7IiGM/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.05.01.0005",
-    "kategori": "Modal",
+    "kategori": "Operasional",
     "namaBarang": "Bracket Set",
     "qty": 1.0,
     "satuan": "buah",
     "hargaSatuan": 675000.0,
     "totalNominal": 675000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/1EneqbLBO2warN8ximoZi5qMnPZ_c9YVS/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
@@ -1286,20 +1307,22 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 11250000.0,
     "totalNominal": 11250000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/1ZpUne6U_AEn11Sx-CTObj0YJ_AJd2Zvc/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.05.02.0001",
-    "kategori": "Modal",
+    "kategori": "Operasional",
     "namaBarang": "Kursi Kerja-Kursi Putar",
     "qty": 2.0,
     "satuan": "buah",
     "hargaSatuan": 250000.0,
     "totalNominal": 500000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/1TEFezrQ78KaCxtc8-GYL4wZEgZqMqlD9/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
@@ -1312,33 +1335,36 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 27720000.0,
     "totalNominal": 27720000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/1TEFezrQ78KaCxtc8-GYL4wZEgZqMqlD9/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.08.03.0011",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Matras",
     "qty": 14.0,
     "satuan": "buah",
     "hargaSatuan": 225000.0,
     "totalNominal": 3150000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "unit": "FG Mahad Putra",
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/14qAcmZQbZqmsSJ488RHV2zlO_vlhq-_a/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.08.03.0011",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "meja tenis meja (pingpong) standar pertandingan + net",
     "qty": 1.0,
     "satuan": "set",
     "hargaSatuan": 6709000.0,
     "totalNominal": 6709000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "unit": "FG Mahad Putra",
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/14qAcmZQbZqmsSJ488RHV2zlO_vlhq-_a/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
@@ -1351,7 +1377,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 6095000.0,
     "totalNominal": 6095000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/16BqA177pQP-SzFFV6HLTPxtBaa6or-nd/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
@@ -1364,59 +1391,64 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 500000.0,
     "totalNominal": 500000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/1L6jrQCAoVDMisx6WEi141eydV4SVSPsR/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Buku",
+    "kategori": "Operasional",
     "namaBarang": "Jangka Sorong/Sigmat",
     "qty": 2.0,
     "satuan": "buah",
     "hargaSatuan": 85000.0,
     "totalNominal": 170000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/1EneqbLBO2warN8ximoZi5qMnPZ_c9YVS/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Buku",
+    "kategori": "Operasional",
     "namaBarang": "Mikrometer Sekrup",
     "qty": 5.0,
     "satuan": "buah",
     "hargaSatuan": 85000.0,
     "totalNominal": 425000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/1EneqbLBO2warN8ximoZi5qMnPZ_c9YVS/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Buku",
+    "kategori": "Operasional",
     "namaBarang": "Rangkaian Hamabtan jembatan Seri",
     "qty": 9.0,
     "satuan": "set",
     "hargaSatuan": 85000.0,
     "totalNominal": 765000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/13hgHMY7ZfHFbDTTt-d0F7DRqkc4rB_OX/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
     "bulan": "April",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Buku",
+    "kategori": "Operasional",
     "namaBarang": "Lain-lain",
     "qty": 1.0,
     "satuan": "set",
     "hargaSatuan": 185000.0,
     "totalNominal": 185000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/1oTaALRKR1erSAOk09eknrepimuYBZMg3/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
@@ -1429,7 +1461,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 450000.0,
     "totalNominal": 450000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/127z-G12tsU0HSGwxhEBMoh_zsJtojsKC/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
@@ -1442,7 +1475,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 735000.0,
     "totalNominal": 735000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/1GIY1lHx0qp2i2vOOFgV1erTNDhZwv--4/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
@@ -1455,7 +1489,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 80000.0,
     "totalNominal": 160000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/1vVmegxXpSBJWE2UKlWY6q8cp3wa_bdd7/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
@@ -1468,7 +1503,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 40000.0,
     "totalNominal": 200000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/12ETJhSLVw8bGWrSzaT8EJLm0V_qhoZPr/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
@@ -1481,7 +1517,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 35000.0,
     "totalNominal": 175000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (April)"
+    "keterangan": "RAPBS BOSP 2025 (April)",
+    "linkFoto": "https://drive.google.com/file/d/12ETJhSLVw8bGWrSzaT8EJLm0V_qhoZPr/view?usp=sharing"
   },
   {
     "tanggal": "2025-04-28",
@@ -1818,21 +1855,23 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 920000.0,
     "totalNominal": 18400000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Mei)"
+    "unit": "FG Mahad Putra",
+    "keterangan": "RAPBS BOSP 2025 (Mei)",
+    "linkFoto": "https://drive.google.com/file/d/1Oaao5ISezVTcRdw71AoKO_SEhBVpFYZL/view?usp=sharing"
   },
   {
     "tanggal": "2025-05-28",
     "bulan": "Mei",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Tabung Resonansi",
     "qty": 1.0,
     "satuan": "set",
     "hargaSatuan": 2200000.0,
     "totalNominal": 2200000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Mei)"
+    "keterangan": "RAPBS BOSP 2025 (Mei)",
+    "linkFoto": "https://drive.google.com/file/d/1jTFRAM1XfSuxgH8AMD9IyRsp8Pivfca0/view?usp=sharing"
   },
   {
     "tanggal": "2025-05-28",
@@ -1845,7 +1884,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 107000.0,
     "totalNominal": 214000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Mei)"
+    "keterangan": "RAPBS BOSP 2025 (Mei)",
+    "linkFoto": "https://drive.google.com/file/d/1RMrI11cc31ZdHC_WgUS2CiliJMkBAdkT/view?usp=sharing"
   },
   {
     "tanggal": "2025-05-28",
@@ -1858,7 +1898,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 70000.0,
     "totalNominal": 1400000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Mei)"
+    "keterangan": "RAPBS BOSP 2025 (Mei)",
+    "linkFoto": "https://drive.google.com/file/d/1oqX8Xfs_-q9S6mVHqDCLyLGWjlbaJupP/view?usp=sharing"
   },
   {
     "tanggal": "2025-05-28",
@@ -1871,7 +1912,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 75000.0,
     "totalNominal": 7500000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Mei)"
+    "keterangan": "RAPBS BOSP 2025 (Mei)",
+    "linkFoto": "https://drive.google.com/file/d/1Uy-egfWSb5b_MLV_OKc-IIlhjuawSaDA/view?usp=sharing"
   },
   {
     "tanggal": "2025-05-28",
@@ -1884,7 +1926,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 470000.0,
     "totalNominal": 1410000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Mei)"
+    "keterangan": "RAPBS BOSP 2025 (Mei)",
+    "linkFoto": "https://drive.google.com/file/d/1I4bsFS4TlSw5WV-lZab7iDjorHd2xyHb/view?usp=sharing"
   },
   {
     "tanggal": "2025-05-28",
@@ -2221,21 +2264,23 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 920000.0,
     "totalNominal": 46000000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Juni)"
+    "unit": "FG Putri Fullday (FD)",
+    "keterangan": "RAPBS BOSP 2025 (Juni)",
+    "linkFoto": "https://drive.google.com/file/d/1Mi_MHMub7WMkU6hmuiDIXV_8y4ktGmyv/view?usp=sharing\n\nhttps://drive.google.com/file/d/1c8bhV2wmWebrB7gGHbo-ZpI_8Xl3QEV2/view?usp=sharing"
   },
   {
     "tanggal": "2025-06-28",
     "bulan": "Juni",
     "kodeRekening": "5.2.02.08.03.0011",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Barbel",
     "qty": 6.0,
     "satuan": "buah",
     "hargaSatuan": 395000.0,
     "totalNominal": 2370000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Juni)"
+    "keterangan": "RAPBS BOSP 2025 (Juni)",
+    "linkFoto": "https://drive.google.com/file/d/1DwrwDXUTSbTnIjGHz3B6ukDw3jFBqP1L/view?usp=sharing\n\nhttps://drive.google.com/file/d/1jd1AbIijai_-F2PMx7GkQOwHHMckUlPb/view?usp=sharing\n\nhttps://drive.google.com/file/d/1FBuxQzG7f9yDGXqwT2z0oLrvLtS1J0RU/view?usp=sharing"
   },
   {
     "tanggal": "2025-06-28",
@@ -2247,8 +2292,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 452942.0,
     "totalNominal": 452942.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Juni)"
+    "unit": "FG Putri Fullday (FD)",
+    "keterangan": "RAPBS BOSP 2025 (Juni)",
+    "linkFoto": "https://drive.google.com/file/d/149Dzu9ycbq3iKfzQ4rGdKmUBBCB_gw-p/view?usp=sharing"
   },
   {
     "tanggal": "2025-06-28",
@@ -2261,7 +2307,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 10000.0,
     "totalNominal": 50000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Juni)"
+    "keterangan": "RAPBS BOSP 2025 (Juni)",
+    "linkFoto": "https://drive.google.com/file/d/1CKGjCSRc4or0Tp2-Ut3MwjFAdQwUtrEx/view?usp=sharing"
   },
   {
     "tanggal": "2025-06-28",
@@ -2274,7 +2321,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 180000.0,
     "totalNominal": 540000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Juni)"
+    "keterangan": "RAPBS BOSP 2025 (Juni)",
+    "linkFoto": "https://drive.google.com/file/d/1ijMW_P9iulQ0Clj3crvTtzEAjGILF1R_/view?usp=sharing"
   },
   {
     "tanggal": "2025-06-28",
@@ -2293,14 +2341,15 @@ export const HISTORI_BELANJA_2025 = [
     "tanggal": "2025-06-28",
     "bulan": "Juni",
     "kodeRekening": "5.2.02.08.01.0020",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Osiloscope",
     "qty": 1.0,
     "satuan": "unit",
     "hargaSatuan": 3700000.0,
     "totalNominal": 3700000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Juni)"
+    "keterangan": "RAPBS BOSP 2025 (Juni)",
+    "linkFoto": "https://drive.google.com/file/d/1xnk7OLni0XaYesN2VocZVTsdWnz6hlUo/view?usp=sharing"
   },
   {
     "tanggal": "2025-06-28",
@@ -2312,7 +2361,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 227250.0,
     "totalNominal": 454500.0,
-    "unit": "FG Putra SMA",
+    "unit": "FG Putri Fullday (FD)",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2351,7 +2400,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 600000.0,
     "totalNominal": 1200000.0,
-    "unit": "FG Putra SMA",
+    "unit": "FG Mahad Putra",
     "keterangan": "RAPBS BOSP 2025 (Juni)"
   },
   {
@@ -2365,7 +2414,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 75000.0,
     "totalNominal": 375000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Juni)"
+    "keterangan": "RAPBS BOSP 2025 (Juni)",
+    "linkFoto": "https://drive.google.com/file/d/1rIvQFkLhNBJFYxCx6s2Xh_d13FTf6Zb7/view?usp=drive_link"
   },
   {
     "tanggal": "2025-06-28",
@@ -2378,7 +2428,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 470000.0,
     "totalNominal": 4230000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Juni)"
+    "keterangan": "RAPBS BOSP 2025 (Juni)",
+    "linkFoto": "https://drive.google.com/file/d/1AD8g-_asxudfr98D9n3Qhj1wc5V1naiF/view?usp=drive_link"
   },
   {
     "tanggal": "2025-06-28",
@@ -2391,7 +2442,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 20000.0,
     "totalNominal": 1200000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Juni)"
+    "keterangan": "RAPBS BOSP 2025 (Juni)",
+    "linkFoto": "https://drive.google.com/file/d/1nSOgXVmmLiZcjrINOg9DOp3PHirdjBQO/view?usp=drive_link"
   },
   {
     "tanggal": "2025-06-28",
@@ -3053,8 +3105,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 337734.0,
     "totalNominal": 337734.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/149Dzu9ycbq3iKfzQ4rGdKmUBBCB_gw-p/view?usp=sharing"
   },
   {
     "tanggal": "2025-08-28",
@@ -3066,8 +3119,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 910000.0,
     "totalNominal": 5460000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/1AIsqPnPbgN7w2hcEmSLTu0OfLsxO3Kup/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -3742,8 +3796,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 1950000.0,
     "totalNominal": 1950000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/149Dzu9ycbq3iKfzQ4rGdKmUBBCB_gw-p/view?usp=sharing"
   },
   {
     "tanggal": "2025-08-28",
@@ -3755,8 +3810,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 2300000.0,
     "totalNominal": 2300000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/1jF0UyudN36l2jyVCUcPwOnBM-aAL8Tn7/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -3768,8 +3824,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 850000.0,
     "totalNominal": 850000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/1vnCT8wo59QRnPH7OAFs6AZa9esn6xab_/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -3781,8 +3838,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 1500000.0,
     "totalNominal": 1500000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/1TQf2f2z4Y1E1CIDVDpngKYerEfeqU7DZ/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -3794,8 +3852,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 810000.0,
     "totalNominal": 810000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/1VioasILTaFEdabSc4vdOU0oO7EM--awM/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -3807,8 +3866,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 1220000.0,
     "totalNominal": 1220000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/1p5i4gzAQ1CX6f2NozGIUK5L952VJdKrC/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -3820,8 +3880,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 485000.0,
     "totalNominal": 1455000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/1ALb7nzXoTEbBz2m1j0iMcy-u3FX3Lhgt/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -3833,8 +3894,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "paket",
     "hargaSatuan": 375000.0,
     "totalNominal": 750000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/1dtHc4fdb8H2w07CrMZFIZzQ8q5sQfQjV/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -3859,8 +3921,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "unit",
     "hargaSatuan": 6800000.0,
     "totalNominal": 34000000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/1GkitnEkCco47rlGm24BscQMkWdc6GmLW/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -3873,7 +3936,8 @@ export const HISTORI_BELANJA_2025 = [
     "hargaSatuan": 10000.0,
     "totalNominal": 50000.0,
     "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/1WO2KqFeOzH8HYXioNnGGBP_3vGXJO1gK/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -3885,8 +3949,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 40000.0,
     "totalNominal": 2000000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/1w78-y5UOh0HxK4T5XcpEtbqVzWVaNaBU/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -3911,8 +3976,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 4500.0,
     "totalNominal": 810000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/1XpWWXhdhJbWv5BpZZv1SxUwDyNOdEcBJ/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -3937,8 +4003,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 250000.0,
     "totalNominal": 3500000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/12O4X4pzDaobYqpoSTFeF8waXxgHZHWwt/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -4015,8 +4082,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "pak",
     "hargaSatuan": 30000.0,
     "totalNominal": 1500000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Agustus)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Agustus)",
+    "linkFoto": "https://drive.google.com/file/d/17Tx7dfpV3GXhUgnKdIe25MN90bM_Jgt9/view?usp=drive_link"
   },
   {
     "tanggal": "2025-08-28",
@@ -4522,8 +4590,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 20000.0,
     "totalNominal": 400000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (September)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (September)",
+    "linkFoto": "https://drive.google.com/file/d/1oSUMzrJ2oKoAUkJVYOAqx4s9hewqfoyE/view?usp=drive_link"
   },
   {
     "tanggal": "2025-09-28",
@@ -4535,8 +4604,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 15000.0,
     "totalNominal": 450000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (September)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (September)",
+    "linkFoto": "https://drive.google.com/file/d/1fHaxpYQFXBD3uQogM5R_amqczWA1UY0D/view?usp=drive_link"
   },
   {
     "tanggal": "2025-09-28",
@@ -4548,8 +4618,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "lusin",
     "hargaSatuan": 110000.0,
     "totalNominal": 1100000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (September)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (September)",
+    "linkFoto": "https://drive.google.com/file/d/18NoAo73bYYBBykswPtg8KbcsydnyoJDk/view?usp=drive_link"
   },
   {
     "tanggal": "2025-09-28",
@@ -4561,7 +4632,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "lusin",
     "hargaSatuan": 110000.0,
     "totalNominal": 1100000.0,
-    "unit": "FG Putra SMA",
+    "unit": "FG Putri Boarding (BD)",
     "keterangan": "RAPBS BOSP 2025 (September)"
   },
   {
@@ -4574,8 +4645,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "buah",
     "hargaSatuan": 75000.0,
     "totalNominal": 7500000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (September)"
+    "unit": "FG Putri Fullday (FD)",
+    "keterangan": "RAPBS BOSP 2025 (September)",
+    "linkFoto": "https://drive.google.com/file/d/15DIVxBnvANl_4jHvNXnCFpmx-hTJxNTs/view?usp=drive_link"
   },
   {
     "tanggal": "2025-09-28",
@@ -4587,8 +4659,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 470000.0,
     "totalNominal": 1410000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (September)"
+    "unit": "FG Putri Fullday (FD)",
+    "keterangan": "RAPBS BOSP 2025 (September)",
+    "linkFoto": "https://drive.google.com/file/d/11ssXTFhuN-t-pkiYldIuMTEil2CAOt3E/view?usp=drive_link"
   },
   {
     "tanggal": "2025-09-28",
@@ -4600,8 +4673,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 600000.0,
     "totalNominal": 12000000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (September)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (September)",
+    "linkFoto": "https://drive.google.com/file/d/1kF5fEB7MRXJe_TSCm-NRimNoueLg9DxZ/view?usp=drive_link"
   },
   {
     "tanggal": "2025-09-28",
@@ -5068,8 +5142,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 70000.0,
     "totalNominal": 6300000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (Oktober)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (Oktober)",
+    "linkFoto": "https://drive.google.com/file/d/18wTVBqIV1pv5UzuFISH78d99ZDNX4OV1/view?usp=drive_link"
   },
   {
     "tanggal": "2025-10-28",
@@ -5081,7 +5156,7 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "rim",
     "hargaSatuan": 80000.0,
     "totalNominal": 6720000.0,
-    "unit": "FG Putra SMA",
+    "unit": "FG Putri Boarding (BD)",
     "keterangan": "RAPBS BOSP 2025 (Oktober)"
   },
   {
@@ -5419,8 +5494,9 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "set",
     "hargaSatuan": 920000.0,
     "totalNominal": 13800000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (November)"
+    "unit": "FG Putri Fullday (FD)",
+    "keterangan": "RAPBS BOSP 2025 (November)",
+    "linkFoto": "https://drive.google.com/file/d/13_fMYbBHBkzJkPIq-XdvKClMGwlJ8_OE/view?usp=drive_link"
   },
   {
     "tanggal": "2025-11-28",
@@ -5432,86 +5508,93 @@ export const HISTORI_BELANJA_2025 = [
     "satuan": "liter",
     "hargaSatuan": 20000.0,
     "totalNominal": 80000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (November)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (November)",
+    "linkFoto": "https://drive.google.com/file/d/10u3v-o3GdhWglSlB9PND7HxNC9cHNVPQ/view?usp=drive_link"
   },
   {
     "tanggal": "2025-11-28",
     "bulan": "November",
     "kodeRekening": "5.2.02.08.01.0013",
-    "kategori": "Buku",
+    "kategori": "Operasional",
     "namaBarang": "Sikat Tabung Reaksi Besar Kecil",
     "qty": 15.0,
     "satuan": "buah",
     "hargaSatuan": 8000.0,
     "totalNominal": 120000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (November)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (November)",
+    "linkFoto": "https://drive.google.com/file/d/13no22kO1Km-481XXyq0QqoAkjVN0EhOR/view?usp=drive_link"
   },
   {
     "tanggal": "2025-11-28",
     "bulan": "November",
     "kodeRekening": "5.2.02.08.01.0013",
-    "kategori": "Buku",
+    "kategori": "Operasional",
     "namaBarang": "Pipet Tetes",
     "qty": 30.0,
     "satuan": "pcs",
     "hargaSatuan": 5000.0,
     "totalNominal": 150000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (November)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (November)",
+    "linkFoto": "https://drive.google.com/file/d/19hyScdFG6Raa3eiaj7UXQkEtfUesmT_p/view?usp=drive_link"
   },
   {
     "tanggal": "2025-11-28",
     "bulan": "November",
     "kodeRekening": "5.2.02.08.01.0013",
-    "kategori": "Buku",
+    "kategori": "Operasional",
     "namaBarang": "Thermometer Digital",
     "qty": 1.0,
     "satuan": "buah",
     "hargaSatuan": 200000.0,
     "totalNominal": 200000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (November)"
+    "unit": "FG Putri Boarding (BD)",
+    "keterangan": "RAPBS BOSP 2025 (November)",
+    "linkFoto": "https://drive.google.com/file/d/1SIF6NFjRdbK1UW3cE_isVJQhQwfuO0um/view?usp=drive_link"
   },
   {
     "tanggal": "2025-11-28",
     "bulan": "November",
     "kodeRekening": "5.2.02.08.03.0005",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Respirometer",
     "qty": 5.0,
     "satuan": "buah",
     "hargaSatuan": 100000.0,
     "totalNominal": 500000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (November)"
+    "unit": "FG Putri Fullday (FD)",
+    "keterangan": "RAPBS BOSP 2025 (November)",
+    "linkFoto": "https://drive.google.com/file/d/1mXrGhmlYDvLk-xg19avDi1EyEhJwy4rM/view?usp=drive_link"
   },
   {
     "tanggal": "2025-11-28",
     "bulan": "November",
     "kodeRekening": "5.2.02.08.03.0005",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Model Torso Wanita",
     "qty": 1.0,
     "satuan": "set",
     "hargaSatuan": 750000.0,
     "totalNominal": 750000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (November)"
+    "unit": "FG Putri Fullday (FD)",
+    "keterangan": "RAPBS BOSP 2025 (November)",
+    "linkFoto": "https://drive.google.com/file/d/1J4Tpu1gvjWh4y2WYwHgWAboKpXrCSYLg/view?usp=drive_link"
   },
   {
     "tanggal": "2025-11-28",
     "bulan": "November",
     "kodeRekening": "5.2.02.08.03.0005",
-    "kategori": "Buku",
+    "kategori": "Modal",
     "namaBarang": "Timbangan Digital",
     "qty": 1.0,
     "satuan": "unit",
     "hargaSatuan": 185000.0,
     "totalNominal": 185000.0,
-    "unit": "FG Putra SMA",
-    "keterangan": "RAPBS BOSP 2025 (November)"
+    "unit": "FG Putri Fullday (FD)",
+    "keterangan": "RAPBS BOSP 2025 (November)",
+    "linkFoto": "https://drive.google.com/file/d/1tuf7PmX2abyfoV4NVtkP_dLYDJGqdlRo/view?usp=drive_link"
   },
   {
     "tanggal": "2025-11-28",

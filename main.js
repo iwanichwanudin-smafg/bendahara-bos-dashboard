@@ -2291,6 +2291,9 @@ function renderHistoriPagu() {
   }
 
   renderHistoriBelanjaTable(d.belanjaRows);
+  if (typeof window.filterHistoriBelanja === 'function') {
+    window.filterHistoriBelanja();
+  }
 }
 
 function renderHistoriBelanjaTable(rows) {
