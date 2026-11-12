@@ -2083,7 +2083,48 @@ let historiData = {
     totalRealisasi: 1210040000,
     sisa: 0,
     persen: '100%',
-    unitRows: [],
+    unitRows: [
+      {
+        nama: 'FG Putra SMA',
+        siswa: 325,
+        paguMurni: 549250000,
+        iuranFKSS: 16250000,
+        totalPagu: 573580000,
+        realisasi: 573580000,
+        sisa: 0,
+        pct: '100%'
+      },
+      {
+        nama: 'FG Mahad Putra',
+        siswa: 41,
+        paguMurni: 69290000,
+        iuranFKSS: 2455000,
+        totalPagu: 668350000,
+        realisasi: 668350000,
+        sisa: 0,
+        pct: '100%'
+      },
+      {
+        nama: 'FG Putri Boarding (BD)',
+        siswa: 188,
+        paguMurni: 317720000,
+        iuranFKSS: 11740000,
+        totalPagu: 305980000,
+        realisasi: 305980000,
+        sisa: 0,
+        pct: '100%'
+      },
+      {
+        nama: 'FG Putri Fullday (FD)',
+        siswa: 162,
+        paguMurni: 273780000,
+        iuranFKSS: 10135000,
+        totalPagu: 263645000,
+        realisasi: 263645000,
+        sisa: 0,
+        pct: '100%'
+      }
+    ],
     belanjaRows: HISTORI_BELANJA_2025 || []
   },
   2024: {
