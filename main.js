@@ -14,6 +14,7 @@ import { applyRekeningInfo } from './src/data/rekeningKoranData.js';
 import { requireLogin, mountUserBadge, showFatal } from './src/lib/auth.js';
 import { loadAll, createSyncQueue } from './src/lib/repository.js';
 import { hitungRincianPagu } from './src/lib/pagu.js';
+import { hitungBelanjaPerUnit, KATEGORI_BELANJA } from './src/lib/visualUnit.js';
 import {
   formatRupiah,
   formatNumber,
@@ -36,6 +37,7 @@ let activeSIBatchId = null;
 let currentParsedSI = null;
 let budgetBarChartInstance = null;
 let categoryPieChartInstance = null;
+const visualUnitCharts = new Map(); // id unit -> instance Chart (halaman Visual per Unit)
 let currentBarMode = 'stacked'; // 'stacked', 'grouped', or 'percent'
 let currentCetakTab = 'surat'; // 'surat' or 'lampiran'
 
@@ -1903,6 +1905,152 @@ function fillStaticLabels() {
   }
 }
 
+// =========================================================
+// HALAMAN VISUAL PER UNIT: jatah, belanja rinci per kategori, dan diagram pie tiap unit
+// =========================================================
+function renderVisualUnit() {
+  const gridEl = document.getElementById('visualUnitGrid');
+  const ringkasEl = document.getElementById('visualUnitRingkasan');
+  if (!gridEl || !ringkasEl) return;
+
+  // Bersihkan diagram lama agar tidak bocor memori
+  visualUnitCharts.forEach((chart) => chart.destroy());
+  visualUnitCharts.clear();
+
+  const metrics = getMetrics();
+  const rate = Number(PAGU_DATA.iuranFKSSPerSiswa) || 0;
+  const rincian = Object.fromEntries(hitungRincianPagu(metrics.unitStats, rate).rows.map((r) => [r.id, r]));
+  const units = hitungBelanjaPerUnit(metrics.unitStats, transaksiList);
+
+  if (units.length === 0) {
+    ringkasEl.innerHTML = '';
+    gridEl.innerHTML = '<div class="si-batch-card">Belum ada data unit.</div>';
+    return;
+  }
+
+  // ---- Ringkasan seluruh unit ----
+  const totalJatah = units.reduce((sum, u) => sum + u.jatah, 0);
+  const totalBelanja = units.reduce((sum, u) => sum + u.realisasi, 0);
+  const totalSisa = totalJatah - totalBelanja;
+  const pctTotal = totalJatah > 0 ? ((totalBelanja / totalJatah) * 100).toFixed(1) : '0.0';
+  const totalKategori = KATEGORI_BELANJA.map((k, i) => ({
+    ...k, total: units.reduce((sum, u) => sum + u.kategori[i].total, 0)
+  }));
+
+  ringkasEl.innerHTML = `
+    <div class="vu-summary">
+      <div class="vu-stat"><div class="vu-label">Total Jatah ${units.length} Unit</div><div class="vu-value" style="color:#0284c7;">${formatRupiah(totalJatah)}</div></div>
+      <div class="vu-stat"><div class="vu-label">Total Belanja</div><div class="vu-value" style="color:#e11d48;">${formatRupiah(totalBelanja)}</div></div>
+      <div class="vu-stat"><div class="vu-label">Sisa Jatah</div><div class="vu-value" style="color:#059669;">${formatRupiah(totalSisa)}</div></div>
+      <div class="vu-stat"><div class="vu-label">Serapan</div><div class="vu-value">${pctTotal}%</div></div>
+    </div>
+    <div class="vu-chips">
+      ${totalKategori.map((k) => `<span class="vu-chip"><span class="vu-dot" style="background:${k.warna};"></span>${k.label}: <strong>${formatRupiah(k.total)}</strong></span>`).join('')}
+    </div>`;
+
+  // ---- Satu kartu per unit ----
+  gridEl.innerHTML = units.map((u) => {
+    const r = rincian[u.id];
+    const nama = escapeHtmlText(u.nama);
+    const lebar = Math.min(100, Math.max(0, u.persenSerapan));
+    const warnaSisa = u.sisa < 0 ? '#e11d48' : '#059669';
+
+    let catatanJatah = '';
+    if (r) {
+      catatanJatah = `Jatah bruto ${formatRupiah(r.jatahBruto)} &minus; iuran FKSS ${formatRupiah(r.iuranFKSS)} = jatah netto ${formatRupiah(r.jatahNetto)}.`;
+      if (r.tambahanIuran > 0) {
+        catatanJatah += ` Ditambah iuran FKSS seluruh unit ${formatRupiah(r.tambahanIuran)} (ditalangi ${nama}) = jatah ${formatRupiah(r.paguRKAS)}.`;
+      }
+    }
+
+    const barisKategori = u.kategori.map((k) => `
+      <tr>
+        <td><span class="vu-kat"><span class="vu-dot" style="background:${k.warna};"></span>${k.label}</span></td>
+        <td class="num">${formatRupiah(k.total)}</td>
+        <td class="num">${k.persen}%</td>
+        <td class="num">${k.jumlahItem}</td>
+      </tr>`).join('');
+    const barisLain = (u.lainnya.total !== 0 || u.lainnya.jumlahItem > 0) ? `
+      <tr>
+        <td><span class="vu-kat"><span class="vu-dot" style="background:#94a3b8;"></span>Lainnya</span></td>
+        <td class="num">${formatRupiah(u.lainnya.total)}</td>
+        <td class="num">${u.lainnya.persen}%</td>
+        <td class="num">${u.lainnya.jumlahItem}</td>
+      </tr>` : '';
+
+    return `
+      <div class="vu-card">
+        <div class="vu-head">
+          <span class="tag-unit ${String(u.id).toLowerCase()}" style="font-size:0.95rem;">${nama}</span>
+          <span class="vu-siswa">${u.siswa} siswa &bull; ${u.jumlahItem} item belanja</span>
+        </div>
+        <div class="vu-kpis">
+          <div class="vu-kpi"><div class="vu-label">Jatah (pagu RKAS)</div><div class="vu-value" style="color:#0284c7;">${formatRupiah(u.jatah)}</div></div>
+          <div class="vu-kpi"><div class="vu-label">Belanja rinci</div><div class="vu-value" style="color:#e11d48;">${formatRupiah(u.realisasi)}</div></div>
+          <div class="vu-kpi"><div class="vu-label">Sisa jatah</div><div class="vu-value" style="color:${warnaSisa};">${formatRupiah(u.sisa)}</div></div>
+          <div class="vu-kpi"><div class="vu-label">Serapan</div><div class="vu-value">${u.persenSerapan}%</div></div>
+        </div>
+        ${catatanJatah ? `<div class="vu-note">${catatanJatah}</div>` : ''}
+        <div class="vu-progress"><div style="width:${lebar}%;"></div></div>
+        <div class="vu-progress-label">${u.persenSerapan}% dari jatah sudah dibelanjakan</div>
+        <div class="vu-body">
+          <div class="vu-chart">
+            <canvas id="unitPie_${escapeHtmlText(u.id)}"></canvas>
+            <div class="vu-center"><span class="vu-center-label">Belanja</span><span class="vu-center-value">${formatRupiah(u.realisasi)}</span></div>
+          </div>
+          <table class="vu-table">
+            <thead><tr><th>Kategori</th><th class="num">Belanja</th><th class="num">%</th><th class="num">Item</th></tr></thead>
+            <tbody>${barisKategori}${barisLain}</tbody>
+            <tfoot><tr><td>Total belanja</td><td class="num">${formatRupiah(u.realisasi)}</td><td class="num">${u.realisasi > 0 ? '100%' : '0%'}</td><td class="num">${u.jumlahItem}</td></tr></tfoot>
+          </table>
+        </div>
+      </div>`;
+  }).join('');
+
+  // ---- Diagram pie (doughnut) tiap unit ----
+  units.forEach((u) => {
+    const canvas = document.getElementById(`unitPie_${u.id}`);
+    if (!canvas) return;
+    const irisan = [...u.kategori.filter((k) => k.total > 0)];
+    if (u.lainnya.total > 0) irisan.push({ label: 'Lainnya', warna: '#94a3b8', total: u.lainnya.total });
+
+    const kosong = irisan.length === 0;
+    const chart = new Chart(canvas, {
+      type: 'doughnut',
+      data: {
+        labels: kosong ? ['Belum ada belanja'] : irisan.map((k) => k.label),
+        datasets: [{
+          data: kosong ? [1] : irisan.map((k) => k.total),
+          backgroundColor: kosong ? ['#e2e8f0'] : irisan.map((k) => k.warna),
+          borderWidth: 2,
+          borderColor: '#ffffff',
+          hoverOffset: kosong ? 0 : 6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        cutout: '66%',
+        plugins: {
+          legend: { display: false },
+          tooltip: kosong ? { enabled: false } : {
+            backgroundColor: '#0f172a',
+            padding: 10,
+            callbacks: {
+              label: (ctx) => {
+                const nilai = ctx.parsed || 0;
+                const pct = u.realisasi > 0 ? ((nilai / u.realisasi) * 100).toFixed(1) : 0;
+                return ` ${ctx.label}: ${formatRupiah(nilai)} (${pct}%)`;
+              }
+            }
+          }
+        }
+      }
+    });
+    visualUnitCharts.set(u.id, chart);
+  });
+}
+
 function renderAll() {
   renderDashboard();
   renderTransaksi();
@@ -1910,6 +2058,7 @@ function renderAll() {
   renderPagu();
   renderRekonsiliasi();
   fillStaticLabels();
+  if (document.getElementById('viewVisualUnit')?.classList.contains('active')) renderVisualUnit();
 }
 
 // =========================================================
@@ -1918,12 +2067,14 @@ function renderAll() {
 
 function setupNavigation() {
   const navDashboard = document.getElementById('navDashboard');
+  const navVisualUnit = document.getElementById('navVisualUnit');
   const navTransaksi = document.getElementById('navTransaksi');
   const navCetakSI = document.getElementById('navCetakSI');
   const navPagu = document.getElementById('navPagu');
   const navRekonsiliasi = document.getElementById('navRekonsiliasi');
 
   const viewDashboard = document.getElementById('viewDashboard');
+  const viewVisualUnit = document.getElementById('viewVisualUnit');
   const viewTransaksi = document.getElementById('viewTransaksi');
   const viewCetakSI = document.getElementById('viewCetakSI');
   const viewPagu = document.getElementById('viewPagu');
@@ -1932,8 +2083,8 @@ function setupNavigation() {
   const pageTitle = document.getElementById('pageTitle');
   const pageSubtitle = document.getElementById('pageSubtitle');
 
-  const navs = [navDashboard, navTransaksi, navCetakSI, navPagu, navRekonsiliasi].filter(Boolean);
-  const views = [viewDashboard, viewTransaksi, viewCetakSI, viewPagu, viewRekonsiliasi].filter(Boolean);
+  const navs = [navDashboard, navVisualUnit, navTransaksi, navCetakSI, navPagu, navRekonsiliasi].filter(Boolean);
+  const views = [viewDashboard, viewVisualUnit, viewTransaksi, viewCetakSI, viewPagu, viewRekonsiliasi].filter(Boolean);
 
   // Mobile sidebar drawer elements
   const btnMobileToggle = document.getElementById('btnMobileToggle');
@@ -1973,6 +2124,8 @@ function setupNavigation() {
     // Refresh chart if going to dashboard
     if (activeView === viewDashboard) {
       setTimeout(() => renderDashboard(), 50);
+    } else if (activeView === viewVisualUnit) {
+      setTimeout(() => renderVisualUnit(), 50);
     } else if (activeView === viewCetakSI) {
       renderCetakSI();
     } else if (activeView === viewTransaksi) {
@@ -1986,7 +2139,9 @@ function setupNavigation() {
 
   function handleRoute() {
     const hash = window.location.hash || '#dashboard';
-    if (hash === '#transaksi') {
+    if (hash === '#visual-unit') {
+      switchPage(navVisualUnit, viewVisualUnit, 'Visual per Unit', 'Jatah, Belanja Rinci, dan Komposisi Belanja per Unit Sekolah');
+    } else if (hash === '#transaksi') {
       switchPage(navTransaksi, viewTransaksi, 'Rincian Belanja & Transaksi SI', 'Daftar Pengeluaran Dana BOS yang Telah Dicairkan & Ditransaksikan');
     } else if (hash === '#cetak-si') {
       switchPage(navCetakSI, viewCetakSI, 'Cetak Dokumen SI Bank', 'Surat Instruksi Pemindahbukuan & Lampiran Rekap Transfer Resmi BJB');
@@ -2002,6 +2157,7 @@ function setupNavigation() {
   window.addEventListener('hashchange', handleRoute);
 
   navDashboard?.addEventListener('click', () => { window.location.hash = '#dashboard'; });
+  navVisualUnit?.addEventListener('click', () => { window.location.hash = '#visual-unit'; });
   navTransaksi?.addEventListener('click', () => { window.location.hash = '#transaksi'; });
   navCetakSI?.addEventListener('click', () => { window.location.hash = '#cetak-si'; });
   navPagu?.addEventListener('click', () => { window.location.hash = '#pagu'; });

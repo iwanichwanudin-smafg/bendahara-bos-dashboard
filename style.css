@@ -1873,3 +1873,48 @@ body {
   }
 }
 
+
+
+/* =========================================================
+   HALAMAN VISUAL PER UNIT
+   ========================================================= */
+.vu-summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 14px; }
+.vu-stat { background: #fff; border: 1px solid var(--border-color); border-radius: 14px; padding: 14px 16px; }
+.vu-stat .vu-label { font-size: 0.7rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .03em; }
+.vu-stat .vu-value { font-size: 1.15rem; font-weight: 800; font-family: var(--font-mono); margin-top: 4px; }
+.vu-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+.vu-chip { display: inline-flex; align-items: center; gap: 8px; background: #fff; border: 1px solid var(--border-color); border-radius: 999px; padding: 6px 14px; font-size: 0.8rem; }
+.vu-chip strong { font-family: var(--font-mono); }
+.vu-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
+
+.vu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.vu-card { background: #fff; border: 1px solid var(--border-color); border-radius: 16px; padding: 20px; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05); }
+.vu-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+.vu-head .vu-siswa { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; }
+.vu-kpis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 12px; }
+.vu-kpi { background: #f8fafc; border: 1px solid var(--border-color); border-radius: 10px; padding: 10px 12px; }
+.vu-kpi .vu-label { font-size: 0.66rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .03em; }
+.vu-kpi .vu-value { font-size: 0.98rem; font-weight: 800; font-family: var(--font-mono); margin-top: 3px; word-break: break-word; }
+.vu-note { font-size: 0.76rem; color: #475569; background: #f1f5f9; border-radius: 8px; padding: 8px 10px; margin-bottom: 12px; line-height: 1.5; }
+.vu-progress { height: 8px; background: #e2e8f0; border-radius: 999px; overflow: hidden; margin-bottom: 4px; }
+.vu-progress > div { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #2563eb, #38bdf8); }
+.vu-progress-label { font-size: 0.72rem; color: var(--text-muted); margin-bottom: 14px; text-align: right; }
+.vu-body { display: grid; grid-template-columns: minmax(170px, 210px) minmax(0, 1fr); gap: 18px; align-items: center; }
+.vu-chart { position: relative; height: 200px; }
+.vu-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; pointer-events: none; text-align: center; }
+.vu-center .vu-center-label { font-size: 0.62rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; }
+.vu-center .vu-center-value { font-size: 0.78rem; font-weight: 800; font-family: var(--font-mono); max-width: 110px; word-break: break-word; }
+.vu-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+.vu-table th { text-align: left; font-size: 0.66rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; padding: 4px 6px; border-bottom: 1px solid var(--border-color); }
+.vu-table th.num, .vu-table td.num { text-align: right; }
+.vu-table td { padding: 7px 6px; border-bottom: 1px solid #f1f5f9; }
+.vu-table td.num { font-family: var(--font-mono); white-space: nowrap; }
+.vu-table tfoot td { font-weight: 800; border-top: 2px solid var(--border-color); border-bottom: 0; }
+.vu-kat { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; }
+
+@media (max-width: 1100px) { .vu-grid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 760px) {
+  .vu-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vu-body { grid-template-columns: minmax(0, 1fr); }
+  .vu-chart { height: 220px; max-width: 260px; margin: 0 auto; }
+}
