@@ -6,6 +6,7 @@
 import Chart from 'chart.js/auto';
 import * as XLSX from 'xlsx';
 import { HISTORI_BELANJA_2025 } from './src/data/historiData2025.js';
+import { HISTORI_BELANJA_2024 } from './src/data/historiData2024.js';
 import {
   PROFIL_SEKOLAH,
   PAGU_DATA,
@@ -2142,12 +2143,49 @@ let historiData = {
     belanjaRows: HISTORI_BELANJA_2025 || []
   },
   2024: {
-    totalPagu: 0,
-    totalRealisasi: 0,
+    totalPagu: 1130610000,
+    totalRealisasi: 1130610000,
     sisa: 0,
-    persen: '0%',
-    unitRows: [],
-    belanjaRows: []
+    persen: '100%',
+    unitRows: [
+      {
+        nama: 'FG Putra SMA',
+        siswa: 382,
+        paguBruto: 645580000,
+        fkss: 9550000,
+        mkks: 0,
+        ijasah: 0,
+        pmi: 0,
+        netPembagian: 636030000,
+        paguRealRkas: 932965500,
+        pct: '100%'
+      },
+      {
+        nama: 'FG Putri Boarding (BD)',
+        siswa: 174,
+        paguBruto: 294060000,
+        fkss: 4350000,
+        mkks: 0,
+        ijasah: 0,
+        pmi: 0,
+        netPembagian: 289710000,
+        paguRealRkas: 134644500,
+        pct: '100%'
+      },
+      {
+        nama: 'FG Putri Fullday (FD)',
+        siswa: 113,
+        paguBruto: 190970000,
+        fkss: 2825000,
+        mkks: 0,
+        ijasah: 0,
+        pmi: 0,
+        netPembagian: 188145000,
+        paguRealRkas: 72000000,
+        pct: '100%'
+      }
+    ],
+    belanjaRows: HISTORI_BELANJA_2024 || []
   }
 };
 
