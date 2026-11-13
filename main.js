@@ -2116,7 +2116,7 @@ let historiData = {
         mkks: 4700000,
         ijasah: 1400000,
         pmi: 940000,
-        netPembagian: 30598000,
+        netPembagian: 305980000,
         paguRealRkas: 305980000,
         pct: '100%'
       },
@@ -2194,7 +2194,24 @@ window.filterHistoriBelanja = function() {
       (b.unit || '').toLowerCase().includes(kw) ||
       (b.kategori || '').toLowerCase().includes(kw);
 
-    const matchesUnit = !selectedUnit || (b.unit || '').toLowerCase().includes(selectedUnit.toLowerCase().replace('fg ', '').replace(' sma', ''));
+    const norm = (s) => (s || '').toLowerCase().trim();
+    let matchesUnit = true;
+    if (selectedUnit) {
+      const u1 = norm(b.unit);
+      const u2 = norm(selectedUnit);
+      if (u2.includes('mahad')) {
+        matchesUnit = u1.includes('mahad');
+      } else if (u2.includes('boarding') || u2.includes('bd')) {
+        matchesUnit = u1.includes('boarding') || u1.includes('bd');
+      } else if (u2.includes('fullday') || u2.includes('fd')) {
+        matchesUnit = u1.includes('fullday') || u1.includes('fd');
+      } else if (u2.includes('putra')) {
+        matchesUnit = u1.includes('putra') && !u1.includes('mahad');
+      } else {
+        matchesUnit = u1.includes(u2);
+      }
+    }
+
     const matchesKat = !selectedKat || (b.kategori || '').toLowerCase() === selectedKat.toLowerCase();
 
     return matchesKw && matchesUnit && matchesKat;
