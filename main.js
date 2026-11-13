@@ -668,6 +668,8 @@ function renderPaguDashboardTable(metrics) {
   });
 
   const totalSiswa = unitStats.reduce((sum, u) => sum + (u.siswa || 0), 0);
+  const totalPaguBruto = unitStats.reduce((sum, u) => sum + (Number(u.jatahBruto) || ((u.siswa || 0) * (Number(PAGU_DATA.nominalPerSiswa) || 1690000))), 0);
+  const totalIuranFKSS = unitStats.reduce((sum, u) => sum + (Number(u.iuranFKSS) || ((u.siswa || 0) * (Number(PAGU_DATA.iuranFKSSPerSiswa) || 25000))), 0);
   const totalPaguMurni = unitStats.reduce((sum, u) => sum + (u.paguMurni || 0), 0);
   const totalTalanganFKSS = unitStats.reduce((sum, u) => sum + (u.talanganFKSS || 0), 0);
   const totalPaguBJB = unitStats.reduce((sum, u) => sum + (u.pagu || 0), 0);
@@ -712,11 +714,13 @@ function renderPaguDashboardTable(metrics) {
           ${u.catatan ? `<div style="font-size: 0.73rem; color: var(--text-dim); margin-top: 2px; padding-left: 18px;">${u.catatan}</div>` : ''}
         </td>
         <td class="table-num" style="font-weight: 600;">${u.siswa} Siswa</td>
-        <td class="table-num">${formatRupiah(u.paguMurni)}</td>
+        <td class="table-num" style="font-weight: 600;">${formatRupiah(u.jatahBruto || ((u.siswa || 0) * 1690000))}</td>
+        <td class="table-num" style="color: #dc2626; font-weight: 600;">${(u.iuranFKSS || 0) > 0 ? '-' + formatRupiah(u.iuranFKSS) : '–'}</td>
+        <td class="table-num" style="color: #15803d; font-weight: 700;">${formatRupiah(u.paguMurni)}</td>
         <td class="table-num" style="color: ${u.talanganFKSS > 0 ? '#d97706' : 'var(--text-dim)'}; font-weight: ${u.talanganFKSS > 0 ? '700' : 'normal'};">
           ${u.talanganFKSS > 0 ? `+${formatRupiah(u.talanganFKSS)}` : '-'}
         </td>
-        <td class="table-num" style="font-weight: 700; color: #0284c7;">${formatRupiah(u.pagu)}</td>
+        <td class="table-num" style="font-weight: 800; color: #0284c7;">${formatRupiah(u.pagu)}</td>
         <td class="table-num" style="font-weight: 700; color: #e11d48;">${formatRupiah(u.realisasi)}</td>
         <td class="table-num" style="font-weight: 700; color: #059669;">${formatRupiah(u.sisa)}</td>
         <td>
@@ -746,7 +750,9 @@ function renderPaguDashboardTable(metrics) {
           TOTAL SELURUH 5 UNIT
         </td>
         <td class="table-num" style="font-weight: 800;">${totalSiswa} Siswa</td>
-        <td class="table-num" style="font-weight: 800;">${formatRupiah(totalPaguMurni)}</td>
+        <td class="table-num" style="font-weight: 800;">${formatRupiah(totalPaguBruto)}</td>
+        <td class="table-num" style="font-weight: 800; color: #dc2626;">-${formatRupiah(totalIuranFKSS)}</td>
+        <td class="table-num" style="font-weight: 800; color: #15803d;">${formatRupiah(totalPaguMurni)}</td>
         <td class="table-num" style="font-weight: 800; color: #d97706;">+${formatRupiah(totalTalanganFKSS)}</td>
         <td class="table-num" style="font-weight: 800; color: #0284c7;">${formatRupiah(totalPaguBJB)}</td>
         <td class="table-num" style="font-weight: 800; color: #e11d48;">${formatRupiah(totalRealisasi)}</td>
