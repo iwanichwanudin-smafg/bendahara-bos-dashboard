@@ -2368,6 +2368,158 @@ function renderHistoriPagu() {
   if (typeof window.filterHistoriBelanja === 'function') {
     window.filterHistoriBelanja();
   }
+
+  // Render Diagram Analisa Komparasi Multi-Tahun
+  renderHistoriComparisonCharts();
+}
+
+let chartHistoriTrenInstance = null;
+let chartHistoriKategoriInstance = null;
+
+function renderHistoriComparisonCharts() {
+  const canvasTren = document.getElementById('chartHistoriTrenPagu');
+  const canvasKat = document.getElementById('chartHistoriKategoriKomparasi');
+  if (!canvasTren || !canvasKat) return;
+
+  // Hitung data 2026 berjalan dinamis dari transaksiList
+  const metrics2026 = getMetrics();
+  const realisasi2026 = metrics2026.totalRealisasi || 0;
+  const pagu2026 = metrics2026.totalPagu || 1350310000;
+
+  let honor2026 = 0, ops2026 = 0, modal2026 = 0, buku2026 = 0;
+  (transaksiList || []).forEach(t => {
+    const nom = Number(t.totalNominal || t.nominal || t.netto) || 0;
+    const k = (t.kategori || '').toLowerCase();
+    if (k.includes('honor') || k.includes('gaji')) honor2026 += nom;
+    else if (k.includes('buku')) buku2026 += nom;
+    else if (k.includes('modal') || k.includes('aset')) modal2026 += nom;
+    else ops2026 += nom;
+  });
+
+  // Chart 1: Tren Pertumbuhan Pagu & Realisasi
+  if (chartHistoriTrenInstance) {
+    chartHistoriTrenInstance.destroy();
+  }
+  chartHistoriTrenInstance = new Chart(canvasTren, {
+    type: 'bar',
+    data: {
+      labels: ['2024 (669 Siswa)', '2025 (716 Siswa)', '2026 (799 Siswa)'],
+      datasets: [
+        {
+          label: 'Plafon Pagu BOS',
+          data: [1130610000, 1210040000, pagu2026],
+          backgroundColor: '#0284c7',
+          borderRadius: 6,
+          barPercentage: 0.6
+        },
+        {
+          label: 'Realisasi Belanja SI',
+          data: [1130610000, 1210040000, realisasi2026],
+          backgroundColor: '#10b981',
+          borderRadius: 6,
+          barPercentage: 0.6
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'top',
+          labels: { font: { family: "'Plus Jakarta Sans', sans-serif", size: 11, weight: '600' } }
+        },
+        tooltip: {
+          callbacks: {
+            label: function(ctx) {
+              return ' ' + ctx.dataset.label + ': ' + formatRupiah(ctx.raw);
+            }
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            callback: function(v) { return 'Rp ' + (v / 1e6).toFixed(0) + ' Jt'; },
+            font: { family: "'JetBrains Mono', monospace", size: 10 }
+          },
+          grid: { color: '#f1f5f9' }
+        },
+        x: {
+          grid: { display: false },
+          ticks: { font: { family: "'Plus Jakarta Sans', sans-serif", weight: '600', size: 11 } }
+        }
+      }
+    }
+  });
+
+  // Chart 2: Komparasi Alokasi Belanja per Kategori (dalam Juta Rupiah)
+  if (chartHistoriKategoriInstance) {
+    chartHistoriKategoriInstance.destroy();
+  }
+  chartHistoriKategoriInstance = new Chart(canvasKat, {
+    type: 'bar',
+    data: {
+      labels: ['Honor Guru & Tendik', 'Operasional & Daya Jasa', 'Belanja Modal / Aset', 'Buku & Literasi'],
+      datasets: [
+        {
+          label: 'TA 2024',
+          data: [384.50, 466.44, 261.53, 27.14],
+          backgroundColor: '#94a3b8',
+          borderRadius: 4
+        },
+        {
+          label: 'TA 2025',
+          data: [434.50, 342.00, 264.24, 129.79],
+          backgroundColor: '#0284c7',
+          borderRadius: 4
+        },
+        {
+          label: 'TA 2026 (Berjalan)',
+          data: [
+            Number((honor2026 / 1e6).toFixed(2)),
+            Number((ops2026 / 1e6).toFixed(2)),
+            Number((modal2026 / 1e6).toFixed(2)),
+            Number((buku2026 / 1e6).toFixed(2))
+          ],
+          backgroundColor: '#7c3aed',
+          borderRadius: 4
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'top',
+          labels: { font: { family: "'Plus Jakarta Sans', sans-serif", size: 11, weight: '600' } }
+        },
+        tooltip: {
+          callbacks: {
+            label: function(ctx) {
+              return ' ' + ctx.dataset.label + ': Rp ' + ctx.raw.toLocaleString('id-ID') + ' Juta';
+            }
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            callback: function(v) { return v + ' Jt'; },
+            font: { family: "'JetBrains Mono', monospace", size: 10 }
+          },
+          grid: { color: '#f1f5f9' }
+        },
+        x: {
+          grid: { display: false },
+          ticks: { font: { family: "'Plus Jakarta Sans', sans-serif", weight: '600', size: 10 } }
+        }
+      }
+    }
+  });
 }
 
 function renderHistoriBelanjaTable(rows) {
