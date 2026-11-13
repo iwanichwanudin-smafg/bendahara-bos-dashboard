@@ -2194,15 +2194,19 @@ window.switchHistoriTahun = function(tahun) {
   const btn2026 = document.getElementById('btnTabHistori2026');
   const btn2025 = document.getElementById('btnTabHistori2025');
   const btn2024 = document.getElementById('btnTabHistori2024');
+  const lblAktifBadge = document.getElementById('historiLabelTahunAktifBadge');
 
   [btn2026, btn2025, btn2024].forEach(b => b?.classList.remove('active'));
 
   if (tahun === 2026) {
     btn2026?.classList.add('active');
+    if (lblAktifBadge) lblAktifBadge.textContent = 'Tahun 2026 (Berjalan)';
   } else if (tahun === 2025) {
     btn2025?.classList.add('active');
+    if (lblAktifBadge) lblAktifBadge.textContent = 'Tahun 2025';
   } else {
     btn2024?.classList.add('active');
+    if (lblAktifBadge) lblAktifBadge.textContent = 'Tahun 2024';
   }
 
   renderHistoriPagu();
@@ -2375,10 +2379,12 @@ function renderHistoriPagu() {
 
 let chartHistoriTrenInstance = null;
 let chartHistoriKategoriInstance = null;
+let chartHistoriUnitInstance = null;
 
 function renderHistoriComparisonCharts() {
   const canvasTren = document.getElementById('chartHistoriTrenPagu');
   const canvasKat = document.getElementById('chartHistoriKategoriKomparasi');
+  const canvasUnit = document.getElementById('chartHistoriUnitKomparasi');
   if (!canvasTren || !canvasKat) return;
 
   // Hitung data 2026 berjalan dinamis dari transaksiList
@@ -2396,6 +2402,12 @@ function renderHistoriComparisonCharts() {
     else ops2026 += nom;
   });
 
+  const unitStats2026 = metrics2026.unitStats || [];
+  const getUnitReal = (id) => {
+    const u = unitStats2026.find(x => x.id === id);
+    return u ? Number((u.realisasi / 1e6).toFixed(2)) : 0;
+  };
+
   // Chart 1: Tren Pertumbuhan Pagu & Realisasi
   if (chartHistoriTrenInstance) {
     chartHistoriTrenInstance.destroy();
@@ -2409,14 +2421,14 @@ function renderHistoriComparisonCharts() {
           label: 'Plafon Pagu BOS',
           data: [1130610000, 1210040000, pagu2026],
           backgroundColor: '#0284c7',
-          borderRadius: 6,
+          borderRadius: 4,
           barPercentage: 0.6
         },
         {
           label: 'Realisasi Belanja SI',
           data: [1130610000, 1210040000, realisasi2026],
           backgroundColor: '#10b981',
-          borderRadius: 6,
+          borderRadius: 4,
           barPercentage: 0.6
         }
       ]
@@ -2427,7 +2439,7 @@ function renderHistoriComparisonCharts() {
       plugins: {
         legend: {
           position: 'top',
-          labels: { font: { family: "'Plus Jakarta Sans', sans-serif", size: 11, weight: '600' } }
+          labels: { font: { family: "'Plus Jakarta Sans', sans-serif", size: 10, weight: '600' } }
         },
         tooltip: {
           callbacks: {
@@ -2441,14 +2453,14 @@ function renderHistoriComparisonCharts() {
         y: {
           beginAtZero: true,
           ticks: {
-            callback: function(v) { return 'Rp ' + (v / 1e6).toFixed(0) + ' Jt'; },
-            font: { family: "'JetBrains Mono', monospace", size: 10 }
+            callback: function(v) { return (v / 1e6).toFixed(0) + ' Jt'; },
+            font: { family: "'JetBrains Mono', monospace", size: 9 }
           },
           grid: { color: '#f1f5f9' }
         },
         x: {
           grid: { display: false },
-          ticks: { font: { family: "'Plus Jakarta Sans', sans-serif", weight: '600', size: 11 } }
+          ticks: { font: { family: "'Plus Jakarta Sans', sans-serif", weight: '600', size: 9.5 } }
         }
       }
     }
@@ -2461,22 +2473,22 @@ function renderHistoriComparisonCharts() {
   chartHistoriKategoriInstance = new Chart(canvasKat, {
     type: 'bar',
     data: {
-      labels: ['Honor Guru & Tendik', 'Operasional & Daya Jasa', 'Belanja Modal / Aset', 'Buku & Literasi'],
+      labels: ['Honor Guru', 'Operasional', 'Modal/Aset', 'Buku Literasi'],
       datasets: [
         {
-          label: 'TA 2024',
+          label: '2024',
           data: [384.50, 466.44, 261.53, 27.14],
           backgroundColor: '#94a3b8',
-          borderRadius: 4
+          borderRadius: 3
         },
         {
-          label: 'TA 2025',
+          label: '2025',
           data: [434.50, 342.00, 264.24, 129.79],
           backgroundColor: '#0284c7',
-          borderRadius: 4
+          borderRadius: 3
         },
         {
-          label: 'TA 2026 (Berjalan)',
+          label: '2026',
           data: [
             Number((honor2026 / 1e6).toFixed(2)),
             Number((ops2026 / 1e6).toFixed(2)),
@@ -2484,7 +2496,7 @@ function renderHistoriComparisonCharts() {
             Number((buku2026 / 1e6).toFixed(2))
           ],
           backgroundColor: '#7c3aed',
-          borderRadius: 4
+          borderRadius: 3
         }
       ]
     },
@@ -2494,7 +2506,7 @@ function renderHistoriComparisonCharts() {
       plugins: {
         legend: {
           position: 'top',
-          labels: { font: { family: "'Plus Jakarta Sans', sans-serif", size: 11, weight: '600' } }
+          labels: { font: { family: "'Plus Jakarta Sans', sans-serif", size: 10, weight: '600' } }
         },
         tooltip: {
           callbacks: {
@@ -2509,17 +2521,87 @@ function renderHistoriComparisonCharts() {
           beginAtZero: true,
           ticks: {
             callback: function(v) { return v + ' Jt'; },
-            font: { family: "'JetBrains Mono', monospace", size: 10 }
+            font: { family: "'JetBrains Mono', monospace", size: 9 }
           },
           grid: { color: '#f1f5f9' }
         },
         x: {
           grid: { display: false },
-          ticks: { font: { family: "'Plus Jakarta Sans', sans-serif", weight: '600', size: 10 } }
+          ticks: { font: { family: "'Plus Jakarta Sans', sans-serif", weight: '600', size: 9.5 } }
         }
       }
     }
   });
+
+  // Chart 3: Komparasi Realisasi Belanja per Unit Sekolah
+  if (chartHistoriUnitInstance) {
+    chartHistoriUnitInstance.destroy();
+  }
+  if (canvasUnit) {
+    chartHistoriUnitInstance = new Chart(canvasUnit, {
+      type: 'bar',
+      data: {
+        labels: ['Putra SMA', 'Putri BD', 'Putri FD', 'Mahad', 'Rabbani'],
+        datasets: [
+          {
+            label: '2024',
+            data: [932.97, 134.64, 72.00, 0, 0],
+            backgroundColor: '#94a3b8',
+            borderRadius: 3
+          },
+          {
+            label: '2025',
+            data: [582.72, 409.74, 291.09, 44.31, 0],
+            backgroundColor: '#0284c7',
+            borderRadius: 3
+          },
+          {
+            label: '2026',
+            data: [
+              getUnitReal('PUTRA'),
+              getUnitReal('BS'),
+              getUnitReal('FDS'),
+              getUnitReal('MAHAD'),
+              getUnitReal('RABBANI')
+            ],
+            backgroundColor: '#7c3aed',
+            borderRadius: 3
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: { font: { family: "'Plus Jakarta Sans', sans-serif", size: 10, weight: '600' } }
+          },
+          tooltip: {
+            callbacks: {
+              label: function(ctx) {
+                return ' ' + ctx.dataset.label + ': Rp ' + ctx.raw.toLocaleString('id-ID') + ' Juta';
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              callback: function(v) { return v + ' Jt'; },
+              font: { family: "'JetBrains Mono', monospace", size: 9 }
+            },
+            grid: { color: '#f1f5f9' }
+          },
+          x: {
+            grid: { display: false },
+            ticks: { font: { family: "'Plus Jakarta Sans', sans-serif", weight: '600', size: 9.5 } }
+          }
+        }
+      }
+    });
+  }
 }
 
 function renderHistoriBelanjaTable(rows) {

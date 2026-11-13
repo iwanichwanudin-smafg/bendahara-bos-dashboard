@@ -827,98 +827,138 @@
           <!-- ============================================== -->
           <section id="viewHistoriPagu" class="view-section">
             <!-- Header Card -->
-            <div class="si-batch-card no-print" style="margin-bottom: 20px; border-left: 4px solid #7c3aed; background: linear-gradient(135deg, #f5f3ff 0%, #ffffff 100%);">
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
-                <div style="display: flex; gap: 14px; align-items: center;">
-                  <div style="width: 52px; height: 52px; border-radius: 12px; background: #7c3aed; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 4px 10px rgba(124, 58, 237, 0.25);">
+            <div class="si-batch-card no-print" style="margin-bottom: 16px; border-left: 4px solid #7c3aed; background: linear-gradient(135deg, #f5f3ff 0%, #ffffff 100%); padding: 14px 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                <div style="display: flex; gap: 12px; align-items: center;">
+                  <div style="width: 44px; height: 44px; border-radius: 10px; background: #7c3aed; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 4px 8px rgba(124, 58, 237, 0.2);">
                     📜
                   </div>
                   <div>
                     <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                      <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: #0f172a;">Histori Pagu & Rincian Belanja BOS</h3>
-                      <span class="badge" style="background: #7c3aed; color: #ffffff; font-weight: 700; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;">ARSIP & ANALISA KOMPARASI</span>
+                      <h3 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: #0f172a;">Histori Pagu & Rincian Belanja BOS</h3>
+                      <span class="badge" style="background: #7c3aed; color: #ffffff; font-weight: 700; font-size: 0.7rem; padding: 2px 7px; border-radius: 999px;">ARSIP & ANALISA KOMPARASI</span>
                     </div>
-                    <div style="margin-top: 4px; font-size: 0.85rem; color: #475569;">
-                      Arsip realisasi dan alokasi pagu tahun buku <strong>2024, 2025 & 2026 (Berjalan)</strong> SMAS Future Gate
+                    <div style="margin-top: 2px; font-size: 0.8rem; color: #475569;">
+                      Arsip pembukuan, evaluasi komparasi, dan tren belanja BOS <strong>2024, 2025 & 2026 (Berjalan)</strong> SMAS Future Gate
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <!-- Year Filter Tabs -->
-                <div class="rekon-tabs-wrapper" style="display: flex; gap: 8px; flex-wrap: wrap;">
-                  <button type="button" class="rekon-tab-btn active" id="btnTabHistori2026" onclick="window.switchHistoriTahun(2026)">
-                    📅 Tahun 2026 (Berjalan)
-                  </button>
-                  <button type="button" class="rekon-tab-btn" id="btnTabHistori2025" onclick="window.switchHistoriTahun(2025)">
-                    📅 Tahun 2025
-                  </button>
-                  <button type="button" class="rekon-tab-btn" id="btnTabHistori2024" onclick="window.switchHistoriTahun(2024)">
-                    📅 Tahun 2024
-                  </button>
-                </div>
-                </div>
-                </div>
-
-                <!-- Panel Analisa & Komparasi Multi-Tahun (2024 - 2026) -->
-                <div class="dashboard-panel no-print" style="margin-bottom: 24px; padding: 20px;">
-                <div class="panel-header" style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <!-- Panel Analisa & Komparasi Multi-Tahun (2024 - 2026) Compact & Kaya Informasi -->
+            <div class="dashboard-panel no-print" style="margin-bottom: 20px; padding: 16px 18px;">
+              <div class="panel-header" style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
                 <div>
-                  <h3 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: #0f172a; display: flex; align-items: center; gap: 8px;">
-                    <span>📊</span> Analisa Tren & Komparasi Multi-Tahun (2024 – 2026)
+                  <h3 style="margin: 0; font-size: 1.05rem; font-weight: 800; color: #0f172a; display: flex; align-items: center; gap: 8px;">
+                    <span>📊</span> Analisa Tren Finansial & Komparasi Multi-Tahun (2024 – 2026)
                   </h3>
-                  <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 3px;">
-                    Evaluasi pertumbuhan skala penerima BOS, realisasi belanja, dan evolusi pos anggaran sekolah
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
+                    Benchmarking pertumbuhan siswa, plafon BOS BJB, efisiensi operasional, dan kepatuhan Juknis BOSP
                   </div>
                 </div>
-                <span class="badge" style="background: #f5f3ff; color: #7c3aed; font-weight: 700; font-size: 0.78rem; padding: 4px 10px; border-radius: 999px;">
-                  3 Tahun Pembukuan
+                <span class="badge" style="background: #f5f3ff; color: #7c3aed; font-weight: 700; font-size: 0.72rem; padding: 3px 8px; border-radius: 999px;">
+                  Audit Komparasi 3 Tahun
                 </span>
-                </div>
+              </div>
 
-                <!-- 3 Executive Key Insights -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 20px;">
-                <div style="background: #f8fafc; border: 1px solid var(--border-color); border-left: 4px solid #0284c7; padding: 12px 14px; border-radius: 8px;">
-                  <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Pertumbuhan Siswa & Pagu</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; color: #0284c7; margin: 3px 0;">+19.4% (+130 Siswa)</div>
-                  <div style="font-size: 0.74rem; color: var(--text-muted);">Pagu naik dari Rp 1,13 M (2024) ➔ Rp 1,35 M (2026)</div>
+              <!-- 6 Compact KPI Cards (Ukuran diperkecil agar padat & informatif) -->
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-bottom: 16px;">
+                <div style="background: #f8fafc; border: 1px solid var(--border-color); border-left: 3px solid #0284c7; padding: 8px 12px; border-radius: 6px;">
+                  <div style="font-size: 0.68rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Pertumbuhan Siswa</div>
+                  <div style="font-size: 1.05rem; font-weight: 800; color: #0284c7; margin: 2px 0;">+19.4% (+130 Siswa)</div>
+                  <div style="font-size: 0.7rem; color: var(--text-muted);">669 (2024) ➔ 799 (2026)</div>
                 </div>
-                <div style="background: #f8fafc; border: 1px solid var(--border-color); border-left: 4px solid #10b981; padding: 12px 14px; border-radius: 8px;">
-                  <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Kepatuhan Juknis Honor</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; color: #10b981; margin: 3px 0;">34.0% – 35.9%</div>
-                  <div style="font-size: 0.74rem; color: var(--text-muted);">Konsisten aman di bawah batas juknis BOS (maks 40%)</div>
+                <div style="background: #f8fafc; border: 1px solid var(--border-color); border-left: 3px solid #7c3aed; padding: 8px 12px; border-radius: 6px;">
+                  <div style="font-size: 0.68rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Kenaikan Pagu BOS</div>
+                  <div style="font-size: 1.05rem; font-weight: 800; color: #7c3aed; margin: 2px 0;">+Rp 219,7 Juta</div>
+                  <div style="font-size: 0.7rem; color: var(--text-muted);">Rp 1,13 M ➔ Rp 1,35 M</div>
                 </div>
-                <div style="background: #f8fafc; border: 1px solid var(--border-color); border-left: 4px solid #d97706; padding: 12px 14px; border-radius: 8px;">
-                  <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Alokasi Penguatan Buku</div>
-                  <div style="font-size: 1.15rem; font-weight: 800; color: #d97706; margin: 3px 0;">Meningkat Pesat (>10%)</div>
-                  <div style="font-size: 0.74rem; color: var(--text-muted);">Memenuhi ketentuan juknis pengadaan buku minimal 10%</div>
+                <div style="background: #f8fafc; border: 1px solid var(--border-color); border-left: 3px solid #10b981; padding: 8px 12px; border-radius: 6px;">
+                  <div style="font-size: 0.68rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Rasio Honor Guru</div>
+                  <div style="font-size: 1.05rem; font-weight: 800; color: #10b981; margin: 2px 0;">34.0% – 35.9%</div>
+                  <div style="font-size: 0.7rem; color: var(--text-muted);">Aman di bawah batas juknis (maks 40%)</div>
                 </div>
+                <div style="background: #f8fafc; border: 1px solid var(--border-color); border-left: 3px solid #d97706; padding: 8px 12px; border-radius: 6px;">
+                  <div style="font-size: 0.68rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Alokasi Buku & Modul</div>
+                  <div style="font-size: 1.05rem; font-weight: 800; color: #d97706; margin: 2px 0;">10.7% – 13.2%</div>
+                  <div style="font-size: 0.7rem; color: var(--text-muted);">Memenuhi juknis perpustakaan (≥10%)</div>
                 </div>
+                <div style="background: #f8fafc; border: 1px solid var(--border-color); border-left: 3px solid #ec4899; padding: 8px 12px; border-radius: 6px;">
+                  <div style="font-size: 0.68rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Belanja Modal / Sarpras</div>
+                  <div style="font-size: 1.05rem; font-weight: 800; color: #ec4899; margin: 2px 0;">~Rp 260 Jt / Thn</div>
+                  <div style="font-size: 0.7rem; color: var(--text-muted);">Laptop, AC, Mebeler, Lab & Alat Olahraga</div>
+                </div>
+                <div style="background: #f8fafc; border: 1px solid var(--border-color); border-left: 3px solid #059669; padding: 8px 12px; border-radius: 6px;">
+                  <div style="font-size: 0.68rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Efektivitas Serapan Kas</div>
+                  <div style="font-size: 1.05rem; font-weight: 800; color: #059669; margin: 2px 0;">98.8% Rata-rata</div>
+                  <div style="font-size: 0.7rem; color: var(--text-muted);">Saldo akhir bank Rp 0 / Carryover optimal</div>
+                </div>
+              </div>
 
-                <!-- Charts Grid: 2 Charts Side by Side -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
+              <!-- 3 Charts Grid Compact (Tinggi 210px agar pas & muat banyak) -->
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 14px;">
                 <!-- Chart 1: Pagu vs Realisasi per Tahun -->
-                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 16px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                    <h5 style="margin: 0; font-size: 0.9rem; font-weight: 700; color: #1e293b;">📈 Tren Pertumbuhan Pagu & Realisasi BOS</h5>
-                    <span style="font-size: 0.72rem; color: #64748b; font-family: var(--font-mono);">2024 – 2026</span>
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                    <h5 style="margin: 0; font-size: 0.82rem; font-weight: 700; color: #1e293b;">📈 Pagu vs Realisasi Belanja</h5>
+                    <span style="font-size: 0.68rem; color: #64748b; font-family: var(--font-mono);">2024–2026</span>
                   </div>
-                  <div style="height: 260px; position: relative;">
+                  <div style="height: 200px; position: relative;">
                     <canvas id="chartHistoriTrenPagu"></canvas>
                   </div>
                 </div>
 
                 <!-- Chart 2: Komposisi Belanja per Kategori -->
-                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 16px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                    <h5 style="margin: 0; font-size: 0.9rem; font-weight: 700; color: #1e293b;">⚖️ Pergeseran Komposisi Belanja per Kategori</h5>
-                    <span style="font-size: 0.72rem; color: #64748b; font-family: var(--font-mono);">Juta Rupiah</span>
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                    <h5 style="margin: 0; font-size: 0.82rem; font-weight: 700; color: #1e293b;">⚖️ Pergeseran Pos Belanja</h5>
+                    <span style="font-size: 0.68rem; color: #64748b; font-family: var(--font-mono);">Juta Rupiah</span>
                   </div>
-                  <div style="height: 260px; position: relative;">
+                  <div style="height: 200px; position: relative;">
                     <canvas id="chartHistoriKategoriKomparasi"></canvas>
                   </div>
                 </div>
+
+                <!-- Chart 3: Distribusi Belanja per Unit Sekolah -->
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                    <h5 style="margin: 0; font-size: 0.82rem; font-weight: 700; color: #1e293b;">🏫 Realisasi per Unit Sekolah</h5>
+                    <span style="font-size: 0.68rem; color: #64748b; font-family: var(--font-mono);">Multi-Unit</span>
+                  </div>
+                  <div style="height: 200px; position: relative;">
+                    <canvas id="chartHistoriUnitKomparasi"></canvas>
+                  </div>
                 </div>
+              </div>
+            </div>
+
+            <!-- PILIHAN TAHUN (Dipindahkan ke Bawah Analisa Sesuai Arahan Pak Iwan) -->
+            <div class="si-batch-card no-print" style="margin-bottom: 20px; border-left: 4px solid #0284c7; background: #ffffff; padding: 14px 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
+                <div>
+                  <div style="font-size: 0.72rem; font-weight: 800; color: #0284c7; text-transform: uppercase; letter-spacing: 0.5px;">
+                    Pilih Arsip Tahun Pembukuan
+                  </div>
+                  <div style="font-size: 0.92rem; font-weight: 700; color: #0f172a; margin-top: 2px;">
+                    Menampilkan Rincian Pagu & Transaksi: <span id="historiLabelTahunAktifBadge" style="color: #0284c7;">Tahun 2026</span>
+                  </div>
                 </div>
+
+                <!-- Year Filter Tabs -->
+                <div class="rekon-tabs-wrapper" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                  <button type="button" class="rekon-tab-btn active" id="btnTabHistori2026" onclick="window.switchHistoriTahun(2026)" style="padding: 8px 16px; font-weight: 700;">
+                    📅 Tahun 2026 (Berjalan)
+                  </button>
+                  <button type="button" class="rekon-tab-btn" id="btnTabHistori2025" onclick="window.switchHistoriTahun(2025)" style="padding: 8px 16px; font-weight: 700;">
+                    📅 Tahun 2025
+                  </button>
+                  <button type="button" class="rekon-tab-btn" id="btnTabHistori2024" onclick="window.switchHistoriTahun(2024)" style="padding: 8px 16px; font-weight: 700;">
+                    📅 Tahun 2024
+                  </button>
+                </div>
+              </div>
+            </div>
 
             <!-- Metric Cards Tahun Terpilih -->
             <div class="stat-cards-grid no-print" style="margin-bottom: 24px;">
