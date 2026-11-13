@@ -2227,21 +2227,34 @@ function renderHistoriPagu() {
   if (tahun === 2026) {
     // Ambil data live tahun 2026 langsung dari state sistem berjalan
     const m = getMetrics();
+    const rateFKSS = Number(PAGU_DATA.iuranFKSSPerSiswa) || 25000;
+    const rateBOS = Number(PAGU_DATA.nominalPerSiswa) || 1690000;
+
     d = {
       totalPagu: m.totalPagu,
       totalRealisasi: m.totalRealisasi,
       sisa: m.sisaKas,
       persen: `${m.pctRealisasi}%`,
-      unitRows: m.unitStats.map(u => ({
-        nama: u.nama,
-        siswa: u.siswa,
-        paguMurni: u.jatahNetto,
-        iuranFKSS: u.iuranFKSS,
-        totalPagu: u.pagu,
-        realisasi: u.realisasi,
-        sisa: u.sisa,
-        pct: `${u.pct}%`
-      })),
+      unitRows: m.unitStats.map(u => {
+        const siswa = Number(u.siswa) || 0;
+        const bruto = Number(u.jatahBruto) || (siswa * rateBOS);
+        const fkss = Number(u.iuranFKSS) || (siswa * rateFKSS);
+        const netto = Number(u.jatahNetto) || (bruto - fkss);
+        return {
+          nama: u.nama,
+          siswa: siswa,
+          paguBruto: bruto,
+          fkss: fkss,
+          mkks: 0,
+          ijasah: 0,
+          pmi: 0,
+          netPembagian: netto,
+          paguRealRkas: Number(u.pagu) || 0,
+          realisasi: u.realisasi,
+          sisa: u.sisa,
+          pct: `${u.pct}%`
+        };
+      }),
       belanjaRows: transaksiList.map(t => ({
         tanggal: t.tanggal,
         unit: t.unitNama,
@@ -2294,7 +2307,7 @@ function renderHistoriPagu() {
           <td style="text-align: center; font-weight: 700;">${idx + 1}</td>
           <td><strong>${u.nama}</strong></td>
           <td class="table-num">${u.siswa || 0} Siswa</td>
-          <td class="table-num" style="font-weight: 600;">${formatRupiah(u.paguMurni || 0)}</td>
+          <td class="table-num" style="font-weight: 600;">${formatRupiah(u.paguBruto || u.paguMurni || 0)}</td>
           <td class="table-num" style="color: #dc2626;">${u.fkss ? '-' + formatRupiah(u.fkss) : '–'}</td>
           <td class="table-num" style="color: #dc2626;">${u.mkks ? '-' + formatRupiah(u.mkks) : '–'}</td>
           <td class="table-num" style="color: #dc2626;">${u.ijasah ? '-' + formatRupiah(u.ijasah) : '–'}</td>
